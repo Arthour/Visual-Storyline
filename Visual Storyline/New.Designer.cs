@@ -87,6 +87,7 @@
             resources.ApplyResources(this.explorer, "explorer");
             this.explorer.Name = "explorer";
             this.explorer.UseVisualStyleBackColor = true;
+            this.explorer.Click += new System.EventHandler(this.explorer_Click);
             // 
             // ProjectLocation
             // 

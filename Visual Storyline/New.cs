@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace Visual_Storyline
 {
@@ -44,7 +45,7 @@ namespace Visual_Storyline
 
         private void ProjectName_KeyInput(object sender, KeyPressEventArgs e)
         {
-            var StandardUnicode = new Regex(@"^[^a-zA-Z0-9_\b]*");
+            var StandardUnicode = new Regex(@"^[^a-zA-Z0-9_\b]+");
             if (StandardUnicode.IsMatch(e.KeyChar.ToString()))
             {
                 e.Handled = true;
@@ -70,12 +71,12 @@ namespace Visual_Storyline
         {
             RadioButton[] LocButtons = new RadioButton[] { loclocally, locglobally, locboth };
             RadioButton[] CharButtons = new RadioButton[] { charlocally, charglobally, charboth };
-            var StandardUnicode = new Regex(@" ^[a-zA-Z0-9_\b]*");
+            var StandardUnicode = new Regex(@"^[a-zA-Z0-9_\b]+");
             if (StandardUnicode.IsMatch(ProjectName.Text) && ProjectLocation.Text != "" && LocButtons.Any() && CharButtons.Any())
             {
                 OK.Enabled = true;
             }
-            else { OK.Enabled = false; };
+            else { OK.Enabled = false;};
         }
 
         private void OK_Click(object sender, EventArgs e)
@@ -83,7 +84,16 @@ namespace Visual_Storyline
             var StandardUnicode = new Regex(@"^[a-zA-Z0-9_\b]+");
             if (StandardUnicode.IsMatch(ProjectName.Text))
             {
-
+                Console.WriteLine("ProjectName accepted: {0}", ProjectName.Text);
+            }
+            try
+            {
+                Path.GetFullPath(ProjectLocation.Text);
+                Console.WriteLine("ProjectLocation accepted: {0}, Input was: {1}", Path.GetFullPath(ProjectLocation.Text), ProjectLocation.Text);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Some text", "Some title", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
