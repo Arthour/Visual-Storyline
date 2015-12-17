@@ -54,7 +54,7 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.addQuest = new System.Windows.Forms.ToolStripButton();
             this.addRelation = new System.Windows.Forms.ToolStripButton();
-            this.addCondition = new System.Windows.Forms.ToolStripButton();
+            this.addEvent = new System.Windows.Forms.ToolStripButton();
             this.Settings = new System.Windows.Forms.ToolStripButton();
             this.Toolbar.SuspendLayout();
             this.SuspendLayout();
@@ -78,7 +78,7 @@
             this.toolStripSeparator3,
             this.addQuest,
             this.addRelation,
-            this.addCondition,
+            this.addEvent,
             this.Settings});
             this.Toolbar.Name = "Toolbar";
             // 
@@ -237,11 +237,12 @@
             this.addRelation.Image = global::Visual_Storyline.Properties.Resources.AddInterface_5537;
             this.addRelation.Name = "addRelation";
             // 
-            // addCondition
+            // addEvent
             // 
-            resources.ApplyResources(this.addCondition, "addCondition");
-            this.addCondition.Image = global::Visual_Storyline.Properties.Resources.ChangeQueryType_insertvalues_286;
-            this.addCondition.Name = "addCondition";
+            resources.ApplyResources(this.addEvent, "addEvent");
+            this.addEvent.Image = global::Visual_Storyline.Properties.Resources.ChangeQueryType_insertvalues_286;
+            this.addEvent.Name = "addEvent";
+            this.addEvent.Click += new System.EventHandler(this.addCondition_Click);
             // 
             // Settings
             // 
@@ -280,7 +281,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton addQuest;
         private System.Windows.Forms.ToolStripButton addRelation;
-        private System.Windows.Forms.ToolStripButton addCondition;
+        private System.Windows.Forms.ToolStripButton addEvent;
         private System.Windows.Forms.ToolStripButton Settings;
         private System.Windows.Forms.ToolStripMenuItem SaveSubmenu;
         private System.Windows.Forms.ToolStripMenuItem SaveasSubmenu;

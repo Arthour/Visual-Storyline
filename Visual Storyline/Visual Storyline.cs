@@ -27,5 +27,10 @@ namespace Visual_Storyline
             New newproject = new New();
             newproject.ShowDialog();
         }
+
+        private void addCondition_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
