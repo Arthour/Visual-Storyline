@@ -42,6 +42,21 @@ namespace Visual_Storyline
             return Title;
         }
 
+        public static string WarningTitle()
+        {
+            checkLanguage();
+            switch (Language)
+            {
+                case 0:
+                    Title = "Warning";
+                    break;
+                case 1:
+                    Title = "Warnung";
+                    break;
+            }
+            return Title;
+        }
+
         public static string NameError()
         {
             checkLanguage();
@@ -112,6 +127,51 @@ namespace Visual_Storyline
                     break;
                 case 1:
                     Message = "Der gewählte Pfad ist zu lang.";
+                    break;
+            }
+            return Message;
+        }
+
+        public static string IOError()
+        {
+            checkLanguage();
+            switch (Language)
+            {
+                case 0:
+                    Message = "The specified folder is a file or the network name is unknown.";
+                    break;
+                case 1:
+                    Message = "Der angegebene Ordner ist eine Datei oder der Netzwerkname ist unbekannt.";
+                    break;
+            }
+            return Message;
+        }
+
+        public static string UnauthorizedError()
+        {
+            checkLanguage();
+            switch (Language)
+            {
+                case 0:
+                    Message = "You do not have the required permissions for this path.";
+                    break;
+                case 1:
+                    Message = "Sie verfügen nicht über die benötigten Berechtigungen für diesen Pfad.";
+                    break;
+            }
+            return Message;
+        }
+
+        public static string FolderExistsWarning()
+        {
+            checkLanguage();
+            switch (Language)
+            {
+                case 0:
+                    Message = "There is already a folder at the specified path. If you continue the files in this folder will be deleted. Continue?";
+                    break;
+                case 1:
+                    Message = "An dem angegeben Pfad befindet sich bereits ein Ordner mit diesem Namen. Wenn Sie fortfahren werden die Dateien in diesem Ordner gelöscht. Fortfahren?";
                     break;
             }
             return Message;
