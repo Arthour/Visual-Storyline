@@ -151,9 +151,6 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Projektname:</value>
   </data>
-  <data name="LocBox.Text" xml:space="preserve">
-    <value>Ort-Library</value>
-  </data>
   <data name="locboth.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 19</value>
   </data>
@@ -171,6 +168,9 @@
   </data>
   <data name="loclocally.Text" xml:space="preserve">
     <value>Orte lokal speichern</value>
+  </data>
+  <data name="LocBox.Text" xml:space="preserve">
+    <value>Ort-Library</value>
   </data>
   <data name="cancel.Text" xml:space="preserve">
     <value>Abbrechen</value>

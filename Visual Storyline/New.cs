@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Security;
 
 namespace Visual_Storyline
 {
@@ -85,15 +86,41 @@ namespace Visual_Storyline
             if (StandardUnicode.IsMatch(ProjectName.Text))
             {
                 Console.WriteLine("ProjectName accepted: {0}", ProjectName.Text);
+                try
+                {
+                    Path.GetFullPath(ProjectLocation.Text);
+                    Console.WriteLine("ProjectLocation accepted: {0}, Input was: {1}", Path.GetFullPath(ProjectLocation.Text), ProjectLocation.Text);
+                }
+                catch (ArgumentException)
+                {
+                    ErrorMessages.ArgumentError();
+                    ErrorMessages.ErrorTitle();
+                    MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (SecurityException)
+                {
+                    ErrorMessages.SecurityError();
+                    ErrorMessages.ErrorTitle();
+                    MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (NotSupportedException)
+                {
+                    ErrorMessages.NotSupportedError();
+                    ErrorMessages.ErrorTitle();
+                    MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (PathTooLongException)
+                {
+                    ErrorMessages.TooLongError();
+                    ErrorMessages.ErrorTitle();
+                    MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            try
+            else
             {
-                Path.GetFullPath(ProjectLocation.Text);
-                Console.WriteLine("ProjectLocation accepted: {0}, Input was: {1}", Path.GetFullPath(ProjectLocation.Text), ProjectLocation.Text);
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Some text", "Some title", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ErrorMessages.NameError();
+                ErrorMessages.ErrorTitle();
+                MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
