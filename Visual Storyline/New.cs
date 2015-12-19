@@ -11,6 +11,7 @@ using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using System.IO;
 using System.Security;
+using System.Security.Cryptography;
 
 namespace Visual_Storyline
 {
@@ -127,6 +128,7 @@ namespace Visual_Storyline
                         }
                         else
                         {
+                            Console.WriteLine("User chose to cancel overwriting");
                             return;
                         }
                     }
@@ -139,6 +141,8 @@ namespace Visual_Storyline
                         Directory.CreateDirectory(Path.Combine(Path.GetFullPath(ProjectLocation.Text), ProjectName.Text));
                         Console.WriteLine("Trying to create the project folder");
                     }
+                    File.Create(Path.Combine(ProjectFolder, ProjectName.Text += ".vsl"));
+
                 }
                 catch (ArgumentException)
                 {
