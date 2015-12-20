@@ -10,7 +10,7 @@ namespace Visual_Storyline
 {
     class Encryption
     {
-        public static void Main()
+        public static void Cryptic()
         {
             try
             {
