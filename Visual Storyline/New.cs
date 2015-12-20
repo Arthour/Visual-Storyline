@@ -147,20 +147,17 @@ namespace Visual_Storyline
                         Directory.CreateDirectory(ProjectFolder);
                         Console.WriteLine("Success");
                     }
-                    RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
-                    string privateKey = RSA.ToXmlString(true);
-/*
-*   SAVE PRIVATE KEY (in Keychain)
-*/
-                    string publicKey= RSA.ToXmlString(false);
-                    Console.WriteLine("Created encryption keys");
+                    KeyContainer.SaveInContainer(ProjectName.Text);
                     using (StreamWriter sw = new StreamWriter(ProjectFile, true))
                     {
                         sw.WriteLine("<{0}><{1}><{2}><{3}>", System.DateTime.UtcNow, System.DateTime.UtcNow, ProjectName.Text, Variables.ProgramInfo);
-                        sw.WriteLine(publicKey);
+                        sw.WriteLine(KeyContainer.publicKey);
                         sw.Close();
                     }
                     Console.WriteLine("Created project file and saved basic data");
+/*
+*   WRITE SAVE LOCATIONS
+*/
                 }
                 catch (ArgumentException)
                 {
