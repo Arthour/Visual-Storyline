@@ -87,7 +87,11 @@ namespace Visual_Storyline
         private void OK_Click(object sender, EventArgs e)
         {
             string ProjectPath = Path.GetFullPath(ProjectLocation.Text);
+            Variables.currentPath = ProjectPath;
             string ProjectFolder = Path.Combine(ProjectPath, ProjectName.Text);
+            Variables.currentFolder = ProjectFolder;
+            string ProjectFile = ProjectFolder + "\\" + ProjectName.Text + ".vsl";
+            Variables.currentFile = ProjectFile;
             DirectoryInfo dirinfo = new DirectoryInfo(ProjectFolder);
 
             var StandardUnicode = new Regex(@"^[a-zA-Z0-9_\b]+");
@@ -98,14 +102,15 @@ namespace Visual_Storyline
                 {
                     Path.GetFullPath(ProjectLocation.Text);
                     Console.WriteLine("ProjectLocation accepted: {0}, Input was: {1}", ProjectPath, ProjectLocation.Text);
-                    if (Directory.Exists(Path.GetFullPath(ProjectLocation.Text)))
+                    if (Directory.Exists(ProjectPath))
                     {
                         Console.WriteLine("Directory already exists, proceeding");
                     }
                     else
                     {
-                        Directory.CreateDirectory(ProjectPath);
                         Console.WriteLine("Trying to create the directory");
+                        Directory.CreateDirectory(ProjectPath);
+                        Console.WriteLine("Success");
                     }
                     if (Directory.Exists(ProjectFolder) && Directory.EnumerateFileSystemEntries(ProjectFolder).Any())
                     {
@@ -138,11 +143,24 @@ namespace Visual_Storyline
                     }
                     else if (!Directory.Exists(ProjectFolder))
                     {
-                        Directory.CreateDirectory(Path.Combine(Path.GetFullPath(ProjectLocation.Text), ProjectName.Text));
                         Console.WriteLine("Trying to create the project folder");
+                        Directory.CreateDirectory(ProjectFolder);
+                        Console.WriteLine("Success");
                     }
-                    File.Create(Path.Combine(ProjectFolder, ProjectName.Text += ".vsl"));
-
+                    RSACryptoServiceProvider RSA = new RSACryptoServiceProvider();
+                    string privateKey = RSA.ToXmlString(true);
+/*
+*   SAVE PRIVATE KEY (in Keychain)
+*/
+                    string publicKey= RSA.ToXmlString(false);
+                    Console.WriteLine("Created encryption keys");
+                    using (StreamWriter sw = new StreamWriter(ProjectFile, true))
+                    {
+                        sw.WriteLine("<{0}><{1}><{2}><{3}>", System.DateTime.UtcNow, System.DateTime.UtcNow, ProjectName.Text, Variables.ProgramInfo);
+                        sw.WriteLine(publicKey);
+                        sw.Close();
+                    }
+                    Console.WriteLine("Created project file and saved basic data");
                 }
                 catch (ArgumentException)
                 {

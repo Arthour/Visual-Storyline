@@ -24,5 +24,7 @@ namespace Visual_Storyline
     class Variables
     {
         public static string VSL = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"Visual Storyline");
+        public static string currentPath, currentFolder, currentFile;
+        public static string ProgramInfo = System.Reflection.Assembly.GetExecutingAssembly().GetName().ToString();
     }
 }
