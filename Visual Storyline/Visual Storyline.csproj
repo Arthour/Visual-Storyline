@@ -46,9 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Encryption.cs" />
     <Compile Include="ErrorMessages.cs" />
-    <Compile Include="KeyContainer.cs" />
     <Compile Include="New.cs">
       <SubType>Form</SubType>
     </Compile>

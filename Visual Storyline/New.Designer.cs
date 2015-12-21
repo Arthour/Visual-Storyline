@@ -44,16 +44,18 @@
             this.loclocally = new System.Windows.Forms.RadioButton();
             this.OK = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
+            this.ProjectDescription = new System.Windows.Forms.TextBox();
+            this.Description = new System.Windows.Forms.Label();
             this.charBox.SuspendLayout();
             this.LocBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // charBox
             // 
-            resources.ApplyResources(this.charBox, "charBox");
             this.charBox.Controls.Add(this.charboth);
             this.charBox.Controls.Add(this.charglobally);
             this.charBox.Controls.Add(this.charlocally);
+            resources.ApplyResources(this.charBox, "charBox");
             this.charBox.Name = "charBox";
             this.charBox.TabStop = false;
             // 
@@ -114,10 +116,10 @@
             // 
             // LocBox
             // 
-            resources.ApplyResources(this.LocBox, "LocBox");
             this.LocBox.Controls.Add(this.locboth);
             this.LocBox.Controls.Add(this.locglobally);
             this.LocBox.Controls.Add(this.loclocally);
+            resources.ApplyResources(this.LocBox, "LocBox");
             this.LocBox.Name = "LocBox";
             this.LocBox.TabStop = false;
             // 
@@ -155,10 +157,22 @@
             // 
             // cancel
             // 
-            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
+            // 
+            // ProjectDescription
+            // 
+            this.ProjectDescription.AcceptsReturn = true;
+            this.ProjectDescription.AllowDrop = true;
+            resources.ApplyResources(this.ProjectDescription, "ProjectDescription");
+            this.ProjectDescription.Name = "ProjectDescription";
+            // 
+            // Description
+            // 
+            resources.ApplyResources(this.Description, "Description");
+            this.Description.Name = "Description";
             // 
             // New
             // 
@@ -167,6 +181,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancel;
             this.ControlBox = false;
+            this.Controls.Add(this.Description);
+            this.Controls.Add(this.ProjectDescription);
             this.Controls.Add(this.charBox);
             this.Controls.Add(this.explorer);
             this.Controls.Add(this.ProjectLocation);
@@ -210,5 +226,7 @@
         private System.Windows.Forms.RadioButton loclocally;
         private System.Windows.Forms.Button OK;
         private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.TextBox ProjectDescription;
+        private System.Windows.Forms.Label Description;
     }
 }

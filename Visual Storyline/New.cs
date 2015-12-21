@@ -147,11 +147,12 @@ namespace Visual_Storyline
                         Directory.CreateDirectory(ProjectFolder);
                         Console.WriteLine("Success");
                     }
-                    KeyContainer.SaveInContainer(ProjectName.Text);
+
+                    string metadata = "<metadata><created>" + System.DateTime.UtcNow + @"</created><lastsave>" + System.DateTime.UtcNow + @"</lastsave><name>" + ProjectName.Text + @"</name><description>" + ProjectDescription.Text + @"</description><programInfo>" + Variables.ProgramInfo + @"</programInfo></metadata>";
                     using (StreamWriter sw = new StreamWriter(ProjectFile, true))
                     {
-                        sw.WriteLine("<{0}><{1}><{2}><{3}>", System.DateTime.UtcNow, System.DateTime.UtcNow, ProjectName.Text, Variables.ProgramInfo);
-                        sw.WriteLine(KeyContainer.publicKey);
+                        sw.WriteLine(metadata);
+                        sw.WriteLine(Program.Encode(metadata));
                         sw.Close();
                     }
                     Console.WriteLine("Created project file and saved basic data");
