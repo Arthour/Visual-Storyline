@@ -158,7 +158,7 @@
     <value>16, 101</value>
   </data>
   <data name="charBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 98</value>
+    <value>341, 98</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="charBox.TabIndex" type="System.Int32, mscorlib">
@@ -395,66 +395,6 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;locboth.Name" xml:space="preserve">
-    <value>locboth</value>
-  </data>
-  <data name="&gt;&gt;locboth.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;locboth.Parent" xml:space="preserve">
-    <value>LocBox</value>
-  </data>
-  <data name="&gt;&gt;locboth.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;locglobally.Name" xml:space="preserve">
-    <value>locglobally</value>
-  </data>
-  <data name="&gt;&gt;locglobally.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;locglobally.Parent" xml:space="preserve">
-    <value>LocBox</value>
-  </data>
-  <data name="&gt;&gt;locglobally.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;loclocally.Name" xml:space="preserve">
-    <value>loclocally</value>
-  </data>
-  <data name="&gt;&gt;loclocally.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;loclocally.Parent" xml:space="preserve">
-    <value>LocBox</value>
-  </data>
-  <data name="&gt;&gt;loclocally.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="LocBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 205</value>
-  </data>
-  <data name="LocBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 100</value>
-  </data>
-  <data name="LocBox.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="LocBox.Text" xml:space="preserve">
-    <value>Location Library</value>
-  </data>
-  <data name="&gt;&gt;LocBox.Name" xml:space="preserve">
-    <value>LocBox</value>
-  </data>
-  <data name="&gt;&gt;LocBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LocBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LocBox.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
   <data name="locboth.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -535,6 +475,30 @@
   </data>
   <data name="&gt;&gt;loclocally.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="LocBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 205</value>
+  </data>
+  <data name="LocBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 100</value>
+  </data>
+  <data name="LocBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LocBox.Text" xml:space="preserve">
+    <value>Location Library</value>
+  </data>
+  <data name="&gt;&gt;LocBox.Name" xml:space="preserve">
+    <value>LocBox</value>
+  </data>
+  <data name="&gt;&gt;LocBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LocBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LocBox.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="OK.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>

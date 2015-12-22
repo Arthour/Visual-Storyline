@@ -18,6 +18,7 @@ namespace Visual_Storyline
     public partial class New : Form, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        public int CharSave = 1, LocSave = 1;
 
         public New()
         {
@@ -94,6 +95,7 @@ namespace Visual_Storyline
             Variables.currentFile = ProjectFile;
             DirectoryInfo dirinfo = new DirectoryInfo(ProjectFolder);
 
+
             var StandardUnicode = new Regex(@"^[a-zA-Z0-9_\b]+");
             if (StandardUnicode.IsMatch(ProjectName.Text))
             {
@@ -149,16 +151,48 @@ namespace Visual_Storyline
                     }
 
                     string metadata = "<metadata><created>" + System.DateTime.UtcNow + @"</created><lastsave>" + System.DateTime.UtcNow + @"</lastsave><name>" + ProjectName.Text + @"</name><description>" + ProjectDescription.Text + @"</description><programInfo>" + Variables.ProgramInfo + @"</programInfo></metadata>";
+                    string saveoptions = "<saveoptions><characters>" + CharSave + @"</characters><locations>" + LocSave + @"</locations></saveoptions>";
                     using (StreamWriter sw = new StreamWriter(ProjectFile, true))
                     {
-                        sw.WriteLine(metadata);
                         sw.WriteLine(Program.Encode(metadata));
+                        sw.WriteLine(Program.Encode(saveoptions));
                         sw.Close();
                     }
+                    if (CharSave == 1 || CharSave == 3)
+                    {
+                        if (!Directory.Exists(Path.Combine(ProjectFolder, "Savedata")))
+                        {
+                            Directory.CreateDirectory(Path.Combine(ProjectFolder, "Savedata"));
+                        }
+                        File.Create(Path.Combine(ProjectFolder, "Savedata", "Characters.dat"));
+                    }
+                    if (CharSave == 2 || CharSave == 3)
+                    {
+                        if (!Directory.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata")))
+                        {
+                            Directory.CreateDirectory(Path.Combine(Variables.VSL, "$GlobalSavedata"));
+                        }
+                        File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Characters.dat"));
+                    }
+                    if (LocSave == 1 || LocSave == 3)
+                    {
+                        if (!Directory.Exists(Path.Combine(ProjectFolder, "Savedata")))
+                        {
+                            Directory.CreateDirectory(Path.Combine(ProjectFolder, "Savedata"));
+                        }
+                        File.Create(Path.Combine(ProjectFolder, "Savedata", "Locations.dat"));
+                    }
+                    if (LocSave == 2 || LocSave == 3)
+                    {
+                        if (!Directory.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata")))
+                        {
+                            Directory.CreateDirectory(Path.Combine(Variables.VSL, "$GlobalSavedata"));
+                        }
+                        File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Locations.dat"));
+                    }
                     Console.WriteLine("Created project file and saved basic data");
-/*
-*   WRITE SAVE LOCATIONS
-*/
+                    this.Dispose();
+                    Console.WriteLine("Project creation form closed");
                 }
                 catch (ArgumentException)
                 {
@@ -210,6 +244,36 @@ namespace Visual_Storyline
                 MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine("Name Error");
             }
+        }
+
+        private void charlocally_CheckedChanged(object sender, EventArgs e)
+        {
+            CharSave = 1;
+        }
+
+        private void charglobally_CheckedChanged(object sender, EventArgs e)
+        {
+            CharSave = 2;
+        }
+
+        private void charboth_CheckedChanged(object sender, EventArgs e)
+        {
+            CharSave = 3;
+        }
+
+        private void loclocally_CheckedChanged(object sender, EventArgs e)
+        {
+            LocSave = 1;
+        }
+
+        private void locglobally_CheckedChanged(object sender, EventArgs e)
+        {
+            LocSave = 2;
+        }
+
+        private void locboth_CheckedChanged(object sender, EventArgs e)
+        {
+            LocSave = 3;
         }
     }
 }

@@ -65,6 +65,7 @@
             this.charboth.Name = "charboth";
             this.charboth.TabStop = true;
             this.charboth.UseVisualStyleBackColor = true;
+            this.charboth.CheckedChanged += new System.EventHandler(this.charboth_CheckedChanged);
             this.charboth.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // charglobally
@@ -73,6 +74,7 @@
             this.charglobally.Name = "charglobally";
             this.charglobally.TabStop = true;
             this.charglobally.UseVisualStyleBackColor = true;
+            this.charglobally.CheckedChanged += new System.EventHandler(this.charglobally_CheckedChanged);
             this.charglobally.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // charlocally
@@ -82,6 +84,7 @@
             this.charlocally.Name = "charlocally";
             this.charlocally.TabStop = true;
             this.charlocally.UseVisualStyleBackColor = true;
+            this.charlocally.CheckedChanged += new System.EventHandler(this.charlocally_CheckedChanged);
             this.charlocally.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // explorer
@@ -129,6 +132,7 @@
             this.locboth.Name = "locboth";
             this.locboth.TabStop = true;
             this.locboth.UseVisualStyleBackColor = true;
+            this.locboth.CheckedChanged += new System.EventHandler(this.locboth_CheckedChanged);
             this.locboth.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // locglobally
@@ -137,6 +141,7 @@
             this.locglobally.Name = "locglobally";
             this.locglobally.TabStop = true;
             this.locglobally.UseVisualStyleBackColor = true;
+            this.locglobally.CheckedChanged += new System.EventHandler(this.locglobally_CheckedChanged);
             this.locglobally.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // loclocally
@@ -146,6 +151,7 @@
             this.loclocally.Name = "loclocally";
             this.loclocally.TabStop = true;
             this.loclocally.UseVisualStyleBackColor = true;
+            this.loclocally.CheckedChanged += new System.EventHandler(this.loclocally_CheckedChanged);
             this.loclocally.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // OK
