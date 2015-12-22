@@ -117,71 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="charboth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 19</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
   </data>
-  <data name="charboth.Text" xml:space="preserve">
-    <value>Charaktere lokal und global speichern</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="charglobally.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 19</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
-  <data name="charglobally.Text" xml:space="preserve">
-    <value>Charaktere global speichern</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>331, 301</value>
   </data>
-  <data name="charlocally.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 19</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="charlocally.Text" xml:space="preserve">
-    <value>Charaktere lokal speichern</value>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
   </data>
-  <data name="charBox.Text" xml:space="preserve">
-    <value>Charakter-Library</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 15</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Projektpfad:</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 15</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Projektname:</value>
-  </data>
-  <data name="locboth.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 19</value>
-  </data>
-  <data name="locboth.Text" xml:space="preserve">
-    <value>Orte lokal und global speichern</value>
-  </data>
-  <data name="locglobally.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 19</value>
-  </data>
-  <data name="locglobally.Text" xml:space="preserve">
-    <value>Orte global speichern</value>
-  </data>
-  <data name="loclocally.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 19</value>
-  </data>
-  <data name="loclocally.Text" xml:space="preserve">
-    <value>Orte lokal speichern</value>
-  </data>
-  <data name="LocBox.Text" xml:space="preserve">
-    <value>Ort-Library</value>
-  </data>
-  <data name="cancel.Text" xml:space="preserve">
-    <value>Abbrechen</value>
-  </data>
-  <data name="Description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 15</value>
-  </data>
-  <data name="Description.Text" xml:space="preserve">
-    <value>Beschreibung:</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Neues Projekt anlegen</value>
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

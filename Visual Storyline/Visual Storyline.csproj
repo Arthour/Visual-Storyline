@@ -54,6 +54,12 @@
       <DependentUpon>New.cs</DependentUpon>
     </Compile>
     <Compile Include="OpenFile.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visual Storyline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="New.resx">
       <DependentUpon>New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.de.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual Storyline.de.resx">
       <DependentUpon>Visual Storyline.cs</DependentUpon>

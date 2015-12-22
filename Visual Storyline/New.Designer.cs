@@ -52,10 +52,10 @@
             // 
             // charBox
             // 
+            resources.ApplyResources(this.charBox, "charBox");
             this.charBox.Controls.Add(this.charboth);
             this.charBox.Controls.Add(this.charglobally);
             this.charBox.Controls.Add(this.charlocally);
-            resources.ApplyResources(this.charBox, "charBox");
             this.charBox.Name = "charBox";
             this.charBox.TabStop = false;
             // 
@@ -119,10 +119,10 @@
             // 
             // LocBox
             // 
+            resources.ApplyResources(this.LocBox, "LocBox");
             this.LocBox.Controls.Add(this.locboth);
             this.LocBox.Controls.Add(this.locglobally);
             this.LocBox.Controls.Add(this.loclocally);
-            resources.ApplyResources(this.LocBox, "LocBox");
             this.LocBox.Name = "LocBox";
             this.LocBox.TabStop = false;
             // 
@@ -163,16 +163,16 @@
             // 
             // cancel
             // 
-            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.cancel, "cancel");
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
             // ProjectDescription
             // 
             this.ProjectDescription.AcceptsReturn = true;
-            this.ProjectDescription.AllowDrop = true;
             resources.ApplyResources(this.ProjectDescription, "ProjectDescription");
+            this.ProjectDescription.AllowDrop = true;
             this.ProjectDescription.Name = "ProjectDescription";
             // 
             // Description
