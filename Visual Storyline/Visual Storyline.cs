@@ -42,6 +42,11 @@ namespace Visual_Storyline
                 newproject.ShowDialog();
                 return true;
             }
+            if (keyData == (Keys.Control | Keys.O))
+            {
+                OpenFile.OpenDialog();
+                return true;
+            }
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
