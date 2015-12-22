@@ -150,7 +150,7 @@ namespace Visual_Storyline
                         Console.WriteLine("Success");
                     }
 
-                    string metadata = "<metadata><created>" + System.DateTime.UtcNow + @"</created><lastsave>" + System.DateTime.UtcNow + @"</lastsave><name>" + ProjectName.Text + @"</name><description>" + ProjectDescription.Text + @"</description><programInfo>" + Variables.ProgramInfo + @"</programInfo></metadata>";
+                    string metadata = "<metadata><created>" + System.DateTime.UtcNow + @"</created><modified>" + System.DateTime.UtcNow + @"</modified><name>" + ProjectName.Text + @"</name><description>" + ProjectDescription.Text + @"</description><version>" + Variables.Version + @"</version></metadata>";
                     string saveoptions = "<saveoptions><characters>" + CharSave + @"</characters><locations>" + LocSave + @"</locations></saveoptions>";
                     using (StreamWriter sw = new StreamWriter(ProjectFile, true))
                     {

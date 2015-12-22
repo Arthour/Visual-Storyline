@@ -113,6 +113,7 @@
             resources.ApplyResources(this.Open, "Open");
             this.Open.Image = global::Visual_Storyline.Properties.Resources.Open_6529;
             this.Open.Name = "Open";
+            this.Open.Click += new System.EventHandler(this.Open_Click);
             // 
             // Export
             // 

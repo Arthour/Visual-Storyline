@@ -53,6 +53,7 @@
     <Compile Include="New.Designer.cs">
       <DependentUpon>New.cs</DependentUpon>
     </Compile>
+    <Compile Include="OpenFile.cs" />
     <Compile Include="Visual Storyline.cs">
       <SubType>Form</SubType>
     </Compile>
