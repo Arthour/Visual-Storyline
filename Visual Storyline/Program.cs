@@ -38,6 +38,8 @@ namespace Visual_Storyline
         public static string currentPath, currentFolder, currentFile;
         public static string Version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
         public static string Created, Modified, Name, Description, Programversion;
+        public static string SaveOptionChar, SaveOptionLoc;
+        public static List<string> Characters, Locations, Strands, Ideas, Quests, Relations, Conditions;
     }
 
 
