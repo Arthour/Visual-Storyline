@@ -31,8 +31,8 @@ namespace Visual_Storyline
             if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-                RadioButton[] LocButtons = new RadioButton[] { loclocally, locglobally, locboth };
-                RadioButton[] CharButtons = new RadioButton[] { charlocally, charglobally, charboth };
+                RadioButton[] LocButtons = new RadioButton[] { loclocally, locglobally };
+                RadioButton[] CharButtons = new RadioButton[] { charlocally, charglobally };
 
                 if (ProjectName.Text != "" && ProjectLocation.Text != "" && LocButtons.Any() && CharButtons.Any())
                 {
@@ -72,8 +72,8 @@ namespace Visual_Storyline
 
         private void propertyChanged(object sender, EventArgs e)
         {
-            RadioButton[] LocButtons = new RadioButton[] { loclocally, locglobally, locboth };
-            RadioButton[] CharButtons = new RadioButton[] { charlocally, charglobally, charboth };
+            RadioButton[] LocButtons = new RadioButton[] { loclocally, locglobally };
+            RadioButton[] CharButtons = new RadioButton[] { charlocally, charglobally };
             var StandardUnicode = new Regex(@"^[a-zA-Z0-9_\b]+");
             if (StandardUnicode.IsMatch(ProjectName.Text) && ProjectLocation.Text != "" && LocButtons.Any() && CharButtons.Any())
             {
@@ -158,7 +158,7 @@ namespace Visual_Storyline
                         sw.WriteLine(Program.Encode(saveoptions));
                         sw.Close();
                     }
-                    if (CharSave == 1 || CharSave == 3)
+                    if (CharSave == 1)
                     {
                         if (!Directory.Exists(Path.Combine(ProjectFolder, "Savedata")))
                         {
@@ -166,15 +166,18 @@ namespace Visual_Storyline
                         }
                         File.Create(Path.Combine(ProjectFolder, "Savedata", "Characters.dat"));
                     }
-                    if (CharSave == 2 || CharSave == 3)
+                    if (CharSave == 2)
                     {
                         if (!Directory.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata")))
                         {
                             Directory.CreateDirectory(Path.Combine(Variables.VSL, "$GlobalSavedata"));
                         }
-                        File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Characters.dat"));
+                        if (!File.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata", "Characters.dat")) )
+                        {
+                            File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Characters.dat"));
+                        }
                     }
-                    if (LocSave == 1 || LocSave == 3)
+                    if (LocSave == 1)
                     {
                         if (!Directory.Exists(Path.Combine(ProjectFolder, "Savedata")))
                         {
@@ -182,13 +185,16 @@ namespace Visual_Storyline
                         }
                         File.Create(Path.Combine(ProjectFolder, "Savedata", "Locations.dat"));
                     }
-                    if (LocSave == 2 || LocSave == 3)
+                    if (LocSave == 2)
                     {
                         if (!Directory.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata")))
                         {
                             Directory.CreateDirectory(Path.Combine(Variables.VSL, "$GlobalSavedata"));
                         }
-                        File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Locations.dat"));
+                        if (!File.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata", "Locations.dat")))
+                        {
+                            File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Locations.dat"));
+                        }
                     }
                     Console.WriteLine("Created project file and saved basic data");
                     this.Dispose();
@@ -256,11 +262,6 @@ namespace Visual_Storyline
             CharSave = 2;
         }
 
-        private void charboth_CheckedChanged(object sender, EventArgs e)
-        {
-            CharSave = 3;
-        }
-
         private void loclocally_CheckedChanged(object sender, EventArgs e)
         {
             LocSave = 1;
@@ -269,11 +270,6 @@ namespace Visual_Storyline
         private void locglobally_CheckedChanged(object sender, EventArgs e)
         {
             LocSave = 2;
-        }
-
-        private void locboth_CheckedChanged(object sender, EventArgs e)
-        {
-            LocSave = 3;
         }
     }
 }

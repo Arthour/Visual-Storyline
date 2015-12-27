@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(New));
             this.charBox = new System.Windows.Forms.GroupBox();
-            this.charboth = new System.Windows.Forms.RadioButton();
             this.charglobally = new System.Windows.Forms.RadioButton();
             this.charlocally = new System.Windows.Forms.RadioButton();
             this.explorer = new System.Windows.Forms.Button();
@@ -39,7 +38,6 @@
             this.ProjectName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.LocBox = new System.Windows.Forms.GroupBox();
-            this.locboth = new System.Windows.Forms.RadioButton();
             this.locglobally = new System.Windows.Forms.RadioButton();
             this.loclocally = new System.Windows.Forms.RadioButton();
             this.OK = new System.Windows.Forms.Button();
@@ -52,21 +50,11 @@
             // 
             // charBox
             // 
-            resources.ApplyResources(this.charBox, "charBox");
-            this.charBox.Controls.Add(this.charboth);
             this.charBox.Controls.Add(this.charglobally);
             this.charBox.Controls.Add(this.charlocally);
+            resources.ApplyResources(this.charBox, "charBox");
             this.charBox.Name = "charBox";
             this.charBox.TabStop = false;
-            // 
-            // charboth
-            // 
-            resources.ApplyResources(this.charboth, "charboth");
-            this.charboth.Name = "charboth";
-            this.charboth.TabStop = true;
-            this.charboth.UseVisualStyleBackColor = true;
-            this.charboth.CheckedChanged += new System.EventHandler(this.charboth_CheckedChanged);
-            this.charboth.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // charglobally
             // 
@@ -119,21 +107,11 @@
             // 
             // LocBox
             // 
-            resources.ApplyResources(this.LocBox, "LocBox");
-            this.LocBox.Controls.Add(this.locboth);
             this.LocBox.Controls.Add(this.locglobally);
             this.LocBox.Controls.Add(this.loclocally);
+            resources.ApplyResources(this.LocBox, "LocBox");
             this.LocBox.Name = "LocBox";
             this.LocBox.TabStop = false;
-            // 
-            // locboth
-            // 
-            resources.ApplyResources(this.locboth, "locboth");
-            this.locboth.Name = "locboth";
-            this.locboth.TabStop = true;
-            this.locboth.UseVisualStyleBackColor = true;
-            this.locboth.CheckedChanged += new System.EventHandler(this.locboth_CheckedChanged);
-            this.locboth.Enter += new System.EventHandler(this.propertyChanged);
             // 
             // locglobally
             // 
@@ -163,16 +141,16 @@
             // 
             // cancel
             // 
-            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
             // ProjectDescription
             // 
             this.ProjectDescription.AcceptsReturn = true;
-            resources.ApplyResources(this.ProjectDescription, "ProjectDescription");
             this.ProjectDescription.AllowDrop = true;
+            resources.ApplyResources(this.ProjectDescription, "ProjectDescription");
             this.ProjectDescription.Name = "ProjectDescription";
             // 
             // Description
@@ -218,7 +196,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox charBox;
-        private System.Windows.Forms.RadioButton charboth;
         private System.Windows.Forms.RadioButton charglobally;
         private System.Windows.Forms.RadioButton charlocally;
         private System.Windows.Forms.Button explorer;
@@ -227,7 +204,6 @@
         private System.Windows.Forms.TextBox ProjectName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox LocBox;
-        private System.Windows.Forms.RadioButton locboth;
         private System.Windows.Forms.RadioButton locglobally;
         private System.Windows.Forms.RadioButton loclocally;
         private System.Windows.Forms.Button OK;
