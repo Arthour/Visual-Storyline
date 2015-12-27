@@ -155,13 +155,13 @@
     <value>Exportieren</value>
   </data>
   <data name="addChar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="addChar.Text" xml:space="preserve">
     <value>Hinzufügen</value>
   </data>
   <data name="editChar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="editChar.Text" xml:space="preserve">
     <value>Bearbeiten</value>

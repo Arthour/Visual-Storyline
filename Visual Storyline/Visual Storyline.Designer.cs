@@ -30,15 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VisualStoryline));
             this.Toolbar = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.New = new System.Windows.Forms.ToolStripButton();
             this.Save = new System.Windows.Forms.ToolStripSplitButton();
             this.SaveSubmenu = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveasSubmenu = new System.Windows.Forms.ToolStripMenuItem();
             this.Open = new System.Windows.Forms.ToolStripButton();
             this.Export = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.Characters = new System.Windows.Forms.ToolStripDropDownButton();
             this.addChar = new System.Windows.Forms.ToolStripMenuItem();
             this.editChar = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +49,9 @@
             this.Chapters = new System.Windows.Forms.ToolStripDropDownButton();
             this.addChapt = new System.Windows.Forms.ToolStripMenuItem();
             this.editChapt = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.Featurelist = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.addQuest = new System.Windows.Forms.ToolStripButton();
             this.addRelation = new System.Windows.Forms.ToolStripButton();
             this.addEvent = new System.Windows.Forms.ToolStripButton();
@@ -81,21 +81,6 @@
             this.addEvent,
             this.Settings});
             this.Toolbar.Name = "Toolbar";
-            // 
-            // toolStripSeparator1
-            // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            // 
-            // toolStripSeparator2
-            // 
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            // 
-            // toolStripSeparator3
-            // 
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
             // 
             // New
             // 
@@ -135,6 +120,11 @@
             resources.ApplyResources(this.Export, "Export");
             this.Export.Image = global::Visual_Storyline.Properties.Resources.PrintSetup_11011;
             this.Export.Name = "Export";
+            // 
+            // toolStripSeparator1
+            // 
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // Characters
             // 
@@ -220,11 +210,21 @@
             this.editChapt.Image = global::Visual_Storyline.Properties.Resources.EditorZone_6025;
             this.editChapt.Name = "editChapt";
             // 
+            // toolStripSeparator2
+            // 
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            // 
             // Featurelist
             // 
             resources.ApplyResources(this.Featurelist, "Featurelist");
             this.Featurelist.Image = global::Visual_Storyline.Properties.Resources.LightBulb_32xLG;
             this.Featurelist.Name = "Featurelist";
+            // 
+            // toolStripSeparator3
+            // 
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
             // 
             // addQuest
             // 
@@ -251,7 +251,6 @@
             this.Settings.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.Settings.Image = global::Visual_Storyline.Properties.Resources.gear_32xLG;
             this.Settings.Name = "Settings";
-            this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
             // VisualStoryline
             // 
@@ -259,6 +258,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Toolbar);
             this.Name = "VisualStoryline";
+            this.Load += new System.EventHandler(this.VisualStoryline_Load);
             this.Toolbar.ResumeLayout(false);
             this.Toolbar.PerformLayout();
             this.ResumeLayout(false);

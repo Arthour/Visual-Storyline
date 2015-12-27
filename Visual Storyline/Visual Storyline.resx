@@ -157,6 +157,9 @@
   <data name="&gt;&gt;Export.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="New.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
   <data name="editChapt.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 22</value>
   </data>
@@ -280,9 +283,6 @@
   </data>
   <data name="&gt;&gt;editChar.Name" xml:space="preserve">
     <value>editChar</value>
-  </data>
-  <data name="addRelation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
   </data>
   <data name="editLoc.Text" xml:space="preserve">
     <value>Edit</value>
@@ -411,7 +411,7 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Visual Storyline</value>
   </data>
-  <data name="New.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="addRelation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
   <data name="&gt;&gt;addStrand.Name" xml:space="preserve">

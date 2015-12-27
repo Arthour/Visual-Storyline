@@ -60,10 +60,9 @@ namespace Visual_Storyline
             OpenFile.OpenDialog();
         }
 
-        private void Settings_Click(object sender, EventArgs e)
+        private void VisualStoryline_Load(object sender, EventArgs e)
         {
-            Settings settings = new Settings();
-            settings.ShowDialog();
+
         }
     }
 }
