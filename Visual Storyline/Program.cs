@@ -40,6 +40,7 @@ namespace Visual_Storyline
         public static string Created, Modified, Name, Description, Programversion;
         public static string SaveOptionChar, SaveOptionLoc;
         public static List<string> Characters, Locations, Strands, Ideas, Quests, Relations, Conditions;
+        public static List<string> CharacterFields;
     }
 
 
