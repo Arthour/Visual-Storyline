@@ -64,5 +64,11 @@ namespace Visual_Storyline
         {
 
         }
+
+        private void editFieldsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditCharacterFields editfields = new EditCharacterFields();
+            editfields.ShowDialog();
+        }
     }
 }

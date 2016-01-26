@@ -117,11 +117,59 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;charglobally.Name" xml:space="preserve">
+    <value>charglobally</value>
+  </data>
+  <data name="&gt;&gt;charglobally.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;charglobally.Parent" xml:space="preserve">
+    <value>charBox</value>
+  </data>
+  <data name="&gt;&gt;charglobally.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;charlocally.Name" xml:space="preserve">
+    <value>charlocally</value>
+  </data>
+  <data name="&gt;&gt;charlocally.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;charlocally.Parent" xml:space="preserve">
+    <value>charBox</value>
+  </data>
+  <data name="&gt;&gt;charlocally.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="charBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 101</value>
+  </data>
+  <data name="charBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 70</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="charBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="charBox.Text" xml:space="preserve">
+    <value>Character Library</value>
+  </data>
+  <data name="&gt;&gt;charBox.Name" xml:space="preserve">
+    <value>charBox</value>
+  </data>
+  <data name="&gt;&gt;charBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;charBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;charBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="charglobally.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="charglobally.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 45</value>
   </data>
@@ -172,30 +220,6 @@
   </data>
   <data name="&gt;&gt;charlocally.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="charBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 101</value>
-  </data>
-  <data name="charBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 70</value>
-  </data>
-  <data name="charBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="charBox.Text" xml:space="preserve">
-    <value>Character Library</value>
-  </data>
-  <data name="&gt;&gt;charBox.Name" xml:space="preserve">
-    <value>charBox</value>
-  </data>
-  <data name="&gt;&gt;charBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;charBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;charBox.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="explorer.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -332,6 +356,54 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="&gt;&gt;locglobally.Name" xml:space="preserve">
+    <value>locglobally</value>
+  </data>
+  <data name="&gt;&gt;locglobally.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;locglobally.Parent" xml:space="preserve">
+    <value>LocBox</value>
+  </data>
+  <data name="&gt;&gt;locglobally.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;loclocally.Name" xml:space="preserve">
+    <value>loclocally</value>
+  </data>
+  <data name="&gt;&gt;loclocally.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;loclocally.Parent" xml:space="preserve">
+    <value>LocBox</value>
+  </data>
+  <data name="&gt;&gt;loclocally.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LocBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 175</value>
+  </data>
+  <data name="LocBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 70</value>
+  </data>
+  <data name="LocBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="LocBox.Text" xml:space="preserve">
+    <value>Location Library</value>
+  </data>
+  <data name="&gt;&gt;LocBox.Name" xml:space="preserve">
+    <value>LocBox</value>
+  </data>
+  <data name="&gt;&gt;LocBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LocBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LocBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="locglobally.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -385,30 +457,6 @@
   </data>
   <data name="&gt;&gt;loclocally.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="LocBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 175</value>
-  </data>
-  <data name="LocBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>341, 70</value>
-  </data>
-  <data name="LocBox.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="LocBox.Text" xml:space="preserve">
-    <value>Location Library</value>
-  </data>
-  <data name="&gt;&gt;LocBox.Name" xml:space="preserve">
-    <value>LocBox</value>
-  </data>
-  <data name="&gt;&gt;LocBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LocBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LocBox.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="OK.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -516,6 +564,9 @@
   <data name="&gt;&gt;Description.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>de</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -529,7 +580,7 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>384, 457</value>
+    <value>371, 452</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>

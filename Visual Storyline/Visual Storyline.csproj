@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditCharacterFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCharacterFields.Designer.cs">
+      <DependentUpon>EditCharacterFields.cs</DependentUpon>
+    </Compile>
     <Compile Include="ErrorMessages.cs" />
     <Compile Include="New.cs">
       <SubType>Form</SubType>
@@ -54,6 +60,12 @@
       <DependentUpon>New.cs</DependentUpon>
     </Compile>
     <Compile Include="OpenFile.cs" />
+    <Compile Include="Characterfield.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Characterfield.Designer.cs">
+      <DependentUpon>Characterfield.cs</DependentUpon>
+    </Compile>
     <Compile Include="Visual Storyline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,11 +74,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Characterfield.de.resx">
+      <DependentUpon>Characterfield.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCharacterFields.de.resx">
+      <DependentUpon>EditCharacterFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCharacterFields.resx">
+      <DependentUpon>EditCharacterFields.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="New.de.resx">
       <DependentUpon>New.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New.resx">
       <DependentUpon>New.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characterfield.resx">
+      <DependentUpon>Characterfield.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual Storyline.de.resx">
       <DependentUpon>Visual Storyline.cs</DependentUpon>
@@ -135,6 +160,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editdatasetwithdesigner_8449.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlyphUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlyphDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_Cancel_16xSM.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -63,6 +63,16 @@ namespace Visual_Storyline.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap action_Cancel_16xSM {
+            get {
+                object obj = ResourceManager.GetObject("action_Cancel_16xSM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AddButton {
             get {
                 object obj = ResourceManager.GetObject("AddButton", resourceCulture);
@@ -123,6 +133,16 @@ namespace Visual_Storyline.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Editdatasetwithdesigner_8449 {
+            get {
+                object obj = ResourceManager.GetObject("Editdatasetwithdesigner_8449", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EditorZone_6025 {
             get {
                 object obj = ResourceManager.GetObject("EditorZone_6025", resourceCulture);
@@ -136,6 +156,26 @@ namespace Visual_Storyline.Properties {
         internal static System.Drawing.Bitmap gear_32xLG {
             get {
                 object obj = ResourceManager.GetObject("gear_32xLG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GlyphDown {
+            get {
+                object obj = ResourceManager.GetObject("GlyphDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GlyphUp {
+            get {
+                object obj = ResourceManager.GetObject("GlyphUp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
