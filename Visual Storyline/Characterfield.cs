@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Visual_Storyline
 {
     public partial class Characterfield : UserControl
     {
-        public Characterfield()
+        public int ID;
+
+        public Characterfield(int Index)
         {
             InitializeComponent();
+            ID = Index;
         }
 
         private void Type_SelectedIndexChanged(object sender, EventArgs e)
@@ -62,6 +59,12 @@ namespace Visual_Storyline
                     Console.WriteLine("7");
                     break;
             }
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            EditCharacterFields.deletedID = ID;
+            this.Dispose();
         }
     }
 }

@@ -74,6 +74,7 @@
             this.Delete.Name = "Delete";
             this.Delete.TabStop = false;
             this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Down
             // 
