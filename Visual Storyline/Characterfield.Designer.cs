@@ -44,6 +44,7 @@
             // 
             // Type
             // 
+            resources.ApplyResources(this.Type, "Type");
             this.Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Type.Items.AddRange(new object[] {
             resources.GetString("Type.Items"),
@@ -54,7 +55,6 @@
             resources.GetString("Type.Items5"),
             resources.GetString("Type.Items6"),
             resources.GetString("Type.Items7")});
-            resources.ApplyResources(this.Type, "Type");
             this.Type.Name = "Type";
             this.Type.SelectedIndexChanged += new System.EventHandler(this.Type_SelectedIndexChanged);
             // 
@@ -62,35 +62,33 @@
             // 
             resources.ApplyResources(this.Options, "Options");
             this.Options.Name = "Options";
-            this.Options.TabStop = false;
             this.Options.UseVisualStyleBackColor = true;
             this.Options.Click += new System.EventHandler(this.Options_Click);
             // 
             // Delete
             // 
+            resources.ApplyResources(this.Delete, "Delete");
             this.Delete.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
-            resources.ApplyResources(this.Delete, "Delete");
             this.Delete.Name = "Delete";
-            this.Delete.TabStop = false;
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Down
             // 
-            this.Down.Image = global::Visual_Storyline.Properties.Resources.GlyphDown;
             resources.ApplyResources(this.Down, "Down");
+            this.Down.Image = global::Visual_Storyline.Properties.Resources.GlyphDown;
             this.Down.Name = "Down";
-            this.Down.TabStop = false;
             this.Down.UseVisualStyleBackColor = true;
+            this.Down.Click += new System.EventHandler(this.Down_Click);
             // 
             // Up
             // 
-            this.Up.Image = global::Visual_Storyline.Properties.Resources.GlyphUp;
             resources.ApplyResources(this.Up, "Up");
+            this.Up.Image = global::Visual_Storyline.Properties.Resources.GlyphUp;
             this.Up.Name = "Up";
-            this.Up.TabStop = false;
             this.Up.UseVisualStyleBackColor = true;
+            this.Up.Click += new System.EventHandler(this.Up_Click);
             // 
             // Characterfield
             // 
@@ -103,18 +101,18 @@
             this.Controls.Add(this.Down);
             this.Controls.Add(this.Up);
             this.Name = "Characterfield";
+            this.Load += new System.EventHandler(this.Characterfield_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Up;
-        private System.Windows.Forms.Button Down;
         private System.Windows.Forms.TextBox NameField;
         private System.Windows.Forms.ComboBox Type;
         private System.Windows.Forms.Button Options;
         private System.Windows.Forms.Button Delete;
+        public System.Windows.Forms.Button Up;
+        public System.Windows.Forms.Button Down;
     }
 }

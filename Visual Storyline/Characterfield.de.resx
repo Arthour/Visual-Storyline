@@ -117,19 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="NameField.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 33</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NameField.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="NameField.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 31</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NameField.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="Type.Items5" xml:space="preserve">
-    <value>Listenbox</value>
+    <value>Liste</value>
   </data>
   <data name="Type.Items6" xml:space="preserve">
     <value>Bild</value>
@@ -137,26 +130,15 @@
   <data name="Type.Items7" xml:space="preserve">
     <value>Trennstrich</value>
   </data>
-  <data name="Type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 33</value>
+  <data name="Type.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="Type.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="Type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 33</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Options.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 33</value>
-  </data>
-  <data name="Options.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="Options.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 38</value>
+  <data name="Options.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="Options.Text" xml:space="preserve">
     <value>Optionen</value>
@@ -164,46 +146,19 @@
   <data name="Delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 33</value>
-  </data>
-  <data name="Delete.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="Delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 38</value>
+  <data name="Delete.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 57</value>
-  </data>
-  <data name="Down.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="Down.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 38</value>
+  <data name="Down.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 8</value>
-  </data>
-  <data name="Up.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="Up.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 38</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 25</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>589, 103</value>
+  <data name="Up.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
 </root>

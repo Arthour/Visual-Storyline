@@ -7,11 +7,29 @@ namespace Visual_Storyline
     public partial class Characterfield : UserControl
     {
         public int ID;
+        public bool isMarked = false;
+        public int IDChecker
+        {
+            get { CheckID();  return ID; }
+            set { ID = value; CheckID(); }
+        }
 
         public Characterfield(int Index)
         {
             InitializeComponent();
             ID = Index;
+        }
+
+        public void CheckID()
+        {
+            if (ID == 0)
+            { Up.Enabled = false; }
+            if (ID != 0)
+            { Up.Enabled = true; }
+            if (ID == EditCharacterFields.highestID)
+            { Down.Enabled = false; }
+            if (ID != EditCharacterFields.highestID)
+            { Down.Enabled = true; }
         }
 
         private void Type_SelectedIndexChanged(object sender, EventArgs e)
@@ -63,8 +81,39 @@ namespace Visual_Storyline
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            EditCharacterFields.deletedID = ID;
+            EditCharacterFields.tempID = ID;
             this.Dispose();
+        }
+
+        private void Characterfield_Load(object sender, EventArgs e)
+        {
+            CheckID();
+        }
+
+        private void Up_Click(object sender, EventArgs e)
+        {
+            if (ID != 0)
+            {
+                int x = this.Location.X;
+                int y = this.Location.Y;
+                isMarked = true;
+                this.Location = new Point(x, y - EditCharacterFields.Distance);
+                EditCharacterFields.tempID = ID;
+                EditCharacterFields.eventHappened = "UP";
+            }
+        }
+
+        private void Down_Click(object sender, EventArgs e)
+        {
+            if (ID != EditCharacterFields.highestID)
+            {
+                int x = this.Location.X;
+                int y = this.Location.Y;
+                isMarked = true;
+                this.Location = new Point(x, y + EditCharacterFields.Distance);
+                EditCharacterFields.tempID = ID;
+                EditCharacterFields.eventHappened = "DOWN";
+            }
         }
     }
 }

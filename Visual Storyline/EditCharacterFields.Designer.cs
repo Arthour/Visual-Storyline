@@ -40,6 +40,7 @@
             resources.ApplyResources(this.FieldPanel, "FieldPanel");
             this.FieldPanel.Name = "FieldPanel";
             this.FieldPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.controlRemoved);
+            this.FieldPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UC_moved);
             // 
             // cancel
             // 
