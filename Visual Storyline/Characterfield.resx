@@ -179,17 +179,11 @@
   <data name="&gt;&gt;Type.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="NameField.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 20</value>
-  </data>
   <data name="Type.Location" type="System.Drawing.Point, System.Drawing">
     <value>157, 20</value>
   </data>
   <data name="&gt;&gt;Type.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Down.Name" xml:space="preserve">
-    <value>Down</value>
   </data>
   <data name="&gt;&gt;Options.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -233,6 +227,9 @@
   <data name="Type.Items1" xml:space="preserve">
     <value>RTF-Textfield</value>
   </data>
+  <data name="Delete.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="Type.Items5" xml:space="preserve">
     <value>List</value>
   </data>
@@ -248,8 +245,11 @@
   <data name="Type.Items7" xml:space="preserve">
     <value>Hyphen</value>
   </data>
-  <data name="&gt;&gt;NameField.Name" xml:space="preserve">
-    <value>NameField</value>
+  <data name="&gt;&gt;Down.Name" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="Type.Items3" xml:space="preserve">
+    <value>Date</value>
   </data>
   <data name="&gt;&gt;Delete.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -263,8 +263,8 @@
   <data name="Options.Text" xml:space="preserve">
     <value>Options</value>
   </data>
-  <data name="Type.Items3" xml:space="preserve">
-    <value>Date</value>
+  <data name="NameField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
   </data>
   <data name="Type.Items2" xml:space="preserve">
     <value>Checkbox</value>
@@ -278,20 +278,20 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="NameField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 20</value>
   </data>
   <data name="&gt;&gt;Down.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="NameField.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
+  <data name="&gt;&gt;NameField.Name" xml:space="preserve">
+    <value>NameField</value>
   </data>
   <data name="&gt;&gt;Up.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="Delete.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

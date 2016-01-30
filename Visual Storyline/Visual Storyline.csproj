@@ -53,6 +53,12 @@
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
     </Compile>
     <Compile Include="ErrorMessages.cs" />
+    <Compile Include="Textfieldoptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Textfieldoptions.Designer.cs">
+      <DependentUpon>Textfieldoptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="New.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditCharacterFields.resx">
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textfieldoptions.de.resx">
+      <DependentUpon>Textfieldoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Textfieldoptions.resx">
+      <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New.de.resx">
       <DependentUpon>New.cs</DependentUpon>

@@ -117,57 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NameField.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="cancel.Text" xml:space="preserve">
+    <value>Abbrechen</value>
   </data>
-  <data name="Type.Items" xml:space="preserve">
-    <value>Textfeld</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="maxchars.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 15</value>
   </data>
-  <data name="Type.Items1" xml:space="preserve">
-    <value>RTF-Textfeld</value>
+  <data name="maxchars.Text" xml:space="preserve">
+    <value>Maximale Zeichen:</value>
   </data>
-  <data name="Type.Items3" xml:space="preserve">
-    <value>Datum</value>
+  <data name="allowmultiline.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 15</value>
   </data>
-  <data name="Type.Items5" xml:space="preserve">
-    <value>Liste</value>
+  <data name="allowmultiline.Text" xml:space="preserve">
+    <value>mehrere Zeilen:</value>
   </data>
-  <data name="Type.Items6" xml:space="preserve">
-    <value>Bild</value>
+  <data name="acceptedinput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 15</value>
   </data>
-  <data name="Type.Items7" xml:space="preserve">
-    <value>Trennstrich</value>
+  <data name="acceptedinput.Text" xml:space="preserve">
+    <value>Eingaben:</value>
   </data>
-  <data name="Type.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="acceptedinput_groupbox.Items1" xml:space="preserve">
+    <value>Zahlen</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Options.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="acceptedinput_groupbox.Items2" xml:space="preserve">
+    <value>Leerschritte</value>
   </data>
-  <data name="Options.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="acceptedinput_groupbox.Items3" xml:space="preserve">
+    <value>Sonderzeichen</value>
   </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>Optionen</value>
-  </data>
-  <data name="Delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Delete.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Down.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Up.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Textfeld-Optionen</value>
   </data>
 </root>

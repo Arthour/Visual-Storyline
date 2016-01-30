@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -10,6 +11,14 @@ namespace Visual_Storyline
         public readonly static int Distance = 62;
         public static int tempID;
         public static string eventHappened;
+        public static string tempOptions;
+        public static string grabOptions
+        {
+            get { return tempOptions; }
+            set { tempOptions = value; setOptions(tempID, tempOptions); }
+        }
+
+        public static Panel spanel{ get; private set; }
 
         public EditCharacterFields()
         {
@@ -23,6 +32,7 @@ namespace Visual_Storyline
             field.Top = highestID * Distance;
             FieldPanel.Controls.Add(field);
             checkButtons();
+            spanel = FieldPanel;
         }
 
         private void checkButtons()
@@ -122,5 +132,16 @@ namespace Visual_Storyline
             }
         }
 
+        public static void setOptions(int ID, string options)
+        {
+            foreach (Characterfield field in spanel.Controls)
+            {
+                Console.WriteLine("ID: {0}", field.ID);
+                if (field.ID == tempID)
+                {
+                    field.optionslist = options;
+                }
+            }
+        }
     }
 }

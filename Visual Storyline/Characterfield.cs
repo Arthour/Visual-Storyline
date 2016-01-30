@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -8,10 +9,16 @@ namespace Visual_Storyline
     {
         public int ID;
         public bool isMarked = false;
+        public string optionslist;
         public int IDChecker
         {
             get { CheckID();  return ID; }
             set { ID = value; CheckID(); }
+        }
+        public string templist
+        {
+            get { return optionslist; }
+            set { optionslist = value; }
         }
 
         public Characterfield(int Index)
@@ -34,6 +41,13 @@ namespace Visual_Storyline
 
         private void Type_SelectedIndexChanged(object sender, EventArgs e)
         {
+            switch(Type.SelectedIndex)
+            {
+                case 0:
+                    optionslist = "<options><chars>248</chars><ml>no</ml><input>0;1;2;</input></options>";
+                    break;
+            }
+
             if(Type.SelectedIndex == 7)
             {
                 NameField.Enabled = false;
@@ -53,7 +67,8 @@ namespace Visual_Storyline
             switch(Type.SelectedIndex)
             {
                 case 0:
-                    Console.WriteLine("0");
+                    Textfieldoptions options = new Textfieldoptions(optionslist, ID);
+                    options.ShowDialog();
                     break;
                 case 1:
                     Console.WriteLine("1");
