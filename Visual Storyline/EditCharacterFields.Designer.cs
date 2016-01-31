@@ -39,8 +39,10 @@
             // 
             resources.ApplyResources(this.FieldPanel, "FieldPanel");
             this.FieldPanel.Name = "FieldPanel";
+            this.FieldPanel.Click += new System.EventHandler(this.FormEvent);
             this.FieldPanel.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.controlRemoved);
             this.FieldPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.UC_moved);
+            this.FieldPanel.Validated += new System.EventHandler(this.FormEvent);
             // 
             // cancel
             // 
@@ -54,6 +56,7 @@
             resources.ApplyResources(this.OK, "OK");
             this.OK.Name = "OK";
             this.OK.UseVisualStyleBackColor = true;
+            this.OK.Click += new System.EventHandler(this.OK_Click);
             // 
             // addField
             // 
@@ -73,11 +76,13 @@
             this.Controls.Add(this.OK);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.FieldPanel);
+            this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "EditCharacterFields";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.Click += new System.EventHandler(this.FormEvent);
             this.ResumeLayout(false);
 
         }

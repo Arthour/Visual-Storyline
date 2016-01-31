@@ -17,22 +17,24 @@ namespace Visual_Storyline
             get { return tempOptions; }
             set { tempOptions = value; setOptions(tempID, tempOptions); }
         }
-
         public static Panel spanel{ get; private set; }
 
         public EditCharacterFields()
         {
             InitializeComponent();
+            highestID = -1;
         }
 
         private void addField_Click(object sender, EventArgs e)
         {
             highestID++;
             Characterfield field = new Characterfield(highestID);
+            field.update += new EventHandler(ChildUpdate);
             field.Top = highestID * Distance;
             FieldPanel.Controls.Add(field);
             checkButtons();
             spanel = FieldPanel;
+            checkOK();
         }
 
         private void checkButtons()
@@ -80,6 +82,7 @@ namespace Visual_Storyline
                     RearrangeDown();
                     break;
             }
+            checkOK();
         }
 
         public void RearrangeUp()
@@ -142,6 +145,39 @@ namespace Visual_Storyline
                     field.optionslist = options;
                 }
             }
+        }
+
+        private void OK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormEvent(object sender, EventArgs e)
+        {
+            checkOK();
+        }
+
+        public void checkOK()
+        {
+            int count = 0;
+            foreach(Characterfield field in FieldPanel.Controls)
+            {
+                if ((field.NameField.Text == "" && field.Type.SelectedIndex != 7) || field.Type.SelectedIndex == -1)
+                    count++;
+            }
+            if(count == 0)
+            {
+                OK.Enabled = true;
+            }
+            else
+            {
+                OK.Enabled = false;
+            }
+        }
+
+        private void ChildUpdate(object sender, EventArgs e)
+        {
+            checkOK();
         }
     }
 }

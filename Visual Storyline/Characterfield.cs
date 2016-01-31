@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using Visual_Storyline.Characterfield_options;
 
 namespace Visual_Storyline
 {
@@ -20,6 +21,8 @@ namespace Visual_Storyline
             get { return optionslist; }
             set { optionslist = value; }
         }
+
+        public event EventHandler update;
 
         public Characterfield(int Index)
         {
@@ -44,7 +47,24 @@ namespace Visual_Storyline
             switch(Type.SelectedIndex)
             {
                 case 0:
-                    optionslist = "<options><chars>248</chars><ml>no</ml><input>0;1;2;</input></options>";
+                    optionslist = "<options><chars>248</chars><ml>no</ml><input>0;1;2;</input><required>no</required></options>";
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    optionslist = "<options><ms>no</ms><required>no</required><elements><element>Test1</element><element>Test2</element><element>Test3</element></elements></options>";
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
                     break;
             }
 
@@ -60,6 +80,8 @@ namespace Visual_Storyline
             {
                 Options.Enabled = true;
             }
+            if (update != null)
+                update(this, e);
         }
 
         private void Options_Click(object sender, EventArgs e)
@@ -67,14 +89,15 @@ namespace Visual_Storyline
             switch(Type.SelectedIndex)
             {
                 case 0:
-                    Textfieldoptions options = new Textfieldoptions(optionslist, ID);
-                    options.ShowDialog();
+                    Textfieldoptions tfoptions = new Textfieldoptions(optionslist, ID);
+                    tfoptions.ShowDialog();
                     break;
                 case 1:
                     Console.WriteLine("1");
                     break;
                 case 2:
-                    Console.WriteLine("2");
+                    Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID);
+                    cboptions.ShowDialog();
                     break;
                 case 3:
                     Console.WriteLine("3");
@@ -90,6 +113,9 @@ namespace Visual_Storyline
                     break;
                 case 7:
                     Console.WriteLine("7");
+                    break;
+                case 8:
+                    Console.WriteLine("8");
                     break;
             }
         }
@@ -129,6 +155,12 @@ namespace Visual_Storyline
                 EditCharacterFields.tempID = ID;
                 EditCharacterFields.eventHappened = "DOWN";
             }
+        }
+
+        private void OnTextChanged(object sender, EventArgs e)
+        {
+            if (update != null)
+                update(this, e);
         }
     }
 }

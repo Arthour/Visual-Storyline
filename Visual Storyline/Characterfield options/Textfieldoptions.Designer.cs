@@ -37,6 +37,8 @@
             this.allowMultiline_check = new System.Windows.Forms.CheckBox();
             this.acceptedinput = new System.Windows.Forms.Label();
             this.acceptedinput_groupbox = new System.Windows.Forms.CheckedListBox();
+            this.required_check = new System.Windows.Forms.CheckBox();
+            this.required = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // OK
@@ -48,8 +50,8 @@
             // 
             // cancel
             // 
-            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.cancel, "cancel");
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
@@ -84,6 +86,7 @@
             // 
             // acceptedinput_groupbox
             // 
+            resources.ApplyResources(this.acceptedinput_groupbox, "acceptedinput_groupbox");
             this.acceptedinput_groupbox.CheckOnClick = true;
             this.acceptedinput_groupbox.FormattingEnabled = true;
             this.acceptedinput_groupbox.Items.AddRange(new object[] {
@@ -91,11 +94,21 @@
             resources.GetString("acceptedinput_groupbox.Items1"),
             resources.GetString("acceptedinput_groupbox.Items2"),
             resources.GetString("acceptedinput_groupbox.Items3")});
-            resources.ApplyResources(this.acceptedinput_groupbox, "acceptedinput_groupbox");
             this.acceptedinput_groupbox.Name = "acceptedinput_groupbox";
             this.acceptedinput_groupbox.Click += new System.EventHandler(this.FormEvent);
             this.acceptedinput_groupbox.SelectedIndexChanged += new System.EventHandler(this.FormEvent);
             this.acceptedinput_groupbox.Validated += new System.EventHandler(this.FormEvent);
+            // 
+            // required_check
+            // 
+            resources.ApplyResources(this.required_check, "required_check");
+            this.required_check.Name = "required_check";
+            this.required_check.UseVisualStyleBackColor = true;
+            // 
+            // required
+            // 
+            resources.ApplyResources(this.required, "required");
+            this.required.Name = "required";
             // 
             // Textfieldoptions
             // 
@@ -104,6 +117,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancel;
             this.ControlBox = false;
+            this.Controls.Add(this.required_check);
+            this.Controls.Add(this.required);
             this.Controls.Add(this.acceptedinput_groupbox);
             this.Controls.Add(this.acceptedinput);
             this.Controls.Add(this.allowMultiline_check);
@@ -112,10 +127,13 @@
             this.Controls.Add(this.maxchars);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.cancel);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Textfieldoptions";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +149,7 @@
         private System.Windows.Forms.CheckBox allowMultiline_check;
         private System.Windows.Forms.Label acceptedinput;
         private System.Windows.Forms.CheckedListBox acceptedinput_groupbox;
+        private System.Windows.Forms.CheckBox required_check;
+        private System.Windows.Forms.Label required;
     }
 }

@@ -41,6 +41,7 @@
             // 
             resources.ApplyResources(this.NameField, "NameField");
             this.NameField.Name = "NameField";
+            this.NameField.TextChanged += new System.EventHandler(this.OnTextChanged);
             // 
             // Type
             // 
@@ -54,7 +55,8 @@
             resources.GetString("Type.Items4"),
             resources.GetString("Type.Items5"),
             resources.GetString("Type.Items6"),
-            resources.GetString("Type.Items7")});
+            resources.GetString("Type.Items7"),
+            resources.GetString("Type.Items8")});
             this.Type.Name = "Type";
             this.Type.SelectedIndexChanged += new System.EventHandler(this.Type_SelectedIndexChanged);
             // 
@@ -100,6 +102,7 @@
             this.Controls.Add(this.NameField);
             this.Controls.Add(this.Down);
             this.Controls.Add(this.Up);
+            this.DoubleBuffered = true;
             this.Name = "Characterfield";
             this.Load += new System.EventHandler(this.Characterfield_Load);
             this.ResumeLayout(false);
@@ -108,8 +111,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox NameField;
-        private System.Windows.Forms.ComboBox Type;
+        public System.Windows.Forms.TextBox NameField;
+        public System.Windows.Forms.ComboBox Type;
         private System.Windows.Forms.Button Options;
         private System.Windows.Forms.Button Delete;
         public System.Windows.Forms.Button Up;

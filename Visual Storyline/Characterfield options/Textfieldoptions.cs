@@ -15,22 +15,22 @@ namespace Visual_Storyline
     public partial class Textfieldoptions : Form
     {
         private int ID;
-        private string currentoptions;
 
         public Textfieldoptions(string options, int ID_Parent)
         {
             InitializeComponent();
             ID = ID_Parent;
-            currentoptions = options;
             XmlDocument option = new XmlDocument();
-            option.LoadXml(currentoptions);
+            option.LoadXml(options);
             if (option.DocumentElement.SelectSingleNode("/options/chars") != null)
                 maxchars_text.Text = option.DocumentElement.SelectSingleNode("/options/chars").InnerText;
+            else { maxchars_text.Text = "256"; }
             if (option.DocumentElement.SelectSingleNode("/options/ml") != null)
             {
                 if(option.DocumentElement.SelectSingleNode("/options/ml").InnerText == "yes")
                 { allowMultiline_check.Checked = true; }
             }
+            else { allowMultiline_check.Checked = false; }
             if (option.DocumentElement.SelectSingleNode("/options/input") != null)
             {
                 string checkeditems = option.DocumentElement.SelectSingleNode("/options/input").InnerText;
@@ -46,6 +46,13 @@ namespace Visual_Storyline
                         acceptedinput_groupbox.SetItemChecked(3, true);
                 }
             }
+            else { acceptedinput_groupbox.SetItemChecked(0, true); acceptedinput_groupbox.SetItemChecked(1, true); acceptedinput_groupbox.SetItemChecked(2, true); }
+            if (option.DocumentElement.SelectSingleNode("/options/required") != null)
+            {
+                if (option.DocumentElement.SelectSingleNode("/options/required").InnerText == "yes")
+                { required_check.Checked = true; }
+            }
+            else { required_check.Checked = false; }
             checkOK();
         }
 
@@ -76,12 +83,18 @@ namespace Visual_Storyline
                 inputset = inputset + "2;";
             if (acceptedinput_groupbox.GetItemChecked(3) == true)
                 inputset = inputset + "3;";
+            string requiredset;
+            if (required_check.Checked == true)
+                requiredset = "yes";
+            else
+                requiredset = "no";
+
 
 
 
 
             string newoptions;
-            newoptions = "<options><chars>" + charsset + "</chars><ml>" + mlset + "</ml><input>" + inputset + "</input></options>";
+            newoptions = "<options><chars>" + charsset + "</chars><ml>" + mlset + "</ml><input>" + inputset + "</input><required>" + requiredset + "</required></options>";
             EditCharacterFields.tempID = ID;
             EditCharacterFields.grabOptions = newoptions;
             this.Dispose();

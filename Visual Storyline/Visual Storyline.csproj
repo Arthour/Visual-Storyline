@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Characterfield options\Checkboxoptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characterfield options\Checkboxoptions.Designer.cs">
+      <DependentUpon>Checkboxoptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditCharacterFields.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,10 +59,10 @@
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
     </Compile>
     <Compile Include="ErrorMessages.cs" />
-    <Compile Include="Textfieldoptions.cs">
+    <Compile Include="Characterfield options\Textfieldoptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Textfieldoptions.Designer.cs">
+    <Compile Include="Characterfield options\Textfieldoptions.Designer.cs">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </Compile>
     <Compile Include="New.cs">
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Characterfield options\Checkboxoptions.de.resx">
+      <DependentUpon>Checkboxoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characterfield options\Checkboxoptions.resx">
+      <DependentUpon>Checkboxoptions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Characterfield.de.resx">
       <DependentUpon>Characterfield.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,10 +101,10 @@
     <EmbeddedResource Include="EditCharacterFields.resx">
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Textfieldoptions.de.resx">
+    <EmbeddedResource Include="Characterfield options\Textfieldoptions.de.resx">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Textfieldoptions.resx">
+    <EmbeddedResource Include="Characterfield options\Textfieldoptions.resx">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New.de.resx">
