@@ -46,26 +46,26 @@ namespace Visual_Storyline
         {
             switch(Type.SelectedIndex)
             {
-                case 0:
+                case 0:     /*Textfield*/
                     optionslist = "<options><chars>248</chars><ml>no</ml><input>0;1;2;</input><required>no</required></options>";
                     break;
-                case 1:
+                case 1:     /*RichText-Textfield*/
                     optionslist = "<options><font>Arial</font><color>yes</color><size>yes</size><bold>yes</bold><italic>yes</italic><underline>yes</underline><bunumb>yes</bunumb><required>no</required><align>left;right;center;justify</align></options>";
                     break;
-                case 2:
+                case 2:     /*Checkbox*/
                     optionslist = "<options><ms>no</ms><required>no</required><elements></elements></options>";
                     break;
-                case 3:
+                case 3:     /*Date*/
                     break;
-                case 4:
+                case 4:     /*Combobox*/
                     break;
-                case 5:
+                case 5:     /*List*/
                     break;
-                case 6:
+                case 6:     /*Picture*/
                     break;
-                case 7:
+                case 7:     /*Hyphen*/
                     break;
-                case 8:
+                case 8:     /*Colorpalette*/
                     break;
             }
 
