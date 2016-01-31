@@ -176,5 +176,20 @@ namespace Visual_Storyline
             }
             return Message;
         }
+
+        public static string SomethingWentWrongOptions()
+        {
+            checkLanguage();
+            switch (Language)
+            {
+                case 0:
+                    Message = "Something went wrong while loading these options. Resetting to default values.";
+                    break;
+                case 1:
+                    Message = "Während dem Laden der Optionen ist etwas schiefgelaufen. Sie werden auf die Standardwerte zurückgesetzt.";
+                    break;
+            }
+            return Message;
+        }
     }
 }

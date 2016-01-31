@@ -19,31 +19,43 @@ namespace Visual_Storyline.Characterfield_options
         {
             InitializeComponent();
             ID = ID_Parent;
-            XmlDocument option = new XmlDocument();
-            option.LoadXml(options);
-            if (option.DocumentElement.SelectSingleNode("/options/ms") != null)
+            try
             {
-                if (option.DocumentElement.SelectSingleNode("/options/ms").InnerText == "yes")
-                    multiselect_check.Checked = true;
-            }
-            else { multiselect_check.Checked = false; }
-            if (option.DocumentElement.SelectSingleNode("/options/required") != null)
-            {
-                if(option.DocumentElement.SelectSingleNode("/options/required").InnerText == "yes")
-                    requireselection_check.Checked = true;
-            }
-            else { requireselection_check.Checked = false; }
-            if (option.DocumentElement.SelectNodes("/options/elements/element") != null)
-            {
-                XmlNodeList xmllist = option.SelectNodes("/options/elements/element");
-                foreach (XmlNode node in xmllist)
+                XmlDocument option = new XmlDocument();
+                option.LoadXml(options);
+                if (option.DocumentElement.SelectSingleNode("/options/ms") != null)
                 {
-                    if(node.InnerText != "")
+                    if (option.DocumentElement.SelectSingleNode("/options/ms").InnerText == "yes")
+                        multiselect_check.Checked = true;
+                }
+                else { multiselect_check.Checked = false; }
+                if (option.DocumentElement.SelectSingleNode("/options/required") != null)
+                {
+                    if (option.DocumentElement.SelectSingleNode("/options/required").InnerText == "yes")
+                        requireselection_check.Checked = true;
+                }
+                else { requireselection_check.Checked = false; }
+                if (option.DocumentElement.SelectNodes("/options/elements/element") != null)
+                {
+                    XmlNodeList xmllist = option.SelectNodes("/options/elements/element");
+                    foreach (XmlNode node in xmllist)
                     {
-                        checkboxelements_list.Items.Add(node.InnerText);
+                        if (node.InnerText != "")
+                        {
+                            checkboxelements_list.Items.Add(node.InnerText);
+                        }
                     }
                 }
             }
+            catch(Exception)
+            {
+                ErrorMessages.SomethingWentWrongOptions();
+                ErrorMessages.ErrorTitle();
+                DialogResult result = MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                multiselect_check.Checked = false;
+                requireselection_check.Checked = false;
+            }
+
         }
 
         private void IndexChanged(object sender, EventArgs e)

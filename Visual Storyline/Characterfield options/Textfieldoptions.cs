@@ -20,39 +20,54 @@ namespace Visual_Storyline
         {
             InitializeComponent();
             ID = ID_Parent;
-            XmlDocument option = new XmlDocument();
-            option.LoadXml(options);
-            if (option.DocumentElement.SelectSingleNode("/options/chars") != null)
-                maxchars_text.Text = option.DocumentElement.SelectSingleNode("/options/chars").InnerText;
-            else { maxchars_text.Text = "256"; }
-            if (option.DocumentElement.SelectSingleNode("/options/ml") != null)
+            try
             {
-                if(option.DocumentElement.SelectSingleNode("/options/ml").InnerText == "yes")
-                { allowMultiline_check.Checked = true; }
-            }
-            else { allowMultiline_check.Checked = false; }
-            if (option.DocumentElement.SelectSingleNode("/options/input") != null)
-            {
-                string checkeditems = option.DocumentElement.SelectSingleNode("/options/input").InnerText;
-                for (int i = 0; i < acceptedinput_groupbox.Items.Count; i++)
+                XmlDocument option = new XmlDocument();
+                option.LoadXml(options);
+                if (option.DocumentElement.SelectSingleNode("/options/chars") != null)
+                    maxchars_text.Text = option.DocumentElement.SelectSingleNode("/options/chars").InnerText;
+                else { maxchars_text.Text = "256"; }
+                if (option.DocumentElement.SelectSingleNode("/options/ml") != null)
                 {
-                    if (checkeditems.Contains("0") == true)
-                        acceptedinput_groupbox.SetItemChecked(0, true);
-                    if (checkeditems.Contains("1") == true)
-                        acceptedinput_groupbox.SetItemChecked(1, true);
-                    if (checkeditems.Contains("2") == true)
-                        acceptedinput_groupbox.SetItemChecked(2, true);
-                    if (checkeditems.Contains("3") == true)
-                        acceptedinput_groupbox.SetItemChecked(3, true);
+                    if (option.DocumentElement.SelectSingleNode("/options/ml").InnerText == "yes")
+                    { allowMultiline_check.Checked = true; }
                 }
+                else { allowMultiline_check.Checked = false; }
+                if (option.DocumentElement.SelectSingleNode("/options/input") != null)
+                {
+                    string checkeditems = option.DocumentElement.SelectSingleNode("/options/input").InnerText;
+                    for (int i = 0; i < acceptedinput_groupbox.Items.Count; i++)
+                    {
+                        if (checkeditems.Contains("0") == true)
+                            acceptedinput_groupbox.SetItemChecked(0, true);
+                        if (checkeditems.Contains("1") == true)
+                            acceptedinput_groupbox.SetItemChecked(1, true);
+                        if (checkeditems.Contains("2") == true)
+                            acceptedinput_groupbox.SetItemChecked(2, true);
+                        if (checkeditems.Contains("3") == true)
+                            acceptedinput_groupbox.SetItemChecked(3, true);
+                    }
+                }
+                else { acceptedinput_groupbox.SetItemChecked(0, true); acceptedinput_groupbox.SetItemChecked(1, true); acceptedinput_groupbox.SetItemChecked(2, true); }
+                if (option.DocumentElement.SelectSingleNode("/options/required") != null)
+                {
+                    if (option.DocumentElement.SelectSingleNode("/options/required").InnerText == "yes")
+                    { required_check.Checked = true; }
+                }
+                else { required_check.Checked = false; }
             }
-            else { acceptedinput_groupbox.SetItemChecked(0, true); acceptedinput_groupbox.SetItemChecked(1, true); acceptedinput_groupbox.SetItemChecked(2, true); }
-            if (option.DocumentElement.SelectSingleNode("/options/required") != null)
+            catch(Exception)
             {
-                if (option.DocumentElement.SelectSingleNode("/options/required").InnerText == "yes")
-                { required_check.Checked = true; }
+                ErrorMessages.SomethingWentWrongOptions();
+                ErrorMessages.ErrorTitle();
+                DialogResult result = MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                maxchars_text.Text = "256";
+                allowMultiline_check.Checked = false;
+                acceptedinput_groupbox.SetItemChecked(0, true);
+                acceptedinput_groupbox.SetItemChecked(1, true);
+                acceptedinput_groupbox.SetItemChecked(2, true);
             }
-            else { required_check.Checked = false; }
+
             checkOK();
         }
 
@@ -88,11 +103,6 @@ namespace Visual_Storyline
                 requiredset = "yes";
             else
                 requiredset = "no";
-
-
-
-
-
             string newoptions;
             newoptions = "<options><chars>" + charsset + "</chars><ml>" + mlset + "</ml><input>" + inputset + "</input><required>" + requiredset + "</required></options>";
             EditCharacterFields.tempID = ID;

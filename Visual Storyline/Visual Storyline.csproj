@@ -52,6 +52,12 @@
     <Compile Include="Characterfield options\Checkboxoptions.Designer.cs">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Characterfield options\RichTextboxoptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characterfield options\RichTextboxoptions.Designer.cs">
+      <DependentUpon>RichTextboxoptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditCharacterFields.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Characterfield options\Checkboxoptions.resx">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characterfield options\RichTextboxoptions.de.resx">
+      <DependentUpon>RichTextboxoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characterfield options\RichTextboxoptions.resx">
+      <DependentUpon>RichTextboxoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Characterfield.de.resx">
       <DependentUpon>Characterfield.cs</DependentUpon>

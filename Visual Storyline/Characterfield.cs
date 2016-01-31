@@ -50,9 +50,10 @@ namespace Visual_Storyline
                     optionslist = "<options><chars>248</chars><ml>no</ml><input>0;1;2;</input><required>no</required></options>";
                     break;
                 case 1:
+                    optionslist = "<options><font>Arial</font><color>yes</color><size>yes</size><bold>yes</bold><italic>yes</italic><underline>yes</underline><bunumb>yes</bunumb><required>no</required><align>left;right;center;justify</align></options>";
                     break;
                 case 2:
-                    optionslist = "<options><ms>no</ms><required>no</required><elements><element>Test1</element><element>Test2</element><element>Test3</element></elements></options>";
+                    optionslist = "<options><ms>no</ms><required>no</required><elements></elements></options>";
                     break;
                 case 3:
                     break;
@@ -93,7 +94,8 @@ namespace Visual_Storyline
                     tfoptions.ShowDialog();
                     break;
                 case 1:
-                    Console.WriteLine("1");
+                    RichTextboxoptions rtoptions = new RichTextboxoptions(optionslist, ID);
+                    rtoptions.ShowDialog();
                     break;
                 case 2:
                     Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID);
