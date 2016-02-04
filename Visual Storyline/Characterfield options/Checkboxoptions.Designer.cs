@@ -57,6 +57,7 @@
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // multiselect
             // 
@@ -97,6 +98,8 @@
             resources.ApplyResources(this.addElement_text, "addElement_text");
             this.addElement_text.Name = "addElement_text";
             this.addElement_text.TextChanged += new System.EventHandler(this.TextFieldChanged);
+            this.addElement_text.Enter += new System.EventHandler(this.FocusEnter);
+            this.addElement_text.Leave += new System.EventHandler(this.FocusLeave);
             // 
             // add_Element
             // 

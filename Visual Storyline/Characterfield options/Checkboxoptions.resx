@@ -130,8 +130,8 @@
   <data name="&gt;&gt;checkboxelements.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;add_Element.Name" xml:space="preserve">
     <value>add_Element</value>
@@ -164,11 +164,14 @@
   <data name="&gt;&gt;move_down.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>241, 256</value>
+  <data name="&gt;&gt;move_down.Name" xml:space="preserve">
+    <value>move_down</value>
   </data>
   <data name="cancel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Checkboxoptions</value>
@@ -176,8 +179,8 @@
   <data name="checkboxelements_list.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="checkboxelements_list.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 78</value>
+  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;checkboxelements_list.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -195,14 +198,14 @@
   <data name="requireselection_check.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="multiselect_check.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="&gt;&gt;multiselect.ZOrder" xml:space="preserve">
     <value>10</value>
-  </data>
-  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 192</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
@@ -210,14 +213,17 @@
   <data name="&gt;&gt;move_down.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Checkbox options</value>
+  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;multiselect.Name" xml:space="preserve">
+    <value>multiselect</value>
+  </data>
+  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 136</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="OK.Text" xml:space="preserve">
     <value>OK</value>
@@ -234,8 +240,8 @@
   <data name="&gt;&gt;addElement_text.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
+  <data name="&gt;&gt;checkboxelements_list.Name" xml:space="preserve">
+    <value>checkboxelements_list</value>
   </data>
   <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 78</value>
@@ -252,11 +258,11 @@
   <data name="&gt;&gt;multiselect.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;multiselect.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="checkboxelements.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 15</value>
+  </data>
+  <data name="delete.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -264,8 +270,14 @@
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 192</value>
   </data>
+  <data name="listBox1.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
   <data name="&gt;&gt;addElement_text.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="multiselect_check.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 15</value>
@@ -273,20 +285,17 @@
   <data name="move_down.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
   </data>
-  <data name="&gt;&gt;checkboxelements_list.Parent" xml:space="preserve">
+  <data name="&gt;&gt;multiselect_check.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="move_down.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
   </data>
   <data name="&gt;&gt;checkboxelements.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;checkboxelements_list.Name" xml:space="preserve">
-    <value>checkboxelements_list</value>
+  <data name="&gt;&gt;cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="multiselect_check.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="checkboxelements.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;move_down.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -297,17 +306,17 @@
   <data name="&gt;&gt;addElement_text.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
   </data>
   <data name="requireselection.Text" xml:space="preserve">
     <value>Require at least one selection:</value>
   </data>
-  <data name="&gt;&gt;cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 192</value>
   </data>
   <data name="&gt;&gt;checkboxelements_list.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -315,11 +324,11 @@
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="add_Element.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
+  <data name="&gt;&gt;add_Element.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 192</value>
+  <data name="&gt;&gt;requireselection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;requireselection.Parent" xml:space="preserve">
     <value>$this</value>
@@ -339,11 +348,11 @@
   <data name="addElement_text.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;requireselection.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="move_down.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="add_Element.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="requireselection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
   </data>
   <data name="&gt;&gt;move_up.Parent" xml:space="preserve">
     <value>$this</value>
@@ -351,29 +360,20 @@
   <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
     <value>listBox1</value>
   </data>
-  <data name="&gt;&gt;requireselection_check.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
   </data>
   <data name="requireselection_check.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 37</value>
   </data>
-  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;checkboxelements.Name" xml:space="preserve">
     <value>checkboxelements</value>
   </data>
-  <data name="&gt;&gt;add_Element.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;delete.Name" xml:space="preserve">
-    <value>delete</value>
+  <data name="requireselection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -384,14 +384,17 @@
   <data name="move_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="multiselect.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;addElement_text.Name" xml:space="preserve">
     <value>addElement_text</value>
   </data>
   <data name="cancel.Text" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="&gt;&gt;OK.Name" xml:space="preserve">
-    <value>OK</value>
+  <data name="&gt;&gt;multiselect.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="checkboxelements.Text" xml:space="preserve">
     <value>Checkbox elements:</value>
@@ -402,11 +405,8 @@
   <data name="requireselection_check.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
   </data>
-  <data name="checkboxelements.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="add_Element.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -420,14 +420,14 @@
   <data name="&gt;&gt;requireselection_check.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="checkboxelements_list.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 78</value>
   </data>
   <data name="move_up.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 78</value>
   </data>
-  <data name="&gt;&gt;multiselect.Name" xml:space="preserve">
-    <value>multiselect</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Checkbox options</value>
   </data>
   <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 221</value>
@@ -435,8 +435,8 @@
   <data name="&gt;&gt;multiselect_check.Name" xml:space="preserve">
     <value>multiselect_check</value>
   </data>
-  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 192</value>
   </data>
   <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
     <value>12</value>
@@ -453,11 +453,11 @@
   <data name="&gt;&gt;delete.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;move_down.Name" xml:space="preserve">
-    <value>move_down</value>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
-  <data name="&gt;&gt;OK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;checkboxelements_list.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="requireselection.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 15</value>
@@ -474,17 +474,17 @@
   <data name="&gt;&gt;checkboxelements.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="multiselect.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;requireselection_check.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="move_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -492,20 +492,20 @@
   <data name="checkboxelements.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="requireselection.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 38</value>
+  <data name="multiselect_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;move_up.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;delete.Name" xml:space="preserve">
+    <value>delete</value>
   </data>
-  <data name="listBox1.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>241, 256</value>
   </data>
-  <data name="requireselection.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;requireselection.Name" xml:space="preserve">
     <value>requireselection</value>
@@ -513,11 +513,11 @@
   <data name="requireselection_check.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;multiselect_check.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="add_Element.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
   </data>
-  <data name="delete.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;OK.Name" xml:space="preserve">
+    <value>OK</value>
   </data>
   <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>

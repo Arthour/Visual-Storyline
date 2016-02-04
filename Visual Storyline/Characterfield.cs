@@ -54,6 +54,8 @@ namespace Visual_Storyline
                     break;
                 case 2:     /*Checkbox*/
                     optionslist = "<options><ms>no</ms><required>no</required><elements></elements></options>";
+                    Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID, true);
+                    cboptions.ShowDialog();
                     break;
                 case 3:     /*Date*/
                     break;
@@ -89,35 +91,29 @@ namespace Visual_Storyline
         {
             switch(Type.SelectedIndex)
             {
-                case 0:
+                case 0:     /*Textfield*/
                     Textfieldoptions tfoptions = new Textfieldoptions(optionslist, ID);
                     tfoptions.ShowDialog();
                     break;
-                case 1:
+                case 1:     /*RichText-Textfield*/
                     RichTextboxoptions rtoptions = new RichTextboxoptions(optionslist, ID);
                     rtoptions.ShowDialog();
                     break;
-                case 2:
-                    Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID);
+                case 2:     /*Combobox*/
+                    Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID, false);
                     cboptions.ShowDialog();
                     break;
-                case 3:
-                    Console.WriteLine("3");
+                case 3:     /*Date*/
                     break;
-                case 4:
-                    Console.WriteLine("4");
+                case 4:     /*Combobox*/
                     break;
-                case 5:
-                    Console.WriteLine("5");
+                case 5:     /*List*/
                     break;
-                case 6:
-                    Console.WriteLine("6");
+                case 6:     /*Picture*/
                     break;
-                case 7:
-                    Console.WriteLine("7");
+                case 7:     /*Hyphen*/
                     break;
-                case 8:
-                    Console.WriteLine("8");
+                case 8:     /*Colorpalette*/
                     break;
             }
         }

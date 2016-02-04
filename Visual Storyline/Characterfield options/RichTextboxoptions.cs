@@ -118,7 +118,13 @@ namespace Visual_Storyline.Characterfield_options
                 if (check.Checked == true)
                     ischecked = true;
             }
-            if (font_box.Text != "" && font_box.Items.Contains(font_box.Text) && ischecked == true)
+            bool fontExists = false;
+            foreach(Object item in font_box.Items)
+            {
+                if (item.ToString().ToLower() == font_box.Text.ToLower())
+                    fontExists = true;
+            }
+            if (font_box.Text != "" && fontExists == true && ischecked == true)
             {
                 OK.Enabled = true;
             }

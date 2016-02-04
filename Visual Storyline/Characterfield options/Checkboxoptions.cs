@@ -14,11 +14,13 @@ namespace Visual_Storyline.Characterfield_options
     public partial class Checkboxoptions : Form
     {
         private int ID;
+        private bool isNeeded;
 
-        public Checkboxoptions(string options, int ID_Parent)
+        public Checkboxoptions(string options, int ID_Parent, bool EntryNeeded)
         {
             InitializeComponent();
             ID = ID_Parent;
+            isNeeded = EntryNeeded;
             try
             {
                 XmlDocument option = new XmlDocument();
@@ -55,7 +57,7 @@ namespace Visual_Storyline.Characterfield_options
                 multiselect_check.Checked = false;
                 requireselection_check.Checked = false;
             }
-
+            CheckOK();
         }
 
         private void IndexChanged(object sender, EventArgs e)
@@ -114,6 +116,7 @@ namespace Visual_Storyline.Characterfield_options
                 checkboxelements_list.Items.Add(addElement_text.Text);
                 addElement_text.Text = "";
                 addElement_text.Focus();
+                CheckOK();
             }
         }
 
@@ -125,6 +128,7 @@ namespace Visual_Storyline.Characterfield_options
             move_down.Enabled = false;
             addElement_text.Text = "";
             addElement_text.Focus();
+            CheckOK();
         }
 
         private void move_up_Click(object sender, EventArgs e)
@@ -177,6 +181,14 @@ namespace Visual_Storyline.Characterfield_options
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
+        private void CheckOK()
+        {
+            if (checkboxelements_list.Items.Count == 0)
+                OK.Enabled = false;
+            else
+                OK.Enabled = true;
+        }
+
         private void OK_Click(object sender, EventArgs e)
         {
             string msset;
@@ -199,6 +211,24 @@ namespace Visual_Storyline.Characterfield_options
             EditCharacterFields.tempID = ID;
             EditCharacterFields.grabOptions = newoptions;
             this.Dispose();
+        }
+
+        private void FocusEnter(object sender, EventArgs e)
+        {
+            this.AcceptButton = add_Element;
+        }
+
+        private void FocusLeave(object sender, EventArgs e)
+        {
+            this.AcceptButton = OK;
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            if (isNeeded == true)
+            {
+                EditCharacterFields.cancelOptions(ID);
+            }
         }
     }
 }

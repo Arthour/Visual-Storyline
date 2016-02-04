@@ -139,10 +139,20 @@ namespace Visual_Storyline
         {
             foreach (Characterfield field in spanel.Controls)
             {
-                Console.WriteLine("ID: {0}", field.ID);
                 if (field.ID == tempID)
                 {
                     field.optionslist = options;
+                }
+            }
+        }
+
+        public static void cancelOptions(int ID)
+        {
+            foreach (Characterfield field in spanel.Controls)
+            {
+                if (field.ID == tempID)
+                {
+                    field.Type.SelectedIndex = -1;
                 }
             }
         }
