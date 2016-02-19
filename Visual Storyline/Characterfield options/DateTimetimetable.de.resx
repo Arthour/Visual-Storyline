@@ -117,66 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 15</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Ein(e)</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 15</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Jahr</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 15</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Monat</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 15</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 15</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Stunde</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 15</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>besteht aus</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 15</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Stunden</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Tagen</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 23</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Monaten</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 15</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Sekunden</value>
+  </data>
   <data name="cancel.Text" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="maxchars.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="maxchars.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 15</value>
-  </data>
-  <data name="maxchars.Text" xml:space="preserve">
-    <value>Maximale Zeichen:</value>
-  </data>
-  <data name="allowmultiline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 43</value>
-  </data>
-  <data name="allowmultiline.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 15</value>
-  </data>
-  <data name="allowmultiline.Text" xml:space="preserve">
-    <value>mehrere Zeilen:</value>
-  </data>
-  <data name="allowMultiline_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 44</value>
-  </data>
-  <data name="acceptedinput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 66</value>
-  </data>
-  <data name="acceptedinput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 15</value>
-  </data>
-  <data name="acceptedinput.Text" xml:space="preserve">
-    <value>Eingaben:</value>
-  </data>
-  <data name="acceptedinput_groupbox.Items1" xml:space="preserve">
-    <value>Zahlen</value>
-  </data>
-  <data name="acceptedinput_groupbox.Items2" xml:space="preserve">
-    <value>Leerschritte</value>
-  </data>
-  <data name="acceptedinput_groupbox.Items3" xml:space="preserve">
-    <value>Sonderzeichen</value>
-  </data>
-  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 151</value>
-  </data>
-  <data name="required.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 150</value>
-  </data>
-  <data name="required.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 15</value>
-  </data>
-  <data name="required.Text" xml:space="preserve">
-    <value>Wird benötigt:</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Textfeld-Optionen</value>
+    <value>Zeiteinheiten-Tabelle</value>
   </data>
 </root>

@@ -117,15 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 218</value>
+  </data>
+  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 218</value>
+  </data>
   <data name="cancel.Text" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="multiselect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="multiselect.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 15</value>
   </data>
   <data name="multiselect.Text" xml:space="preserve">
     <value>Mehrfachauswahl zulassen:</value>
+  </data>
+  <data name="multiselect_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="multiselect_check.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 17</value>
@@ -139,12 +152,11 @@
   <data name="requireselection.Text" xml:space="preserve">
     <value>Mindestens ein Element ausgewählt:</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkboxelements_list.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
   <data name="checkboxelements_list.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 109</value>
+  </data>
+  <data name="checkboxelements.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="checkboxelements.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 15</value>
@@ -152,24 +164,30 @@
   <data name="checkboxelements.Text" xml:space="preserve">
     <value>Checkbox-Elemente:</value>
   </data>
+  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 189</value>
+  </data>
   <data name="addElement_text.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 23</value>
   </data>
-  <data name="move_up.Enabled" type="System.Boolean, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="delete.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="move_down.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="delete.Enabled" type="System.Boolean, mscorlib">
+  <data name="move_up.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="add_Element.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
+  <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 189</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Checkbox-Optionen</value>

@@ -128,7 +128,7 @@
     <value>RichText-Textfeld</value>
   </data>
   <data name="Type.Items3" xml:space="preserve">
-    <value>Datum</value>
+    <value>Datum &amp; Zeit</value>
   </data>
   <data name="Type.Items5" xml:space="preserve">
     <value>Liste</value>

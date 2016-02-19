@@ -104,6 +104,8 @@ namespace Visual_Storyline
                     cboptions.ShowDialog();
                     break;
                 case 3:     /*Date*/
+                    DateTimeoptions dtoptions = new DateTimeoptions();
+                    dtoptions.ShowDialog();
                     break;
                 case 4:     /*Combobox*/
                     break;

@@ -117,314 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="color.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;fontsize_check.Name" xml:space="preserve">
-    <value>fontsize_check</value>
-  </data>
-  <data name="&gt;&gt;fontsize.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;underlined_check.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="bunumb_check.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="color.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 44</value>
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 276</value>
   </data>
-  <data name="bunumb.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 27</value>
   </data>
-  <data name="italic_check.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fontsize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="align_justify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 47</value>
-  </data>
-  <data name="italic_check.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;bunumb.Name" xml:space="preserve">
-    <value>bunumb</value>
-  </data>
-  <data name="bunumb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 154</value>
-  </data>
-  <data name="&gt;&gt;required_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;font.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="required.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 15</value>
-  </data>
-  <data name="italic_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="&gt;&gt;align_justify.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="bold_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 89</value>
-  </data>
-  <data name="&gt;&gt;bold_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fontsize_check.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="italic.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="underlined.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;required.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fontsize_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;align_center.Name" xml:space="preserve">
-    <value>align_center</value>
-  </data>
-  <data name="cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="align_center.Text" xml:space="preserve">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;font_box.Name" xml:space="preserve">
-    <value>font_box</value>
-  </data>
-  <data name="bold_check.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;align_left.Name" xml:space="preserve">
-    <value>align_left</value>
-  </data>
-  <data name="required_check.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>218, 316</value>
-  </data>
-  <data name="&gt;&gt;group_align.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fontsize.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bold.Name" xml:space="preserve">
-    <value>bold</value>
-  </data>
-  <data name="fontsize.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="OK.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;required_check.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="OK.Text" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>RichTextbox options</value>
+  <data name="&gt;&gt;OK.Name" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="&gt;&gt;italic_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;align_justify.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;align_justify.Name" xml:space="preserve">
-    <value>align_justify</value>
+  <data name="&gt;&gt;OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OK.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="color.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="fontsize.Text" xml:space="preserve">
-    <value>Enable fontsize changing:</value>
-  </data>
-  <data name="fontsize_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 67</value>
-  </data>
-  <data name="bold_check.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="bold.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="italic_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 111</value>
-  </data>
-  <data name="align_left.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
-  </data>
-  <data name="&gt;&gt;bunumb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="font.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 15</value>
-  </data>
-  <data name="&gt;&gt;fontsize_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;color.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bunumb.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="color.Text" xml:space="preserve">
-    <value>Enable color changing:</value>
-  </data>
-  <data name="bold_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="&gt;&gt;bold_check.Name" xml:space="preserve">
-    <value>bold_check</value>
-  </data>
-  <data name="required_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="italic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 15</value>
-  </data>
-  <data name="required.Text" xml:space="preserve">
-    <value>Is required:</value>
-  </data>
-  <data name="&gt;&gt;font_box.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bunumb_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="group_align.Text" xml:space="preserve">
-    <value>Enabled text alignments:</value>
-  </data>
-  <data name="align_right.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;color_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;underlined.Name" xml:space="preserve">
-    <value>underlined</value>
-  </data>
   <data name="&gt;&gt;OK.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="required_check.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bunumb.Text" xml:space="preserve">
-    <value>Enable bullets and numbering:</value>
-  </data>
-  <data name="&gt;&gt;bold.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;italic_check.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;italic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;align_right.Name" xml:space="preserve">
-    <value>align_right</value>
-  </data>
-  <data name="&gt;&gt;align_left.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="align_left.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;bunumb_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;required_check.Name" xml:space="preserve">
-    <value>required_check</value>
-  </data>
-  <data name="bold.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="required_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="&gt;&gt;bold.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;color.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;color_check.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="bunumb_check.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;required.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="color_check.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="underlined_check.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>RichTextboxoptions</value>
-  </data>
-  <data name="bunumb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;underlined.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="align_right.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 19</value>
-  </data>
-  <data name="italic.Text" xml:space="preserve">
-    <value>Enable italic text:</value>
-  </data>
-  <data name="&gt;&gt;color.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="group_align.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 73</value>
-  </data>
-  <data name="&gt;&gt;group_align.Name" xml:space="preserve">
-    <value>group_align</value>
-  </data>
-  <data name="&gt;&gt;color_check.Name" xml:space="preserve">
-    <value>color_check</value>
-  </data>
-  <data name="&gt;&gt;bunumb.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 276</value>
@@ -432,278 +156,413 @@
   <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 27</value>
   </data>
-  <data name="bold_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="align_justify.Text" xml:space="preserve">
-    <value>Justify</value>
+  <data name="cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="underlined_check.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="underlined.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 132</value>
-  </data>
-  <data name="italic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 110</value>
-  </data>
-  <data name="required.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="align_center.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="underlined_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 133</value>
-  </data>
-  <data name="font.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="italic_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;align_center.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="bold.Text" xml:space="preserve">
-    <value>Enable bold text:</value>
-  </data>
-  <data name="&gt;&gt;align_right.Parent" xml:space="preserve">
-    <value>group_align</value>
-  </data>
-  <data name="align_center.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bold.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;underlined_check.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="underlined_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="align_center.Location" type="System.Drawing.Point, System.Drawing">
-    <value>58, 22</value>
-  </data>
-  <data name="group_align.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 197</value>
-  </data>
-  <data name="&gt;&gt;align_left.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;align_center.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 177</value>
-  </data>
-  <data name="required.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 176</value>
-  </data>
-  <data name="&gt;&gt;OK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="underlined.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;bunumb_check.Name" xml:space="preserve">
-    <value>bunumb_check</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="group_align.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;required.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 14, 14</value>
+  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
+    <value>cancel</value>
   </data>
   <data name="&gt;&gt;cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;italic.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="underlined.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 15</value>
-  </data>
-  <data name="bunumb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 15</value>
-  </data>
-  <data name="&gt;&gt;OK.Name" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="bunumb_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="italic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;font.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="required.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="font.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="font.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 17</value>
+  </data>
+  <data name="font.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 15</value>
+  </data>
+  <data name="font.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="font.Text" xml:space="preserve">
     <value>Font:</value>
   </data>
-  <data name="underlined_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+  <data name="&gt;&gt;font.Name" xml:space="preserve">
+    <value>font</value>
+  </data>
+  <data name="&gt;&gt;font.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;font.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;font.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="color_check.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;underlined.Parent" xml:space="preserve">
+  <data name="color_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 46</value>
+  </data>
+  <data name="color_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="color_check.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;color_check.Name" xml:space="preserve">
+    <value>color_check</value>
+  </data>
+  <data name="&gt;&gt;color_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;color_check.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;color_check.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="font_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="font_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 23</value>
+  </data>
+  <data name="font_box.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;font_box.Name" xml:space="preserve">
+    <value>font_box</value>
+  </data>
+  <data name="&gt;&gt;font_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;font_box.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;font_box.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;italic.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bold_check.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="align_justify.AutoSize" type="System.Boolean, mscorlib">
+  <data name="color.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="font.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 16</value>
-  </data>
-  <data name="color_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 45</value>
-  </data>
-  <data name="&gt;&gt;align_left.Parent" xml:space="preserve">
-    <value>group_align</value>
-  </data>
-  <data name="&gt;&gt;required.Name" xml:space="preserve">
-    <value>required</value>
-  </data>
-  <data name="fontsize.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;color.Name" xml:space="preserve">
-    <value>color</value>
-  </data>
-  <data name="fontsize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 66</value>
-  </data>
-  <data name="&gt;&gt;underlined_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;underlined.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;color_check.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 276</value>
-  </data>
-  <data name="&gt;&gt;bold_check.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;group_align.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 27</value>
-  </data>
-  <data name="&gt;&gt;font.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
-    <value>cancel</value>
-  </data>
-  <data name="font.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="align_left.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="font_box.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;fontsize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;required_check.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="fontsize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 15</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="align_right.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 47</value>
-  </data>
-  <data name="fontsize_check.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;bunumb_check.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="color.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 45</value>
   </data>
   <data name="color.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 15</value>
   </data>
-  <data name="bold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 88</value>
+  <data name="color.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;align_right.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="color.Text" xml:space="preserve">
+    <value>Enable color changing:</value>
   </data>
-  <data name="&gt;&gt;underlined_check.Name" xml:space="preserve">
-    <value>underlined_check</value>
+  <data name="&gt;&gt;color.Name" xml:space="preserve">
+    <value>color</value>
   </data>
-  <data name="&gt;&gt;align_center.Parent" xml:space="preserve">
-    <value>group_align</value>
+  <data name="&gt;&gt;color.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;font_box.Parent" xml:space="preserve">
+  <data name="&gt;&gt;color.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;color.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="fontsize.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fontsize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="fontsize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 67</value>
+  </data>
+  <data name="fontsize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 15</value>
+  </data>
+  <data name="fontsize.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="fontsize.Text" xml:space="preserve">
+    <value>Enable fontsize changing:</value>
+  </data>
+  <data name="&gt;&gt;fontsize.Name" xml:space="preserve">
+    <value>fontsize</value>
+  </data>
+  <data name="&gt;&gt;fontsize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fontsize.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;fontsize.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="fontsize_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fontsize_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="fontsize_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 68</value>
+  </data>
+  <data name="fontsize_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="fontsize_check.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;fontsize_check.Name" xml:space="preserve">
+    <value>fontsize_check</value>
+  </data>
+  <data name="&gt;&gt;fontsize_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;fontsize_check.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="font_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 13</value>
+  <data name="&gt;&gt;fontsize_check.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="bold.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bold.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 89</value>
   </data>
   <data name="bold.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 15</value>
   </data>
-  <data name="&gt;&gt;font.Name" xml:space="preserve">
-    <value>font</value>
+  <data name="bold.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="align_left.Text" xml:space="preserve">
-    <value>Left</value>
+  <data name="bold.Text" xml:space="preserve">
+    <value>Enable bold text:</value>
   </data>
-  <data name="&gt;&gt;bunumb_check.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;bold.Name" xml:space="preserve">
+    <value>bold</value>
   </data>
-  <data name="align_right.Text" xml:space="preserve">
-    <value>Right</value>
+  <data name="&gt;&gt;bold.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bold.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bold.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="bold_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bold_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bold_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 90</value>
+  </data>
+  <data name="bold_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="bold_check.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;bold_check.Name" xml:space="preserve">
+    <value>bold_check</value>
+  </data>
+  <data name="&gt;&gt;bold_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bold_check.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bold_check.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="italic.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;fontsize.Name" xml:space="preserve">
-    <value>fontsize</value>
+  <data name="italic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="italic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 111</value>
+  </data>
+  <data name="italic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 15</value>
+  </data>
+  <data name="italic.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="italic.Text" xml:space="preserve">
+    <value>Enable italic text:</value>
+  </data>
+  <data name="&gt;&gt;italic.Name" xml:space="preserve">
+    <value>italic</value>
+  </data>
+  <data name="&gt;&gt;italic.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;italic.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;italic.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="italic_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="italic_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="italic_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 112</value>
+  </data>
+  <data name="italic_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="italic_check.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;italic_check.Name" xml:space="preserve">
+    <value>italic_check</value>
+  </data>
+  <data name="&gt;&gt;italic_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;italic_check.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;italic_check.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="underlined.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="underlined.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="underlined.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 133</value>
+  </data>
+  <data name="underlined.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 15</value>
+  </data>
+  <data name="underlined.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="underlined.Text" xml:space="preserve">
+    <value>Enable underlined text:</value>
+  </data>
+  <data name="&gt;&gt;underlined.Name" xml:space="preserve">
+    <value>underlined</value>
+  </data>
+  <data name="&gt;&gt;underlined.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;underlined.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;underlined.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="underlined_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="underlined_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="underlined_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 134</value>
+  </data>
+  <data name="underlined_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="underlined_check.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;underlined_check.Name" xml:space="preserve">
+    <value>underlined_check</value>
+  </data>
+  <data name="&gt;&gt;underlined_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;underlined_check.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;underlined_check.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="bunumb.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bunumb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bunumb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 155</value>
+  </data>
+  <data name="bunumb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 15</value>
+  </data>
+  <data name="bunumb.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="bunumb.Text" xml:space="preserve">
+    <value>Enable bullets and numbering:</value>
+  </data>
+  <data name="&gt;&gt;bunumb.Name" xml:space="preserve">
+    <value>bunumb</value>
+  </data>
+  <data name="&gt;&gt;bunumb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bunumb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunumb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bunumb_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bunumb_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bunumb_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 156</value>
+  </data>
+  <data name="bunumb_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="bunumb_check.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;bunumb_check.Name" xml:space="preserve">
+    <value>bunumb_check</value>
+  </data>
+  <data name="&gt;&gt;bunumb_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bunumb_check.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bunumb_check.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="align_justify.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="align_justify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 47</value>
   </data>
   <data name="align_justify.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 19</value>
@@ -711,76 +570,214 @@
   <data name="align_justify.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;italic_check.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="align_justify.Text" xml:space="preserve">
+    <value>Justify</value>
   </data>
-  <data name="&gt;&gt;italic.Name" xml:space="preserve">
-    <value>italic</value>
+  <data name="&gt;&gt;align_justify.Name" xml:space="preserve">
+    <value>align_justify</value>
   </data>
-  <data name="fontsize_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="&gt;&gt;group_align.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="align_left.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 19</value>
-  </data>
-  <data name="cancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="&gt;&gt;align_justify.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;align_justify.Parent" xml:space="preserve">
     <value>group_align</value>
   </data>
-  <data name="&gt;&gt;italic_check.Name" xml:space="preserve">
-    <value>italic_check</value>
-  </data>
-  <data name="bunumb.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="align_center.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
-  </data>
-  <data name="bunumb_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 155</value>
-  </data>
-  <data name="required.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="font_box.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 23</value>
-  </data>
-  <data name="&gt;&gt;bold.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="color_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;align_justify.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="align_right.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="underlined.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="align_right.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 47</value>
   </data>
-  <data name="&gt;&gt;fontsize_check.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="align_right.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 19</value>
+  </data>
+  <data name="align_right.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="align_right.Text" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;align_right.Name" xml:space="preserve">
+    <value>align_right</value>
   </data>
   <data name="&gt;&gt;align_right.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="underlined.Text" xml:space="preserve">
-    <value>Enable underlined text:</value>
+  <data name="&gt;&gt;align_right.Parent" xml:space="preserve">
+    <value>group_align</value>
   </data>
-  <data name="OK.Text" xml:space="preserve">
-    <value>OK</value>
+  <data name="&gt;&gt;align_right.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="align_center.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="align_center.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 22</value>
+  </data>
+  <data name="align_center.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
+  </data>
+  <data name="align_center.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="align_center.Text" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;align_center.Name" xml:space="preserve">
+    <value>align_center</value>
+  </data>
+  <data name="&gt;&gt;align_center.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;align_center.Parent" xml:space="preserve">
+    <value>group_align</value>
+  </data>
+  <data name="&gt;&gt;align_center.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="align_left.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="align_left.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="align_left.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 19</value>
+  </data>
+  <data name="align_left.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="align_left.Text" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;align_left.Name" xml:space="preserve">
+    <value>align_left</value>
+  </data>
+  <data name="&gt;&gt;align_left.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;align_left.Parent" xml:space="preserve">
+    <value>group_align</value>
+  </data>
+  <data name="&gt;&gt;align_left.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="group_align.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 197</value>
+  </data>
+  <data name="group_align.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 73</value>
+  </data>
+  <data name="group_align.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="group_align.Text" xml:space="preserve">
+    <value>Enabled text alignments:</value>
+  </data>
+  <data name="&gt;&gt;group_align.Name" xml:space="preserve">
+    <value>group_align</value>
+  </data>
+  <data name="&gt;&gt;group_align.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;group_align.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;group_align.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="required.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="required.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="required.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 177</value>
+  </data>
+  <data name="required.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
+  </data>
+  <data name="required.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="required.Text" xml:space="preserve">
+    <value>Is required:</value>
+  </data>
+  <data name="&gt;&gt;required.Name" xml:space="preserve">
+    <value>required</value>
+  </data>
+  <data name="&gt;&gt;required.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;required.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;required.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="required_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="required_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 178</value>
+  </data>
+  <data name="required_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="required_check.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;required_check.Name" xml:space="preserve">
+    <value>required_check</value>
+  </data>
+  <data name="&gt;&gt;required_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;required_check.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;required_check.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>de</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>218, 316</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>RichTextbox options</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RichTextboxoptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

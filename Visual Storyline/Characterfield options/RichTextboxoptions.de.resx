@@ -127,6 +127,9 @@
   <data name="cancel.Text" xml:space="preserve">
     <value>Abbrechen</value>
   </data>
+  <data name="font.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 17</value>
+  </data>
   <data name="font.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 15</value>
   </data>
@@ -134,16 +137,22 @@
     <value>Schriftart:</value>
   </data>
   <data name="color_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 45</value>
+    <value>201, 46</value>
   </data>
   <data name="font_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>76, 13</value>
+  </data>
+  <data name="color.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 45</value>
   </data>
   <data name="color.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 15</value>
   </data>
   <data name="color.Text" xml:space="preserve">
     <value>Erlaube Textfarbe:</value>
+  </data>
+  <data name="fontsize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 67</value>
   </data>
   <data name="fontsize.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 15</value>
@@ -152,7 +161,10 @@
     <value>Erlaube andere Schriftgröße:</value>
   </data>
   <data name="fontsize_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 67</value>
+    <value>201, 68</value>
+  </data>
+  <data name="bold.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 89</value>
   </data>
   <data name="bold.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 15</value>
@@ -161,7 +173,10 @@
     <value>Erlaube fetten Text:</value>
   </data>
   <data name="bold_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 89</value>
+    <value>201, 90</value>
+  </data>
+  <data name="italic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 111</value>
   </data>
   <data name="italic.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 15</value>
@@ -170,7 +185,10 @@
     <value>Erlaube kursiven Text:</value>
   </data>
   <data name="italic_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 111</value>
+    <value>201, 112</value>
+  </data>
+  <data name="underlined.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 133</value>
   </data>
   <data name="underlined.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 15</value>
@@ -179,7 +197,10 @@
     <value>Erlaube unterstrichenen Text:</value>
   </data>
   <data name="underlined_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 133</value>
+    <value>201, 134</value>
+  </data>
+  <data name="bunumb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 155</value>
   </data>
   <data name="bunumb.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 15</value>
@@ -188,7 +209,7 @@
     <value>Erlaube Aufzählungen:</value>
   </data>
   <data name="bunumb_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 155</value>
+    <value>201, 156</value>
   </data>
   <data name="align_justify.Location" type="System.Drawing.Point, System.Drawing">
     <value>73, 47</value>
@@ -226,6 +247,9 @@
   <data name="group_align.Text" xml:space="preserve">
     <value>Erlaubte Textausrichtung:</value>
   </data>
+  <data name="required.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 177</value>
+  </data>
   <data name="required.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 15</value>
   </data>
@@ -233,10 +257,14 @@
     <value>Wird benötigt:</value>
   </data>
   <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 177</value>
+    <value>201, 178</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>228, 317</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>RichTextbox-Optionen</value>

@@ -48,6 +48,7 @@ namespace Visual_Storyline.Characterfield_options
                         }
                     }
                 }
+                else { isNeeded = true; }
             }
             catch(Exception)
             {
@@ -56,6 +57,7 @@ namespace Visual_Storyline.Characterfield_options
                 DialogResult result = MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 multiselect_check.Checked = false;
                 requireselection_check.Checked = false;
+                isNeeded = true;
             }
             CheckOK();
         }

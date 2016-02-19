@@ -41,6 +41,8 @@ namespace Visual_Storyline
         public static string SaveOptionChar, SaveOptionLoc;
         public static List<string> Characters, Locations, Strands, Ideas, Quests, Relations, Conditions;
         public static List<string> CharacterFields;
+
+
     }
 
 

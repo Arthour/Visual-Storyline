@@ -118,185 +118,188 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="NameField.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="NameField.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 20</value>
-  </data>
-  <data name="NameField.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NameField.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;NameField.Name" xml:space="preserve">
-    <value>NameField</value>
-  </data>
-  <data name="&gt;&gt;NameField.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameField.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;NameField.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Type.Items" xml:space="preserve">
-    <value>Textfield</value>
-  </data>
-  <data name="Type.Items1" xml:space="preserve">
-    <value>RichText-Textfield</value>
-  </data>
-  <data name="Type.Items2" xml:space="preserve">
-    <value>Checkbox</value>
-  </data>
-  <data name="Type.Items3" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="Type.Items4" xml:space="preserve">
-    <value>Combobox</value>
-  </data>
-  <data name="Type.Items5" xml:space="preserve">
-    <value>List</value>
-  </data>
-  <data name="Type.Items6" xml:space="preserve">
-    <value>Picture</value>
-  </data>
-  <data name="Type.Items7" xml:space="preserve">
-    <value>Hyphen</value>
-  </data>
-  <data name="Type.Items8" xml:space="preserve">
-    <value>Colorpalette</value>
-  </data>
-  <data name="Type.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 20</value>
-  </data>
-  <data name="Type.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 23</value>
-  </data>
-  <data name="Type.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Type.Name" xml:space="preserve">
-    <value>Type</value>
-  </data>
-  <data name="&gt;&gt;Type.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Type.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Type.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Options.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Options.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 20</value>
-  </data>
   <data name="Options.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 23</value>
   </data>
-  <data name="Options.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;Down.Name" xml:space="preserve">
+    <value>Down</value>
   </data>
-  <data name="Options.Text" xml:space="preserve">
-    <value>Options</value>
-  </data>
-  <data name="&gt;&gt;Options.Name" xml:space="preserve">
-    <value>Options</value>
-  </data>
-  <data name="&gt;&gt;Options.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Options.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Down.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
   </data>
   <data name="&gt;&gt;Options.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="NameField.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="Type.Items6" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="&gt;&gt;Up.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Options.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="Delete.Location" type="System.Drawing.Point, System.Drawing">
     <value>382, 20</value>
   </data>
+  <data name="Type.Items8" xml:space="preserve">
+    <value>Colorpalette</value>
+  </data>
+  <data name="Options.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 20</value>
+  </data>
+  <data name="Up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 5</value>
+  </data>
+  <data name="&gt;&gt;Down.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Characterfield</value>
+  </data>
+  <data name="&gt;&gt;Delete.Name" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;Up.Name" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;Type.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Options.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Type.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 20</value>
+  </data>
+  <data name="&gt;&gt;Type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Options.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 34</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;Options.Name" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;NameField.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NameField.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Type.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Delete.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Down.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Options.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NameField.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Delete.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Type.Items" xml:space="preserve">
+    <value>Textfield</value>
+  </data>
+  <data name="Up.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Type.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 23</value>
+  </data>
+  <data name="Type.Items5" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="&gt;&gt;Type.Name" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Type.Items4" xml:space="preserve">
+    <value>Combobox</value>
+  </data>
+  <data name="Type.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Type.Items7" xml:space="preserve">
+    <value>Hyphen</value>
+  </data>
+  <data name="&gt;&gt;NameField.Name" xml:space="preserve">
+    <value>NameField</value>
+  </data>
+  <data name="Type.Items3" xml:space="preserve">
+    <value>Date &amp; Time</value>
+  </data>
+  <data name="Type.Items1" xml:space="preserve">
+    <value>RichText-Textfield</value>
+  </data>
+  <data name="&gt;&gt;Up.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="Delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="Options.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="NameField.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="Type.Items2" xml:space="preserve">
+    <value>Checkbox</value>
+  </data>
+  <data name="&gt;&gt;Up.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NameField.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Up.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
   </data>
   <data name="Delete.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;Delete.Name" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="&gt;&gt;Delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Delete.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Delete.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Down.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 34</value>
-  </data>
-  <data name="Down.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="Down.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Down.Name" xml:space="preserve">
-    <value>Down</value>
-  </data>
-  <data name="&gt;&gt;Down.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Down.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="NameField.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 20</value>
   </data>
   <data name="&gt;&gt;Down.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="Up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 5</value>
-  </data>
-  <data name="Up.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="Up.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Up.Name" xml:space="preserve">
-    <value>Up</value>
-  </data>
-  <data name="&gt;&gt;Up.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Up.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Up.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>412, 62</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 62</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Characterfield</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>de</value>
+  </metadata>
 </root>

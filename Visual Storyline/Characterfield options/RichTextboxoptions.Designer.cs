@@ -64,8 +64,8 @@
             // 
             // cancel
             // 
-            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
@@ -82,10 +82,10 @@
             // 
             // font_box
             // 
-            resources.ApplyResources(this.font_box, "font_box");
             this.font_box.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;
             this.font_box.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.font_box.FormattingEnabled = true;
+            resources.ApplyResources(this.font_box, "font_box");
             this.font_box.Name = "font_box";
             this.font_box.TextUpdate += new System.EventHandler(this.FrameEvent);
             // 
@@ -151,11 +151,11 @@
             // 
             // group_align
             // 
-            resources.ApplyResources(this.group_align, "group_align");
             this.group_align.Controls.Add(this.align_justify);
             this.group_align.Controls.Add(this.align_right);
             this.group_align.Controls.Add(this.align_center);
             this.group_align.Controls.Add(this.align_left);
+            resources.ApplyResources(this.group_align, "group_align");
             this.group_align.Name = "group_align";
             this.group_align.TabStop = false;
             // 

@@ -117,8 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;OK.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="maxchars.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 15</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Textfield options</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="allowMultiline_check.TabIndex" type="System.Int32, mscorlib">
@@ -127,21 +131,17 @@
   <data name="&gt;&gt;allowmultiline.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="maxchars.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 15</value>
-  </data>
   <data name="required.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 15</value>
   </data>
-  <data name="&gt;&gt;required_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 151</value>
   </data>
   <data name="&gt;&gt;required.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="required.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 150</value>
+    <value>11, 150</value>
   </data>
   <data name="OK.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -158,14 +158,14 @@
   <data name="required.Text" xml:space="preserve">
     <value>Is required:</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Textfieldoptions</value>
-  </data>
-  <data name="&gt;&gt;required.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="acceptedinput_groupbox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="maxchars_text.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
+  </data>
+  <data name="required_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
   </data>
   <data name="required_check.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,14 +216,8 @@
   <data name="acceptedinput_groupbox.Items1" xml:space="preserve">
     <value>Numbers</value>
   </data>
-  <data name="&gt;&gt;required_check.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;maxchars.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="acceptedinput_groupbox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="&gt;&gt;allowMultiline_check.Parent" xml:space="preserve">
     <value>$this</value>
@@ -240,17 +234,26 @@
   <data name="maxchars_text.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 12</value>
   </data>
+  <data name="&gt;&gt;OK.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="maxchars.Text" xml:space="preserve">
     <value>Maximum characters:</value>
   </data>
   <data name="maxchars.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 16</value>
+    <value>11, 16</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
   </data>
   <data name="&gt;&gt;cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;required_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="allowMultiline_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 44</value>
+    <value>222, 44</value>
   </data>
   <data name="&gt;&gt;OK.Name" xml:space="preserve">
     <value>OK</value>
@@ -264,8 +267,8 @@
   <data name="&gt;&gt;allowMultiline_check.Name" xml:space="preserve">
     <value>allowMultiline_check</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="&gt;&gt;required.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;allowmultiline.Parent" xml:space="preserve">
     <value>$this</value>
@@ -288,9 +291,6 @@
   <data name="acceptedinput_groupbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 76</value>
   </data>
-  <data name="acceptedinput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 66</value>
-  </data>
   <data name="&gt;&gt;acceptedinput.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -303,8 +303,11 @@
   <data name="acceptedinput_groupbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>109, 66</value>
   </data>
-  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 151</value>
+  <data name="acceptedinput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 66</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Textfieldoptions</value>
   </data>
   <data name="allowMultiline_check.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
@@ -324,8 +327,8 @@
   <data name="&gt;&gt;acceptedinput_groupbox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="required_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+  <data name="&gt;&gt;allowmultiline.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="acceptedinput.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -339,14 +342,11 @@
   <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 171</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Textfield options</value>
+  <data name="maxchars_text.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 171</value>
-  </data>
-  <data name="&gt;&gt;allowmultiline.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="acceptedinput.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -364,7 +364,7 @@
     <value>NoControl</value>
   </data>
   <data name="allowmultiline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 43</value>
+    <value>11, 43</value>
   </data>
   <data name="&gt;&gt;acceptedinput_groupbox.Name" xml:space="preserve">
     <value>acceptedinput_groupbox</value>
@@ -393,6 +393,9 @@
   <data name="allowmultiline.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
   <data name="allowmultiline.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -411,22 +414,22 @@
   <data name="&gt;&gt;acceptedinput_groupbox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="maxchars_text.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="&gt;&gt;required.Name" xml:space="preserve">
     <value>required</value>
   </data>
   <data name="allowmultiline.Text" xml:space="preserve">
     <value>Multiline:</value>
   </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 5, 5</value>
+  <data name="&gt;&gt;required_check.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="maxchars_text.MaxLength" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>de</value>
   </metadata>
 </root>
