@@ -48,22 +48,21 @@
             this.showMonths = new System.Windows.Forms.CheckBox();
             this.invisMonths = new System.Windows.Forms.Panel();
             this.monthsPanel = new System.Windows.Forms.Panel();
+            this.monthNames = new System.Windows.Forms.ListView();
+            this.Nr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.MName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.showDays = new System.Windows.Forms.CheckBox();
             this.invisDays = new System.Windows.Forms.Panel();
             this.daysPanel = new System.Windows.Forms.Panel();
             this.showHours = new System.Windows.Forms.CheckBox();
-            this.invisHours = new System.Windows.Forms.Panel();
-            this.hoursPanel = new System.Windows.Forms.Panel();
             this.showMinutes = new System.Windows.Forms.CheckBox();
-            this.invisMinutes = new System.Windows.Forms.Panel();
-            this.minutesPanel = new System.Windows.Forms.Panel();
             this.showSeconds = new System.Windows.Forms.CheckBox();
             this.invisSeconds = new System.Windows.Forms.Panel();
-            this.secondsPanel = new System.Windows.Forms.Panel();
             this.FormatPanel = new System.Windows.Forms.Panel();
             this.timetable = new System.Windows.Forms.Button();
             this.flowLayoutPanel2.SuspendLayout();
             this.yearsPanel.SuspendLayout();
+            this.monthsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // OK
@@ -74,8 +73,8 @@
             // 
             // cancel
             // 
-            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
@@ -92,14 +91,9 @@
             this.flowLayoutPanel2.Controls.Add(this.invisDays);
             this.flowLayoutPanel2.Controls.Add(this.daysPanel);
             this.flowLayoutPanel2.Controls.Add(this.showHours);
-            this.flowLayoutPanel2.Controls.Add(this.invisHours);
-            this.flowLayoutPanel2.Controls.Add(this.hoursPanel);
             this.flowLayoutPanel2.Controls.Add(this.showMinutes);
-            this.flowLayoutPanel2.Controls.Add(this.invisMinutes);
-            this.flowLayoutPanel2.Controls.Add(this.minutesPanel);
             this.flowLayoutPanel2.Controls.Add(this.showSeconds);
             this.flowLayoutPanel2.Controls.Add(this.invisSeconds);
-            this.flowLayoutPanel2.Controls.Add(this.secondsPanel);
             this.flowLayoutPanel2.Controls.Add(this.FormatPanel);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             // 
@@ -146,11 +140,11 @@
             // 
             // defaultElement
             // 
-            resources.ApplyResources(this.defaultElement, "defaultElement");
             this.defaultElement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.defaultElement.FormattingEnabled = true;
             this.defaultElement.Items.AddRange(new object[] {
             resources.GetString("defaultElement.Items")});
+            resources.ApplyResources(this.defaultElement, "defaultElement");
             this.defaultElement.Name = "defaultElement";
             // 
             // nothing
@@ -179,16 +173,16 @@
             // 
             // delete
             // 
-            resources.ApplyResources(this.delete, "delete");
             this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
+            resources.ApplyResources(this.delete, "delete");
             this.delete.Name = "delete";
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // add_Element
             // 
-            resources.ApplyResources(this.add_Element, "add_Element");
             this.add_Element.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
+            resources.ApplyResources(this.add_Element, "add_Element");
             this.add_Element.Name = "add_Element";
             this.add_Element.UseVisualStyleBackColor = true;
             this.add_Element.Click += new System.EventHandler(this.add_Element_Click);
@@ -203,8 +197,8 @@
             // 
             // presuffix_list
             // 
-            resources.ApplyResources(this.presuffix_list, "presuffix_list");
             this.presuffix_list.FormattingEnabled = true;
+            resources.ApplyResources(this.presuffix_list, "presuffix_list");
             this.presuffix_list.Name = "presuffix_list";
             this.presuffix_list.SelectedIndexChanged += new System.EventHandler(this.IndexChanged);
             // 
@@ -224,9 +218,32 @@
             // monthsPanel
             // 
             resources.ApplyResources(this.monthsPanel, "monthsPanel");
-            this.monthsPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.monthsPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.monthsPanel.Controls.Add(this.monthNames);
             this.flowLayoutPanel2.SetFlowBreak(this.monthsPanel, true);
             this.monthsPanel.Name = "monthsPanel";
+            // 
+            // monthNames
+            // 
+            this.monthNames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.MName,
+            this.Nr});
+            this.monthNames.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.monthNames.LabelEdit = true;
+            resources.ApplyResources(this.monthNames, "monthNames");
+            this.monthNames.MultiSelect = false;
+            this.monthNames.Name = "monthNames";
+            this.monthNames.ShowGroups = false;
+            this.monthNames.UseCompatibleStateImageBehavior = false;
+            this.monthNames.View = System.Windows.Forms.View.Details;
+            // 
+            // Nr
+            // 
+            resources.ApplyResources(this.Nr, "Nr");
+            // 
+            // MName
+            // 
+            resources.ApplyResources(this.MName, "MName");
             // 
             // showDays
             // 
@@ -243,9 +260,9 @@
             // 
             // daysPanel
             // 
-            resources.ApplyResources(this.daysPanel, "daysPanel");
             this.daysPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.flowLayoutPanel2.SetFlowBreak(this.daysPanel, true);
+            resources.ApplyResources(this.daysPanel, "daysPanel");
             this.daysPanel.Name = "daysPanel";
             // 
             // showHours
@@ -256,18 +273,6 @@
             this.showHours.UseVisualStyleBackColor = true;
             this.showHours.CheckedChanged += new System.EventHandler(this.CheckChanged);
             // 
-            // invisHours
-            // 
-            resources.ApplyResources(this.invisHours, "invisHours");
-            this.invisHours.Name = "invisHours";
-            // 
-            // hoursPanel
-            // 
-            resources.ApplyResources(this.hoursPanel, "hoursPanel");
-            this.hoursPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.flowLayoutPanel2.SetFlowBreak(this.hoursPanel, true);
-            this.hoursPanel.Name = "hoursPanel";
-            // 
             // showMinutes
             // 
             resources.ApplyResources(this.showMinutes, "showMinutes");
@@ -275,18 +280,6 @@
             this.showMinutes.Name = "showMinutes";
             this.showMinutes.UseVisualStyleBackColor = true;
             this.showMinutes.CheckedChanged += new System.EventHandler(this.CheckChanged);
-            // 
-            // invisMinutes
-            // 
-            resources.ApplyResources(this.invisMinutes, "invisMinutes");
-            this.invisMinutes.Name = "invisMinutes";
-            // 
-            // minutesPanel
-            // 
-            resources.ApplyResources(this.minutesPanel, "minutesPanel");
-            this.minutesPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.flowLayoutPanel2.SetFlowBreak(this.minutesPanel, true);
-            this.minutesPanel.Name = "minutesPanel";
             // 
             // showSeconds
             // 
@@ -301,17 +294,10 @@
             resources.ApplyResources(this.invisSeconds, "invisSeconds");
             this.invisSeconds.Name = "invisSeconds";
             // 
-            // secondsPanel
-            // 
-            resources.ApplyResources(this.secondsPanel, "secondsPanel");
-            this.secondsPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.flowLayoutPanel2.SetFlowBreak(this.secondsPanel, true);
-            this.secondsPanel.Name = "secondsPanel";
-            // 
             // FormatPanel
             // 
-            resources.ApplyResources(this.FormatPanel, "FormatPanel");
             this.FormatPanel.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.FormatPanel, "FormatPanel");
             this.FormatPanel.Name = "FormatPanel";
             // 
             // timetable
@@ -343,6 +329,7 @@
             this.flowLayoutPanel2.PerformLayout();
             this.yearsPanel.ResumeLayout(false);
             this.yearsPanel.PerformLayout();
+            this.monthsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -360,16 +347,11 @@
         private System.Windows.Forms.Panel invisDays;
         private System.Windows.Forms.Panel daysPanel;
         private System.Windows.Forms.CheckBox showHours;
-        private System.Windows.Forms.Panel invisHours;
-        private System.Windows.Forms.Panel hoursPanel;
         private System.Windows.Forms.Panel yearsPanel;
         private System.Windows.Forms.Panel invisYears;
         private System.Windows.Forms.CheckBox showMinutes;
         private System.Windows.Forms.CheckBox showSeconds;
         private System.Windows.Forms.Panel invisSeconds;
-        private System.Windows.Forms.Panel secondsPanel;
-        private System.Windows.Forms.Panel invisMinutes;
-        private System.Windows.Forms.Panel minutesPanel;
         private System.Windows.Forms.Panel FormatPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox defaultElement;
@@ -382,5 +364,8 @@
         private System.Windows.Forms.ListBox presuffix_list;
         private System.Windows.Forms.CheckBox negative;
         private System.Windows.Forms.Button timetable;
+        private System.Windows.Forms.ListView monthNames;
+        private System.Windows.Forms.ColumnHeader MName;
+        private System.Windows.Forms.ColumnHeader Nr;
     }
 }

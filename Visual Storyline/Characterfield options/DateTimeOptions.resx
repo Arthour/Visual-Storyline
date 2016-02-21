@@ -117,874 +117,826 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;addElement_text.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="invisSeconds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 443</value>
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 449</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;monthsPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;daysPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="timetable.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 449</value>
-  </data>
-  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 83</value>
-  </data>
-  <data name="showHours.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 19</value>
-  </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 428</value>
-  </data>
-  <data name="&gt;&gt;invisYears.Name" xml:space="preserve">
-    <value>invisYears</value>
-  </data>
-  <data name="monthsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="showYears.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="&gt;&gt;addElement_text.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;yearsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="OK.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="showMinutes.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="OK.Text" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="addSuffix.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 3</value>
+  <data name="&gt;&gt;OK.Name" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="showMonths.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="secondsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="daysPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 293</value>
-  </data>
-  <data name="&gt;&gt;invisSeconds.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="showDays.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="showDays.Text" xml:space="preserve">
-    <value>show Days</value>
-  </data>
-  <data name="&gt;&gt;showDays.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;invisSeconds.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;negative.Name" xml:space="preserve">
-    <value>negative</value>
-  </data>
-  <data name="&gt;&gt;nothing.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;negative.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;delete.Name" xml:space="preserve">
-    <value>delete</value>
-  </data>
-  <data name="FormatPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="&gt;&gt;FormatPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;invisYears.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;invisDays.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="add_Element.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="invisYears.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;addSuffix.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>333, 487</value>
-  </data>
-  <data name="showHours.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;invisDays.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;addPrefix.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;invisSeconds.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;addPrefix.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;timetable.Type" xml:space="preserve">
+  <data name="&gt;&gt;OK.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hoursPanel.Name" xml:space="preserve">
-    <value>hoursPanel</value>
-  </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 15</value>
-  </data>
-  <data name="showSeconds.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 19</value>
-  </data>
-  <data name="&gt;&gt;yearsPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;invisMonths.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;OK.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="nothing.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="showMonths.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;invisDays.Name" xml:space="preserve">
-    <value>invisDays</value>
-  </data>
-  <data name="&gt;&gt;nothing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="invisMonths.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="minutesPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 393</value>
-  </data>
-  <data name="presuffix_list.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;showSeconds.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;addElement_text.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;showHours.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="nothing.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;showHours.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="invisMinutes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="FormatPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="defaultElement.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="presuffix_list.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 28</value>
-  </data>
-  <data name="yearsPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;OK.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 449</value>
   </data>
-  <data name="showMinutes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 19</value>
+  <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="yearsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 28</value>
+  <data name="cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="showHours.Text" xml:space="preserve">
-    <value>show Hours</value>
+  <data name="cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="OK.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
+    <value>cancel</value>
   </data>
-  <data name="&gt;&gt;secondsPanel.Name" xml:space="preserve">
-    <value>secondsPanel</value>
+  <data name="&gt;&gt;cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;monthsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;addSuffix.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;negative.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;daysPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+  <data name="flowLayoutPanel2.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="showHours.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 318</value>
+  <data name="showYears.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;showDays.Name" xml:space="preserve">
-    <value>showDays</value>
+  <data name="showYears.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="invisHours.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="showYears.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="&gt;&gt;invisMinutes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="showYears.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
   </data>
-  <data name="&gt;&gt;OK.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;showMinutes.Name" xml:space="preserve">
-    <value>showMinutes</value>
+  <data name="showYears.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="showYears.Text" xml:space="preserve">
     <value>show Years</value>
   </data>
-  <data name="yearsPanel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;showYears.Name" xml:space="preserve">
+    <value>showYears</value>
   </data>
-  <data name="&gt;&gt;addElement_text.Name" xml:space="preserve">
-    <value>addElement_text</value>
-  </data>
-  <data name="&gt;&gt;timetable.Name" xml:space="preserve">
-    <value>timetable</value>
-  </data>
-  <data name="&gt;&gt;showSeconds.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="negative.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="monthsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 243</value>
-  </data>
-  <data name="showSeconds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="showMonths.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 218</value>
-  </data>
-  <data name="&gt;&gt;showHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;nothing.Name" xml:space="preserve">
-    <value>nothing</value>
-  </data>
-  <data name="showDays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 268</value>
-  </data>
-  <data name="&gt;&gt;presuffix_list.Name" xml:space="preserve">
-    <value>presuffix_list</value>
-  </data>
-  <data name="&gt;&gt;secondsPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="showMonths.Text" xml:space="preserve">
-    <value>show Months</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;negative.Type" xml:space="preserve">
+  <data name="&gt;&gt;showYears.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showYears.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;minutesPanel.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="defaultElement.Items" xml:space="preserve">
-    <value>none</value>
-  </data>
-  <data name="addSuffix.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 115</value>
-  </data>
-  <data name="yearsPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="&gt;&gt;secondsPanel.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="showMinutes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;presuffix_list.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="showHours.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;FormatPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="addSuffix.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;showDays.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="nothing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 3</value>
-  </data>
-  <data name="delete.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addPrefix.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="showYears.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;add_Element.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;invisMonths.Name" xml:space="preserve">
-    <value>invisMonths</value>
-  </data>
-  <data name="&gt;&gt;showHours.Name" xml:space="preserve">
-    <value>showHours</value>
-  </data>
-  <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 28</value>
-  </data>
-  <data name="&gt;&gt;invisMonths.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="timetable.Text" xml:space="preserve">
-    <value>Show Timetable</value>
+  <data name="&gt;&gt;showYears.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="invisYears.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 28</value>
   </data>
-  <data name="&gt;&gt;invisHours.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;invisMinutes.Name" xml:space="preserve">
-    <value>invisMinutes</value>
-  </data>
-  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 449</value>
-  </data>
-  <data name="invisHours.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 343</value>
-  </data>
-  <data name="&gt;&gt;presuffix_list.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="showSeconds.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="showMinutes.Text" xml:space="preserve">
-    <value>show Minutes</value>
-  </data>
-  <data name="invisDays.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="invisYears.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 0</value>
-  </data>
-  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="defaultElement.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 23</value>
-  </data>
-  <data name="&gt;&gt;daysPanel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;invisMonths.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="daysPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;showYears.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;timetable.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="yearsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 184</value>
-  </data>
-  <data name="showDays.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;defaultElement.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="timetable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="addSuffix.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 19</value>
-  </data>
-  <data name="&gt;&gt;yearsPanel.Name" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;invisHours.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;invisSeconds.Name" xml:space="preserve">
-    <value>invisSeconds</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="secondsPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 443</value>
-  </data>
-  <data name="&gt;&gt;invisHours.Name" xml:space="preserve">
-    <value>invisHours</value>
-  </data>
-  <data name="showSeconds.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 418</value>
-  </data>
-  <data name="addPrefix.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="addPrefix.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 19</value>
-  </data>
-  <data name="showHours.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;invisDays.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="invisMinutes.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="showMinutes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 368</value>
-  </data>
-  <data name="showYears.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="addSuffix.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;OK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="invisDays.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="negative.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 162</value>
-  </data>
-  <data name="addPrefix.Text" xml:space="preserve">
-    <value>add Prefix</value>
-  </data>
-  <data name="&gt;&gt;nothing.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;hoursPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="add_Element.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="invisYears.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 12, 12, 12</value>
+  <data name="&gt;&gt;invisYears.Name" xml:space="preserve">
+    <value>invisYears</value>
   </data>
-  <data name="&gt;&gt;cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;invisYears.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="daysPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
-  </data>
-  <data name="&gt;&gt;showMinutes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;invisYears.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
   </data>
-  <data name="addPrefix.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;invisYears.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="yearsPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;OK.Name" xml:space="preserve">
-    <value>OK</value>
+  <data name="yearsPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
-  <data name="&gt;&gt;showMonths.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="negative.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="timetable.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="negative.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="invisDays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 293</value>
+  <data name="negative.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 162</value>
   </data>
-  <data name="showDays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 19</value>
+  <data name="negative.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 19</value>
+  </data>
+  <data name="negative.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="negative.Text" xml:space="preserve">
+    <value>allow negative values</value>
+  </data>
+  <data name="&gt;&gt;negative.Name" xml:space="preserve">
+    <value>negative</value>
+  </data>
+  <data name="&gt;&gt;negative.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;negative.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;negative.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 115</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 15</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;showMonths.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Set default element:</value>
   </data>
-  <data name="minutesPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="defaultElement.Items" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="defaultElement.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 133</value>
+  </data>
+  <data name="defaultElement.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 23</value>
+  </data>
+  <data name="defaultElement.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;defaultElement.Name" xml:space="preserve">
+    <value>defaultElement</value>
+  </data>
+  <data name="&gt;&gt;defaultElement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;defaultElement.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;defaultElement.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="nothing.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nothing.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nothing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 3</value>
+  </data>
+  <data name="nothing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 19</value>
+  </data>
+  <data name="nothing.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="nothing.Text" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="&gt;&gt;nothing.Name" xml:space="preserve">
+    <value>nothing</value>
+  </data>
+  <data name="&gt;&gt;nothing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nothing.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;nothing.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="addSuffix.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="addSuffix.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addSuffix.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 3</value>
+  </data>
+  <data name="addSuffix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 19</value>
+  </data>
+  <data name="addSuffix.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="addSuffix.Text" xml:space="preserve">
+    <value>add Suffix</value>
+  </data>
+  <data name="&gt;&gt;addSuffix.Name" xml:space="preserve">
+    <value>addSuffix</value>
+  </data>
+  <data name="&gt;&gt;addSuffix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addSuffix.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;addSuffix.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="addPrefix.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="addPrefix.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addPrefix.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="addPrefix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 19</value>
+  </data>
+  <data name="addPrefix.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="addPrefix.Text" xml:space="preserve">
+    <value>add Prefix</value>
+  </data>
+  <data name="&gt;&gt;addPrefix.Name" xml:space="preserve">
+    <value>addPrefix</value>
+  </data>
+  <data name="&gt;&gt;addPrefix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addPrefix.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;addPrefix.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 28</value>
+  </data>
+  <data name="delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="delete.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;delete.Name" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="&gt;&gt;delete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;delete.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="add_Element.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 83</value>
+  </data>
+  <data name="add_Element.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="add_Element.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;add_Element.Name" xml:space="preserve">
+    <value>add_Element</value>
+  </data>
+  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;add_Element.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 83</value>
+  </data>
+  <data name="addElement_text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 23</value>
+  </data>
+  <data name="addElement_text.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;addElement_text.Name" xml:space="preserve">
+    <value>addElement_text</value>
+  </data>
+  <data name="&gt;&gt;addElement_text.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addElement_text.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;addElement_text.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="presuffix_list.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="presuffix_list.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 28</value>
   </data>
   <data name="presuffix_list.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 49</value>
   </data>
-  <data name="&gt;&gt;hoursPanel.Parent" xml:space="preserve">
+  <data name="presuffix_list.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;presuffix_list.Name" xml:space="preserve">
+    <value>presuffix_list</value>
+  </data>
+  <data name="&gt;&gt;presuffix_list.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;presuffix_list.Parent" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;presuffix_list.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="yearsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 28</value>
+  </data>
+  <data name="yearsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 184</value>
+  </data>
+  <data name="yearsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;yearsPanel.Name" xml:space="preserve">
+    <value>yearsPanel</value>
+  </data>
+  <data name="&gt;&gt;yearsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yearsPanel.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;yearsPanel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;invisYears.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="showMonths.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="nothing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 19</value>
-  </data>
-  <data name="&gt;&gt;FormatPanel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="showMonths.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="invisSeconds.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;presuffix_list.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="addPrefix.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="&gt;&gt;showYears.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="nothing.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>DateTimeoptions</value>
-  </data>
-  <data name="showMinutes.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;delete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="hoursPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="invisMonths.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 243</value>
-  </data>
-  <data name="invisSeconds.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;add_Element.Name" xml:space="preserve">
-    <value>add_Element</value>
-  </data>
-  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
-    <value>cancel</value>
-  </data>
-  <data name="secondsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
-  </data>
-  <data name="presuffix_list.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;monthsPanel.Name" xml:space="preserve">
-    <value>monthsPanel</value>
-  </data>
-  <data name="&gt;&gt;invisYears.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 449</value>
-  </data>
-  <data name="hoursPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 343</value>
-  </data>
-  <data name="&gt;&gt;minutesPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="flowLayoutPanel2.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="showMonths.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 218</value>
   </data>
   <data name="showMonths.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 19</value>
   </data>
-  <data name="invisHours.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
+  <data name="showMonths.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="negative.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 15</value>
-  </data>
-  <data name="invisMonths.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
+  <data name="showMonths.Text" xml:space="preserve">
+    <value>show Months</value>
   </data>
   <data name="&gt;&gt;showMonths.Name" xml:space="preserve">
     <value>showMonths</value>
   </data>
+  <data name="&gt;&gt;showMonths.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;showMonths.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
   </data>
-  <data name="&gt;&gt;showSeconds.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;showMonths.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;addSuffix.Name" xml:space="preserve">
-    <value>addSuffix</value>
+  <data name="invisMonths.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 243</value>
   </data>
-  <data name="showSeconds.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="invisMonths.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="invisMonths.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Set default element:</value>
+  <data name="&gt;&gt;invisMonths.Name" xml:space="preserve">
+    <value>invisMonths</value>
   </data>
-  <data name="&gt;&gt;hoursPanel.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;invisMonths.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;showMinutes.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;invisMinutes.Parent" xml:space="preserve">
+  <data name="&gt;&gt;invisMonths.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
   </data>
-  <data name="minutesPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;invisMonths.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;daysPanel.Name" xml:space="preserve">
-    <value>daysPanel</value>
-  </data>
-  <data name="&gt;&gt;invisHours.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;delete.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="&gt;&gt;FormatPanel.Name" xml:space="preserve">
-    <value>FormatPanel</value>
-  </data>
-  <data name="showYears.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 19</value>
-  </data>
-  <data name="&gt;&gt;defaultElement.Name" xml:space="preserve">
-    <value>defaultElement</value>
-  </data>
-  <data name="showMonths.AutoSize" type="System.Boolean, mscorlib">
+  <data name="monthsPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="monthsPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="MName.DisplayIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="MName.Text" xml:space="preserve">
+    <value>MName</value>
+  </data>
+  <data name="MName.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="Nr.DisplayIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Nr.Text" xml:space="preserve">
+    <value>Nr</value>
+  </data>
+  <data name="Nr.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Nr.Width" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="monthNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="monthNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 72</value>
+  </data>
+  <data name="monthNames.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;monthNames.Name" xml:space="preserve">
+    <value>monthNames</value>
+  </data>
+  <data name="&gt;&gt;monthNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;monthNames.Parent" xml:space="preserve">
+    <value>monthsPanel</value>
+  </data>
+  <data name="&gt;&gt;monthNames.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="monthsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 243</value>
+  </data>
   <data name="monthsPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
+    <value>195, 75</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Date &amp; Time options</value>
+  <data name="monthsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="add_Element.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;monthsPanel.Name" xml:space="preserve">
+    <value>monthsPanel</value>
   </data>
-  <data name="&gt;&gt;defaultElement.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;monthsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;addPrefix.Name" xml:space="preserve">
-    <value>addPrefix</value>
-  </data>
-  <data name="nothing.Text" xml:space="preserve">
-    <value>none</value>
-  </data>
-  <data name="&gt;&gt;defaultElement.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
-  </data>
-  <data name="timetable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 23</value>
-  </data>
-  <data name="addSuffix.Text" xml:space="preserve">
-    <value>add Suffix</value>
-  </data>
-  <data name="negative.Text" xml:space="preserve">
-    <value>allow negative values</value>
-  </data>
-  <data name="FormatPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 468</value>
-  </data>
-  <data name="addElement_text.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="negative.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;invisMinutes.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="hoursPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 19</value>
-  </data>
-  <data name="cancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="&gt;&gt;monthsPanel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;monthsPanel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;showYears.Name" xml:space="preserve">
-    <value>showYears</value>
-  </data>
-  <data name="&gt;&gt;minutesPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="negative.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 19</value>
-  </data>
-  <data name="invisMinutes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 393</value>
-  </data>
-  <data name="showSeconds.Text" xml:space="preserve">
-    <value>show Seconds</value>
-  </data>
-  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="addPrefix.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;showSeconds.Name" xml:space="preserve">
-    <value>showSeconds</value>
-  </data>
-  <data name="addElement_text.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 23</value>
-  </data>
-  <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 83</value>
-  </data>
-  <data name="showYears.AutoSize" type="System.Boolean, mscorlib">
+  <data name="showDays.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;secondsPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="showDays.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;showMinutes.Type" xml:space="preserve">
+  <data name="showDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 324</value>
+  </data>
+  <data name="showDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 19</value>
+  </data>
+  <data name="showDays.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="showDays.Text" xml:space="preserve">
+    <value>show Days</value>
+  </data>
+  <data name="&gt;&gt;showDays.Name" xml:space="preserve">
+    <value>showDays</value>
+  </data>
+  <data name="&gt;&gt;showDays.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showDays.Parent" xml:space="preserve">
     <value>flowLayoutPanel2</value>
   </data>
-  <data name="showDays.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;showDays.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;addSuffix.Parent" xml:space="preserve">
-    <value>yearsPanel</value>
+  <data name="invisDays.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 349</value>
   </data>
-  <data name="&gt;&gt;minutesPanel.Name" xml:space="preserve">
-    <value>minutesPanel</value>
+  <data name="invisDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="invisDays.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;invisDays.Name" xml:space="preserve">
+    <value>invisDays</value>
+  </data>
+  <data name="&gt;&gt;invisDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;invisDays.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;invisDays.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="daysPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 349</value>
+  </data>
+  <data name="daysPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 19</value>
+  </data>
+  <data name="daysPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;daysPanel.Name" xml:space="preserve">
+    <value>daysPanel</value>
+  </data>
+  <data name="&gt;&gt;daysPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;daysPanel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;daysPanel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="showHours.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="showHours.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="showHours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 374</value>
+  </data>
+  <data name="showHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 19</value>
+  </data>
+  <data name="showHours.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="showHours.Text" xml:space="preserve">
+    <value>show Hours</value>
+  </data>
+  <data name="&gt;&gt;showHours.Name" xml:space="preserve">
+    <value>showHours</value>
+  </data>
+  <data name="&gt;&gt;showHours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showHours.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;showHours.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="showMinutes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="showMinutes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="showMinutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 399</value>
+  </data>
+  <data name="showMinutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 19</value>
+  </data>
+  <data name="showMinutes.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="showMinutes.Text" xml:space="preserve">
+    <value>show Minutes</value>
+  </data>
+  <data name="&gt;&gt;showMinutes.Name" xml:space="preserve">
+    <value>showMinutes</value>
+  </data>
+  <data name="&gt;&gt;showMinutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showMinutes.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;showMinutes.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="showSeconds.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="showSeconds.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="showSeconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 424</value>
+  </data>
+  <data name="showSeconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 19</value>
+  </data>
+  <data name="showSeconds.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="showSeconds.Text" xml:space="preserve">
+    <value>show Seconds</value>
+  </data>
+  <data name="&gt;&gt;showSeconds.Name" xml:space="preserve">
+    <value>showSeconds</value>
+  </data>
+  <data name="&gt;&gt;showSeconds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;showSeconds.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;showSeconds.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="invisSeconds.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 449</value>
+  </data>
+  <data name="invisSeconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="invisSeconds.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;invisSeconds.Name" xml:space="preserve">
+    <value>invisSeconds</value>
+  </data>
+  <data name="&gt;&gt;invisSeconds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;invisSeconds.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;invisSeconds.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="FormatPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 449</value>
+  </data>
+  <data name="FormatPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="FormatPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;FormatPanel.Name" xml:space="preserve">
+    <value>FormatPanel</value>
+  </data>
+  <data name="&gt;&gt;FormatPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FormatPanel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;FormatPanel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 15</value>
+  </data>
+  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 428</value>
+  </data>
+  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
+    <value>flowLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="timetable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="timetable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 449</value>
+  </data>
+  <data name="timetable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 23</value>
+  </data>
+  <data name="timetable.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="timetable.Text" xml:space="preserve">
+    <value>Show Timetable</value>
+  </data>
+  <data name="&gt;&gt;timetable.Name" xml:space="preserve">
+    <value>timetable</value>
+  </data>
+  <data name="&gt;&gt;timetable.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;timetable.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="OK.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="defaultElement.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 133</value>
+  <data name="&gt;&gt;timetable.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>333, 487</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Date &amp; Time options</value>
+  </data>
+  <data name="&gt;&gt;Nr.Name" xml:space="preserve">
+    <value>Nr</value>
+  </data>
+  <data name="&gt;&gt;Nr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MName.Name" xml:space="preserve">
+    <value>MName</value>
+  </data>
+  <data name="&gt;&gt;MName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DateTimeoptions</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

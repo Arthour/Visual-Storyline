@@ -117,8 +117,90 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cancel.Text" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="showYears.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 19</value>
+  </data>
+  <data name="showYears.Text" xml:space="preserve">
+    <value>Jahre anzeigen</value>
+  </data>
+  <data name="negative.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 19</value>
+  </data>
+  <data name="negative.Text" xml:space="preserve">
+    <value>Negative Werte erlauben</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 15</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Standardelement festlegen:</value>
+  </data>
+  <data name="nothing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 3</value>
+  </data>
+  <data name="nothing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
+  </data>
+  <data name="nothing.Text" xml:space="preserve">
+    <value>keines</value>
+  </data>
+  <data name="addSuffix.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 3</value>
+  </data>
+  <data name="addSuffix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 19</value>
+  </data>
+  <data name="addSuffix.Text" xml:space="preserve">
+    <value>Suffix</value>
+  </data>
+  <data name="addPrefix.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 19</value>
+  </data>
+  <data name="addPrefix.Text" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="showMonths.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="showMonths.Text" xml:space="preserve">
+    <value>Monate anzeigen</value>
+  </data>
+  <data name="showDays.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 19</value>
+  </data>
+  <data name="showDays.Text" xml:space="preserve">
+    <value>Tage anzeigen</value>
+  </data>
+  <data name="showHours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 19</value>
+  </data>
+  <data name="showHours.Text" xml:space="preserve">
+    <value>Stunden anzeigen</value>
+  </data>
+  <data name="showMinutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 19</value>
+  </data>
+  <data name="showMinutes.Text" xml:space="preserve">
+    <value>Minuten anzeigen</value>
+  </data>
+  <data name="showSeconds.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 19</value>
+  </data>
+  <data name="showSeconds.Text" xml:space="preserve">
+    <value>Sekunden anzeigen</value>
+  </data>
+  <data name="timetable.Text" xml:space="preserve">
+    <value>Zeiteinheiten</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Datum- &amp; Zeit-Optionen</value>
   </data>
 </root>

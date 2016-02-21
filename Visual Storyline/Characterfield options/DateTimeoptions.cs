@@ -17,6 +17,10 @@ namespace Visual_Storyline.Characterfield_options
             InitializeComponent();
             optionChanged();
             presuffixChanged();
+
+            //ListViewItem newItem = new ListViewItem("Test");
+            //newItem.SubItems.Add("1");
+            //monthNames.Items.Add(newItem);
         }
 
         private void CheckChanged(object sender, EventArgs e)
@@ -27,6 +31,8 @@ namespace Visual_Storyline.Characterfield_options
 
         private void optionChanged()
         {
+            bool ischecked = false;
+
             if (showYears.Checked == true)
             {
                 invisYears.Visible = true;
@@ -57,33 +63,20 @@ namespace Visual_Storyline.Characterfield_options
                 invisDays.Visible = false;
                 daysPanel.Visible = false;
             }
-            if (showHours.Checked == true)
+
+            CheckBox[] TimeOptions = new CheckBox[] { showYears, showMonths, showDays, showHours, showMinutes, showSeconds};
+            foreach (CheckBox check in TimeOptions)
             {
-                invisHours.Visible = true;
-                hoursPanel.Visible = true;
+                if (check.Checked == true)
+                    ischecked = true;
+            }
+            if (ischecked == true)
+            {
+                OK.Enabled = true;
             }
             else
             {
-                invisHours.Visible = false;
-                hoursPanel.Visible = false;
-            }
-            if (showMinutes.Checked == true)
-            {
-                invisMinutes.Visible = true;
-                minutesPanel.Visible = true;
-            }
-            else
-            {
-                invisMinutes.Visible = false;
-                minutesPanel.Visible = false;
-            }
-            if (showSeconds.Checked == true)
-            {
-                secondsPanel.Visible = true;
-            }
-            else
-            {
-                secondsPanel.Visible = false;
+                OK.Enabled = false;
             }
         }
 
