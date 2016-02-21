@@ -150,8 +150,8 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Year</value>
+  <data name="yeartoday.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -177,11 +177,11 @@
   <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="month.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 38</value>
   </data>
   <data name="second.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -189,14 +189,11 @@
   <data name="&gt;&gt;monthtohour.Name" xml:space="preserve">
     <value>monthtohour</value>
   </data>
-  <data name="monthtohour.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Minute</value>
   </data>
-  <data name="minute.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="daytominute.MaxLength" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Month</value>
@@ -206,9 +203,6 @@
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>12, 12, 12, 12</value>
-  </data>
-  <data name="second.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>$this</value>
@@ -222,23 +216,26 @@
   <data name="monthtominute.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="cancel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="&gt;&gt;month.Name" xml:space="preserve">
     <value>month</value>
   </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>18</value>
+  <data name="&gt;&gt;hour.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="monthtosecond.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>26</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 128</value>
   </data>
   <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;second.Name" xml:space="preserve">
     <value>second</value>
@@ -264,6 +261,9 @@
   <data name="day.Text" xml:space="preserve">
     <value>30</value>
   </data>
+  <data name="hourtosecond.MaxLength" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Timetable</value>
   </data>
@@ -288,12 +288,6 @@
   <data name="day.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="&gt;&gt;daytosecond.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>consists of</value>
-  </data>
   <data name="month.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -309,23 +303,26 @@
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;minute.Name" xml:space="preserve">
-    <value>minute</value>
+  <data name="yeartominute.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
   </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="yeartominute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
   <data name="yeartominute.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="day.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;yeartominute.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;second.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 15</value>
@@ -336,17 +333,17 @@
   <data name="day.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 67</value>
   </data>
+  <data name="OK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="&gt;&gt;second.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="yeartosecond.Location" type="System.Drawing.Point, System.Drawing">
-    <value>396, 38</value>
-  </data>
-  <data name="&gt;&gt;yeartoday.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;monthtosecond.Name" xml:space="preserve">
+    <value>monthtosecond</value>
   </data>
   <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -354,8 +351,14 @@
   <data name="hour.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>279, 12</value>
+  </data>
   <data name="&gt;&gt;monthtosecond.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;yeartosecond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -366,20 +369,14 @@
   <data name="monthtohour.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
-  <data name="hourtosecond.MaxLength" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 183</value>
   </data>
   <data name="&gt;&gt;daytosecond.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;monthtosecond.Name" xml:space="preserve">
-    <value>monthtosecond</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -390,26 +387,32 @@
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="yeartominute.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="daytominute.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="&gt;&gt;monthtominute.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;yeartosecond.Parent" xml:space="preserve">
+  <data name="&gt;&gt;hour.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="yeartohour.Location" type="System.Drawing.Point, System.Drawing">
     <value>282, 38</value>
+  </data>
+  <data name="month.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
   <data name="yeartoday.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="monthtosecond.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
   </data>
   <data name="&gt;&gt;minute.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -423,9 +426,6 @@
   <data name="label8.Text" xml:space="preserve">
     <value>Minutes</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
   <data name="month.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
@@ -435,8 +435,8 @@
   <data name="&gt;&gt;yeartohour.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;hour.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 15</value>
@@ -444,29 +444,20 @@
   <data name="hourtosecond.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="month.Location" type="System.Drawing.Point, System.Drawing">
-    <value>168, 38</value>
-  </data>
   <data name="monthtohour.Location" type="System.Drawing.Point, System.Drawing">
     <value>282, 67</value>
-  </data>
-  <data name="&gt;&gt;monthtominute.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 99</value>
   </data>
-  <data name="monthtohour.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="&gt;&gt;yeartominute.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="yeartoday.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 99</value>
-  </data>
-  <data name="hourtosecond.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
   </data>
   <data name="monthtominute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -480,11 +471,11 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>DateTimetimetable</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>458, 219</value>
+  </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;yeartominute.Name" xml:space="preserve">
-    <value>yeartominute</value>
   </data>
   <data name="&gt;&gt;yeartoday.Parent" xml:space="preserve">
     <value>$this</value>
@@ -494,9 +485,6 @@
   </data>
   <data name="hour.Text" xml:space="preserve">
     <value>24</value>
-  </data>
-  <data name="hour.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
   </data>
   <data name="daytominute.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -522,28 +510,25 @@
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
-  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 183</value>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="daytominute.MaxLength" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="second.MaxLength" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;yeartominute.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
   <data name="&gt;&gt;hourtosecond.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="monthtominute.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 15</value>
   </data>
-  <data name="&gt;&gt;daytominute.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;yeartominute.Parent" xml:space="preserve">
+  <data name="&gt;&gt;yeartosecond.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
@@ -561,11 +546,8 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 128</value>
-  </data>
-  <data name="&gt;&gt;day.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="yeartosecond.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 38</value>
   </data>
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -585,32 +567,29 @@
   <data name="minute.Text" xml:space="preserve">
     <value>60</value>
   </data>
+  <data name="minute.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
   <data name="second.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>290, 183</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 15</value>
-  </data>
-  <data name="yeartohour.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="monthtosecond.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="&gt;&gt;second.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="monthtominute.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+  <data name="hourtosecond.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
-  <data name="&gt;&gt;yeartominute.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;day.Name" xml:space="preserve">
+    <value>day</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="minute.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;OK.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -618,14 +597,11 @@
   <data name="&gt;&gt;yeartohour.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;daytominute.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;yeartosecond.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;hourtosecond.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Days</value>
@@ -636,6 +612,9 @@
   <data name="yeartominute.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
+  <data name="daytominute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 96</value>
+  </data>
   <data name="label12.Text" xml:space="preserve">
     <value>Seconds</value>
   </data>
@@ -645,8 +624,8 @@
   <data name="daytominute.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
-  <data name="daytominute.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 96</value>
+  <data name="monthtohour.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="&gt;&gt;hourtosecond.Parent" xml:space="preserve">
     <value>$this</value>
@@ -657,23 +636,20 @@
   <data name="month.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="second.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+  <data name="&gt;&gt;monthtominute.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>consists of</value>
+  </data>
   <data name="yeartohour.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
-  <data name="&gt;&gt;OK.Name" xml:space="preserve">
-    <value>OK</value>
-  </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Hours</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;day.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -684,8 +660,8 @@
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>19</value>
+  <data name="&gt;&gt;yeartominute.Name" xml:space="preserve">
+    <value>yeartominute</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 70</value>
@@ -705,11 +681,8 @@
   <data name="minute.Location" type="System.Drawing.Point, System.Drawing">
     <value>339, 125</value>
   </data>
-  <data name="hourtosecond.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 12</value>
+  <data name="&gt;&gt;daytominute.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="yeartoday.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -719,6 +692,12 @@
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="daytominute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="daytosecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
   </data>
   <data name="yeartominute.Location" type="System.Drawing.Point, System.Drawing">
     <value>339, 38</value>
@@ -732,17 +711,20 @@
   <data name="daytosecond.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>One</value>
+  </data>
   <data name="minute.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="monthtohour.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cancel.Name" xml:space="preserve">
     <value>cancel</value>
@@ -759,8 +741,8 @@
   <data name="&gt;&gt;month.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="daytominute.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -768,14 +750,14 @@
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="yeartosecond.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Year</value>
   </data>
   <data name="&gt;&gt;yeartohour.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="minute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>290, 183</value>
   </data>
   <data name="yeartominute.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
@@ -786,11 +768,11 @@
   <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 12</value>
+  </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>99, 99</value>
-  </data>
-  <data name="&gt;&gt;hour.Name" xml:space="preserve">
-    <value>hour</value>
   </data>
   <data name="yeartohour.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
     <value>Right</value>
@@ -807,8 +789,8 @@
   <data name="monthtominute.Location" type="System.Drawing.Point, System.Drawing">
     <value>339, 67</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>24</value>
+  <data name="day.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
   <data name="&gt;&gt;daytosecond.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -834,17 +816,20 @@
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>One</value>
+  <data name="second.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
   </data>
   <data name="month.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>279, 12</value>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;yeartosecond.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;hourtosecond.Name" xml:space="preserve">
     <value>hourtosecond</value>
@@ -854,6 +839,9 @@
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 15</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>$this</value>
@@ -867,8 +855,11 @@
   <data name="&gt;&gt;daytominute.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="hour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 41</value>
   </data>
   <data name="&gt;&gt;minute.Parent" xml:space="preserve">
     <value>$this</value>
@@ -882,40 +873,43 @@
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="minute.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="minute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="hour.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 41</value>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>458, 219</value>
+  <data name="&gt;&gt;OK.Name" xml:space="preserve">
+    <value>OK</value>
   </data>
-  <data name="&gt;&gt;monthtosecond.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 15</value>
   </data>
-  <data name="daytosecond.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;daytominute.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="yeartohour.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 12</value>
+  <data name="yeartosecond.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 23</value>
   </data>
   <data name="&gt;&gt;OK.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;yeartosecond.Type" xml:space="preserve">
+  <data name="&gt;&gt;yeartominute.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -930,17 +924,20 @@
   <data name="day.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="daytominute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
+  <data name="yeartohour.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;day.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
-  <data name="month.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>26</value>
   </data>
   <data name="&gt;&gt;monthtohour.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;monthtosecond.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="monthtominute.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
@@ -948,14 +945,14 @@
   <data name="second.Location" type="System.Drawing.Point, System.Drawing">
     <value>396, 154</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;minute.Name" xml:space="preserve">
+    <value>minute</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="day.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 23</value>
-  </data>
-  <data name="&gt;&gt;hour.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="second.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 23</value>
@@ -972,32 +969,35 @@
   <data name="daytosecond.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
-  <data name="&gt;&gt;day.Name" xml:space="preserve">
-    <value>day</value>
+  <data name="&gt;&gt;yeartoday.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="yeartoday.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="hourtosecond.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 23</value>
   </data>
-  <data name="yeartominute.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;daytosecond.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>50, 157</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 12</value>
+  </data>
+  <data name="second.MaxLength" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Day</value>
   </data>
-  <data name="OK.Text" xml:space="preserve">
-    <value>OK</value>
+  <data name="&gt;&gt;hour.Name" xml:space="preserve">
+    <value>hour</value>
   </data>
-  <data name="&gt;&gt;monthtominute.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="monthtohour.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <metadata name="yeartoday.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

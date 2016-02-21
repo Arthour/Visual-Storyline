@@ -38,8 +38,8 @@ namespace Visual_Storyline.Characterfield_options
             if (input != null)
             {
                 var tb = input as TextBox;
-                if(tb.Text == "")
-                    tb.Text = "0";
+                if(tb.Text == "" || tb.Text == "0")
+                    tb.Text = "1";
             }
 
             temp = Convert.ToInt64(minute.Text) * Convert.ToInt64(second.Text);

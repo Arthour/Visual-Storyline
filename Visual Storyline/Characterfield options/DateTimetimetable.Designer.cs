@@ -235,8 +235,10 @@
             // 
             // DateTimetimetable
             // 
+            this.AcceptButton = this.OK;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancel;
             this.ControlBox = false;
             this.Controls.Add(this.OK);
             this.Controls.Add(this.cancel);
