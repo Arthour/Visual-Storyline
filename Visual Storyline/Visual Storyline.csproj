@@ -46,41 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Characterfield options\Checkboxoptions.cs">
+    <Compile Include="Characters\Characterfield options\Checkboxoptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characterfield options\Checkboxoptions.Designer.cs">
+    <Compile Include="Characters\Characterfield options\Checkboxoptions.Designer.cs">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characterfield options\DateTimeoptions.cs">
+    <Compile Include="Characters\Characterfield options\DateTimeoptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characterfield options\DateTimeoptions.Designer.cs">
+    <Compile Include="Characters\Characterfield options\DateTimeoptions.Designer.cs">
       <DependentUpon>DateTimeoptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characterfield options\DateTimetimetable.cs">
+    <Compile Include="Characters\Characterfield options\DateTimetimetable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characterfield options\DateTimetimetable.Designer.cs">
+    <Compile Include="Characters\Characterfield options\DateTimetimetable.Designer.cs">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characterfield options\RichTextboxoptions.cs">
+    <Compile Include="Characters\Characterfield options\RichTextboxoptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characterfield options\RichTextboxoptions.Designer.cs">
+    <Compile Include="Characters\Characterfield options\RichTextboxoptions.Designer.cs">
       <DependentUpon>RichTextboxoptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditCharacterFields.cs">
+    <Compile Include="Characters\EditCharacterFields.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditCharacterFields.Designer.cs">
+    <Compile Include="Characters\EditCharacterFields.Designer.cs">
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
     </Compile>
     <Compile Include="ErrorMessages.cs" />
-    <Compile Include="Characterfield options\Textfieldoptions.cs">
+    <Compile Include="Characters\Characterfield options\Textfieldoptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Characterfield options\Textfieldoptions.Designer.cs">
+    <Compile Include="Characters\Characterfield options\Textfieldoptions.Designer.cs">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </Compile>
     <Compile Include="New.cs">
@@ -90,10 +90,10 @@
       <DependentUpon>New.cs</DependentUpon>
     </Compile>
     <Compile Include="OpenFile.cs" />
-    <Compile Include="Characterfield.cs">
+    <Compile Include="Characters\Characterfield.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Characterfield.Designer.cs">
+    <Compile Include="Characters\Characterfield.Designer.cs">
       <DependentUpon>Characterfield.cs</DependentUpon>
     </Compile>
     <Compile Include="Visual Storyline.cs">
@@ -104,44 +104,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Characterfield options\Checkboxoptions.de.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\Checkboxoptions.de.resx">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\Checkboxoptions.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\Checkboxoptions.resx">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\DateTimeoptions.de.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\DateTimeoptions.de.resx">
       <DependentUpon>DateTimeoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\DateTimeOptions.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\DateTimeOptions.resx">
       <DependentUpon>DateTimeoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\DateTimetimetable.de.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\DateTimetimetable.de.resx">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\DateTimetimetable.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\DateTimetimetable.resx">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\RichTextboxoptions.de.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\RichTextboxoptions.de.resx">
       <DependentUpon>RichTextboxoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\RichTextboxoptions.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\RichTextboxoptions.resx">
       <DependentUpon>RichTextboxoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield.de.resx">
+    <EmbeddedResource Include="Characters\Characterfield.de.resx">
       <DependentUpon>Characterfield.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditCharacterFields.de.resx">
+    <EmbeddedResource Include="Characters\EditCharacterFields.de.resx">
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditCharacterFields.resx">
+    <EmbeddedResource Include="Characters\EditCharacterFields.resx">
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\Textfieldoptions.de.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\Textfieldoptions.de.resx">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield options\Textfieldoptions.resx">
+    <EmbeddedResource Include="Characters\Characterfield options\Textfieldoptions.resx">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New.de.resx">
@@ -151,7 +151,7 @@
       <DependentUpon>New.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Characterfield.resx">
+    <EmbeddedResource Include="Characters\Characterfield.resx">
       <DependentUpon>Characterfield.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Visual Storyline.de.resx">
@@ -233,6 +233,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\action_Cancel_16xSM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Projectdata.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
