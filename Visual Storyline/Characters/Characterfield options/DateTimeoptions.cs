@@ -12,7 +12,10 @@ namespace Visual_Storyline.Characterfield_options
 {
     public partial class DateTimeoptions : Form
     {
-        public DateTimeoptions()
+        private int ID;
+        private bool userealcal;
+
+        public DateTimeoptions(string options, int ID_Parent)
         {
             InitializeComponent();
             optionChanged();
@@ -33,7 +36,7 @@ namespace Visual_Storyline.Characterfield_options
         {
             bool ischecked = false;
 
-            if (showYears.Checked == true)
+            if (showYears.Checked == true && userealcal == false)
             {
                 invisYears.Visible = true;
                 yearsPanel.Visible = true;
@@ -43,7 +46,7 @@ namespace Visual_Storyline.Characterfield_options
                 invisYears.Visible = false;
                 yearsPanel.Visible = false;
             }
-            if (showMonths.Checked == true)
+            if (showMonths.Checked == true && userealcal == false)
             {
                 invisMonths.Visible = true;
                 monthsPanel.Visible = true;
@@ -53,7 +56,7 @@ namespace Visual_Storyline.Characterfield_options
                 invisMonths.Visible = false;
                 monthsPanel.Visible = false;
             }
-            if (showDays.Checked == true)
+            if (showDays.Checked == true && userealcal == false)
             {
                 invisDays.Visible = true;
                 daysPanel.Visible = true;
@@ -205,6 +208,22 @@ namespace Visual_Storyline.Characterfield_options
         {
             DateTimetimetable timetable = new DateTimetimetable();
             timetable.ShowDialog();
+        }
+
+        private void realCalendarChecked(object sender, EventArgs e)
+        {
+            if (realcal.Checked)
+            {
+                userealcal = true;
+                timetable.Enabled = false;
+            }
+            else
+            {
+                userealcal = false;
+                timetable.Enabled = true;
+            }
+
+            optionChanged();
         }
     }
 }

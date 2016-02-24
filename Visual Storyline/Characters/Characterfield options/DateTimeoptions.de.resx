@@ -121,6 +121,12 @@
     <value>Abbrechen</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="realcal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 19</value>
+  </data>
+  <data name="realcal.Text" xml:space="preserve">
+    <value>tatsächlichen Kalender verwenden</value>
+  </data>
   <data name="showYears.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 19</value>
   </data>
@@ -175,6 +181,12 @@
   <data name="showDays.Text" xml:space="preserve">
     <value>Tage anzeigen</value>
   </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 15</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Tage pro Woche:</value>
+  </data>
   <data name="showHours.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 19</value>
   </data>
@@ -195,10 +207,6 @@
   </data>
   <data name="timetable.Text" xml:space="preserve">
     <value>Zeiteinheiten</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Datum- &amp; Zeit-Optionen</value>

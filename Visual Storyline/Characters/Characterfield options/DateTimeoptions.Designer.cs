@@ -32,6 +32,7 @@
             this.OK = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.realcal = new System.Windows.Forms.CheckBox();
             this.showYears = new System.Windows.Forms.CheckBox();
             this.invisYears = new System.Windows.Forms.Panel();
             this.yearsPanel = new System.Windows.Forms.Panel();
@@ -49,11 +50,16 @@
             this.invisMonths = new System.Windows.Forms.Panel();
             this.monthsPanel = new System.Windows.Forms.Panel();
             this.monthNames = new System.Windows.Forms.ListView();
-            this.Nr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Nr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.showDays = new System.Windows.Forms.CheckBox();
             this.invisDays = new System.Windows.Forms.Panel();
             this.daysPanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.daysPerWeek = new System.Windows.Forms.NumericUpDown();
+            this.dayNames = new System.Windows.Forms.ListView();
+            this.DName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Nr2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.showHours = new System.Windows.Forms.CheckBox();
             this.showMinutes = new System.Windows.Forms.CheckBox();
             this.showSeconds = new System.Windows.Forms.CheckBox();
@@ -63,6 +69,8 @@
             this.flowLayoutPanel2.SuspendLayout();
             this.yearsPanel.SuspendLayout();
             this.monthsPanel.SuspendLayout();
+            this.daysPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.daysPerWeek)).BeginInit();
             this.SuspendLayout();
             // 
             // OK
@@ -73,14 +81,15 @@
             // 
             // cancel
             // 
-            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.cancel, "cancel");
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel2
             // 
             resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
+            this.flowLayoutPanel2.Controls.Add(this.realcal);
             this.flowLayoutPanel2.Controls.Add(this.showYears);
             this.flowLayoutPanel2.Controls.Add(this.invisYears);
             this.flowLayoutPanel2.Controls.Add(this.yearsPanel);
@@ -96,6 +105,14 @@
             this.flowLayoutPanel2.Controls.Add(this.invisSeconds);
             this.flowLayoutPanel2.Controls.Add(this.FormatPanel);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // realcal
+            // 
+            resources.ApplyResources(this.realcal, "realcal");
+            this.flowLayoutPanel2.SetFlowBreak(this.realcal, true);
+            this.realcal.Name = "realcal";
+            this.realcal.UseVisualStyleBackColor = true;
+            this.realcal.CheckedChanged += new System.EventHandler(this.realCalendarChecked);
             // 
             // showYears
             // 
@@ -140,11 +157,11 @@
             // 
             // defaultElement
             // 
+            resources.ApplyResources(this.defaultElement, "defaultElement");
             this.defaultElement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.defaultElement.FormattingEnabled = true;
             this.defaultElement.Items.AddRange(new object[] {
             resources.GetString("defaultElement.Items")});
-            resources.ApplyResources(this.defaultElement, "defaultElement");
             this.defaultElement.Name = "defaultElement";
             // 
             // nothing
@@ -173,16 +190,16 @@
             // 
             // delete
             // 
-            this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
             resources.ApplyResources(this.delete, "delete");
+            this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
             this.delete.Name = "delete";
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // add_Element
             // 
-            this.add_Element.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             resources.ApplyResources(this.add_Element, "add_Element");
+            this.add_Element.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             this.add_Element.Name = "add_Element";
             this.add_Element.UseVisualStyleBackColor = true;
             this.add_Element.Click += new System.EventHandler(this.add_Element_Click);
@@ -197,8 +214,8 @@
             // 
             // presuffix_list
             // 
-            this.presuffix_list.FormattingEnabled = true;
             resources.ApplyResources(this.presuffix_list, "presuffix_list");
+            this.presuffix_list.FormattingEnabled = true;
             this.presuffix_list.Name = "presuffix_list";
             this.presuffix_list.SelectedIndexChanged += new System.EventHandler(this.IndexChanged);
             // 
@@ -225,25 +242,25 @@
             // 
             // monthNames
             // 
+            resources.ApplyResources(this.monthNames, "monthNames");
             this.monthNames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.MName,
             this.Nr});
             this.monthNames.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.monthNames.LabelEdit = true;
-            resources.ApplyResources(this.monthNames, "monthNames");
             this.monthNames.MultiSelect = false;
             this.monthNames.Name = "monthNames";
             this.monthNames.ShowGroups = false;
             this.monthNames.UseCompatibleStateImageBehavior = false;
             this.monthNames.View = System.Windows.Forms.View.Details;
             // 
-            // Nr
-            // 
-            resources.ApplyResources(this.Nr, "Nr");
-            // 
             // MName
             // 
             resources.ApplyResources(this.MName, "MName");
+            // 
+            // Nr
+            // 
+            resources.ApplyResources(this.Nr, "Nr");
             // 
             // showDays
             // 
@@ -260,10 +277,45 @@
             // 
             // daysPanel
             // 
-            this.daysPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.flowLayoutPanel2.SetFlowBreak(this.daysPanel, true);
             resources.ApplyResources(this.daysPanel, "daysPanel");
+            this.daysPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.daysPanel.Controls.Add(this.label2);
+            this.daysPanel.Controls.Add(this.daysPerWeek);
+            this.daysPanel.Controls.Add(this.dayNames);
+            this.flowLayoutPanel2.SetFlowBreak(this.daysPanel, true);
             this.daysPanel.Name = "daysPanel";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // daysPerWeek
+            // 
+            resources.ApplyResources(this.daysPerWeek, "daysPerWeek");
+            this.daysPerWeek.Name = "daysPerWeek";
+            // 
+            // dayNames
+            // 
+            resources.ApplyResources(this.dayNames, "dayNames");
+            this.dayNames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.DName,
+            this.Nr2});
+            this.dayNames.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.dayNames.LabelEdit = true;
+            this.dayNames.MultiSelect = false;
+            this.dayNames.Name = "dayNames";
+            this.dayNames.ShowGroups = false;
+            this.dayNames.UseCompatibleStateImageBehavior = false;
+            this.dayNames.View = System.Windows.Forms.View.Details;
+            // 
+            // DName
+            // 
+            resources.ApplyResources(this.DName, "DName");
+            // 
+            // Nr2
+            // 
+            resources.ApplyResources(this.Nr2, "Nr2");
             // 
             // showHours
             // 
@@ -296,8 +348,8 @@
             // 
             // FormatPanel
             // 
-            this.FormatPanel.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.FormatPanel, "FormatPanel");
+            this.FormatPanel.BackColor = System.Drawing.Color.Red;
             this.FormatPanel.Name = "FormatPanel";
             // 
             // timetable
@@ -330,6 +382,9 @@
             this.yearsPanel.ResumeLayout(false);
             this.yearsPanel.PerformLayout();
             this.monthsPanel.ResumeLayout(false);
+            this.daysPanel.ResumeLayout(false);
+            this.daysPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.daysPerWeek)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -367,5 +422,11 @@
         private System.Windows.Forms.ListView monthNames;
         private System.Windows.Forms.ColumnHeader MName;
         private System.Windows.Forms.ColumnHeader Nr;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown daysPerWeek;
+        private System.Windows.Forms.ListView dayNames;
+        private System.Windows.Forms.ColumnHeader DName;
+        private System.Windows.Forms.ColumnHeader Nr2;
+        private System.Windows.Forms.CheckBox realcal;
     }
 }
