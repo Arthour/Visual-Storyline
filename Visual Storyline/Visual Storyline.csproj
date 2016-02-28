@@ -83,6 +83,7 @@
     <Compile Include="Characters\Characterfield options\Textfieldoptions.Designer.cs">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManualTranslation.cs" />
     <Compile Include="New.cs">
       <SubType>Form</SubType>
     </Compile>
