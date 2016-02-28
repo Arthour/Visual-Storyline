@@ -7,15 +7,16 @@ namespace Visual_Storyline
 {
     public partial class EditCharacterFields : Form
     {
-        public static int highestID = -1;
-        public readonly static int Distance = 62;
-        public static int tempID;
-        public static string eventHappened;
-        public static string tempOptions;
-        public static string grabOptions
+        internal static int highestID = -1;
+        internal readonly static int Distance = 62;
+        internal static int tempID;
+        internal static string eventHappened;
+        internal static string tempOptions;
+        internal static string tempType;
+        internal static string grabOptions
         {
             get { return tempOptions; }
-            set { tempOptions = value; setOptions(tempID, tempOptions); }
+            set { tempOptions = value; setOptions(tempID, tempOptions, tempType); }
         }
         public static Panel spanel{ get; private set; }
 
@@ -135,13 +136,15 @@ namespace Visual_Storyline
             }
         }
 
-        public static void setOptions(int ID, string options)
+        public static void setOptions(int ID, string options, string type)
         {
             foreach (Characterfield field in spanel.Controls)
             {
                 if (field.ID == tempID)
                 {
                     field.optionslist = options;
+                    field.oldoptions = options;
+                    field.oldtype = type;
                 }
             }
         }

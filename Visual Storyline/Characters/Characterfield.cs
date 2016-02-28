@@ -8,15 +8,17 @@ namespace Visual_Storyline
 {
     public partial class Characterfield : UserControl
     {
-        public int ID;
-        public bool isMarked = false;
-        public string optionslist;
-        public int IDChecker
+        internal int ID;
+        internal bool isMarked = false;
+        internal string optionslist;
+        internal string oldoptions;
+        internal string oldtype;
+        internal int IDChecker
         {
             get { CheckID();  return ID; }
             set { ID = value; CheckID(); }
         }
-        public string templist
+        internal string templist
         {
             get { return optionslist; }
             set { optionslist = value; }
@@ -44,20 +46,35 @@ namespace Visual_Storyline
 
         private void Type_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch(Type.SelectedIndex)
+            switch (Type.SelectedIndex)
             {
                 case 0:     /*Textfield*/
-                    optionslist = "<options><chars>248</chars><ml>no</ml><input>0;1;2;</input><required>no</required></options>";
+                    if(oldtype == "Text")
+                    { optionslist = oldoptions; }
+                    else
+                    { optionslist = "<options><chars>248</chars><ml>no</ml><input>0;1;2;</input><required>no</required></options>"; }
                     break;
                 case 1:     /*RichText-Textfield*/
-                    optionslist = "<options><font>Arial</font><color>yes</color><size>yes</size><bold>yes</bold><italic>yes</italic><underline>yes</underline><bunumb>yes</bunumb><required>no</required><align>left;right;center;justify</align></options>";
+                    if(oldtype == "Richtext")
+                    { optionslist = oldoptions; }
+                    else
+                    { optionslist = "<options><font>Aral</font><color>yes</color><size>yes</size><bold>yes</bold><italic>yes</italic><underline>yes</underline><bunumb>yes</bunumb><required>no</required><align>left;right;center;justify</align></options>"; }
                     break;
                 case 2:     /*Checkbox*/
-                    optionslist = "<options><ms>no</ms><required>no</required><elements></elements></options>";
-                    Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID, true);
-                    cboptions.ShowDialog();
+                    if(oldtype == "Checkbox")
+                    { optionslist = oldoptions; }
+                    else
+                    {
+                        optionslist = "<options><ms>no</ms><required>no</required><elements></elements></options>";
+                        Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID, true);
+                        cboptions.ShowDialog();
+                    }
                     break;
                 case 3:     /*Date*/
+                    if(oldtype == "Date")
+                    { optionslist = oldoptions; }
+                    else
+                    { optionslist = "<options><realcal>yes</realcal><show><yrs>yes</yrs><mths>yes</mths><ds>yes</ds><hrs>no</hrs><mins>no</mins><secs>no</secs></show></options>"; }
                     break;
                 case 4:     /*Combobox*/
                     break;
@@ -71,7 +88,7 @@ namespace Visual_Storyline
                     break;
             }
 
-            if(Type.SelectedIndex == 7)
+            if (Type.SelectedIndex == 7)
             {
                 NameField.Enabled = false;
             }
@@ -104,7 +121,7 @@ namespace Visual_Storyline
                     cboptions.ShowDialog();
                     break;
                 case 3:     /*Date*/
-                    DateTimeoptions dtoptions = new DateTimeoptions();
+                    DateTimeoptions dtoptions = new DateTimeoptions(optionslist, ID);
                     dtoptions.ShowDialog();
                     break;
                 case 4:     /*Combobox*/
