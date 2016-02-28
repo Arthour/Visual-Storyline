@@ -30,9 +30,22 @@ namespace Visual_Storyline.Characterfield_options
             {
                 XmlDocument option = new XmlDocument();
                 option.LoadXml(options);
-                if (option.DocumentElement.SelectSingleNode("/options/font") != null)
+                bool fontExists = false;
+                foreach (FontFamily fontfamily in fontFamilies)
+                {
+                    if (fontfamily.Name.ToString() == option.DocumentElement.SelectSingleNode("/options/font").InnerText)
+                        fontExists = true;
+                }
+                if (option.DocumentElement.SelectSingleNode("/options/font") != null && fontExists)
                     font_box.SelectedItem = option.DocumentElement.SelectSingleNode("/options/font").InnerText;
-                else { font_box.SelectedItem = "Arial"; }
+                else
+                {
+                    font_box.SelectedItem = "Arial";
+                    ErrorMessages.FontMissing(option.DocumentElement.SelectSingleNode("/options/font").InnerText);
+                    ErrorMessages.WarningTitle();
+                    DialogResult result = MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
                 if (option.DocumentElement.SelectSingleNode("/options/color") != null)
                 {
                     if (option.DocumentElement.SelectSingleNode("/options/color").InnerText == "yes")
@@ -134,55 +147,43 @@ namespace Visual_Storyline.Characterfield_options
         private void OK_Click(object sender, EventArgs e)
         {
             string fontset = font_box.Text;
-            string colorset;
-            if (color_check.Checked == true)
+            string colorset = "no";
+            if (color_check.Checked)
                 colorset = "yes";
-            else
-                colorset = "no";
-            string sizeset;
-            if (fontsize_check.Checked == true)
+            string sizeset = "no";
+            if (fontsize_check.Checked)
                 sizeset = "yes";
-            else
-                sizeset = "no";
-            string boldset;
-            if (bold_check.Checked == true)
+            string boldset = "no";
+            if (bold_check.Checked)
                 boldset = "yes";
-            else
-                boldset = "no";
-            string italicset;
-            if (italic_check.Checked == true)
+            string italicset = "no";
+            if (italic_check.Checked)
                 italicset = "yes";
-            else
-                italicset = "no";
-            string underlineset;
-            if (underlined_check.Checked == true)
+            string underlineset = "no";
+            if (underlined_check.Checked)
                 underlineset = "yes";
-            else
-                underlineset = "no";
-            string bunumbset;
-            if (bunumb_check.Checked == true)
+            string bunumbset = "no";
+            if (bunumb_check.Checked)
                 bunumbset = "yes";
-            else
-                bunumbset = "no";
-            string requiredset;
-            if (required_check.Checked == true)
+            string requiredset = "no";
+            if (required_check.Checked)
                 requiredset = "yes";
-            else
-                requiredset = "no";
             string alignset = "";
-            if (align_left.Checked == true)
+            if (align_left.Checked)
                 alignset = "left;";
-            if (align_center.Checked == true)
+            if (align_center.Checked)
                 alignset = alignset + "center;";
-            if (align_right.Checked == true)
+            if (align_right.Checked)
                 alignset = alignset + "right;";
-            if (align_justify.Checked == true)
+            if (align_justify.Checked)
                 alignset = alignset + "justify;";
 
             string newoptions;
             newoptions = "<options><font>" + fontset + "</font><color>" + colorset + "</color><size>" + sizeset + "</size><bold>" + boldset + "</bold><italic>" + italicset + "</italic><underline>" + underlineset + "</underline><bunumb>" + bunumbset + "</bunumb><required>" + requiredset + "</required><align>" + alignset + "</align></options>";
             EditCharacterFields.tempID = ID;
+            EditCharacterFields.tempType = "Richtext";
             EditCharacterFields.grabOptions = newoptions;
+
             this.Dispose();
         }
     }
