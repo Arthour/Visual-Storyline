@@ -7,14 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Visual_Storyline.Characterfield_options
 {
     public partial class DateTimetimetable : Form
     {
-        public DateTimetimetable()
+        internal int ytm, mtd, dth, htm, mts;
+
+        public DateTimetimetable(int ytm, int mtd, int dth, int htm, int mts)
         {
             InitializeComponent();
+            month.Text = ytm.ToString();
+            day.Text = mtd.ToString();
+            hour.Text = dth.ToString();
+            minute.Text = htm.ToString();
+            second.Text = mts.ToString();
+
             Recalculate();
 
             foreach (TextBox tb in Controls.OfType<TextBox>())
@@ -86,6 +95,17 @@ namespace Visual_Storyline.Characterfield_options
                 textbox.MinimumSize = new Size(50, 23);
                 textbox.MaximumSize = new Size(50, 23);
             }
+        }
+
+        private void OK_Click(object sender, EventArgs e)
+        {
+            ytm = Convert.ToInt32(month.Text);
+            mtd = Convert.ToInt32(day.Text);
+            dth = Convert.ToInt32(hour.Text);
+            htm = Convert.ToInt32(minute.Text);
+            mts = Convert.ToInt32(second.Text);
+
+            this.Dispose();
         }
     }
 }

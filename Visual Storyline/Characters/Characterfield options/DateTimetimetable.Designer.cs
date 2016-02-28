@@ -225,6 +225,7 @@
             resources.ApplyResources(this.OK, "OK");
             this.OK.Name = "OK";
             this.OK.UseVisualStyleBackColor = true;
+            this.OK.Click += new System.EventHandler(this.OK_Click);
             // 
             // cancel
             // 

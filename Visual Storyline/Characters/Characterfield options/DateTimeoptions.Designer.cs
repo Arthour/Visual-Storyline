@@ -78,11 +78,12 @@
             resources.ApplyResources(this.OK, "OK");
             this.OK.Name = "OK";
             this.OK.UseVisualStyleBackColor = true;
+            this.OK.Click += new System.EventHandler(this.OK_Click);
             // 
             // cancel
             // 
-            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
@@ -157,16 +158,17 @@
             // 
             // defaultElement
             // 
-            resources.ApplyResources(this.defaultElement, "defaultElement");
             this.defaultElement.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.defaultElement.FormattingEnabled = true;
             this.defaultElement.Items.AddRange(new object[] {
             resources.GetString("defaultElement.Items")});
+            resources.ApplyResources(this.defaultElement, "defaultElement");
             this.defaultElement.Name = "defaultElement";
             // 
             // nothing
             // 
             resources.ApplyResources(this.nothing, "nothing");
+            this.nothing.Checked = true;
             this.nothing.Name = "nothing";
             this.nothing.TabStop = true;
             this.nothing.UseVisualStyleBackColor = true;
@@ -190,16 +192,16 @@
             // 
             // delete
             // 
-            resources.ApplyResources(this.delete, "delete");
             this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
+            resources.ApplyResources(this.delete, "delete");
             this.delete.Name = "delete";
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // add_Element
             // 
-            resources.ApplyResources(this.add_Element, "add_Element");
             this.add_Element.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
+            resources.ApplyResources(this.add_Element, "add_Element");
             this.add_Element.Name = "add_Element";
             this.add_Element.UseVisualStyleBackColor = true;
             this.add_Element.Click += new System.EventHandler(this.add_Element_Click);
@@ -214,8 +216,8 @@
             // 
             // presuffix_list
             // 
-            resources.ApplyResources(this.presuffix_list, "presuffix_list");
             this.presuffix_list.FormattingEnabled = true;
+            resources.ApplyResources(this.presuffix_list, "presuffix_list");
             this.presuffix_list.Name = "presuffix_list";
             this.presuffix_list.SelectedIndexChanged += new System.EventHandler(this.IndexChanged);
             // 
@@ -242,12 +244,12 @@
             // 
             // monthNames
             // 
-            resources.ApplyResources(this.monthNames, "monthNames");
             this.monthNames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.MName,
             this.Nr});
             this.monthNames.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.monthNames.LabelEdit = true;
+            resources.ApplyResources(this.monthNames, "monthNames");
             this.monthNames.MultiSelect = false;
             this.monthNames.Name = "monthNames";
             this.monthNames.ShowGroups = false;
@@ -293,16 +295,27 @@
             // daysPerWeek
             // 
             resources.ApplyResources(this.daysPerWeek, "daysPerWeek");
+            this.daysPerWeek.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.daysPerWeek.Name = "daysPerWeek";
+            this.daysPerWeek.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.daysPerWeek.ValueChanged += new System.EventHandler(this.dpwChanged);
             // 
             // dayNames
             // 
-            resources.ApplyResources(this.dayNames, "dayNames");
             this.dayNames.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.DName,
             this.Nr2});
             this.dayNames.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
             this.dayNames.LabelEdit = true;
+            resources.ApplyResources(this.dayNames, "dayNames");
             this.dayNames.MultiSelect = false;
             this.dayNames.Name = "dayNames";
             this.dayNames.ShowGroups = false;
@@ -348,8 +361,8 @@
             // 
             // FormatPanel
             // 
-            resources.ApplyResources(this.FormatPanel, "FormatPanel");
             this.FormatPanel.BackColor = System.Drawing.Color.Red;
+            resources.ApplyResources(this.FormatPanel, "FormatPanel");
             this.FormatPanel.Name = "FormatPanel";
             // 
             // timetable
