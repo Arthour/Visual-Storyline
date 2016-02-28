@@ -84,29 +84,27 @@ namespace Visual_Storyline
         private void OK_Click(object sender, EventArgs e)
         {
             string charsset = maxchars_text.Text;
-            string mlset;
-            if (allowMultiline_check.Checked == true)
+            string mlset = "no";
+            if (allowMultiline_check.Checked)
                 mlset = "yes";
-            else
-                mlset = "no";
             string inputset = "";
-            if (acceptedinput_groupbox.GetItemChecked(0) == true)
+            if (acceptedinput_groupbox.GetItemChecked(0))
                 inputset = "0;";
-            if (acceptedinput_groupbox.GetItemChecked(1) == true)
+            if (acceptedinput_groupbox.GetItemChecked(1))
                 inputset = inputset + "1;";
-            if (acceptedinput_groupbox.GetItemChecked(2) == true)
+            if (acceptedinput_groupbox.GetItemChecked(2))
                 inputset = inputset + "2;";
-            if (acceptedinput_groupbox.GetItemChecked(3) == true)
+            if (acceptedinput_groupbox.GetItemChecked(3))
                 inputset = inputset + "3;";
-            string requiredset;
-            if (required_check.Checked == true)
+            string requiredset = "no";
+            if (required_check.Checked)
                 requiredset = "yes";
-            else
-                requiredset = "no";
             string newoptions;
             newoptions = "<options><chars>" + charsset + "</chars><ml>" + mlset + "</ml><input>" + inputset + "</input><required>" + requiredset + "</required></options>";
             EditCharacterFields.tempID = ID;
+            EditCharacterFields.tempType = "Text";
             EditCharacterFields.grabOptions = newoptions;
+
             this.Dispose();
         }
 

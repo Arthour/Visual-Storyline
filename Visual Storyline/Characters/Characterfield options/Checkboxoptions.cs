@@ -193,16 +193,12 @@ namespace Visual_Storyline.Characterfield_options
 
         private void OK_Click(object sender, EventArgs e)
         {
-            string msset;
-            if (multiselect_check.Checked == true)
+            string msset = "no";
+            if (multiselect_check.Checked)
                 msset = "yes";
-            else
-                msset = "no";
-            string reqset;
-            if (requireselection_check.Checked == true)
+            string reqset = "no";
+            if (requireselection_check.Checked)
                 reqset = "yes";
-            else
-                reqset = "no";
             string eleset = "";
             foreach(object item in checkboxelements_list.Items)
             {
@@ -211,6 +207,7 @@ namespace Visual_Storyline.Characterfield_options
             string newoptions;
             newoptions = "<options><ms>" + msset + "</ms><required>" + reqset + "</required><elements>" + eleset + "</elements></options>";
             EditCharacterFields.tempID = ID;
+            EditCharacterFields.tempType = "Checkbox";
             EditCharacterFields.grabOptions = newoptions;
             this.Dispose();
         }
