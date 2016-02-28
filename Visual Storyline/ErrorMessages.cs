@@ -57,6 +57,21 @@ namespace Visual_Storyline
             return Title;
         }
 
+        public static string InformationTitle()
+        {
+            checkLanguage();
+            switch (Language)
+            {
+                case 0:
+                    Title = "Information";
+                    break;
+                case 1:
+                    Title = "Information";
+                    break;
+            }
+            return Title;
+        }
+
         public static string NameError()
         {
             checkLanguage();
@@ -187,6 +202,21 @@ namespace Visual_Storyline
                     break;
                 case 1:
                     Message = "Während dem Laden der Optionen ist etwas schiefgelaufen. Sie werden auf die Standardwerte zurückgesetzt.";
+                    break;
+            }
+            return Message;
+        }
+
+        public static string FontMissing(string font)
+        {
+            checkLanguage();
+            switch (Language)
+            {
+                case 0:
+                    Message = "The selected font (" + font + ") was not found on your system. Resetting to default value.";
+                    break;
+                case 1:
+                    Message = "Die ausgewählte Schriftart (" + font + ") wurde auf Ihrem System nicht gefunden. Sie wird auf den Standardwert zurückgesetzt.";
                     break;
             }
             return Message;
