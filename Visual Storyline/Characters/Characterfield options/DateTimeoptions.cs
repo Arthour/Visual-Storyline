@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using Visual_Storyline.Characters.Characterfield_options;
 
 namespace Visual_Storyline.Characterfield_options
 {
@@ -18,12 +19,15 @@ namespace Visual_Storyline.Characterfield_options
         private int countMonths;
         private int countDays;
         private bool manualOverride;
+        DragandDropButton temp = new DragandDropButton();
+        Point loc;
 
         internal static int ytm, mtd, dth, htm, mts;
 
         public DateTimeoptions(string options, int ID_Parent)
         {
             InitializeComponent();
+            InitializeTemp();
             ID = ID_Parent;
             string temp;
 
@@ -118,6 +122,13 @@ namespace Visual_Storyline.Characterfield_options
             }
         }
 
+        private void InitializeTemp()
+        {
+            FormatPanel.Controls.Add(temp);
+            temp.Visible = false;
+            temp.BringToFront();
+        }
+
         private void changeMonths()
         {
             if(manualOverride == false)
@@ -189,8 +200,9 @@ namespace Visual_Storyline.Characterfield_options
         private void optionChanged()
         {
             bool ischecked = false;
+            RadioButton[] PreSuffixList = { addPrefix, addSuffix, nothing };
 
-            if (showYears.Checked == true && userealcal == false)
+            if (showYears.Checked && !userealcal)
             {
                 invisYears.Visible = true;
                 yearsPanel.Visible = true;
@@ -200,7 +212,7 @@ namespace Visual_Storyline.Characterfield_options
                 invisYears.Visible = false;
                 yearsPanel.Visible = false;
             }
-            if (showMonths.Checked == true && userealcal == false)
+            if (showMonths.Checked && !userealcal)
             {
                 invisMonths.Visible = true;
                 monthsPanel.Visible = true;
@@ -210,7 +222,7 @@ namespace Visual_Storyline.Characterfield_options
                 invisMonths.Visible = false;
                 monthsPanel.Visible = false;
             }
-            if (showDays.Checked == true && userealcal == false)
+            if (showDays.Checked && !userealcal)
             {
                 invisDays.Visible = true;
                 daysPanel.Visible = true;
@@ -221,7 +233,36 @@ namespace Visual_Storyline.Characterfield_options
                 daysPanel.Visible = false;
             }
 
-            CheckBox[] TimeOptions = new CheckBox[] { showYears, showMonths, showDays, showHours, showMinutes, showSeconds};
+            if (showYears.Checked)
+                year.Visible = true;
+            else
+                year.Visible = false;
+            if (showYears.Checked && PreSuffixList.Any() && !nothing.Checked && !realcal.Checked)
+                presuffix.Visible = true;
+            else
+                presuffix.Visible = false;
+            if(showMonths.Checked)
+            { month.Visible = true; monthname.Visible = true; }
+            else
+            { month.Visible = false; monthname.Visible = false; }
+            if (showDays.Checked)
+            { day.Visible = true; dayofweek.Visible = true; }
+            else
+            { day.Visible = false; dayofweek.Visible = false; }
+            if (showHours.Checked)
+            { hour12.Visible = true; hour24.Visible = true; ampm.Visible = true; }
+            else
+            { hour12.Visible = false; hour24.Visible = false; ampm.Visible = false; }
+            if (showMinutes.Checked)
+                minute.Visible = true;
+            else
+                minute.Visible = false;
+            if (showSeconds.Checked)
+                second.Visible = true;
+            else
+                second.Visible = false;
+
+            CheckBox[] TimeOptions = new CheckBox[] { showYears, showMonths, showDays, showHours, showMinutes, showSeconds };
             foreach (CheckBox check in TimeOptions)
             {
                 if (check.Checked == true)
@@ -356,6 +397,36 @@ namespace Visual_Storyline.Characterfield_options
         private void dpwChanged(object sender, EventArgs e)
         {
             changeDays();
+        }
+
+        private void MouseClicked(object sender, MouseEventArgs e)
+        {
+            var dad = (DragandDropButton)sender;
+
+            temp.Text = dad.Text;
+            loc = dad.Location;
+            loc.X += 6;
+            loc.Y += 3;
+            temp.Location = loc;
+
+            temp.Visible = true;
+            dad.Visible = false;
+            temp.Invalidate();
+        }
+
+        private void MouseMoved(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                Console.WriteLine("X: {0}, Y: {1}", e.X, e.Y);
+                temp.Left = e.X + loc.X - temp.Width / 2;
+                temp.Top = e.Y + loc.Y - temp.Height / 2;
+            }
+        }
+
+        private void MouseReleased(object sender, MouseEventArgs e)
+        {
+            temp.Visible = false;
         }
 
         private void FocusLeave(object sender, EventArgs e)

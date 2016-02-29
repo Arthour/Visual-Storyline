@@ -64,6 +64,12 @@
     <Compile Include="Characters\Characterfield options\DateTimetimetable.Designer.cs">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Characters\Characterfield options\DragandDropButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Characters\Characterfield options\DragandDropButton.Designer.cs">
+      <DependentUpon>DragandDropButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Characters\Characterfield options\RichTextboxoptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\DateTimeOptions.resx">
       <DependentUpon>DateTimeoptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\DateTimetimetable.de.resx">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
