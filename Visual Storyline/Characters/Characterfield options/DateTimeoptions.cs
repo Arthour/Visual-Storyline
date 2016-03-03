@@ -20,7 +20,9 @@ namespace Visual_Storyline.Characterfield_options
         private int countDays;
         private bool manualOverride;
         DragandDropButton temp = new DragandDropButton();
+        DragandDropButton original;
         Point loc;
+        private bool mouseIsOver = false;
 
         internal static int ytm, mtd, dth, htm, mts;
 
@@ -402,6 +404,7 @@ namespace Visual_Storyline.Characterfield_options
         private void MouseClicked(object sender, MouseEventArgs e)
         {
             var dad = (DragandDropButton)sender;
+            original = dad;
 
             temp.Text = dad.Text;
             loc = dad.Location;
@@ -418,7 +421,7 @@ namespace Visual_Storyline.Characterfield_options
         {
             if (e.Button == System.Windows.Forms.MouseButtons.Left)
             {
-                Console.WriteLine("X: {0}, Y: {1}", e.X, e.Y);
+                temp.Capture = false;
                 temp.Left = e.X + loc.X - temp.Width / 2;
                 temp.Top = e.Y + loc.Y - temp.Height / 2;
             }
@@ -427,6 +430,15 @@ namespace Visual_Storyline.Characterfield_options
         private void MouseReleased(object sender, MouseEventArgs e)
         {
             temp.Visible = false;
+            checkMouse(e);
+            if(mouseIsOver)
+            {
+                Console.WriteLine("mouse is over is true");
+            }
+            else
+            {
+                original.Visible = true;
+            }
         }
 
         private void FocusLeave(object sender, EventArgs e)
@@ -626,6 +638,19 @@ namespace Visual_Storyline.Characterfield_options
             EditCharacterFields.grabOptions = newoptions;
 
             this.Dispose();
+        }
+
+        public void checkMouse(MouseEventArgs e)
+        {
+            RichTextBox box = richTextBox1;
+            if(box.Bounds.Contains(e.Location))
+            {
+                mouseIsOver = true;
+            }
+            else
+            {
+                mouseIsOver = false;
+            }
         }
     }
 }

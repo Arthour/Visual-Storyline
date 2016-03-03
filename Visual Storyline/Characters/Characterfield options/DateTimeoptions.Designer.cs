@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DateTimeoptions));
             this.OK = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.MainPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.realcal = new System.Windows.Forms.CheckBox();
             this.showYears = new System.Windows.Forms.CheckBox();
             this.invisYears = new System.Windows.Forms.Panel();
@@ -65,8 +65,8 @@
             this.showSeconds = new System.Windows.Forms.CheckBox();
             this.invisSeconds = new System.Windows.Forms.Panel();
             this.FormatPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.timetable = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.DragandDrop = new System.Windows.Forms.FlowLayoutPanel();
             this.year = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
             this.presuffix = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
             this.month = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
@@ -78,13 +78,14 @@
             this.ampm = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
             this.minute = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
             this.second = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.timetable = new System.Windows.Forms.Button();
+            this.MainPanel.SuspendLayout();
             this.yearsPanel.SuspendLayout();
             this.monthsPanel.SuspendLayout();
             this.daysPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.daysPerWeek)).BeginInit();
             this.FormatPanel.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.DragandDrop.SuspendLayout();
             this.SuspendLayout();
             // 
             // OK
@@ -101,30 +102,30 @@
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel2
+            // MainPanel
             // 
-            resources.ApplyResources(this.flowLayoutPanel2, "flowLayoutPanel2");
-            this.flowLayoutPanel2.Controls.Add(this.realcal);
-            this.flowLayoutPanel2.Controls.Add(this.showYears);
-            this.flowLayoutPanel2.Controls.Add(this.invisYears);
-            this.flowLayoutPanel2.Controls.Add(this.yearsPanel);
-            this.flowLayoutPanel2.Controls.Add(this.showMonths);
-            this.flowLayoutPanel2.Controls.Add(this.invisMonths);
-            this.flowLayoutPanel2.Controls.Add(this.monthsPanel);
-            this.flowLayoutPanel2.Controls.Add(this.showDays);
-            this.flowLayoutPanel2.Controls.Add(this.invisDays);
-            this.flowLayoutPanel2.Controls.Add(this.daysPanel);
-            this.flowLayoutPanel2.Controls.Add(this.showHours);
-            this.flowLayoutPanel2.Controls.Add(this.showMinutes);
-            this.flowLayoutPanel2.Controls.Add(this.showSeconds);
-            this.flowLayoutPanel2.Controls.Add(this.invisSeconds);
-            this.flowLayoutPanel2.Controls.Add(this.FormatPanel);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            resources.ApplyResources(this.MainPanel, "MainPanel");
+            this.MainPanel.Controls.Add(this.realcal);
+            this.MainPanel.Controls.Add(this.showYears);
+            this.MainPanel.Controls.Add(this.invisYears);
+            this.MainPanel.Controls.Add(this.yearsPanel);
+            this.MainPanel.Controls.Add(this.showMonths);
+            this.MainPanel.Controls.Add(this.invisMonths);
+            this.MainPanel.Controls.Add(this.monthsPanel);
+            this.MainPanel.Controls.Add(this.showDays);
+            this.MainPanel.Controls.Add(this.invisDays);
+            this.MainPanel.Controls.Add(this.daysPanel);
+            this.MainPanel.Controls.Add(this.showHours);
+            this.MainPanel.Controls.Add(this.showMinutes);
+            this.MainPanel.Controls.Add(this.showSeconds);
+            this.MainPanel.Controls.Add(this.invisSeconds);
+            this.MainPanel.Controls.Add(this.FormatPanel);
+            this.MainPanel.Name = "MainPanel";
             // 
             // realcal
             // 
             resources.ApplyResources(this.realcal, "realcal");
-            this.flowLayoutPanel2.SetFlowBreak(this.realcal, true);
+            this.MainPanel.SetFlowBreak(this.realcal, true);
             this.realcal.Name = "realcal";
             this.realcal.UseVisualStyleBackColor = true;
             this.realcal.CheckedChanged += new System.EventHandler(this.realCalendarChecked);
@@ -132,7 +133,7 @@
             // showYears
             // 
             resources.ApplyResources(this.showYears, "showYears");
-            this.flowLayoutPanel2.SetFlowBreak(this.showYears, true);
+            this.MainPanel.SetFlowBreak(this.showYears, true);
             this.showYears.Name = "showYears";
             this.showYears.UseVisualStyleBackColor = true;
             this.showYears.CheckedChanged += new System.EventHandler(this.CheckChanged);
@@ -156,7 +157,7 @@
             this.yearsPanel.Controls.Add(this.add_Element);
             this.yearsPanel.Controls.Add(this.addElement_text);
             this.yearsPanel.Controls.Add(this.presuffix_list);
-            this.flowLayoutPanel2.SetFlowBreak(this.yearsPanel, true);
+            this.MainPanel.SetFlowBreak(this.yearsPanel, true);
             this.yearsPanel.Name = "yearsPanel";
             // 
             // negative
@@ -238,7 +239,7 @@
             // showMonths
             // 
             resources.ApplyResources(this.showMonths, "showMonths");
-            this.flowLayoutPanel2.SetFlowBreak(this.showMonths, true);
+            this.MainPanel.SetFlowBreak(this.showMonths, true);
             this.showMonths.Name = "showMonths";
             this.showMonths.UseVisualStyleBackColor = true;
             this.showMonths.CheckedChanged += new System.EventHandler(this.CheckChanged);
@@ -253,7 +254,7 @@
             resources.ApplyResources(this.monthsPanel, "monthsPanel");
             this.monthsPanel.BackColor = System.Drawing.SystemColors.Control;
             this.monthsPanel.Controls.Add(this.monthNames);
-            this.flowLayoutPanel2.SetFlowBreak(this.monthsPanel, true);
+            this.MainPanel.SetFlowBreak(this.monthsPanel, true);
             this.monthsPanel.Name = "monthsPanel";
             // 
             // monthNames
@@ -281,7 +282,7 @@
             // showDays
             // 
             resources.ApplyResources(this.showDays, "showDays");
-            this.flowLayoutPanel2.SetFlowBreak(this.showDays, true);
+            this.MainPanel.SetFlowBreak(this.showDays, true);
             this.showDays.Name = "showDays";
             this.showDays.UseVisualStyleBackColor = true;
             this.showDays.CheckedChanged += new System.EventHandler(this.CheckChanged);
@@ -298,7 +299,7 @@
             this.daysPanel.Controls.Add(this.label2);
             this.daysPanel.Controls.Add(this.daysPerWeek);
             this.daysPanel.Controls.Add(this.dayNames);
-            this.flowLayoutPanel2.SetFlowBreak(this.daysPanel, true);
+            this.MainPanel.SetFlowBreak(this.daysPanel, true);
             this.daysPanel.Name = "daysPanel";
             // 
             // label2
@@ -347,7 +348,7 @@
             // showHours
             // 
             resources.ApplyResources(this.showHours, "showHours");
-            this.flowLayoutPanel2.SetFlowBreak(this.showHours, true);
+            this.MainPanel.SetFlowBreak(this.showHours, true);
             this.showHours.Name = "showHours";
             this.showHours.UseVisualStyleBackColor = true;
             this.showHours.CheckedChanged += new System.EventHandler(this.CheckChanged);
@@ -355,7 +356,7 @@
             // showMinutes
             // 
             resources.ApplyResources(this.showMinutes, "showMinutes");
-            this.flowLayoutPanel2.SetFlowBreak(this.showMinutes, true);
+            this.MainPanel.SetFlowBreak(this.showMinutes, true);
             this.showMinutes.Name = "showMinutes";
             this.showMinutes.UseVisualStyleBackColor = true;
             this.showMinutes.CheckedChanged += new System.EventHandler(this.CheckChanged);
@@ -363,7 +364,7 @@
             // showSeconds
             // 
             resources.ApplyResources(this.showSeconds, "showSeconds");
-            this.flowLayoutPanel2.SetFlowBreak(this.showSeconds, true);
+            this.MainPanel.SetFlowBreak(this.showSeconds, true);
             this.showSeconds.Name = "showSeconds";
             this.showSeconds.UseVisualStyleBackColor = true;
             this.showSeconds.CheckedChanged += new System.EventHandler(this.CheckChanged);
@@ -376,33 +377,32 @@
             // FormatPanel
             // 
             this.FormatPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.FormatPanel.Controls.Add(this.flowLayoutPanel1);
+            this.FormatPanel.Controls.Add(this.richTextBox1);
+            this.FormatPanel.Controls.Add(this.DragandDrop);
             resources.ApplyResources(this.FormatPanel, "FormatPanel");
             this.FormatPanel.Name = "FormatPanel";
             // 
-            // flowLayoutPanel1
+            // richTextBox1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.flowLayoutPanel1.Controls.Add(this.year);
-            this.flowLayoutPanel1.Controls.Add(this.presuffix);
-            this.flowLayoutPanel1.Controls.Add(this.month);
-            this.flowLayoutPanel1.Controls.Add(this.monthname);
-            this.flowLayoutPanel1.Controls.Add(this.day);
-            this.flowLayoutPanel1.Controls.Add(this.dayofweek);
-            this.flowLayoutPanel1.Controls.Add(this.hour24);
-            this.flowLayoutPanel1.Controls.Add(this.hour12);
-            this.flowLayoutPanel1.Controls.Add(this.ampm);
-            this.flowLayoutPanel1.Controls.Add(this.minute);
-            this.flowLayoutPanel1.Controls.Add(this.second);
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            resources.ApplyResources(this.richTextBox1, "richTextBox1");
+            this.richTextBox1.Name = "richTextBox1";
             // 
-            // timetable
+            // DragandDrop
             // 
-            resources.ApplyResources(this.timetable, "timetable");
-            this.timetable.Name = "timetable";
-            this.timetable.UseVisualStyleBackColor = true;
-            this.timetable.Click += new System.EventHandler(this.timetable_Click);
+            this.DragandDrop.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.DragandDrop.Controls.Add(this.year);
+            this.DragandDrop.Controls.Add(this.presuffix);
+            this.DragandDrop.Controls.Add(this.month);
+            this.DragandDrop.Controls.Add(this.monthname);
+            this.DragandDrop.Controls.Add(this.day);
+            this.DragandDrop.Controls.Add(this.dayofweek);
+            this.DragandDrop.Controls.Add(this.hour24);
+            this.DragandDrop.Controls.Add(this.hour12);
+            this.DragandDrop.Controls.Add(this.ampm);
+            this.DragandDrop.Controls.Add(this.minute);
+            this.DragandDrop.Controls.Add(this.second);
+            resources.ApplyResources(this.DragandDrop, "DragandDrop");
+            this.DragandDrop.Name = "DragandDrop";
             // 
             // year
             // 
@@ -492,6 +492,13 @@
             this.second.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
             this.second.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
             // 
+            // timetable
+            // 
+            resources.ApplyResources(this.timetable, "timetable");
+            this.timetable.Name = "timetable";
+            this.timetable.UseVisualStyleBackColor = true;
+            this.timetable.Click += new System.EventHandler(this.timetable_Click);
+            // 
             // DateTimeoptions
             // 
             this.AcceptButton = this.OK;
@@ -500,7 +507,7 @@
             this.CancelButton = this.cancel;
             this.ControlBox = false;
             this.Controls.Add(this.timetable);
-            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.cancel);
             this.DoubleBuffered = true;
@@ -510,8 +517,8 @@
             this.Name = "DateTimeoptions";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
+            this.MainPanel.ResumeLayout(false);
+            this.MainPanel.PerformLayout();
             this.yearsPanel.ResumeLayout(false);
             this.yearsPanel.PerformLayout();
             this.monthsPanel.ResumeLayout(false);
@@ -519,8 +526,8 @@
             this.daysPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.daysPerWeek)).EndInit();
             this.FormatPanel.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.DragandDrop.ResumeLayout(false);
+            this.DragandDrop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -529,7 +536,7 @@
 
         private System.Windows.Forms.Button OK;
         private System.Windows.Forms.Button cancel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel MainPanel;
         private System.Windows.Forms.CheckBox showYears;
         private System.Windows.Forms.CheckBox showMonths;
         private System.Windows.Forms.Panel invisMonths;
@@ -543,7 +550,6 @@
         private System.Windows.Forms.CheckBox showMinutes;
         private System.Windows.Forms.CheckBox showSeconds;
         private System.Windows.Forms.Panel invisSeconds;
-        private System.Windows.Forms.Panel FormatPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox defaultElement;
         private System.Windows.Forms.RadioButton nothing;
@@ -564,7 +570,7 @@
         private System.Windows.Forms.ColumnHeader DName;
         private System.Windows.Forms.ColumnHeader Nr2;
         private System.Windows.Forms.CheckBox realcal;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel DragandDrop;
         private Characters.Characterfield_options.DragandDropButton second;
         private Characters.Characterfield_options.DragandDropButton minute;
         private Characters.Characterfield_options.DragandDropButton ampm;
@@ -576,5 +582,7 @@
         private Characters.Characterfield_options.DragandDropButton month;
         private Characters.Characterfield_options.DragandDropButton presuffix;
         private Characters.Characterfield_options.DragandDropButton year;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        internal System.Windows.Forms.Panel FormatPanel;
     }
 }

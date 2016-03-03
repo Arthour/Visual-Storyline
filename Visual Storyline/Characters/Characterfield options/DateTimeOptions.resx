@@ -174,7 +174,7 @@
   <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="flowLayoutPanel2.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="MainPanel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="realcal.AutoSize" type="System.Boolean, mscorlib">
@@ -202,7 +202,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;realcal.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;realcal.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -232,7 +232,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showYears.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;showYears.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -253,7 +253,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;invisYears.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;invisYears.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -547,7 +547,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;yearsPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;yearsPanel.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -577,7 +577,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showMonths.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;showMonths.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -598,7 +598,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;invisMonths.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;invisMonths.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -667,7 +667,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;monthsPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;monthsPanel.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -697,7 +697,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showDays.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;showDays.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -718,7 +718,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;invisDays.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;invisDays.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -841,7 +841,7 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;daysPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;daysPanel.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -871,7 +871,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showHours.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;showHours.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -901,7 +901,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showMinutes.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;showMinutes.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -931,7 +931,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;showSeconds.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;showSeconds.ZOrder" xml:space="preserve">
     <value>12</value>
@@ -952,10 +952,34 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;invisSeconds.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;invisSeconds.ZOrder" xml:space="preserve">
     <value>13</value>
+  </data>
+  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 91</value>
+  </data>
+  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 72</value>
+  </data>
+  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
+    <value>richTextBox1</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+    <value>FormatPanel</value>
+  </data>
+  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="year.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -973,10 +997,10 @@
     <value>year</value>
   </data>
   <data name="&gt;&gt;year.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;year.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;year.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -997,10 +1021,10 @@
     <value>presuffix</value>
   </data>
   <data name="&gt;&gt;presuffix.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;presuffix.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;presuffix.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1021,10 +1045,10 @@
     <value>month</value>
   </data>
   <data name="&gt;&gt;month.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;month.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;month.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -1045,10 +1069,10 @@
     <value>monthname</value>
   </data>
   <data name="&gt;&gt;monthname.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;monthname.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;monthname.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1069,10 +1093,10 @@
     <value>day</value>
   </data>
   <data name="&gt;&gt;day.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;day.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;day.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1093,10 +1117,10 @@
     <value>dayofweek</value>
   </data>
   <data name="&gt;&gt;dayofweek.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;dayofweek.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;dayofweek.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -1117,10 +1141,10 @@
     <value>hour24</value>
   </data>
   <data name="&gt;&gt;hour24.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;hour24.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;hour24.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -1141,10 +1165,10 @@
     <value>hour12</value>
   </data>
   <data name="&gt;&gt;hour12.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;hour12.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;hour12.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -1165,10 +1189,10 @@
     <value>ampm</value>
   </data>
   <data name="&gt;&gt;ampm.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ampm.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;ampm.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -1189,10 +1213,10 @@
     <value>minute</value>
   </data>
   <data name="&gt;&gt;minute.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;minute.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;minute.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -1213,34 +1237,34 @@
     <value>second</value>
   </data>
   <data name="&gt;&gt;second.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5903.39962, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;second.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+    <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;second.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DragandDrop.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 3</value>
   </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DragandDrop.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 82</value>
   </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="DragandDrop.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
+  <data name="&gt;&gt;DragandDrop.Name" xml:space="preserve">
+    <value>DragandDrop</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;DragandDrop.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DragandDrop.Parent" xml:space="preserve">
     <value>FormatPanel</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;DragandDrop.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="FormatPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 565</value>
@@ -1258,30 +1282,30 @@
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;FormatPanel.Parent" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+    <value>MainPanel</value>
   </data>
   <data name="&gt;&gt;FormatPanel.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="flowLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="MainPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 15</value>
   </data>
-  <data name="flowLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MainPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>301, 428</value>
   </data>
-  <data name="flowLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+  <data name="MainPanel.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Name" xml:space="preserve">
-    <value>flowLayoutPanel2</value>
+  <data name="&gt;&gt;MainPanel.Name" xml:space="preserve">
+    <value>MainPanel</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;MainPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MainPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;flowLayoutPanel2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;MainPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="timetable.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -1328,9 +1352,6 @@
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>12, 12, 12, 12</value>
