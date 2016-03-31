@@ -52,6 +52,12 @@
     <Compile Include="Characters\Characterfield options\Checkboxoptions.Designer.cs">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Characters\Characterfield options\Comboboxoptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters\Characterfield options\Comboboxoptions.Designer.cs">
+      <DependentUpon>Comboboxoptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Characters\Characterfield options\DateTimeoptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\Checkboxoptions.resx">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Comboboxoptions.de.resx">
+      <DependentUpon>Comboboxoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Comboboxoptions.resx">
+      <DependentUpon>Comboboxoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\DateTimeoptions.de.resx">
       <DependentUpon>DateTimeoptions.cs</DependentUpon>

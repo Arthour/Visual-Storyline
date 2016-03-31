@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Visual_Storyline.Characterfield_options;
+using Visual_Storyline.Characters.Characterfield_options;
 
 namespace Visual_Storyline
 {
@@ -66,8 +67,8 @@ namespace Visual_Storyline
                     else
                     {
                         optionslist = "<options><ms>no</ms><required>no</required><elements></elements></options>";
-                        Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID, true);
-                        cboptions.ShowDialog();
+                        Checkboxoptions chbooptions = new Checkboxoptions(optionslist, ID, true);
+                        chbooptions.ShowDialog();
                     }
                     break;
                 case 3:     /*Date*/
@@ -77,6 +78,14 @@ namespace Visual_Storyline
                     { optionslist = "<options><realcal>yes</realcal><show><yrs>yes</yrs><mths>yes</mths><ds>yes</ds><hrs>no</hrs><mins>no</mins><secs>no</secs></show></options>"; }
                     break;
                 case 4:     /*Combobox*/
+                    if (oldtype == "Combobox")
+                    { optionslist = oldoptions; }
+                    else
+                    {
+                        optionslist = "<options><limit>no</limit><elements></elements></options>";
+                        Comboboxoptions cobooptions = new Comboboxoptions(optionslist, ID, true);
+                        cobooptions.ShowDialog();
+                    }
                     break;
                 case 5:     /*List*/
                     break;
@@ -117,14 +126,16 @@ namespace Visual_Storyline
                     rtoptions.ShowDialog();
                     break;
                 case 2:     /*Checkbox*/
-                    Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID, false);
-                    cboptions.ShowDialog();
+                    Checkboxoptions chbooptions = new Checkboxoptions(optionslist, ID, false);
+                    chbooptions.ShowDialog();
                     break;
                 case 3:     /*Date*/
                     DateTimeoptions dtoptions = new DateTimeoptions(optionslist, ID);
                     dtoptions.ShowDialog();
                     break;
                 case 4:     /*Combobox*/
+                    Comboboxoptions cobooptions = new Comboboxoptions(optionslist, ID, false);
+                    cobooptions.ShowDialog();
                     break;
                 case 5:     /*List*/
                     break;

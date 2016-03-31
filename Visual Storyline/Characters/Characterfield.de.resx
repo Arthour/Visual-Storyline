@@ -130,24 +130,20 @@
   <data name="Type.Items3" xml:space="preserve">
     <value>Datum &amp; Zeit</value>
   </data>
-  <data name="Type.Items4" xml:space="preserve">
+  <data name="Type.Items5" xml:space="preserve">
     <value>Liste</value>
   </data>
-  <data name="Type.Items5" xml:space="preserve">
+  <data name="Type.Items6" xml:space="preserve">
     <value>Bild</value>
   </data>
-  <data name="Type.Items6" xml:space="preserve">
+  <data name="Type.Items7" xml:space="preserve">
     <value>Trennstrich</value>
   </data>
-  <data name="Type.Items7" xml:space="preserve">
+  <data name="Type.Items8" xml:space="preserve">
     <value>Farbpalette</value>
   </data>
   <data name="Type.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Options.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="Options.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -155,20 +151,11 @@
   <data name="Options.Text" xml:space="preserve">
     <value>Optionen</value>
   </data>
-  <data name="Delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="Delete.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="Down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="Down.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="Up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="Up.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

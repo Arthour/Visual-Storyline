@@ -177,6 +177,9 @@
   <data name="multiselect.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="multiselect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="multiselect.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 12</value>
   </data>
@@ -203,6 +206,9 @@
   </data>
   <data name="multiselect_check.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="multiselect_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="multiselect_check.Location" type="System.Drawing.Point, System.Drawing">
     <value>221, 11</value>
@@ -309,6 +315,9 @@
   <data name="checkboxelements.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="checkboxelements.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="checkboxelements.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 56</value>
   </data>
@@ -353,6 +362,9 @@
   </data>
   <data name="&gt;&gt;addElement_text.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 132</value>
@@ -423,6 +435,9 @@
   <data name="&gt;&gt;move_up.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="add_Element.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
     <value>213, 189</value>
   </data>
@@ -444,6 +459,9 @@
   <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>de</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

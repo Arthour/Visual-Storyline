@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace Visual_Storyline.Characterfield_options
+namespace Visual_Storyline.Characters.Characterfield_options
 {
-    public partial class Checkboxoptions : Form
+    public partial class Comboboxoptions : Form
     {
         private int ID;
         private bool isNeeded;
 
-        public Checkboxoptions(string options, int ID_Parent, bool EntryNeeded)
+        public Comboboxoptions(string options, int ID_Parent, bool EntryNeeded)
         {
             InitializeComponent();
             ID = ID_Parent;
@@ -25,18 +25,12 @@ namespace Visual_Storyline.Characterfield_options
             {
                 XmlDocument option = new XmlDocument();
                 option.LoadXml(options);
-                if (option.DocumentElement.SelectSingleNode("/options/ms") != null)
+                if (option.DocumentElement.SelectSingleNode("/options/limit") != null)
                 {
-                    if (option.DocumentElement.SelectSingleNode("/options/ms").InnerText == "yes")
-                        multiselect_check.Checked = true;
+                    if (option.DocumentElement.SelectSingleNode("/options/limit").InnerText == "yes")
+                        limit_check.Checked = true;
                 }
-                else { multiselect_check.Checked = false; }
-                if (option.DocumentElement.SelectSingleNode("/options/required") != null)
-                {
-                    if (option.DocumentElement.SelectSingleNode("/options/required").InnerText == "yes")
-                        requireselection_check.Checked = true;
-                }
-                else { requireselection_check.Checked = false; }
+                else { limit_check.Checked = false; }
                 if (option.DocumentElement.SelectNodes("/options/elements/element") != null)
                 {
                     XmlNodeList xmllist = option.SelectNodes("/options/elements/element");
@@ -44,19 +38,18 @@ namespace Visual_Storyline.Characterfield_options
                     {
                         if (node.InnerText != "")
                         {
-                            checkboxelements_list.Items.Add(node.InnerText);
+                            comboboxelements_list.Items.Add(node.InnerText);
                         }
                     }
                 }
                 else { isNeeded = true; }
             }
-            catch(Exception)
+            catch (Exception)
             {
                 ErrorMessages.SomethingWentWrongOptions();
                 ErrorMessages.ErrorTitle();
                 DialogResult result = MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                multiselect_check.Checked = false;
-                requireselection_check.Checked = false;
+                limit_check.Checked = false;
                 isNeeded = true;
             }
             CheckOK();
@@ -64,15 +57,15 @@ namespace Visual_Storyline.Characterfield_options
 
         private void IndexChanged(object sender, EventArgs e)
         {
-            if(checkboxelements_list.SelectedItem != null)
+            if (comboboxelements_list.SelectedItem != null)
             {
-                addElement_text.Text = checkboxelements_list.SelectedItem.ToString();
+                addElement_text.Text = comboboxelements_list.SelectedItem.ToString();
                 delete.Enabled = true;
-                if (checkboxelements_list.SelectedIndex != 0)
+                if (comboboxelements_list.SelectedIndex != 0)
                     move_up.Enabled = true;
                 else
                     move_up.Enabled = false;
-                if (checkboxelements_list.SelectedIndex != checkboxelements_list.Items.Count - 1)
+                if (comboboxelements_list.SelectedIndex != comboboxelements_list.Items.Count - 1)
                     move_down.Enabled = true;
                 else
                     move_down.Enabled = false;
@@ -90,11 +83,11 @@ namespace Visual_Storyline.Characterfield_options
 
         private void TextFieldChanged(object sender, EventArgs e)
         {
-            checkboxelements_list.SelectedIndex = -1;
+            comboboxelements_list.SelectedIndex = -1;
             bool alreadythere = false;
-            foreach(object item in checkboxelements_list.Items)
+            foreach (object item in comboboxelements_list.Items)
             {
-                if(item.ToString() == addElement_text.Text)
+                if (item.ToString() == addElement_text.Text)
                 {
                     alreadythere = true;
                 }
@@ -102,20 +95,20 @@ namespace Visual_Storyline.Characterfield_options
             if (alreadythere == true)
             {
                 add_Element.Enabled = false;
-                checkboxelements_list.SelectedItem = addElement_text.Text;
+                comboboxelements_list.SelectedItem = addElement_text.Text;
             }
             else
             {
                 add_Element.Enabled = true;
-                checkboxelements_list.SelectedIndex = -1;
+                comboboxelements_list.SelectedIndex = -1;
             }
         }
 
         private void add_Element_Click(object sender, EventArgs e)
         {
-            if(addElement_text.Text != "" && addElement_text.Text != null)
+            if (addElement_text.Text != "" && addElement_text.Text != null)
             {
-                checkboxelements_list.Items.Add(addElement_text.Text);
+                comboboxelements_list.Items.Add(addElement_text.Text);
                 addElement_text.Text = "";
                 addElement_text.Focus();
                 CheckOK();
@@ -124,7 +117,7 @@ namespace Visual_Storyline.Characterfield_options
 
         private void delete_Click(object sender, EventArgs e)
         {
-            checkboxelements_list.Items.RemoveAt(checkboxelements_list.SelectedIndex);
+            comboboxelements_list.Items.RemoveAt(comboboxelements_list.SelectedIndex);
             delete.Enabled = false;
             move_up.Enabled = false;
             move_down.Enabled = false;
@@ -135,10 +128,10 @@ namespace Visual_Storyline.Characterfield_options
 
         private void move_up_Click(object sender, EventArgs e)
         {
-            int selectedID = checkboxelements_list.SelectedIndex;
-            checkboxelements_list.Items.Insert(selectedID - 1, checkboxelements_list.Items[selectedID]);
-            checkboxelements_list.Items.RemoveAt(selectedID + 1);
-            checkboxelements_list.SelectedIndex = selectedID - 1;
+            int selectedID = comboboxelements_list.SelectedIndex;
+            comboboxelements_list.Items.Insert(selectedID - 1, comboboxelements_list.Items[selectedID]);
+            comboboxelements_list.Items.RemoveAt(selectedID + 1);
+            comboboxelements_list.SelectedIndex = selectedID - 1;
             addElement_text.Focus();
             addElement_text.SelectionStart = addElement_text.TextLength;
             addElement_text.SelectionLength = 0;
@@ -146,10 +139,10 @@ namespace Visual_Storyline.Characterfield_options
 
         private void move_down_Click(object sender, EventArgs e)
         {
-            int selectedID = checkboxelements_list.SelectedIndex;
-            checkboxelements_list.Items.Insert(selectedID + 2, checkboxelements_list.Items[selectedID]);
-            checkboxelements_list.Items.RemoveAt(selectedID);
-            checkboxelements_list.SelectedIndex = selectedID + 1;
+            int selectedID = comboboxelements_list.SelectedIndex;
+            comboboxelements_list.Items.Insert(selectedID + 2, comboboxelements_list.Items[selectedID]);
+            comboboxelements_list.Items.RemoveAt(selectedID);
+            comboboxelements_list.SelectedIndex = selectedID + 1;
             addElement_text.Focus();
             addElement_text.SelectionStart = addElement_text.TextLength;
             addElement_text.SelectionLength = 0;
@@ -161,18 +154,18 @@ namespace Visual_Storyline.Characterfield_options
             {
                 if (keyData == Keys.Up)
                 {
-                    if (checkboxelements_list.SelectedIndex == -1)
-                        checkboxelements_list.SelectedIndex = checkboxelements_list.Items.Count - 1;
-                    else if (checkboxelements_list.SelectedIndex != -1 && checkboxelements_list.SelectedIndex != 0)
-                        checkboxelements_list.SelectedIndex = checkboxelements_list.SelectedIndex - 1;
+                    if (comboboxelements_list.SelectedIndex == -1)
+                        comboboxelements_list.SelectedIndex = comboboxelements_list.Items.Count - 1;
+                    else if (comboboxelements_list.SelectedIndex != -1 && comboboxelements_list.SelectedIndex != 0)
+                        comboboxelements_list.SelectedIndex = comboboxelements_list.SelectedIndex - 1;
                     addElement_text.SelectionStart = addElement_text.TextLength;
                     addElement_text.SelectionLength = 0;
                     return true;
                 }
                 if (keyData == Keys.Down)
                 {
-                    if (checkboxelements_list.SelectedIndex != -1 && checkboxelements_list.SelectedIndex != checkboxelements_list.Items.Count - 1)
-                        checkboxelements_list.SelectedIndex = checkboxelements_list.SelectedIndex + 1;
+                    if (comboboxelements_list.SelectedIndex != -1 && comboboxelements_list.SelectedIndex != comboboxelements_list.Items.Count - 1)
+                        comboboxelements_list.SelectedIndex = comboboxelements_list.SelectedIndex + 1;
                     addElement_text.SelectionStart = addElement_text.TextLength;
                     addElement_text.SelectionLength = 0;
                     return true;
@@ -183,31 +176,10 @@ namespace Visual_Storyline.Characterfield_options
 
         private void CheckOK()
         {
-            if (checkboxelements_list.Items.Count == 0)
+            if (comboboxelements_list.Items.Count == 0)
                 OK.Enabled = false;
             else
                 OK.Enabled = true;
-        }
-
-        private void OK_Click(object sender, EventArgs e)
-        {
-            string msset = "no";
-            if (multiselect_check.Checked)
-                msset = "yes";
-            string reqset = "no";
-            if (requireselection_check.Checked)
-                reqset = "yes";
-            string eleset = "";
-            foreach(object item in checkboxelements_list.Items)
-            {
-                eleset = eleset + "<element>" + item + "</element>";
-            }
-            string newoptions;
-            newoptions = "<options><ms>" + msset + "</ms><required>" + reqset + "</required><elements>" + eleset + "</elements></options>";
-            EditCharacterFields.tempID = ID;
-            EditCharacterFields.tempType = "Checkbox";
-            EditCharacterFields.grabOptions = newoptions;
-            this.Dispose();
         }
 
         private void FocusEnter(object sender, EventArgs e)
@@ -226,6 +198,24 @@ namespace Visual_Storyline.Characterfield_options
             {
                 EditCharacterFields.cancelOptions(ID);
             }
+        }
+
+        private void OK_Click(object sender, EventArgs e)
+        {
+            string limitset = "no";
+            if (limit_check.Checked)
+                limitset = "yes";
+            string eleset = "";
+            foreach (object item in comboboxelements_list.Items)
+            {
+                eleset = eleset + "<element>" + item + "</element>";
+            }
+            string newoptions;
+            newoptions = "<options><limit>" + limitset + "</limit><elements>" + eleset + "</elements></options>";
+            EditCharacterFields.tempID = ID;
+            EditCharacterFields.tempType = "Combobox";
+            EditCharacterFields.grabOptions = newoptions;
+            this.Dispose();
         }
     }
 }

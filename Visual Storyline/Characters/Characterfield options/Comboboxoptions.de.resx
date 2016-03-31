@@ -117,54 +117,79 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 218</value>
-  </data>
-  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 218</value>
-  </data>
-  <data name="cancel.Text" xml:space="preserve">
-    <value>Abbrechen</value>
-  </data>
-  <data name="multiselect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 15</value>
-  </data>
-  <data name="multiselect.Text" xml:space="preserve">
-    <value>Mehrfachauswahl zulassen:</value>
-  </data>
-  <data name="multiselect_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 17</value>
-  </data>
-  <data name="requireselection_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 39</value>
-  </data>
-  <data name="requireselection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 15</value>
-  </data>
-  <data name="requireselection.Text" xml:space="preserve">
-    <value>Mindestens ein Element ausgewählt:</value>
-  </data>
-  <data name="checkboxelements.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 15</value>
-  </data>
-  <data name="checkboxelements.Text" xml:space="preserve">
-    <value>Checkbox-Elemente:</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="delete.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 110</value>
+  </data>
   <data name="move_down.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="move_down.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 81</value>
   </data>
   <data name="move_up.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="move_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>213, 52</value>
+  </data>
   <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 189</value>
+    <value>213, 167</value>
+  </data>
+  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 167</value>
+  </data>
+  <data name="comboboxelements.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 34</value>
+  </data>
+  <data name="comboboxelements.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 15</value>
+  </data>
+  <data name="comboboxelements.Text" xml:space="preserve">
+    <value>Combobox-Elemente:</value>
+  </data>
+  <data name="comboboxelements_list.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 52</value>
+  </data>
+  <data name="limit_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 11</value>
+  </data>
+  <data name="limit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 12</value>
+  </data>
+  <data name="limit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 15</value>
+  </data>
+  <data name="limit.Text" xml:space="preserve">
+    <value>Nur gegebene Elemente:</value>
+  </data>
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 196</value>
+  </data>
+  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 196</value>
+  </data>
+  <data name="cancel.Text" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Checkbox-Optionen</value>
+    <value>Combobox-Optionen</value>
   </data>
 </root>
