@@ -64,17 +64,17 @@
     <Compile Include="Characters\Characterfield options\DateTimetimetable.Designer.cs">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Characters\Characterfield options\DragandDropButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Characters\Characterfield options\DragandDropButton.Designer.cs">
-      <DependentUpon>DragandDropButton.cs</DependentUpon>
-    </Compile>
     <Compile Include="Characters\Characterfield options\RichTextboxoptions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Characters\Characterfield options\RichTextboxoptions.Designer.cs">
       <DependentUpon>RichTextboxoptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Characters\CustomButton.Designer.cs">
+      <DependentUpon>CustomButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Characters\EditCharacterFields.cs">
       <SubType>Form</SubType>

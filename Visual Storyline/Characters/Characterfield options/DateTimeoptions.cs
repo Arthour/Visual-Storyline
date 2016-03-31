@@ -19,20 +19,15 @@ namespace Visual_Storyline.Characterfield_options
         private int countMonths;
         private int countDays;
         private bool manualOverride;
-        DragandDropButton temp = new DragandDropButton();
-        DragandDropButton original;
-        Point loc;
-        private bool mouseIsOver = false;
 
         internal static int ytm, mtd, dth, htm, mts;
 
         public DateTimeoptions(string options, int ID_Parent)
         {
             InitializeComponent();
-            InitializeTemp();
             ID = ID_Parent;
             string temp;
-
+        
             try
             {
                 RadioButton[] PreSuffixList = { addPrefix, addSuffix, nothing };
@@ -122,13 +117,6 @@ namespace Visual_Storyline.Characterfield_options
                 showMonths.Checked = true;
                 showDays.Checked = true;
             }
-        }
-
-        private void InitializeTemp()
-        {
-            FormatPanel.Controls.Add(temp);
-            temp.Visible = false;
-            temp.BringToFront();
         }
 
         private void changeMonths()
@@ -239,22 +227,18 @@ namespace Visual_Storyline.Characterfield_options
                 year.Visible = true;
             else
                 year.Visible = false;
-            if (showYears.Checked && PreSuffixList.Any() && !nothing.Checked && !realcal.Checked)
-                presuffix.Visible = true;
+            if (showMonths.Checked)
+            { monthnr.Visible = true; monthname.Visible = true; }
             else
-                presuffix.Visible = false;
-            if(showMonths.Checked)
-            { month.Visible = true; monthname.Visible = true; }
-            else
-            { month.Visible = false; monthname.Visible = false; }
+            { monthnr.Visible = false; monthname.Visible = false; }
             if (showDays.Checked)
             { day.Visible = true; dayofweek.Visible = true; }
             else
             { day.Visible = false; dayofweek.Visible = false; }
             if (showHours.Checked)
-            { hour12.Visible = true; hour24.Visible = true; ampm.Visible = true; }
+            { hour12.Visible = true; hour24.Visible = true; }
             else
-            { hour12.Visible = false; hour24.Visible = false; ampm.Visible = false; }
+            { hour12.Visible = false; hour24.Visible = false; }
             if (showMinutes.Checked)
                 minute.Visible = true;
             else
@@ -401,49 +385,20 @@ namespace Visual_Storyline.Characterfield_options
             changeDays();
         }
 
-        private void MouseClicked(object sender, MouseEventArgs e)
-        {
-            var dad = (DragandDropButton)sender;
-            original = dad;
-
-            temp.Text = dad.Text;
-            loc = dad.Location;
-            loc.X += 6;
-            loc.Y += 3;
-            temp.Location = loc;
-
-            temp.Visible = true;
-            dad.Visible = false;
-            temp.Invalidate();
-        }
-
-        private void MouseMoved(object sender, MouseEventArgs e)
-        {
-            if (e.Button == System.Windows.Forms.MouseButtons.Left)
-            {
-                temp.Capture = false;
-                temp.Left = e.X + loc.X - temp.Width / 2;
-                temp.Top = e.Y + loc.Y - temp.Height / 2;
-            }
-        }
-
-        private void MouseReleased(object sender, MouseEventArgs e)
-        {
-            temp.Visible = false;
-            checkMouse(e);
-            if(mouseIsOver)
-            {
-                Console.WriteLine("mouse is over is true");
-            }
-            else
-            {
-                original.Visible = true;
-            }
-        }
-
         private void FocusLeave(object sender, EventArgs e)
         {
             this.AcceptButton = OK;
+        }
+
+        private void ButtonClicked(object sender, EventArgs e)
+        {
+            CustomButton cb = (CustomButton)sender;
+
+            var insertText = "<" + cb.Text + ">";
+            var selectionIndex = Formatfield.SelectionStart;
+
+            Formatfield.Text = Formatfield.Text.Insert(selectionIndex, insertText);
+            Formatfield.SelectionLength = insertText.Length;
         }
 
         private void timetable_Click(object sender, EventArgs e)
@@ -631,26 +586,14 @@ namespace Visual_Storyline.Characterfield_options
             string showsecondsset = "no";
             if (showSeconds.Checked)
                 showsecondsset = "yes";
+            string formatset = Formatfield.Text;
             string newoptions;
-            newoptions = "<options>" + realcalset + "<show><yrs>" + showyearsset + "</yrs><mths>" + showmonthsset + "</mths><ds>" + showdaysset + "</ds><hrs>" + showhoursset + "</hrs><mins>" + showminutesset + "</mins><secs>" + showsecondsset + "</secs></show>" + inneroptions + "</options>";
+            newoptions = "<options>" + realcalset + "<show><yrs>" + showyearsset + "</yrs><mths>" + showmonthsset + "</mths><ds>" + showdaysset + "</ds><hrs>" + showhoursset + "</hrs><mins>" + showminutesset + "</mins><secs>" + showsecondsset + "</secs></show><format>" + formatset + "</format>" + inneroptions + "</options>";
             EditCharacterFields.tempID = ID;
             EditCharacterFields.tempType = "Date";
             EditCharacterFields.grabOptions = newoptions;
 
             this.Dispose();
-        }
-
-        public void checkMouse(MouseEventArgs e)
-        {
-            RichTextBox box = richTextBox1;
-            if(box.Bounds.Contains(e.Location))
-            {
-                mouseIsOver = true;
-            }
-            else
-            {
-                mouseIsOver = false;
-            }
         }
     }
 }

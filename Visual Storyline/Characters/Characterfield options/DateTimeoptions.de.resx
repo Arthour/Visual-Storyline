@@ -205,6 +205,78 @@
   <data name="showSeconds.Text" xml:space="preserve">
     <value>Sekunden anzeigen</value>
   </data>
+  <data name="year.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="year.Text" xml:space="preserve">
+    <value>Jahr</value>
+  </data>
+  <data name="monthnr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 3</value>
+  </data>
+  <data name="monthnr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 21</value>
+  </data>
+  <data name="monthnr.Text" xml:space="preserve">
+    <value>Monat (Zahl)</value>
+  </data>
+  <data name="monthname.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 3</value>
+  </data>
+  <data name="monthname.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 21</value>
+  </data>
+  <data name="monthname.Text" xml:space="preserve">
+    <value>Monat (Name)</value>
+  </data>
+  <data name="day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 3</value>
+  </data>
+  <data name="day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 21</value>
+  </data>
+  <data name="day.Text" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="dayofweek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 30</value>
+  </data>
+  <data name="dayofweek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 21</value>
+  </data>
+  <data name="dayofweek.Text" xml:space="preserve">
+    <value>Wochentag</value>
+  </data>
+  <data name="hour24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 30</value>
+  </data>
+  <data name="hour24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="hour24.Text" xml:space="preserve">
+    <value>Stunde</value>
+  </data>
+  <data name="hour12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 30</value>
+  </data>
+  <data name="hour12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="hour12.Text" xml:space="preserve">
+    <value>Stunde mit AM/PM</value>
+  </data>
+  <data name="minute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 57</value>
+  </data>
+  <data name="second.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 57</value>
+  </data>
+  <data name="second.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="second.Text" xml:space="preserve">
+    <value>Sekunde</value>
+  </data>
   <data name="timetable.Text" xml:space="preserve">
     <value>Zeiteinheiten</value>
   </data>

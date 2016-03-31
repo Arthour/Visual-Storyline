@@ -1,6 +1,6 @@
 ﻿namespace Visual_Storyline.Characters.Characterfield_options
 {
-    partial class DragandDropButton
+    partial class CustomButton
     {
         /// <summary>
         /// Erforderliche Designervariable.

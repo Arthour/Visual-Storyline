@@ -65,20 +65,19 @@
             this.showSeconds = new System.Windows.Forms.CheckBox();
             this.invisSeconds = new System.Windows.Forms.Panel();
             this.FormatPanel = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.Formatfield = new System.Windows.Forms.TextBox();
             this.DragandDrop = new System.Windows.Forms.FlowLayoutPanel();
-            this.year = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.presuffix = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.month = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.monthname = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.day = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.dayofweek = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.hour24 = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.hour12 = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.ampm = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.minute = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
-            this.second = new Visual_Storyline.Characters.Characterfield_options.DragandDropButton();
             this.timetable = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.year = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.monthnr = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.monthname = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.day = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.dayofweek = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.hour24 = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.hour12 = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.minute = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.second = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
             this.MainPanel.SuspendLayout();
             this.yearsPanel.SuspendLayout();
             this.monthsPanel.SuspendLayout();
@@ -377,120 +376,31 @@
             // FormatPanel
             // 
             this.FormatPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.FormatPanel.Controls.Add(this.richTextBox1);
+            this.FormatPanel.Controls.Add(this.label3);
+            this.FormatPanel.Controls.Add(this.Formatfield);
             this.FormatPanel.Controls.Add(this.DragandDrop);
             resources.ApplyResources(this.FormatPanel, "FormatPanel");
             this.FormatPanel.Name = "FormatPanel";
             // 
-            // richTextBox1
+            // Formatfield
             // 
-            resources.ApplyResources(this.richTextBox1, "richTextBox1");
-            this.richTextBox1.Name = "richTextBox1";
+            resources.ApplyResources(this.Formatfield, "Formatfield");
+            this.Formatfield.Name = "Formatfield";
             // 
             // DragandDrop
             // 
             this.DragandDrop.BackColor = System.Drawing.SystemColors.ControlLight;
             this.DragandDrop.Controls.Add(this.year);
-            this.DragandDrop.Controls.Add(this.presuffix);
-            this.DragandDrop.Controls.Add(this.month);
+            this.DragandDrop.Controls.Add(this.monthnr);
             this.DragandDrop.Controls.Add(this.monthname);
             this.DragandDrop.Controls.Add(this.day);
             this.DragandDrop.Controls.Add(this.dayofweek);
             this.DragandDrop.Controls.Add(this.hour24);
             this.DragandDrop.Controls.Add(this.hour12);
-            this.DragandDrop.Controls.Add(this.ampm);
             this.DragandDrop.Controls.Add(this.minute);
             this.DragandDrop.Controls.Add(this.second);
             resources.ApplyResources(this.DragandDrop, "DragandDrop");
             this.DragandDrop.Name = "DragandDrop";
-            // 
-            // year
-            // 
-            resources.ApplyResources(this.year, "year");
-            this.year.Name = "year";
-            this.year.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.year.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.year.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // presuffix
-            // 
-            resources.ApplyResources(this.presuffix, "presuffix");
-            this.presuffix.Name = "presuffix";
-            this.presuffix.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.presuffix.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.presuffix.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // month
-            // 
-            resources.ApplyResources(this.month, "month");
-            this.month.Name = "month";
-            this.month.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.month.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.month.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // monthname
-            // 
-            resources.ApplyResources(this.monthname, "monthname");
-            this.monthname.Name = "monthname";
-            this.monthname.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.monthname.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.monthname.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // day
-            // 
-            resources.ApplyResources(this.day, "day");
-            this.day.Name = "day";
-            this.day.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.day.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.day.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // dayofweek
-            // 
-            resources.ApplyResources(this.dayofweek, "dayofweek");
-            this.dayofweek.Name = "dayofweek";
-            this.dayofweek.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.dayofweek.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.dayofweek.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // hour24
-            // 
-            resources.ApplyResources(this.hour24, "hour24");
-            this.hour24.Name = "hour24";
-            this.hour24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.hour24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.hour24.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // hour12
-            // 
-            resources.ApplyResources(this.hour12, "hour12");
-            this.hour12.Name = "hour12";
-            this.hour12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.hour12.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.hour12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // ampm
-            // 
-            resources.ApplyResources(this.ampm, "ampm");
-            this.ampm.Name = "ampm";
-            this.ampm.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.ampm.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.ampm.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // minute
-            // 
-            resources.ApplyResources(this.minute, "minute");
-            this.minute.Name = "minute";
-            this.minute.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.minute.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.minute.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
-            // 
-            // second
-            // 
-            resources.ApplyResources(this.second, "second");
-            this.second.Name = "second";
-            this.second.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseClicked);
-            this.second.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMoved);
-            this.second.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MouseReleased);
             // 
             // timetable
             // 
@@ -498,6 +408,65 @@
             this.timetable.Name = "timetable";
             this.timetable.UseVisualStyleBackColor = true;
             this.timetable.Click += new System.EventHandler(this.timetable_Click);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // year
+            // 
+            resources.ApplyResources(this.year, "year");
+            this.year.Name = "year";
+            this.year.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // monthnr
+            // 
+            resources.ApplyResources(this.monthnr, "monthnr");
+            this.monthnr.Name = "monthnr";
+            this.monthnr.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // monthname
+            // 
+            resources.ApplyResources(this.monthname, "monthname");
+            this.monthname.Name = "monthname";
+            this.monthname.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // day
+            // 
+            resources.ApplyResources(this.day, "day");
+            this.day.Name = "day";
+            this.day.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // dayofweek
+            // 
+            resources.ApplyResources(this.dayofweek, "dayofweek");
+            this.dayofweek.Name = "dayofweek";
+            this.dayofweek.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // hour24
+            // 
+            resources.ApplyResources(this.hour24, "hour24");
+            this.hour24.Name = "hour24";
+            this.hour24.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // hour12
+            // 
+            resources.ApplyResources(this.hour12, "hour12");
+            this.hour12.Name = "hour12";
+            this.hour12.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // minute
+            // 
+            resources.ApplyResources(this.minute, "minute");
+            this.minute.Name = "minute";
+            this.minute.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // second
+            // 
+            resources.ApplyResources(this.second, "second");
+            this.second.Name = "second";
+            this.second.Click += new System.EventHandler(this.ButtonClicked);
             // 
             // DateTimeoptions
             // 
@@ -526,6 +495,7 @@
             this.daysPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.daysPerWeek)).EndInit();
             this.FormatPanel.ResumeLayout(false);
+            this.FormatPanel.PerformLayout();
             this.DragandDrop.ResumeLayout(false);
             this.DragandDrop.PerformLayout();
             this.ResumeLayout(false);
@@ -571,18 +541,17 @@
         private System.Windows.Forms.ColumnHeader Nr2;
         private System.Windows.Forms.CheckBox realcal;
         private System.Windows.Forms.FlowLayoutPanel DragandDrop;
-        private Characters.Characterfield_options.DragandDropButton second;
-        private Characters.Characterfield_options.DragandDropButton minute;
-        private Characters.Characterfield_options.DragandDropButton ampm;
-        private Characters.Characterfield_options.DragandDropButton hour12;
-        private Characters.Characterfield_options.DragandDropButton hour24;
-        private Characters.Characterfield_options.DragandDropButton dayofweek;
-        private Characters.Characterfield_options.DragandDropButton day;
-        private Characters.Characterfield_options.DragandDropButton monthname;
-        private Characters.Characterfield_options.DragandDropButton month;
-        private Characters.Characterfield_options.DragandDropButton presuffix;
-        private Characters.Characterfield_options.DragandDropButton year;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         internal System.Windows.Forms.Panel FormatPanel;
+        private Characters.Characterfield_options.CustomButton year;
+        private Characters.Characterfield_options.CustomButton monthnr;
+        private Characters.Characterfield_options.CustomButton monthname;
+        private Characters.Characterfield_options.CustomButton day;
+        private Characters.Characterfield_options.CustomButton dayofweek;
+        private Characters.Characterfield_options.CustomButton hour24;
+        private Characters.Characterfield_options.CustomButton hour12;
+        private Characters.Characterfield_options.CustomButton minute;
+        private Characters.Characterfield_options.CustomButton second;
+        private System.Windows.Forms.TextBox Formatfield;
+        private System.Windows.Forms.Label label3;
     }
 }

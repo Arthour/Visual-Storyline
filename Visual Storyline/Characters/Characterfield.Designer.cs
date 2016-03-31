@@ -45,7 +45,6 @@
             // 
             // Type
             // 
-            resources.ApplyResources(this.Type, "Type");
             this.Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Type.Items.AddRange(new object[] {
             resources.GetString("Type.Items"),
@@ -55,8 +54,8 @@
             resources.GetString("Type.Items4"),
             resources.GetString("Type.Items5"),
             resources.GetString("Type.Items6"),
-            resources.GetString("Type.Items7"),
-            resources.GetString("Type.Items8")});
+            resources.GetString("Type.Items7")});
+            resources.ApplyResources(this.Type, "Type");
             this.Type.Name = "Type";
             this.Type.SelectedIndexChanged += new System.EventHandler(this.Type_SelectedIndexChanged);
             // 
@@ -69,25 +68,25 @@
             // 
             // Delete
             // 
-            resources.ApplyResources(this.Delete, "Delete");
             this.Delete.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
+            resources.ApplyResources(this.Delete, "Delete");
             this.Delete.Name = "Delete";
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Down
             // 
-            resources.ApplyResources(this.Down, "Down");
             this.Down.Image = global::Visual_Storyline.Properties.Resources.GlyphDown;
+            resources.ApplyResources(this.Down, "Down");
             this.Down.Name = "Down";
             this.Down.UseVisualStyleBackColor = true;
             this.Down.Click += new System.EventHandler(this.Down_Click);
             // 
             // Up
             // 
-            resources.ApplyResources(this.Up, "Up");
             this.Up.Image = global::Visual_Storyline.Properties.Resources.GlyphUp;
+            resources.ApplyResources(this.Up, "Up");
             this.Up.Name = "Up";
             this.Up.UseVisualStyleBackColor = true;
             this.Up.Click += new System.EventHandler(this.Up_Click);

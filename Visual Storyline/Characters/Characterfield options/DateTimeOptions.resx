@@ -957,29 +957,59 @@
   <data name="&gt;&gt;invisSeconds.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 91</value>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 72</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, -3</value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value />
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 15</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
-    <value>richTextBox1</value>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Format</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>FormatPanel</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Formatfield.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 102</value>
+  </data>
+  <data name="Formatfield.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Formatfield.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 71</value>
+  </data>
+  <data name="Formatfield.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Formatfield.Name" xml:space="preserve">
+    <value>Formatfield</value>
+  </data>
+  <data name="&gt;&gt;Formatfield.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Formatfield.Parent" xml:space="preserve">
+    <value>FormatPanel</value>
+  </data>
+  <data name="&gt;&gt;Formatfield.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="year.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
@@ -988,7 +1018,7 @@
     <value>34, 21</value>
   </data>
   <data name="year.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="year.Text" xml:space="preserve">
     <value>Year</value>
@@ -997,7 +1027,7 @@
     <value>year</value>
   </data>
   <data name="&gt;&gt;year.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;year.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1005,77 +1035,53 @@
   <data name="&gt;&gt;year.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="presuffix.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="monthnr.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 3</value>
   </data>
-  <data name="presuffix.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 21</value>
+  <data name="monthnr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 21</value>
   </data>
-  <data name="presuffix.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="presuffix.Text" xml:space="preserve">
-    <value>Pre-/Suffix</value>
-  </data>
-  <data name="&gt;&gt;presuffix.Name" xml:space="preserve">
-    <value>presuffix</value>
-  </data>
-  <data name="&gt;&gt;presuffix.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;presuffix.Parent" xml:space="preserve">
-    <value>DragandDrop</value>
-  </data>
-  <data name="&gt;&gt;presuffix.ZOrder" xml:space="preserve">
+  <data name="monthnr.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="month.Location" type="System.Drawing.Point, System.Drawing">
-    <value>116, 3</value>
+  <data name="monthnr.Text" xml:space="preserve">
+    <value>Month (Number)</value>
   </data>
-  <data name="month.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 21</value>
+  <data name="&gt;&gt;monthnr.Name" xml:space="preserve">
+    <value>monthnr</value>
   </data>
-  <data name="month.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;monthnr.Type" xml:space="preserve">
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="month.Text" xml:space="preserve">
-    <value>Month</value>
-  </data>
-  <data name="&gt;&gt;month.Name" xml:space="preserve">
-    <value>month</value>
-  </data>
-  <data name="&gt;&gt;month.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;month.Parent" xml:space="preserve">
+  <data name="&gt;&gt;monthnr.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
-  <data name="&gt;&gt;month.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;monthnr.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="monthname.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 3</value>
+    <value>151, 3</value>
   </data>
   <data name="monthname.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 21</value>
+    <value>90, 21</value>
   </data>
   <data name="monthname.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="monthname.Text" xml:space="preserve">
-    <value>Monthname</value>
+    <value>Month (Name)</value>
   </data>
   <data name="&gt;&gt;monthname.Name" xml:space="preserve">
     <value>monthname</value>
   </data>
   <data name="&gt;&gt;monthname.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;monthname.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;monthname.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="day.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 30</value>
@@ -1084,7 +1090,7 @@
     <value>31, 21</value>
   </data>
   <data name="day.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="day.Text" xml:space="preserve">
     <value>Day</value>
@@ -1093,13 +1099,13 @@
     <value>day</value>
   </data>
   <data name="&gt;&gt;day.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;day.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;day.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="dayofweek.Location" type="System.Drawing.Point, System.Drawing">
     <value>40, 30</value>
@@ -1108,7 +1114,7 @@
     <value>79, 21</value>
   </data>
   <data name="dayofweek.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="dayofweek.Text" xml:space="preserve">
     <value>Day of Week</value>
@@ -1117,94 +1123,70 @@
     <value>dayofweek</value>
   </data>
   <data name="&gt;&gt;dayofweek.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;dayofweek.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;dayofweek.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="hour24.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 30</value>
   </data>
   <data name="hour24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 21</value>
+    <value>37, 21</value>
   </data>
   <data name="hour24.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="hour24.Text" xml:space="preserve">
-    <value>Hour (24 h)</value>
+    <value>Hour</value>
   </data>
   <data name="&gt;&gt;hour24.Name" xml:space="preserve">
     <value>hour24</value>
   </data>
   <data name="&gt;&gt;hour24.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;hour24.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;hour24.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="hour12.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 57</value>
   </data>
   <data name="hour12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 21</value>
+    <value>109, 21</value>
   </data>
   <data name="hour12.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="hour12.Text" xml:space="preserve">
-    <value>Hour (12 h)</value>
+    <value>Hour with AM/PM</value>
   </data>
   <data name="&gt;&gt;hour12.Name" xml:space="preserve">
     <value>hour12</value>
   </data>
   <data name="&gt;&gt;hour12.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;hour12.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;hour12.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="ampm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>81, 57</value>
-  </data>
-  <data name="ampm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 21</value>
-  </data>
-  <data name="ampm.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="ampm.Text" xml:space="preserve">
-    <value>AM/PM</value>
-  </data>
-  <data name="&gt;&gt;ampm.Name" xml:space="preserve">
-    <value>ampm</value>
-  </data>
-  <data name="&gt;&gt;ampm.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ampm.Parent" xml:space="preserve">
-    <value>DragandDrop</value>
-  </data>
-  <data name="&gt;&gt;ampm.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="minute.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 57</value>
+    <value>118, 57</value>
   </data>
   <data name="minute.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 21</value>
   </data>
   <data name="minute.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="minute.Text" xml:space="preserve">
     <value>Minute</value>
@@ -1213,22 +1195,22 @@
     <value>minute</value>
   </data>
   <data name="&gt;&gt;minute.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;minute.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;minute.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="second.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 57</value>
+    <value>173, 57</value>
   </data>
   <data name="second.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 21</value>
   </data>
   <data name="second.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="second.Text" xml:space="preserve">
     <value>Second</value>
@@ -1237,16 +1219,16 @@
     <value>second</value>
   </data>
   <data name="&gt;&gt;second.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.DragandDropButton, Visual Storyline, Version=1.0.5905.35791, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;second.Parent" xml:space="preserve">
     <value>DragandDrop</value>
   </data>
   <data name="&gt;&gt;second.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="DragandDrop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 3</value>
+    <value>6, 14</value>
   </data>
   <data name="DragandDrop.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 82</value>
@@ -1264,13 +1246,13 @@
     <value>FormatPanel</value>
   </data>
   <data name="&gt;&gt;DragandDrop.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="FormatPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 565</value>
   </data>
   <data name="FormatPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 160</value>
+    <value>266, 176</value>
   </data>
   <data name="FormatPanel.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>

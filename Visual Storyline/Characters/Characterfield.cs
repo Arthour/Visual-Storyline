@@ -116,7 +116,7 @@ namespace Visual_Storyline
                     RichTextboxoptions rtoptions = new RichTextboxoptions(optionslist, ID);
                     rtoptions.ShowDialog();
                     break;
-                case 2:     /*Combobox*/
+                case 2:     /*Checkbox*/
                     Checkboxoptions cboptions = new Checkboxoptions(optionslist, ID, false);
                     cboptions.ShowDialog();
                     break;

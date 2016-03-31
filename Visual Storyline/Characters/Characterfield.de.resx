@@ -130,16 +130,16 @@
   <data name="Type.Items3" xml:space="preserve">
     <value>Datum &amp; Zeit</value>
   </data>
-  <data name="Type.Items5" xml:space="preserve">
+  <data name="Type.Items4" xml:space="preserve">
     <value>Liste</value>
   </data>
-  <data name="Type.Items6" xml:space="preserve">
+  <data name="Type.Items5" xml:space="preserve">
     <value>Bild</value>
   </data>
-  <data name="Type.Items7" xml:space="preserve">
+  <data name="Type.Items6" xml:space="preserve">
     <value>Trennstrich</value>
   </data>
-  <data name="Type.Items8" xml:space="preserve">
+  <data name="Type.Items7" xml:space="preserve">
     <value>Farbpalette</value>
   </data>
   <data name="Type.TabIndex" type="System.Int32, mscorlib">

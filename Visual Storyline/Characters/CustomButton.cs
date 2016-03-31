@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Visual_Storyline.Characters.Characterfield_options
 {
-    public partial class DragandDropButton : Control
+    public partial class CustomButton : Control
     {
         public new string Text
         {
@@ -43,7 +43,7 @@ namespace Visual_Storyline.Characters.Characterfield_options
             }
         }
 
-        public DragandDropButton()
+        public CustomButton()
         {
             InitializeComponent();
             ResizeRedraw = true;
@@ -53,7 +53,7 @@ namespace Visual_Storyline.Characters.Characterfield_options
 
         protected override void OnPaint(PaintEventArgs pe)
         {
-            if(Visible == true)
+            if (Visible == true)
             {
                 Graphics gfx = pe.Graphics;
                 Rectangle rec = ClientRectangle;
