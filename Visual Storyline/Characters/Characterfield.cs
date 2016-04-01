@@ -88,6 +88,9 @@ namespace Visual_Storyline
                     }
                     break;
                 case 5:     /*List*/
+                    optionslist = "<options><ms>no</ms><elements></elements></options>";
+                    Listoptions loptions = new Listoptions(optionslist, ID, true);
+                    loptions.ShowDialog();
                     break;
                 case 6:     /*Picture*/
                     break;
@@ -138,6 +141,8 @@ namespace Visual_Storyline
                     cobooptions.ShowDialog();
                     break;
                 case 5:     /*List*/
+                    Listoptions loptions = new Listoptions(optionslist, ID, false);
+                    loptions.ShowDialog();
                     break;
                 case 6:     /*Picture*/
                     break;

@@ -70,6 +70,12 @@
     <Compile Include="Characters\Characterfield options\DateTimetimetable.Designer.cs">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Characters\Characterfield options\Listoptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters\Characterfield options\Listoptions.Designer.cs">
+      <DependentUpon>Listoptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Characters\Characterfield options\RichTextboxoptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\DateTimetimetable.resx">
       <DependentUpon>DateTimetimetable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Listoptions.de.resx">
+      <DependentUpon>Listoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Listoptions.resx">
+      <DependentUpon>Listoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\RichTextboxoptions.de.resx">
       <DependentUpon>RichTextboxoptions.cs</DependentUpon>

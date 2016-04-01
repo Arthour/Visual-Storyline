@@ -123,83 +123,76 @@
   <data name="&gt;&gt;delete.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="comboboxelements_list.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="listelements.Text" xml:space="preserve">
+    <value>List elements:</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="add_Element.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;add_Element.Name" xml:space="preserve">
     <value>add_Element</value>
   </data>
-  <data name="limit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="addElement_text.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;limit.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>35</value>
   </data>
   <data name="OK.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>30</value>
   </data>
-  <data name="&gt;&gt;comboboxelements_list.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ms.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboboxelements.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="limit_check.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Comboboxoptions</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="delete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
+  <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="comboboxelements.Text" xml:space="preserve">
-    <value>Combobox elements:</value>
+  <data name="&gt;&gt;move_down.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;limit_check.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;ms.Name" xml:space="preserve">
+    <value>ms</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Listoptions</value>
   </data>
-  <data name="limit_check.AutoSize" type="System.Boolean, mscorlib">
+  <data name="listelements.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;listelements.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 193</value>
+  </data>
+  <data name="&gt;&gt;ms.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;listelements_list.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ms.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 15</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="ms_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
   </data>
   <data name="&gt;&gt;move_down.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="ms.Text" xml:space="preserve">
+    <value>Allow multiselect:</value>
+  </data>
+  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
   <data name="move_up.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="comboboxelements_list.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 109</value>
-  </data>
-  <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 107</value>
-  </data>
-  <data name="limit.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>37</value>
   </data>
   <data name="OK.Text" xml:space="preserve">
     <value>OK</value>
-  </data>
-  <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
   </data>
   <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 193</value>
@@ -207,107 +200,108 @@
   <data name="&gt;&gt;addElement_text.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;comboboxelements_list.Name" xml:space="preserve">
-    <value>comboboxelements_list</value>
+  <data name="&gt;&gt;ms.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;limit_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboboxelements_list.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 49</value>
-  </data>
-  <data name="&gt;&gt;addElement_text.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ms_check.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ms_check.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ms_check.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="delete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="&gt;&gt;listelements_list.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;move_down.Name" xml:space="preserve">
+    <value>move_down</value>
   </data>
   <data name="move_down.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
   </data>
+  <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 107</value>
+  </data>
   <data name="&gt;&gt;cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="limit_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 8</value>
+  <data name="&gt;&gt;move_down.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;OK.Name" xml:space="preserve">
-    <value>OK</value>
+  <data name="ms.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
   </data>
-  <data name="&gt;&gt;move_up.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ms_check.Name" xml:space="preserve">
+    <value>ms_check</value>
   </data>
   <data name="&gt;&gt;addElement_text.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>29</value>
   </data>
   <data name="addElement_text.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 23</value>
   </data>
-  <data name="&gt;&gt;limit.Name" xml:space="preserve">
-    <value>limit</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ms.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="add_Element.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 164</value>
   </data>
-  <data name="&gt;&gt;comboboxelements_list.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="limit_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="add_Element.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;delete.Name" xml:space="preserve">
-    <value>delete</value>
+  <data name="ms.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="limit_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="add_Element.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="limit.Text" xml:space="preserve">
-    <value>Limit to given elements:</value>
-  </data>
-  <data name="&gt;&gt;limit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
-    <value>cancel</value>
-  </data>
-  <data name="comboboxelements.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;comboboxelements.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="move_up.Location" type="System.Drawing.Point, System.Drawing">
-    <value>210, 49</value>
-  </data>
-  <data name="move_down.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;move_down.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="comboboxelements.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="&gt;&gt;add_Element.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;listelements.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="listelements_list.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="move_up.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="move_down.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;move_up.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;addElement_text.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 164</value>
+  </data>
   <data name="&gt;&gt;move_up.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;limit_check.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ms_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="move_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="limit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 15</value>
+  <data name="&gt;&gt;listelements.Name" xml:space="preserve">
+    <value>listelements</value>
   </data>
   <data name="&gt;&gt;addElement_text.Name" xml:space="preserve">
     <value>addElement_text</value>
@@ -315,107 +309,113 @@
   <data name="cancel.Text" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;OK.Name" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="listelements.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="listelements.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 31</value>
   </data>
   <data name="move_down.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 78</value>
   </data>
   <data name="add_Element.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+    <value>36</value>
   </data>
-  <data name="limit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;delete.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="listelements_list.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
   <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="comboboxelements.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 15</value>
+  <data name="listelements.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;OK.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="comboboxelements_list.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="move_up.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 49</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Combobox options</value>
+    <value>List options</value>
   </data>
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 193</value>
+  <data name="ms.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
-  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 164</value>
+  <data name="&gt;&gt;listelements_list.Name" xml:space="preserve">
+    <value>listelements_list</value>
+  </data>
+  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;limit.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;delete.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="limit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+  <data name="ms_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 8</value>
   </data>
-  <data name="&gt;&gt;comboboxelements.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;move_down.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;move_down.Name" xml:space="preserve">
-    <value>move_down</value>
+  <data name="listelements_list.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 109</value>
   </data>
   <data name="&gt;&gt;OK.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;listelements_list.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="&gt;&gt;move_up.Name" xml:space="preserve">
     <value>move_up</value>
   </data>
-  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;listelements.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="move_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;limit_check.Name" xml:space="preserve">
-    <value>limit_check</value>
-  </data>
-  <data name="comboboxelements.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="move_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;comboboxelements.Name" xml:space="preserve">
-    <value>comboboxelements</value>
+  <data name="&gt;&gt;delete.Name" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="ms_check.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>258, 240</value>
+    <value>254, 236</value>
+  </data>
+  <data name="listelements_list.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 49</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="move_up.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="add_Element.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
   </data>
-  <data name="&gt;&gt;comboboxelements_list.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="delete.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+    <value>39</value>
   </data>
-  <data name="comboboxelements.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="ms_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="listelements.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 15</value>
   </data>
   <data name="&gt;&gt;move_up.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
