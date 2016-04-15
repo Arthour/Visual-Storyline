@@ -213,7 +213,7 @@ namespace Visual_Storyline.Characters.Characterfield_options
             string newoptions;
             newoptions = "<options><ms>" + msset + "</ms><elements>" + eleset + "</elements></options>";
             EditCharacterFields.tempID = ID;
-            EditCharacterFields.tempType = "Combobox";
+            EditCharacterFields.tempType = "List";
             EditCharacterFields.grabOptions = newoptions;
             this.Dispose();
         }

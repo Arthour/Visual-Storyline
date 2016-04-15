@@ -117,152 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Erlaubte Dateiendungen</value>
+  </data>
+  <data name="dpmode.Items" xml:space="preserve">
+    <value>Zentriert</value>
+  </data>
+  <data name="dpmode.Items1" xml:space="preserve">
+    <value>Anpassen</value>
+  </data>
+  <data name="dpmode.Items2" xml:space="preserve">
+    <value>Strecken</value>
+  </data>
+  <data name="dpmode.Items3" xml:space="preserve">
+    <value>Ausfüllen</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 277</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
   </data>
-  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 277</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Anzeigemodus:</value>
   </data>
-  <data name="cancel.Text" xml:space="preserve">
-    <value>Abbrechen</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
   </data>
-  <data name="font.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 17</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Breite:</value>
   </data>
-  <data name="font.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 15</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
   </data>
-  <data name="font.Text" xml:space="preserve">
-    <value>Schriftart:</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Höhe:</value>
   </data>
-  <data name="color_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 46</value>
-  </data>
-  <data name="font_box.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 13</value>
-  </data>
-  <data name="color.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 45</value>
-  </data>
-  <data name="color.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 15</value>
-  </data>
-  <data name="color.Text" xml:space="preserve">
-    <value>Erlaube Textfarbe:</value>
-  </data>
-  <data name="fontsize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 67</value>
-  </data>
-  <data name="fontsize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 15</value>
-  </data>
-  <data name="fontsize.Text" xml:space="preserve">
-    <value>Erlaube andere Schriftgröße:</value>
-  </data>
-  <data name="fontsize_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 68</value>
-  </data>
-  <data name="bold.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 89</value>
-  </data>
-  <data name="bold.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 15</value>
-  </data>
-  <data name="bold.Text" xml:space="preserve">
-    <value>Erlaube fetten Text:</value>
-  </data>
-  <data name="bold_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 90</value>
-  </data>
-  <data name="italic.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 111</value>
-  </data>
-  <data name="italic.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 15</value>
-  </data>
-  <data name="italic.Text" xml:space="preserve">
-    <value>Erlaube kursiven Text:</value>
-  </data>
-  <data name="italic_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 112</value>
-  </data>
-  <data name="underlined.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 133</value>
-  </data>
-  <data name="underlined.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 15</value>
-  </data>
-  <data name="underlined.Text" xml:space="preserve">
-    <value>Erlaube unterstrichenen Text:</value>
-  </data>
-  <data name="underlined_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 134</value>
-  </data>
-  <data name="bunumb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 155</value>
-  </data>
-  <data name="bunumb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 15</value>
-  </data>
-  <data name="bunumb.Text" xml:space="preserve">
-    <value>Erlaube Aufzählungen:</value>
-  </data>
-  <data name="bunumb_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 156</value>
-  </data>
-  <data name="align_justify.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 47</value>
-  </data>
-  <data name="align_justify.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 19</value>
-  </data>
-  <data name="align_justify.Text" xml:space="preserve">
-    <value>Blocksatz</value>
-  </data>
-  <data name="align_right.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
-  </data>
-  <data name="align_right.Text" xml:space="preserve">
-    <value>Rechts</value>
-  </data>
-  <data name="align_center.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 22</value>
-  </data>
-  <data name="align_center.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 19</value>
-  </data>
-  <data name="align_center.Text" xml:space="preserve">
-    <value>Mittig</value>
-  </data>
-  <data name="align_left.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 19</value>
-  </data>
-  <data name="align_left.Text" xml:space="preserve">
-    <value>Links</value>
-  </data>
-  <data name="group_align.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 198</value>
-  </data>
-  <data name="group_align.Text" xml:space="preserve">
-    <value>Erlaubte Textausrichtung:</value>
-  </data>
-  <data name="required.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 177</value>
-  </data>
-  <data name="required.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 15</value>
-  </data>
-  <data name="required.Text" xml:space="preserve">
-    <value>Wird benötigt:</value>
-  </data>
-  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 178</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>228, 317</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Anzeigeeinstellungen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>RichTextbox-Optionen</value>
+    <value>Bild-Optionen</value>
   </data>
 </root>

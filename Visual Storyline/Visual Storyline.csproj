@@ -94,6 +94,12 @@
     <Compile Include="Characters\EditCharacterFields.Designer.cs">
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
     </Compile>
+    <Compile Include="Characters\Characterfield options\Pictureoptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters\Characterfield options\Pictureoptions.Designer.cs">
+      <DependentUpon>Pictureoptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="ErrorMessages.cs" />
     <Compile Include="Characters\Characterfield options\Textfieldoptions.cs">
       <SubType>Form</SubType>
@@ -175,6 +181,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\Textfieldoptions.resx">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Pictureoptions.de.resx">
+      <DependentUpon>Pictureoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Pictureoptions.resx">
+      <DependentUpon>Pictureoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New.de.resx">
       <DependentUpon>New.cs</DependentUpon>

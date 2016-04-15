@@ -88,11 +88,20 @@ namespace Visual_Storyline
                     }
                     break;
                 case 5:     /*List*/
-                    optionslist = "<options><ms>no</ms><elements></elements></options>";
-                    Listoptions loptions = new Listoptions(optionslist, ID, true);
-                    loptions.ShowDialog();
+                    if (oldtype == "List")
+                    { optionslist = oldoptions; }
+                    else
+                    {
+                        optionslist = "<options><ms>no</ms><elements></elements></options>";
+                        Listoptions loptions = new Listoptions(optionslist, ID, true);
+                        loptions.ShowDialog();
+                    }
                     break;
                 case 6:     /*Picture*/
+                    if (oldtype == "Picture")
+                    { optionslist = oldoptions; }
+                    else
+                    { optionslist = "<options><allowed>jpg;png;gif;bmp;wmf;</allowed><width>120</width><height>120</height><unit>px</unit><dpm>0</dpm></options>"; }
                     break;
                 case 7:     /*Hyphen*/
                     break;
@@ -145,6 +154,8 @@ namespace Visual_Storyline
                     loptions.ShowDialog();
                     break;
                 case 6:     /*Picture*/
+                    Pictureoptions poptions = new Pictureoptions(optionslist, ID);
+                    poptions.ShowDialog();
                     break;
                 case 7:     /*Hyphen*/
                     break;

@@ -172,11 +172,11 @@ namespace Visual_Storyline.Characterfield_options
             if (align_left.Checked)
                 alignset = "left;";
             if (align_center.Checked)
-                alignset = alignset + "center;";
+                alignset += "center;";
             if (align_right.Checked)
-                alignset = alignset + "right;";
+                alignset += "right;";
             if (align_justify.Checked)
-                alignset = alignset + "justify;";
+                alignset += "justify;";
 
             string newoptions;
             newoptions = "<options><font>" + fontset + "</font><color>" + colorset + "</color><size>" + sizeset + "</size><bold>" + boldset + "</bold><italic>" + italicset + "</italic><underline>" + underlineset + "</underline><bunumb>" + bunumbset + "</bunumb><required>" + requiredset + "</required><align>" + alignset + "</align></options>";
