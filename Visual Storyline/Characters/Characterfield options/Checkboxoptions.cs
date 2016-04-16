@@ -206,6 +206,7 @@ namespace Visual_Storyline.Characterfield_options
             newoptions = "<options><ms>" + msset + "</ms><required>" + reqset + "</required><elements>" + eleset + "</elements></options>";
             EditCharacterFields.tempID = ID;
             EditCharacterFields.tempType = "Checkbox";
+            EditCharacterFields.tempElements = eleset;
             EditCharacterFields.grabOptions = newoptions;
             this.Dispose();
         }

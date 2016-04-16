@@ -13,11 +13,13 @@ namespace Visual_Storyline
         internal static string eventHappened;
         internal static string tempOptions;
         internal static string tempType;
+        internal static string tempElements;
         internal static string grabOptions
         {
             get { return tempOptions; }
-            set { tempOptions = value; setOptions(tempID, tempOptions, tempType); }
+            set { tempOptions = value; setOptions(tempID, tempOptions, tempType, tempElements); }
         }
+
         public static Panel spanel{ get; private set; }
 
         public EditCharacterFields()
@@ -136,7 +138,7 @@ namespace Visual_Storyline
             }
         }
 
-        public static void setOptions(int ID, string options, string type)
+        public static void setOptions(int ID, string options, string type, string elements)
         {
             foreach (Characterfield field in spanel.Controls)
             {
@@ -145,6 +147,7 @@ namespace Visual_Storyline
                     field.optionslist = options;
                     field.oldoptions = options;
                     field.oldtype = type;
+                    field.oldelements = elements;
                 }
             }
         }

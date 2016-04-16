@@ -14,6 +14,7 @@ namespace Visual_Storyline
         internal string optionslist;
         internal string oldoptions;
         internal string oldtype;
+        internal string oldelements;
         internal int IDChecker
         {
             get { CheckID();  return ID; }
@@ -64,6 +65,8 @@ namespace Visual_Storyline
                 case 2:     /*Checkbox*/
                     if(oldtype == "Checkbox")
                     { optionslist = oldoptions; }
+                    else if(oldtype == "List" || oldtype == "Combobox")
+                    { optionslist = "<options><ms>no</ms><required>no</required><elements>" + oldelements + "</elements></options>"; }
                     else
                     {
                         optionslist = "<options><ms>no</ms><required>no</required><elements></elements></options>";
@@ -80,6 +83,8 @@ namespace Visual_Storyline
                 case 4:     /*Combobox*/
                     if (oldtype == "Combobox")
                     { optionslist = oldoptions; }
+                    else if (oldtype == "Checkbox" || oldtype == "List")
+                    { optionslist = "<options><limit>no</limit><elements>" + oldelements + "</elements></options>"; }
                     else
                     {
                         optionslist = "<options><limit>no</limit><elements></elements></options>";
@@ -90,6 +95,8 @@ namespace Visual_Storyline
                 case 5:     /*List*/
                     if (oldtype == "List")
                     { optionslist = oldoptions; }
+                    else if (oldtype == "Checkbox" || oldtype == "Combobox")
+                    { optionslist = "<options><ms>no</ms><elements>" + oldelements + "</elements></options>"; }
                     else
                     {
                         optionslist = "<options><ms>no</ms><elements></elements></options>";

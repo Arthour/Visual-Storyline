@@ -214,6 +214,7 @@ namespace Visual_Storyline.Characters.Characterfield_options
             newoptions = "<options><ms>" + msset + "</ms><elements>" + eleset + "</elements></options>";
             EditCharacterFields.tempID = ID;
             EditCharacterFields.tempType = "List";
+            EditCharacterFields.tempElements = eleset;
             EditCharacterFields.grabOptions = newoptions;
             this.Dispose();
         }
