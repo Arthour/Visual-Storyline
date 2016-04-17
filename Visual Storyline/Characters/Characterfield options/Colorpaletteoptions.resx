@@ -208,7 +208,7 @@
     <value>NoControl</value>
   </data>
   <data name="backgroundcolor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 42</value>
+    <value>16, 41</value>
   </data>
   <data name="backgroundcolor.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 19</value>
@@ -232,7 +232,7 @@
     <value>2</value>
   </data>
   <data name="colorbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 63</value>
+    <value>16, 66</value>
   </data>
   <data name="colorbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 24</value>

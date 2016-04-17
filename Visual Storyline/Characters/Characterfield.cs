@@ -124,6 +124,7 @@ namespace Visual_Storyline
             if (Type.SelectedIndex == 7)
             {
                 NameField.Enabled = false;
+                NameField.Text = "";
                 Options.Enabled = false;
             }
             if (Type.SelectedIndex != 7)

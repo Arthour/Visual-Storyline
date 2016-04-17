@@ -57,18 +57,21 @@
             resources.ApplyResources(this.textcolor, "textcolor");
             this.textcolor.Name = "textcolor";
             this.textcolor.UseVisualStyleBackColor = true;
+            this.textcolor.CheckedChanged += new System.EventHandler(this.CheckChecked);
             // 
             // backgroundcolor
             // 
             resources.ApplyResources(this.backgroundcolor, "backgroundcolor");
             this.backgroundcolor.Name = "backgroundcolor";
             this.backgroundcolor.UseVisualStyleBackColor = true;
+            this.backgroundcolor.CheckedChanged += new System.EventHandler(this.CheckChecked);
             // 
             // colorbox
             // 
             resources.ApplyResources(this.colorbox, "colorbox");
             this.colorbox.Name = "colorbox";
             this.colorbox.UseVisualStyleBackColor = true;
+            this.colorbox.CheckedChanged += new System.EventHandler(this.CheckChecked);
             // 
             // DefaultColor
             // 

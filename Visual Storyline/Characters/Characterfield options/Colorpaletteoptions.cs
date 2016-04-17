@@ -90,5 +90,20 @@ namespace Visual_Storyline.Characters.Characterfield_options
             EditCharacterFields.grabOptions = newoptions;
             this.Dispose();
         }
+
+        private void CheckChecked(object sender, EventArgs e)
+        {
+            CheckBox[] Color = new CheckBox[] { textcolor, backgroundcolor, colorbox };
+            bool ischecked = false;
+            foreach (CheckBox check in Color)
+            {
+                if (check.Checked == true)
+                    ischecked = true;
+            }
+            if (ischecked)
+            { OK.Enabled = true; }
+            else
+            { OK.Enabled = false; }
+        }
     }
 }
