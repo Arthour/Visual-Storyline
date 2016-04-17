@@ -17,6 +17,12 @@ namespace Visual_Storyline
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new VisualStoryline());
+
+            if (!Directory.Exists(Path.Combine(Variables.VSL, "GlobalSavedata")))
+            {
+                DirectoryInfo di = Directory.CreateDirectory(Path.Combine(Variables.VSL, "GlobalSavedata"));
+                di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+            }
         }
 
         public static string Encode(string input)
@@ -34,12 +40,40 @@ namespace Visual_Storyline
 
     class Variables
     {
+        //Main save-file
+        /// <summary>
+        /// Program-Folder
+        /// </summary>
         public static string VSL = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"Visual Storyline");
+        /// <summary>
+        /// Current file paths
+        /// </summary>
         public static string currentPath, currentFolder, currentFile;
+        /// <summary>
+        /// Metadata
+        /// </summary>
         public static string Version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-        public static string Created, Modified, Name, Description, Programversion;
-        public static string SaveOptionChar, SaveOptionLoc;
+        /// <summary>
+        /// Metadata
+        /// </summary>
+        public static string Created, Modified, Name, Description;
+        /// <summary>
+        /// Main save-file
+        /// </summary>
+        public static int SaveOptionChar, SaveOptionLoc;
+        /// <summary>
+        /// Main save-file
+        /// </summary>
+        public static int[] customColors = new int[16] { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+        
+        //Secondary save-files
+        /// <summary>
+        /// Secondary save-files
+        /// </summary>
         public static List<string> Characters, Locations, Strands, Ideas, Quests, Relations, Conditions;
-        public static List<string> CharacterFields;
+        /// <summary>
+        /// Character save-file
+        /// </summary>
+        public static List<string> CharacterFields = new List<string>();
     }
 }

@@ -60,7 +60,7 @@ namespace Visual_Storyline
                     if(oldtype == "Richtext")
                     { optionslist = oldoptions; }
                     else
-                    { optionslist = "<options><font>Aral</font><color>yes</color><size>yes</size><bold>yes</bold><italic>yes</italic><underline>yes</underline><bunumb>yes</bunumb><required>no</required><align>left;right;center;justify</align></options>"; }
+                    { optionslist = "<options><font>Arial</font><color>yes</color><size>yes</size><bold>yes</bold><italic>yes</italic><underline>yes</underline><bunumb>yes</bunumb><required>no</required><align>left;right;center;justify</align></options>"; }
                     break;
                 case 2:     /*Checkbox*/
                     if(oldtype == "Checkbox")
@@ -113,18 +113,24 @@ namespace Visual_Storyline
                 case 7:     /*Hyphen*/
                     break;
                 case 8:     /*Colorpalette*/
+                    if (oldtype == "Colorpalette")
+                    { optionslist = oldoptions; }
+                    else
+                    { optionslist = "<options><textcolor>no</textcolor><bgcolor>no</bgcolor><colorbox>no</colorbox><defcol>-16777216</defcol></options>"; }
+
                     break;
             }
 
             if (Type.SelectedIndex == 7)
             {
                 NameField.Enabled = false;
+                Options.Enabled = false;
             }
             if (Type.SelectedIndex != 7)
             {
                 NameField.Enabled = true;
             }
-            if (Type.SelectedIndex != -1)
+            if (Type.SelectedIndex != -1 && Type.SelectedIndex != 7)
             {
                 Options.Enabled = true;
             }
@@ -167,6 +173,8 @@ namespace Visual_Storyline
                 case 7:     /*Hyphen*/
                     break;
                 case 8:     /*Colorpalette*/
+                    Colorpaletteoptions cpoptions = new Colorpaletteoptions(optionslist, ID);
+                    cpoptions.ShowDialog();
                     break;
             }
         }

@@ -52,6 +52,12 @@
     <Compile Include="Characters\Characterfield options\Checkboxoptions.Designer.cs">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Characters\Characterfield options\Colorpaletteoptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Characters\Characterfield options\Colorpaletteoptions.Designer.cs">
+      <DependentUpon>Colorpaletteoptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Characters\Characterfield options\Comboboxoptions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,7 @@
     <Compile Include="Characters\Characterfield.Designer.cs">
       <DependentUpon>Characterfield.cs</DependentUpon>
     </Compile>
+    <Compile Include="SaveFile.cs" />
     <Compile Include="Visual Storyline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\Checkboxoptions.resx">
       <DependentUpon>Checkboxoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Colorpaletteoptions.de.resx">
+      <DependentUpon>Colorpaletteoptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Characters\Characterfield options\Colorpaletteoptions.resx">
+      <DependentUpon>Colorpaletteoptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\Comboboxoptions.de.resx">
       <DependentUpon>Comboboxoptions.cs</DependentUpon>
@@ -277,9 +290,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\action_Cancel_16xSM.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Projectdata.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

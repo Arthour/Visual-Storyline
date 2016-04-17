@@ -98,11 +98,13 @@
             this.Save.Image = global::Visual_Storyline.Properties.Resources.Save_6530;
             resources.ApplyResources(this.Save, "Save");
             this.Save.Name = "Save";
+            this.Save.ButtonClick += new System.EventHandler(this.Save_ButtonClick);
             // 
             // SaveSubmenu
             // 
             this.SaveSubmenu.Name = "SaveSubmenu";
             resources.ApplyResources(this.SaveSubmenu, "SaveSubmenu");
+            this.SaveSubmenu.Click += new System.EventHandler(this.Save_ButtonClick);
             // 
             // SaveasSubmenu
             // 

@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using System.IO;
 using System.Security;
 using System.Security.Cryptography;
+using System.Xml;
 
 namespace Visual_Storyline
 {
@@ -150,51 +151,16 @@ namespace Visual_Storyline
                         Console.WriteLine("Success");
                     }
 
-                    string metadata = "<metadata><created>" + System.DateTime.UtcNow + @"</created><modified>" + System.DateTime.UtcNow + @"</modified><name>" + ProjectName.Text + @"</name><description>" + ProjectDescription.Text + @"</description><version>" + Variables.Version + @"</version></metadata>";
-                    string saveoptions = "<saveoptions><characters>" + CharSave + @"</characters><locations>" + LocSave + @"</locations></saveoptions>";
+                    Variables.SaveOptionChar = CharSave;
+                    Variables.SaveOptionLoc = LocSave;
+
+                    string metadata = "<metadata><version>" + Variables.Version + @"</version><created>" + System.DateTime.UtcNow + @"</created><modified>" + System.DateTime.UtcNow + @"</modified><name>" + ProjectName.Text + @"</name><description>" + ProjectDescription.Text + @"</description></metadata>";
+                    string saveoptions = "<saveoptions><characters>" + CharSave + @"</characters><locations>" + LocSave + @"</locations><customcolors>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</customcolors></saveoptions>";
                     using (StreamWriter sw = new StreamWriter(ProjectFile, true))
                     {
                         sw.WriteLine(Program.Encode(metadata));
                         sw.WriteLine(Program.Encode(saveoptions));
                         sw.Close();
-                    }
-                    if (CharSave == 1)
-                    {
-                        if (!Directory.Exists(Path.Combine(ProjectFolder, "Savedata")))
-                        {
-                            Directory.CreateDirectory(Path.Combine(ProjectFolder, "Savedata"));
-                        }
-                        File.Create(Path.Combine(ProjectFolder, "Savedata", "Characters.dat"));
-                    }
-                    if (CharSave == 2)
-                    {
-                        if (!Directory.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata")))
-                        {
-                            Directory.CreateDirectory(Path.Combine(Variables.VSL, "$GlobalSavedata"));
-                        }
-                        if (!File.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata", "Characters.dat")) )
-                        {
-                            File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Characters.dat"));
-                        }
-                    }
-                    if (LocSave == 1)
-                    {
-                        if (!Directory.Exists(Path.Combine(ProjectFolder, "Savedata")))
-                        {
-                            Directory.CreateDirectory(Path.Combine(ProjectFolder, "Savedata"));
-                        }
-                        File.Create(Path.Combine(ProjectFolder, "Savedata", "Locations.dat"));
-                    }
-                    if (LocSave == 2)
-                    {
-                        if (!Directory.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata")))
-                        {
-                            Directory.CreateDirectory(Path.Combine(Variables.VSL, "$GlobalSavedata"));
-                        }
-                        if (!File.Exists(Path.Combine(Variables.VSL, "$GlobalSavedata", "Locations.dat")))
-                        {
-                            File.Create(Path.Combine(Variables.VSL, "$GlobalSavedata", "Locations.dat"));
-                        }
                     }
                     Console.WriteLine("Created project file and saved basic data");
                     this.Dispose();
@@ -249,6 +215,31 @@ namespace Visual_Storyline
                 ErrorMessages.ErrorTitle();
                 MessageBox.Show(ErrorMessages.Message, ErrorMessages.Title, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Console.WriteLine("Name Error");
+            }
+
+            if (CharSave == 2)
+            {
+                if (!Directory.Exists(Path.Combine(Variables.VSL, "GlobalSavedata")))
+                {
+                    DirectoryInfo di = Directory.CreateDirectory(Path.Combine(Variables.VSL, "GlobalSavedata"));
+                    di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
+                }
+                else if(File.Exists(Path.Combine(Variables.VSL, "GlobalSavedata", "Characters.dat")))
+                {
+                    string line;
+                    XmlDocument xml = new XmlDocument();
+                    Variables.CharacterFields.Clear();
+                    using (StreamReader sr = new StreamReader(Path.Combine(Variables.VSL, "GlobalSavedata", "Characters.dat")))
+                    {
+                        while ((line = sr.ReadLine()) != null)
+                        {
+                            xml.LoadXml(Program.Decode(line));
+                            XmlNodeList xmllist = xml.SelectNodes("/Characterfields/characterfield");
+                            foreach (XmlNode node in xmllist)
+                            { Variables.CharacterFields.Add("<characterfield>" + node.InnerXml + "</characterfield>"); }
+                        }
+                    }
+                }
             }
         }
 

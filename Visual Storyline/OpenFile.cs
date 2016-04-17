@@ -12,10 +12,12 @@ namespace Visual_Storyline
     class OpenFile
     {
         private static string fileToOpen;
+        private static string dir;
         private static List<string> decoded = new List<string>();
 
         public static void OpenDialog()
         {
+            XmlDocument xml = new XmlDocument();
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             openFileDialog.InitialDirectory = Variables.VSL;
@@ -25,6 +27,9 @@ namespace Visual_Storyline
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 fileToOpen = openFileDialog.FileName;
+                Variables.currentFile = openFileDialog.FileName;
+                Variables.currentFolder = Directory.GetParent(Variables.currentFile).ToString();
+                Variables.currentPath = Directory.GetParent(Variables.currentFolder).ToString();
                 openFileDialog.Dispose();
             }
             else
@@ -40,27 +45,47 @@ namespace Visual_Storyline
                     decoded.Add(Program.Decode(line));
 
                 }
-                XmlDocument xml = new XmlDocument();
                 xml.LoadXml(decoded.ElementAt(0));
-                Console.WriteLine(decoded.ElementAt(0));
 
+                Variables.Version = xml.DocumentElement.SelectSingleNode("/metadata/version").InnerText;
                 Variables.Created = xml.DocumentElement.SelectSingleNode("/metadata/created").InnerText;
-                Console.WriteLine(Variables.Created);
                 Variables.Modified = xml.DocumentElement.SelectSingleNode("/metadata/modified").InnerText;
-                Console.WriteLine(Variables.Modified);
                 Variables.Name = xml.DocumentElement.SelectSingleNode("/metadata/name").InnerText;
-                Console.WriteLine(Variables.Name);
                 Variables.Description = xml.DocumentElement.SelectSingleNode("/metadata/description").InnerText;
-                Console.WriteLine(Variables.Description);
-                Variables.Programversion = xml.DocumentElement.SelectSingleNode("/metadata/version").InnerText;
-                Console.WriteLine(Variables.Programversion);
+
 
                 xml.LoadXml(decoded.ElementAt(1));
 
-                Variables.SaveOptionChar = xml.DocumentElement.SelectSingleNode("/saveoptions/characters").InnerText;
-                Console.WriteLine(Variables.SaveOptionChar);
-                Variables.SaveOptionLoc = xml.DocumentElement.SelectSingleNode("/saveoptions/locations").InnerText;
-                Console.WriteLine(Variables.SaveOptionLoc);
+                Variables.SaveOptionChar = Convert.ToInt32(xml.DocumentElement.SelectSingleNode("/saveoptions/characters").InnerText);
+                Variables.SaveOptionLoc = Convert.ToInt32(xml.DocumentElement.SelectSingleNode("/saveoptions/locations").InnerText);
+                Variables.customColors = Array.ConvertAll<string, int>(xml.DocumentElement.SelectSingleNode("/saveoptions/customcolors").InnerText.Split(','), int.Parse);
+            }
+
+            Variables.CharacterFields.Clear();
+            if (Variables.SaveOptionChar == 1)
+            { dir = Path.Combine(Directory.GetParent(fileToOpen).ToString(), "Savedata", "Characters.dat"); }
+            else if (Variables.SaveOptionChar == 2)
+            { dir = Path.Combine(Variables.VSL, "GlobalSavedata", "Characters.dat"); }
+
+            if (File.Exists(dir))
+            {
+                Console.WriteLine(dir);
+                using (StreamReader sr = new StreamReader(dir))
+                {
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        decoded.Add(Program.Decode(line));
+                    }
+
+                    xml.LoadXml(decoded.ElementAt(2));
+                    Console.WriteLine(xml.InnerXml);
+                    XmlNodeList xmllist = xml.SelectNodes("/Characterfields/characterfield");
+                    foreach (XmlNode node in xmllist)
+                    {
+                        Variables.CharacterFields.Add("<characterfield>" + node.InnerXml + "</characterfield>");
+                    }
+                }
             }
         }
     }

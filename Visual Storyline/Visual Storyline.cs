@@ -70,5 +70,10 @@ namespace Visual_Storyline
             EditCharacterFields editfields = new EditCharacterFields();
             editfields.ShowDialog();
         }
+
+        private void Save_ButtonClick(object sender, EventArgs e)
+        {
+            SaveFile.Save();
+        }
     }
 }

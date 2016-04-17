@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Visual_Storyline
 {
@@ -26,6 +27,31 @@ namespace Visual_Storyline
         {
             InitializeComponent();
             highestID = -1;
+
+            if (Variables.CharacterFields.Count != 0)
+            {
+                foreach (string item in Variables.CharacterFields)
+                {
+                    highestID++;
+                    Characterfield field = new Characterfield(highestID);
+                    field.update += new EventHandler(ChildUpdate);
+                    field.Top = highestID * Distance;
+                    XmlDocument option = new XmlDocument();
+                    option.LoadXml(item);
+                    Console.WriteLine(item);
+                    field.NameField.Text = option.DocumentElement.SelectSingleNode("/characterfield/name").InnerText;
+                    field.Type.SelectedIndex = Convert.ToInt32(option.DocumentElement.SelectSingleNode("/characterfield/type").InnerText);
+                    field.optionslist = option.DocumentElement.SelectSingleNode("/characterfield/optionslist").InnerXml;
+                    field.oldoptions = option.DocumentElement.SelectSingleNode("/characterfield/oldoptions").InnerXml;
+                    field.oldtype = option.DocumentElement.SelectSingleNode("/characterfield/oldtype").InnerText;
+                    field.oldelements = option.DocumentElement.SelectSingleNode("/characterfield/oldelements").InnerText;
+
+                    FieldPanel.Controls.Add(field);
+                    checkButtons();
+                    spanel = FieldPanel;
+                    checkOK();
+                }
+            }
         }
 
         private void addField_Click(object sender, EventArgs e)
@@ -163,11 +189,6 @@ namespace Visual_Storyline
             }
         }
 
-        private void OK_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormEvent(object sender, EventArgs e)
         {
             checkOK();
@@ -194,6 +215,18 @@ namespace Visual_Storyline
         private void ChildUpdate(object sender, EventArgs e)
         {
             checkOK();
+        }
+
+        private void OK_Click(object sender, EventArgs e)
+        {
+            Variables.CharacterFields.Clear();
+
+            foreach (Characterfield field in FieldPanel.Controls)
+            {
+                string characterfield = "<characterfield><name>" + field.NameField.Text + "</name><type>" + field.Type.SelectedIndex + "</type><optionslist>" + field.optionslist + "</optionslist><oldoptions>" + field.oldoptions + "</oldoptions><oldtype>" + field.oldtype + "</oldtype><oldelements>" + field.oldelements + "</oldelements></characterfield>";
+                Variables.CharacterFields.Add(characterfield);
+            }
+            this.Dispose();
         }
     }
 }

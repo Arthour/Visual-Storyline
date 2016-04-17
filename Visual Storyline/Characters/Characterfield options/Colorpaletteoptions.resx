@@ -118,82 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="FieldPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="FieldPanel.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="FieldPanel.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="FieldPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="FieldPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>435, 445</value>
-  </data>
-  <data name="FieldPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;FieldPanel.Name" xml:space="preserve">
-    <value>FieldPanel</value>
-  </data>
-  <data name="&gt;&gt;FieldPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FieldPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;FieldPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="cancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>372, 463</value>
-  </data>
-  <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="cancel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="cancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
-    <value>cancel</value>
-  </data>
-  <data name="&gt;&gt;cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="OK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
   <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>291, 463</value>
+    <value>16, 122</value>
   </data>
   <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="OK.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>21</value>
   </data>
   <data name="OK.Text" xml:space="preserve">
     <value>OK</value>
@@ -208,36 +145,141 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OK.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
-  <data name="addField.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="addField.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="addField.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 463</value>
+  <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 122</value>
   </data>
-  <data name="addField.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="addField.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="addField.Text" xml:space="preserve">
-    <value>Add field</value>
+  <data name="cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
-  <data name="&gt;&gt;addField.Name" xml:space="preserve">
-    <value>addField</value>
+  <data name="&gt;&gt;cancel.Name" xml:space="preserve">
+    <value>cancel</value>
   </data>
-  <data name="&gt;&gt;addField.Type" xml:space="preserve">
+  <data name="&gt;&gt;cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;addField.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;addField.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textcolor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textcolor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="textcolor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 19</value>
+  </data>
+  <data name="textcolor.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="textcolor.Text" xml:space="preserve">
+    <value>Textcolor</value>
+  </data>
+  <data name="&gt;&gt;textcolor.Name" xml:space="preserve">
+    <value>textcolor</value>
+  </data>
+  <data name="&gt;&gt;textcolor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textcolor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textcolor.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="backgroundcolor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="backgroundcolor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="backgroundcolor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 42</value>
+  </data>
+  <data name="backgroundcolor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="backgroundcolor.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="backgroundcolor.Text" xml:space="preserve">
+    <value>Backgroundcolor</value>
+  </data>
+  <data name="&gt;&gt;backgroundcolor.Name" xml:space="preserve">
+    <value>backgroundcolor</value>
+  </data>
+  <data name="&gt;&gt;backgroundcolor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;backgroundcolor.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;backgroundcolor.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="colorbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 63</value>
+  </data>
+  <data name="colorbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 24</value>
+  </data>
+  <data name="colorbox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="colorbox.Text" xml:space="preserve">
+    <value>Colorbox</value>
+  </data>
+  <data name="&gt;&gt;colorbox.Name" xml:space="preserve">
+    <value>colorbox</value>
+  </data>
+  <data name="&gt;&gt;colorbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;colorbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;colorbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="DefaultColor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="selectDefault.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 93</value>
+  </data>
+  <data name="selectDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 23</value>
+  </data>
+  <data name="selectDefault.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="selectDefault.Text" xml:space="preserve">
+    <value>Select default color</value>
+  </data>
+  <data name="&gt;&gt;selectDefault.Name" xml:space="preserve">
+    <value>selectDefault</value>
+  </data>
+  <data name="&gt;&gt;selectDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;selectDefault.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;selectDefault.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -246,29 +288,35 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
   </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>459, 498</value>
+    <value>190, 152</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>475, 9999</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>475, 200</value>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Edit character fields</value>
+    <value>Colorpalette options</value>
+  </data>
+  <data name="&gt;&gt;DefaultColor.Name" xml:space="preserve">
+    <value>DefaultColor</value>
+  </data>
+  <data name="&gt;&gt;DefaultColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>EditCharacterFields</value>
+    <value>Colorpaletteoptions</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
