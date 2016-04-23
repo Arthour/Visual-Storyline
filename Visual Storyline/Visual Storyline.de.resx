@@ -142,6 +142,9 @@
   <data name="Export.Text" xml:space="preserve">
     <value>Ex&amp;portieren</value>
   </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
   <data name="Characters.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 22</value>
   </data>
@@ -166,11 +169,17 @@
   <data name="Chapters.Text" xml:space="preserve">
     <value>Kapitel</value>
   </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
   <data name="Featurelist.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 22</value>
   </data>
   <data name="Featurelist.Text" xml:space="preserve">
     <value>Ideen-/Funktionsliste</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
   </data>
   <data name="addQuest.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 22</value>
@@ -196,12 +205,8 @@
   <data name="Settings.Text" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Toolbar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
-  </data>
   <data name="Toolbar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1489, 25</value>
+    <value>1276, 25</value>
   </data>
   <data name="SaveSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>166, 22</value>
@@ -269,16 +274,11 @@
   <data name="editChapt.Text" xml:space="preserve">
     <value>Bearbeiten</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1489, 417</value>
+    <value>1276, 481</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1488, 456</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

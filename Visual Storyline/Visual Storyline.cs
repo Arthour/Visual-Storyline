@@ -13,9 +13,12 @@ namespace Visual_Storyline
 {
     public partial class VisualStoryline : Form
     {
+        int neededSize;
+
         public VisualStoryline()
         {
             InitializeComponent();
+            neededSize = New.Width + Save.Width + Open.Width + Export.Width + toolStripSeparator1.Width + Characters.Width + Locations.Width + Strands.Width + Chapters.Width + toolStripSeparator2.Width + Featurelist.Width + toolStripSeparator3.Width + addQuest.Width + addRelation.Width + addEvent.Width + Settings.Width + 20;
         }
 
         private void New_Click(object sender, EventArgs e)
@@ -60,11 +63,6 @@ namespace Visual_Storyline
             OpenFile.OpenDialog();
         }
 
-        private void VisualStoryline_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void editFieldsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditCharacterFields editfields = new EditCharacterFields();
@@ -74,6 +72,45 @@ namespace Visual_Storyline
         private void Save_ButtonClick(object sender, EventArgs e)
         {
             SaveFile.Save();
+        }
+
+        private void FormResized(object sender, EventArgs e)
+        {
+
+            Console.WriteLine(neededSize);
+            Console.WriteLine(ClientSize.Width);
+            if (neededSize > this.ClientSize.Width)
+            {
+                New.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Save.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Open.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Export.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Characters.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Locations.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Strands.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Chapters.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Featurelist.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                addQuest.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                addRelation.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                addEvent.DisplayStyle = ToolStripItemDisplayStyle.Image;
+                Settings.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            }
+            else if (neededSize <= this.ClientSize.Width)
+            {
+                New.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Save.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Open.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Export.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Characters.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Locations.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Strands.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Chapters.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Featurelist.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                addQuest.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                addRelation.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                addEvent.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+                Settings.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
+            }
         }
     }
 }

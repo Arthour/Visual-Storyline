@@ -62,6 +62,8 @@
             // 
             // Toolbar
             // 
+            resources.ApplyResources(this.Toolbar, "Toolbar");
+            this.Toolbar.CanOverflow = false;
             this.Toolbar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.Toolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.New,
@@ -80,8 +82,9 @@
             this.addRelation,
             this.addEvent,
             this.Settings});
-            resources.ApplyResources(this.Toolbar, "Toolbar");
             this.Toolbar.Name = "Toolbar";
+            this.Toolbar.Stretch = true;
+            this.Toolbar.SizeChanged += new System.EventHandler(this.FormResized);
             // 
             // New
             // 
@@ -269,11 +272,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Toolbar);
             this.Name = "VisualStoryline";
-            this.Load += new System.EventHandler(this.VisualStoryline_Load);
+            this.Resize += new System.EventHandler(this.FormResized);
             this.Toolbar.ResumeLayout(false);
             this.Toolbar.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
