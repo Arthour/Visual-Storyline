@@ -44,15 +44,19 @@
             this.cancel = new System.Windows.Forms.Button();
             this.ProjectDescription = new System.Windows.Forms.TextBox();
             this.Description = new System.Windows.Forms.Label();
+            this.pw_text = new System.Windows.Forms.TextBox();
+            this.encr = new System.Windows.Forms.Label();
+            this.pw = new System.Windows.Forms.Label();
+            this.encr_check = new System.Windows.Forms.CheckBox();
             this.charBox.SuspendLayout();
             this.LocBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // charBox
             // 
+            resources.ApplyResources(this.charBox, "charBox");
             this.charBox.Controls.Add(this.charglobally);
             this.charBox.Controls.Add(this.charlocally);
-            resources.ApplyResources(this.charBox, "charBox");
             this.charBox.Name = "charBox";
             this.charBox.TabStop = false;
             // 
@@ -107,9 +111,9 @@
             // 
             // LocBox
             // 
+            resources.ApplyResources(this.LocBox, "LocBox");
             this.LocBox.Controls.Add(this.locglobally);
             this.LocBox.Controls.Add(this.loclocally);
-            resources.ApplyResources(this.LocBox, "LocBox");
             this.LocBox.Name = "LocBox";
             this.LocBox.TabStop = false;
             // 
@@ -141,22 +145,46 @@
             // 
             // cancel
             // 
-            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.cancel, "cancel");
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
             // ProjectDescription
             // 
             this.ProjectDescription.AcceptsReturn = true;
-            this.ProjectDescription.AllowDrop = true;
             resources.ApplyResources(this.ProjectDescription, "ProjectDescription");
+            this.ProjectDescription.AllowDrop = true;
             this.ProjectDescription.Name = "ProjectDescription";
             // 
             // Description
             // 
             resources.ApplyResources(this.Description, "Description");
             this.Description.Name = "Description";
+            // 
+            // pw_text
+            // 
+            resources.ApplyResources(this.pw_text, "pw_text");
+            this.pw_text.Name = "pw_text";
+            this.pw_text.UseSystemPasswordChar = true;
+            this.pw_text.TextChanged += new System.EventHandler(this.pw_changed);
+            // 
+            // encr
+            // 
+            resources.ApplyResources(this.encr, "encr");
+            this.encr.Name = "encr";
+            // 
+            // pw
+            // 
+            resources.ApplyResources(this.pw, "pw");
+            this.pw.Name = "pw";
+            // 
+            // encr_check
+            // 
+            resources.ApplyResources(this.encr_check, "encr_check");
+            this.encr_check.Name = "encr_check";
+            this.encr_check.UseVisualStyleBackColor = true;
+            this.encr_check.CheckedChanged += new System.EventHandler(this.encr_checked);
             // 
             // New
             // 
@@ -165,6 +193,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancel;
             this.ControlBox = false;
+            this.Controls.Add(this.encr_check);
+            this.Controls.Add(this.pw);
+            this.Controls.Add(this.encr);
+            this.Controls.Add(this.pw_text);
             this.Controls.Add(this.Description);
             this.Controls.Add(this.ProjectDescription);
             this.Controls.Add(this.charBox);
@@ -210,5 +242,9 @@
         private System.Windows.Forms.Button cancel;
         private System.Windows.Forms.TextBox ProjectDescription;
         private System.Windows.Forms.Label Description;
+        private System.Windows.Forms.TextBox pw_text;
+        private System.Windows.Forms.Label encr;
+        private System.Windows.Forms.Label pw;
+        private System.Windows.Forms.CheckBox encr_check;
     }
 }

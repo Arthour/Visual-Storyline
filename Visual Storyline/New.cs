@@ -47,6 +47,18 @@ namespace Visual_Storyline
 
         }
 
+        private void OK_Check()
+        {
+            if(encr_check.Checked)
+            {
+                if (pw_text.Text == "")
+                    OK.Enabled = false;
+                else if (pw_text.Text != "")
+                    OK.Enabled = true;
+            }
+            else { OK.Enabled = true; }
+        }
+
         private void ProjectName_KeyInput(object sender, KeyPressEventArgs e)
         {
             var StandardUnicode = new Regex(@"^[^a-zA-Z0-9_\b]+");
@@ -262,5 +274,21 @@ namespace Visual_Storyline
         {
             LocSave = 2;
         }
+
+        private void pw_changed(object sender, EventArgs e)
+        {
+            OK_Check();
+        }
+
+        private void encr_checked(object sender, EventArgs e)
+        {
+            if (encr_check.Checked)
+            {
+                pw_text.Enabled = true;
+            }
+            else { pw_text.Enabled = false; }
+            OK_Check();
+        }
+
     }
 }
