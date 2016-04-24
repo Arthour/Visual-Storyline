@@ -121,9 +121,6 @@
   <data name="maxchars.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 15</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Textfield options</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="allowMultiline_check.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -131,11 +128,8 @@
   <data name="&gt;&gt;allowmultiline.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="required.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 15</value>
-  </data>
-  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 151</value>
+  <data name="&gt;&gt;required_check.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;required.Parent" xml:space="preserve">
     <value>$this</value>
@@ -146,9 +140,6 @@
   <data name="OK.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
@@ -158,17 +149,20 @@
   <data name="required.Text" xml:space="preserve">
     <value>Is required:</value>
   </data>
-  <data name="acceptedinput_groupbox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Textfieldoptions</value>
   </data>
   <data name="maxchars_text.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 23</value>
   </data>
-  <data name="required_check.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+  <data name="acceptedinput.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="required_check.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="acceptedinput_groupbox.Items" xml:space="preserve">
+    <value>Text</value>
   </data>
   <data name="OK.Text" xml:space="preserve">
     <value>OK</value>
@@ -185,8 +179,14 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 15</value>
   </data>
+  <data name="allowmultiline.Text" xml:space="preserve">
+    <value>Multiline:</value>
+  </data>
   <data name="&gt;&gt;maxchars_text.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="&gt;&gt;maxchars_text.Name" xml:space="preserve">
     <value>maxchars_text</value>
@@ -234,6 +234,9 @@
   <data name="maxchars_text.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 12</value>
   </data>
+  <data name="&gt;&gt;OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;OK.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
@@ -243,20 +246,17 @@
   <data name="maxchars.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 16</value>
   </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 12, 12, 12</value>
-  </data>
   <data name="&gt;&gt;cancel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;required_check.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="allowMultiline_check.Location" type="System.Drawing.Point, System.Drawing">
     <value>222, 44</value>
   </data>
   <data name="&gt;&gt;OK.Name" xml:space="preserve">
     <value>OK</value>
+  </data>
+  <data name="&gt;&gt;acceptedinput_groupbox.Name" xml:space="preserve">
+    <value>acceptedinput_groupbox</value>
   </data>
   <data name="cancel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -270,22 +270,28 @@
   <data name="&gt;&gt;required.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;allowmultiline.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="allowmultiline.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 43</value>
+  </data>
+  <data name="required.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 15</value>
   </data>
   <data name="&gt;&gt;maxchars.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;cancel.Name" xml:space="preserve">
     <value>cancel</value>
+  </data>
+  <data name="maxchars.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;required_check.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="maxchars.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="acceptedinput_groupbox.Size" type="System.Drawing.Size, System.Drawing">
@@ -297,23 +303,17 @@
   <data name="&gt;&gt;required.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="required.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="maxchars_text.MaxLength" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="acceptedinput_groupbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>109, 66</value>
   </data>
-  <data name="acceptedinput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 66</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Textfieldoptions</value>
+  <data name="required_check.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 151</value>
   </data>
   <data name="allowMultiline_check.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
-  </data>
-  <data name="required.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="cancel.Text" xml:space="preserve">
     <value>Cancel</value>
@@ -327,8 +327,8 @@
   <data name="&gt;&gt;acceptedinput_groupbox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;allowmultiline.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="required_check.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
   </data>
   <data name="acceptedinput.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -336,20 +336,20 @@
   <data name="required_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;OK.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;allowmultiline.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>163, 171</value>
   </data>
-  <data name="maxchars_text.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Textfield options</value>
   </data>
   <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
     <value>82, 171</value>
   </data>
-  <data name="acceptedinput.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;allowMultiline_check.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -357,26 +357,26 @@
   <data name="&gt;&gt;acceptedinput.Name" xml:space="preserve">
     <value>acceptedinput</value>
   </data>
-  <data name="&gt;&gt;OK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;allowmultiline.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="acceptedinput.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="allowmultiline.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 43</value>
+  <data name="required.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;acceptedinput_groupbox.Name" xml:space="preserve">
-    <value>acceptedinput_groupbox</value>
+  <data name="required.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;maxchars.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="maxchars.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="maxchars_text.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
   </data>
   <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -399,8 +399,8 @@
   <data name="allowmultiline.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="acceptedinput_groupbox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;allowmultiline.Name" xml:space="preserve">
     <value>allowmultiline</value>
@@ -408,8 +408,8 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>253, 201</value>
   </data>
-  <data name="acceptedinput_groupbox.Items" xml:space="preserve">
-    <value>Text</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;acceptedinput_groupbox.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -417,14 +417,14 @@
   <data name="&gt;&gt;required.Name" xml:space="preserve">
     <value>required</value>
   </data>
-  <data name="allowmultiline.Text" xml:space="preserve">
-    <value>Multiline:</value>
+  <data name="acceptedinput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 66</value>
   </data>
   <data name="&gt;&gt;required_check.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="maxchars_text.MaxLength" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;OK.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

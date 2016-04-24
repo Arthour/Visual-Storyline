@@ -1027,7 +1027,7 @@
     <value>year</value>
   </data>
   <data name="&gt;&gt;year.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;year.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1051,7 +1051,7 @@
     <value>monthnr</value>
   </data>
   <data name="&gt;&gt;monthnr.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;monthnr.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1075,7 +1075,7 @@
     <value>monthname</value>
   </data>
   <data name="&gt;&gt;monthname.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;monthname.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1099,7 +1099,7 @@
     <value>day</value>
   </data>
   <data name="&gt;&gt;day.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;day.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1123,7 +1123,7 @@
     <value>dayofweek</value>
   </data>
   <data name="&gt;&gt;dayofweek.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;dayofweek.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1147,7 +1147,7 @@
     <value>hour24</value>
   </data>
   <data name="&gt;&gt;hour24.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;hour24.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1171,7 +1171,7 @@
     <value>hour12</value>
   </data>
   <data name="&gt;&gt;hour12.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;hour12.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1195,7 +1195,7 @@
     <value>minute</value>
   </data>
   <data name="&gt;&gt;minute.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;minute.Parent" xml:space="preserve">
     <value>DragandDrop</value>
@@ -1219,7 +1219,7 @@
     <value>second</value>
   </data>
   <data name="&gt;&gt;second.Type" xml:space="preserve">
-    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5933.37254, Culture=neutral, PublicKeyToken=null</value>
+    <value>Visual_Storyline.Characters.Characterfield_options.CustomButton, Visual Storyline, Version=1.0.5957.28349, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;second.Parent" xml:space="preserve">
     <value>DragandDrop</value>

@@ -78,7 +78,11 @@ namespace Visual_Storyline
                     if(oldtype == "Date")
                     { optionslist = oldoptions; }
                     else
-                    { optionslist = "<options><realcal>yes</realcal><show><yrs>yes</yrs><mths>yes</mths><ds>yes</ds><hrs>no</hrs><mins>no</mins><secs>no</secs></show></options>"; }
+                    {
+                        optionslist = "<options><realcal>yes</realcal><show><yrs>yes</yrs><mths>yes</mths><ds>yes</ds><hrs>no</hrs><mins>no</mins><secs>no</secs></show></options>";
+                        DateTimeoptions dtoptions = new DateTimeoptions(optionslist, ID, true);
+                        dtoptions.ShowDialog();
+                    }
                     break;
                 case 4:     /*Combobox*/
                     if (oldtype == "Combobox")
@@ -156,7 +160,7 @@ namespace Visual_Storyline
                     chbooptions.ShowDialog();
                     break;
                 case 3:     /*Date*/
-                    DateTimeoptions dtoptions = new DateTimeoptions(optionslist, ID);
+                    DateTimeoptions dtoptions = new DateTimeoptions(optionslist, ID, false);
                     dtoptions.ShowDialog();
                     break;
                 case 4:     /*Combobox*/

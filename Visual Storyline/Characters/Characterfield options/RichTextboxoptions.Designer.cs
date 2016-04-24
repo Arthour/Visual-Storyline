@@ -92,11 +92,13 @@
             // color
             // 
             resources.ApplyResources(this.color, "color");
+            this.color.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.color.Name = "color";
             // 
             // fontsize
             // 
             resources.ApplyResources(this.fontsize, "fontsize");
+            this.fontsize.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.fontsize.Name = "fontsize";
             // 
             // fontsize_check
@@ -108,6 +110,7 @@
             // bold
             // 
             resources.ApplyResources(this.bold, "bold");
+            this.bold.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.bold.Name = "bold";
             // 
             // bold_check
@@ -119,6 +122,7 @@
             // italic
             // 
             resources.ApplyResources(this.italic, "italic");
+            this.italic.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.italic.Name = "italic";
             // 
             // italic_check
@@ -130,6 +134,7 @@
             // underlined
             // 
             resources.ApplyResources(this.underlined, "underlined");
+            this.underlined.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.underlined.Name = "underlined";
             // 
             // underlined_check
@@ -141,6 +146,7 @@
             // bunumb
             // 
             resources.ApplyResources(this.bunumb, "bunumb");
+            this.bunumb.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.bunumb.Name = "bunumb";
             // 
             // bunumb_check
@@ -190,6 +196,7 @@
             // required
             // 
             resources.ApplyResources(this.required, "required");
+            this.required.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.required.Name = "required";
             // 
             // required_check

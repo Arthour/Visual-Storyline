@@ -15,6 +15,7 @@ namespace Visual_Storyline.Characterfield_options
     public partial class DateTimeoptions : Form
     {
         private int ID;
+        private bool needed;
         private bool userealcal;
         private int countMonths;
         private int countDays;
@@ -22,10 +23,11 @@ namespace Visual_Storyline.Characterfield_options
 
         internal static int ytm, mtd, dth, htm, mts;
 
-        public DateTimeoptions(string options, int ID_Parent)
+        public DateTimeoptions(string options, int ID_Parent, bool EntryNeeded)
         {
             InitializeComponent();
             ID = ID_Parent;
+            needed = EntryNeeded;
             string temp;
         
             try
@@ -254,7 +256,7 @@ namespace Visual_Storyline.Characterfield_options
                 if (check.Checked == true)
                     ischecked = true;
             }
-            if (ischecked == true)
+            if (ischecked == true && Formatfield.Text != "")
             {
                 OK.Enabled = true;
             }
@@ -388,6 +390,19 @@ namespace Visual_Storyline.Characterfield_options
         private void FocusLeave(object sender, EventArgs e)
         {
             this.AcceptButton = OK;
+        }
+
+        private void CheckFormat(object sender, EventArgs e)
+        {
+            optionChanged();
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            if (needed == true)
+            {
+                EditCharacterFields.cancelOptions(ID);
+            }
         }
 
         private void ButtonClicked(object sender, EventArgs e)

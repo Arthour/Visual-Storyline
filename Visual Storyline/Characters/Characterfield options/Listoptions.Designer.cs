@@ -103,6 +103,7 @@
             // ms
             // 
             resources.ApplyResources(this.ms, "ms");
+            this.ms.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ms.Name = "ms";
             // 
             // OK

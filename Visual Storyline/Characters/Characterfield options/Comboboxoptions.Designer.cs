@@ -71,6 +71,7 @@
             // limit
             // 
             resources.ApplyResources(this.limit, "limit");
+            this.limit.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.limit.Name = "limit";
             // 
             // OK

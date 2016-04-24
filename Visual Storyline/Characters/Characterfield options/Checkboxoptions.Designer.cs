@@ -53,8 +53,8 @@
             // 
             // cancel
             // 
-            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.cancel, "cancel");
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
@@ -62,6 +62,7 @@
             // multiselect
             // 
             resources.ApplyResources(this.multiselect, "multiselect");
+            this.multiselect.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.multiselect.Name = "multiselect";
             // 
             // multiselect_check
@@ -79,12 +80,13 @@
             // requireselection
             // 
             resources.ApplyResources(this.requireselection, "requireselection");
+            this.requireselection.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.requireselection.Name = "requireselection";
             // 
             // checkboxelements_list
             // 
-            this.checkboxelements_list.FormattingEnabled = true;
             resources.ApplyResources(this.checkboxelements_list, "checkboxelements_list");
+            this.checkboxelements_list.FormattingEnabled = true;
             this.checkboxelements_list.Name = "checkboxelements_list";
             this.checkboxelements_list.SelectedIndexChanged += new System.EventHandler(this.IndexChanged);
             // 
@@ -103,32 +105,32 @@
             // 
             // delete
             // 
-            this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
             resources.ApplyResources(this.delete, "delete");
+            this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
             this.delete.Name = "delete";
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // move_down
             // 
-            this.move_down.Image = global::Visual_Storyline.Properties.Resources.GlyphDown;
             resources.ApplyResources(this.move_down, "move_down");
+            this.move_down.Image = global::Visual_Storyline.Properties.Resources.GlyphDown;
             this.move_down.Name = "move_down";
             this.move_down.UseVisualStyleBackColor = true;
             this.move_down.Click += new System.EventHandler(this.move_down_Click);
             // 
             // move_up
             // 
-            this.move_up.Image = global::Visual_Storyline.Properties.Resources.GlyphUp;
             resources.ApplyResources(this.move_up, "move_up");
+            this.move_up.Image = global::Visual_Storyline.Properties.Resources.GlyphUp;
             this.move_up.Name = "move_up";
             this.move_up.UseVisualStyleBackColor = true;
             this.move_up.Click += new System.EventHandler(this.move_up_Click);
             // 
             // add_Element
             // 
-            this.add_Element.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             resources.ApplyResources(this.add_Element, "add_Element");
+            this.add_Element.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             this.add_Element.Name = "add_Element";
             this.add_Element.UseVisualStyleBackColor = true;
             this.add_Element.Click += new System.EventHandler(this.add_Element_Click);

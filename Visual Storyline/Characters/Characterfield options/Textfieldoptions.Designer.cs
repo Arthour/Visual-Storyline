@@ -71,6 +71,7 @@
             // allowmultiline
             // 
             resources.ApplyResources(this.allowmultiline, "allowmultiline");
+            this.allowmultiline.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.allowmultiline.Name = "allowmultiline";
             // 
             // allowMultiline_check
@@ -108,6 +109,7 @@
             // required
             // 
             resources.ApplyResources(this.required, "required");
+            this.required.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.required.Name = "required";
             // 
             // Textfieldoptions

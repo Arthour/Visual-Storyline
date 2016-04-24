@@ -126,8 +126,9 @@
   <data name="listelements.Text" xml:space="preserve">
     <value>List elements:</value>
   </data>
-  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="listelements.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 31</value>
   </data>
   <data name="&gt;&gt;add_Element.Name" xml:space="preserve">
     <value>add_Element</value>
@@ -139,10 +140,12 @@
   <data name="OK.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
+  <data name="&gt;&gt;delete.Name" xml:space="preserve">
+    <value>delete</value>
+  </data>
   <data name="&gt;&gt;ms.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
@@ -151,6 +154,13 @@
   </data>
   <data name="&gt;&gt;ms.Name" xml:space="preserve">
     <value>ms</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ms_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="delete.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Listoptions</value>
@@ -161,11 +171,8 @@
   <data name="&gt;&gt;listelements.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>77, 193</value>
-  </data>
-  <data name="&gt;&gt;ms.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="listelements_list.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 109</value>
   </data>
   <data name="&gt;&gt;listelements_list.Parent" xml:space="preserve">
     <value>$this</value>
@@ -185,23 +192,20 @@
   <data name="ms.Text" xml:space="preserve">
     <value>Allow multiselect:</value>
   </data>
-  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
   <data name="move_up.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
   <data name="OK.Text" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>158, 193</value>
   </data>
   <data name="&gt;&gt;addElement_text.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ms.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ms_check.Parent" xml:space="preserve">
     <value>$this</value>
@@ -218,11 +222,11 @@
   <data name="&gt;&gt;listelements_list.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;move_down.Name" xml:space="preserve">
-    <value>move_down</value>
-  </data>
   <data name="move_down.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
+  </data>
+  <data name="ms.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
   <data name="delete.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 107</value>
@@ -248,7 +252,6 @@
   <data name="addElement_text.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 23</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ms.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -258,8 +261,8 @@
   <data name="add_Element.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="ms.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -282,17 +285,14 @@
   <data name="move_down.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
+  <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;move_up.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="&gt;&gt;addElement_text.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 164</value>
   </data>
   <data name="&gt;&gt;move_up.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -315,20 +315,20 @@
   <data name="listelements.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="listelements.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
+  <data name="&gt;&gt;ms.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="move_down.Location" type="System.Drawing.Point, System.Drawing">
     <value>210, 78</value>
   </data>
+  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="add_Element.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
   </data>
-  <data name="listelements_list.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;ms.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="listelements.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -342,14 +342,14 @@
   <data name="$this.Text" xml:space="preserve">
     <value>List options</value>
   </data>
-  <data name="ms.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 193</value>
   </data>
   <data name="&gt;&gt;listelements_list.Name" xml:space="preserve">
     <value>listelements_list</value>
   </data>
-  <data name="&gt;&gt;add_Element.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="addElement_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 164</value>
   </data>
   <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -360,8 +360,8 @@
   <data name="ms_check.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 8</value>
   </data>
-  <data name="listelements_list.Size" type="System.Drawing.Size, System.Drawing">
-    <value>189, 109</value>
+  <data name="&gt;&gt;move_down.Name" xml:space="preserve">
+    <value>move_down</value>
   </data>
   <data name="&gt;&gt;OK.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -372,8 +372,8 @@
   <data name="&gt;&gt;move_up.Name" xml:space="preserve">
     <value>move_up</value>
   </data>
-  <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="cancel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -381,8 +381,8 @@
   <data name="&gt;&gt;listelements.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;add_Element.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="move_down.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -390,8 +390,8 @@
   <data name="move_up.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;delete.Name" xml:space="preserve">
-    <value>delete</value>
+  <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="ms_check.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -408,11 +408,11 @@
   <data name="add_Element.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 23</value>
   </data>
-  <data name="delete.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+  <data name="listelements_list.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
   </data>
-  <data name="ms_check.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="ms.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="listelements.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 15</value>

@@ -32,7 +32,6 @@
             this.OK = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
             this.MainPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.realcal = new System.Windows.Forms.CheckBox();
             this.showYears = new System.Windows.Forms.CheckBox();
             this.invisYears = new System.Windows.Forms.Panel();
             this.yearsPanel = new System.Windows.Forms.Panel();
@@ -65,10 +64,9 @@
             this.showSeconds = new System.Windows.Forms.CheckBox();
             this.invisSeconds = new System.Windows.Forms.Panel();
             this.FormatPanel = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.Formatfield = new System.Windows.Forms.TextBox();
             this.DragandDrop = new System.Windows.Forms.FlowLayoutPanel();
-            this.timetable = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.year = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
             this.monthnr = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
             this.monthname = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
@@ -78,6 +76,8 @@
             this.hour12 = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
             this.minute = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
             this.second = new Visual_Storyline.Characters.Characterfield_options.CustomButton();
+            this.timetable = new System.Windows.Forms.Button();
+            this.realcal = new System.Windows.Forms.CheckBox();
             this.MainPanel.SuspendLayout();
             this.yearsPanel.SuspendLayout();
             this.monthsPanel.SuspendLayout();
@@ -100,6 +100,7 @@
             resources.ApplyResources(this.cancel, "cancel");
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // MainPanel
             // 
@@ -120,14 +121,6 @@
             this.MainPanel.Controls.Add(this.invisSeconds);
             this.MainPanel.Controls.Add(this.FormatPanel);
             this.MainPanel.Name = "MainPanel";
-            // 
-            // realcal
-            // 
-            resources.ApplyResources(this.realcal, "realcal");
-            this.MainPanel.SetFlowBreak(this.realcal, true);
-            this.realcal.Name = "realcal";
-            this.realcal.UseVisualStyleBackColor = true;
-            this.realcal.CheckedChanged += new System.EventHandler(this.realCalendarChecked);
             // 
             // showYears
             // 
@@ -162,6 +155,7 @@
             // negative
             // 
             resources.ApplyResources(this.negative, "negative");
+            this.negative.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.negative.Name = "negative";
             this.negative.UseVisualStyleBackColor = true;
             // 
@@ -382,10 +376,16 @@
             resources.ApplyResources(this.FormatPanel, "FormatPanel");
             this.FormatPanel.Name = "FormatPanel";
             // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
             // Formatfield
             // 
             resources.ApplyResources(this.Formatfield, "Formatfield");
             this.Formatfield.Name = "Formatfield";
+            this.Formatfield.TextChanged += new System.EventHandler(this.CheckFormat);
             // 
             // DragandDrop
             // 
@@ -401,18 +401,6 @@
             this.DragandDrop.Controls.Add(this.second);
             resources.ApplyResources(this.DragandDrop, "DragandDrop");
             this.DragandDrop.Name = "DragandDrop";
-            // 
-            // timetable
-            // 
-            resources.ApplyResources(this.timetable, "timetable");
-            this.timetable.Name = "timetable";
-            this.timetable.UseVisualStyleBackColor = true;
-            this.timetable.Click += new System.EventHandler(this.timetable_Click);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
             // 
             // year
             // 
@@ -467,6 +455,22 @@
             resources.ApplyResources(this.second, "second");
             this.second.Name = "second";
             this.second.Click += new System.EventHandler(this.ButtonClicked);
+            // 
+            // timetable
+            // 
+            resources.ApplyResources(this.timetable, "timetable");
+            this.timetable.Name = "timetable";
+            this.timetable.UseVisualStyleBackColor = true;
+            this.timetable.Click += new System.EventHandler(this.timetable_Click);
+            // 
+            // realcal
+            // 
+            resources.ApplyResources(this.realcal, "realcal");
+            this.MainPanel.SetFlowBreak(this.realcal, true);
+            this.realcal.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.realcal.Name = "realcal";
+            this.realcal.UseVisualStyleBackColor = true;
+            this.realcal.CheckedChanged += new System.EventHandler(this.realCalendarChecked);
             // 
             // DateTimeoptions
             // 
@@ -539,7 +543,6 @@
         private System.Windows.Forms.ListView dayNames;
         private System.Windows.Forms.ColumnHeader DName;
         private System.Windows.Forms.ColumnHeader Nr2;
-        private System.Windows.Forms.CheckBox realcal;
         private System.Windows.Forms.FlowLayoutPanel DragandDrop;
         internal System.Windows.Forms.Panel FormatPanel;
         private Characters.Characterfield_options.CustomButton year;
@@ -553,5 +556,6 @@
         private Characters.Characterfield_options.CustomButton second;
         private System.Windows.Forms.TextBox Formatfield;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox realcal;
     }
 }
