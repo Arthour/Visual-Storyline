@@ -88,182 +88,183 @@
             // 
             // New
             // 
-            this.New.Image = global::Visual_Storyline.Properties.Resources.NewRequest_8796;
             resources.ApplyResources(this.New, "New");
+            this.New.Image = global::Visual_Storyline.Properties.Resources.NewRequest_8796;
             this.New.Name = "New";
             this.New.Click += new System.EventHandler(this.New_Click);
             // 
             // Save
             // 
+            resources.ApplyResources(this.Save, "Save");
             this.Save.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SaveSubmenu,
             this.SaveasSubmenu});
             this.Save.Image = global::Visual_Storyline.Properties.Resources.Save_6530;
-            resources.ApplyResources(this.Save, "Save");
             this.Save.Name = "Save";
             this.Save.ButtonClick += new System.EventHandler(this.Save_ButtonClick);
             // 
             // SaveSubmenu
             // 
-            this.SaveSubmenu.Name = "SaveSubmenu";
             resources.ApplyResources(this.SaveSubmenu, "SaveSubmenu");
+            this.SaveSubmenu.Name = "SaveSubmenu";
             this.SaveSubmenu.Click += new System.EventHandler(this.Save_ButtonClick);
             // 
             // SaveasSubmenu
             // 
-            this.SaveasSubmenu.Name = "SaveasSubmenu";
             resources.ApplyResources(this.SaveasSubmenu, "SaveasSubmenu");
+            this.SaveasSubmenu.Name = "SaveasSubmenu";
             // 
             // Open
             // 
-            this.Open.Image = global::Visual_Storyline.Properties.Resources.Open_6529;
             resources.ApplyResources(this.Open, "Open");
+            this.Open.Image = global::Visual_Storyline.Properties.Resources.Open_6529;
             this.Open.Name = "Open";
             this.Open.Click += new System.EventHandler(this.Open_Click);
             // 
             // Export
             // 
-            this.Export.Image = global::Visual_Storyline.Properties.Resources.PrintSetup_11011;
             resources.ApplyResources(this.Export, "Export");
+            this.Export.Image = global::Visual_Storyline.Properties.Resources.PrintSetup_11011;
             this.Export.Name = "Export";
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // Characters
             // 
+            resources.ApplyResources(this.Characters, "Characters");
             this.Characters.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addChar,
             this.editChar,
             this.editFieldsToolStripMenuItem});
             this.Characters.Image = global::Visual_Storyline.Properties.Resources.user_32xLG;
-            resources.ApplyResources(this.Characters, "Characters");
             this.Characters.Name = "Characters";
             // 
             // addChar
             // 
+            resources.ApplyResources(this.addChar, "addChar");
             this.addChar.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             this.addChar.Name = "addChar";
-            resources.ApplyResources(this.addChar, "addChar");
             // 
             // editChar
             // 
+            resources.ApplyResources(this.editChar, "editChar");
             this.editChar.Image = global::Visual_Storyline.Properties.Resources.EditorZone_6025;
             this.editChar.Name = "editChar";
-            resources.ApplyResources(this.editChar, "editChar");
             // 
             // editFieldsToolStripMenuItem
             // 
+            resources.ApplyResources(this.editFieldsToolStripMenuItem, "editFieldsToolStripMenuItem");
             this.editFieldsToolStripMenuItem.Image = global::Visual_Storyline.Properties.Resources.Editdatasetwithdesigner_8449;
             this.editFieldsToolStripMenuItem.Name = "editFieldsToolStripMenuItem";
-            resources.ApplyResources(this.editFieldsToolStripMenuItem, "editFieldsToolStripMenuItem");
             this.editFieldsToolStripMenuItem.Click += new System.EventHandler(this.editFieldsToolStripMenuItem_Click);
             // 
             // Locations
             // 
+            resources.ApplyResources(this.Locations, "Locations");
             this.Locations.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addLoc,
             this.editLoc});
             this.Locations.Image = global::Visual_Storyline.Properties.Resources.Area_16xLG;
-            resources.ApplyResources(this.Locations, "Locations");
             this.Locations.Name = "Locations";
             // 
             // addLoc
             // 
+            resources.ApplyResources(this.addLoc, "addLoc");
             this.addLoc.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             this.addLoc.Name = "addLoc";
-            resources.ApplyResources(this.addLoc, "addLoc");
+            this.addLoc.Click += new System.EventHandler(this.addLoc_Click);
             // 
             // editLoc
             // 
+            resources.ApplyResources(this.editLoc, "editLoc");
             this.editLoc.Image = global::Visual_Storyline.Properties.Resources.EditorZone_6025;
             this.editLoc.Name = "editLoc";
-            resources.ApplyResources(this.editLoc, "editLoc");
             // 
             // Strands
             // 
+            resources.ApplyResources(this.Strands, "Strands");
             this.Strands.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addStrand,
             this.editStrand});
             this.Strands.Image = global::Visual_Storyline.Properties.Resources.thread_16xLG;
-            resources.ApplyResources(this.Strands, "Strands");
             this.Strands.Name = "Strands";
             // 
             // addStrand
             // 
+            resources.ApplyResources(this.addStrand, "addStrand");
             this.addStrand.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             this.addStrand.Name = "addStrand";
-            resources.ApplyResources(this.addStrand, "addStrand");
             // 
             // editStrand
             // 
+            resources.ApplyResources(this.editStrand, "editStrand");
             this.editStrand.Image = global::Visual_Storyline.Properties.Resources.EditorZone_6025;
             this.editStrand.Name = "editStrand";
-            resources.ApplyResources(this.editStrand, "editStrand");
             // 
             // Chapters
             // 
+            resources.ApplyResources(this.Chapters, "Chapters");
             this.Chapters.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addChapt,
             this.editChapt});
             this.Chapters.Image = global::Visual_Storyline.Properties.Resources.book_Open_16xLG;
-            resources.ApplyResources(this.Chapters, "Chapters");
             this.Chapters.Name = "Chapters";
             // 
             // addChapt
             // 
+            resources.ApplyResources(this.addChapt, "addChapt");
             this.addChapt.Image = global::Visual_Storyline.Properties.Resources.AddMark_10580;
             this.addChapt.Name = "addChapt";
-            resources.ApplyResources(this.addChapt, "addChapt");
             // 
             // editChapt
             // 
+            resources.ApplyResources(this.editChapt, "editChapt");
             this.editChapt.Image = global::Visual_Storyline.Properties.Resources.EditorZone_6025;
             this.editChapt.Name = "editChapt";
-            resources.ApplyResources(this.editChapt, "editChapt");
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // Featurelist
             // 
-            this.Featurelist.Image = global::Visual_Storyline.Properties.Resources.LightBulb_32xLG;
             resources.ApplyResources(this.Featurelist, "Featurelist");
+            this.Featurelist.Image = global::Visual_Storyline.Properties.Resources.LightBulb_32xLG;
             this.Featurelist.Name = "Featurelist";
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
             resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
             // 
             // addQuest
             // 
-            this.addQuest.Image = global::Visual_Storyline.Properties.Resources.AddButton;
             resources.ApplyResources(this.addQuest, "addQuest");
+            this.addQuest.Image = global::Visual_Storyline.Properties.Resources.AddButton;
             this.addQuest.Name = "addQuest";
             // 
             // addRelation
             // 
-            this.addRelation.Image = global::Visual_Storyline.Properties.Resources.AddInterface_5537;
             resources.ApplyResources(this.addRelation, "addRelation");
+            this.addRelation.Image = global::Visual_Storyline.Properties.Resources.AddInterface_5537;
             this.addRelation.Name = "addRelation";
             // 
             // addEvent
             // 
+            resources.ApplyResources(this.addEvent, "addEvent");
             this.addEvent.Image = global::Visual_Storyline.Properties.Resources.ChangeQueryType_insertvalues_286;
             this.addEvent.Name = "addEvent";
-            resources.ApplyResources(this.addEvent, "addEvent");
             this.addEvent.Click += new System.EventHandler(this.addCondition_Click);
             // 
             // Settings
             // 
+            resources.ApplyResources(this.Settings, "Settings");
             this.Settings.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.Settings.Image = global::Visual_Storyline.Properties.Resources.gear_32xLG;
-            resources.ApplyResources(this.Settings, "Settings");
             this.Settings.Name = "Settings";
             // 
             // VisualStoryline

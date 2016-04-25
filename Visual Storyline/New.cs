@@ -71,10 +71,12 @@ namespace Visual_Storyline
         private void explorer_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog explorerdialog = new FolderBrowserDialog();
-            explorerdialog.SelectedPath = Variables.VSL;
+            explorerdialog.SelectedPath = Properties.Settings.Default.Projectpath;
             if (explorerdialog.ShowDialog() == DialogResult.OK)
             {
                 ProjectLocation.Text = explorerdialog.SelectedPath;
+                Properties.Settings.Default.Projectpath = explorerdialog.SelectedPath;
+                Properties.Settings.Default.Save();
             }
         }
 

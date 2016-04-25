@@ -20,9 +20,9 @@ namespace Visual_Storyline
             XmlDocument xml = new XmlDocument();
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
-            openFileDialog.InitialDirectory = Variables.VSL;
+            openFileDialog.InitialDirectory = Properties.Settings.Default.Projectpath;
             openFileDialog.Filter = "Visual Storyline-Files (*.vsl)|*.vsl";
-            openFileDialog.RestoreDirectory = true;
+            openFileDialog.RestoreDirectory = false;
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -30,6 +30,8 @@ namespace Visual_Storyline
                 Variables.currentFile = openFileDialog.FileName;
                 Variables.currentFolder = Directory.GetParent(Variables.currentFile).ToString();
                 Variables.currentPath = Directory.GetParent(Variables.currentFolder).ToString();
+                Properties.Settings.Default.Projectpath = Directory.GetParent(openFileDialog.FileName).ToString();
+                Properties.Settings.Default.Save();
                 openFileDialog.Dispose();
             }
             else

@@ -39,9 +39,9 @@
             this.parentLocation = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.selpar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picture = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -53,12 +53,14 @@
             // 
             resources.ApplyResources(this.name, "name");
             this.name.Name = "name";
+            this.name.TextChanged += new System.EventHandler(this.NameChanged);
             // 
             // OK
             // 
             resources.ApplyResources(this.OK, "OK");
             this.OK.Name = "OK";
             this.OK.UseVisualStyleBackColor = true;
+            this.OK.Click += new System.EventHandler(this.OK_Click);
             // 
             // cancel
             // 
@@ -78,6 +80,7 @@
             resources.ApplyResources(this.selpic, "selpic");
             this.selpic.Name = "selpic";
             this.selpic.UseVisualStyleBackColor = true;
+            this.selpic.Click += new System.EventHandler(this.selpic_Click);
             // 
             // description
             // 
@@ -102,12 +105,13 @@
             this.selpar.Name = "selpar";
             this.selpar.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // picture
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.picture, "picture");
+            this.picture.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picture.Name = "picture";
+            this.picture.TabStop = false;
             // 
             // label4
             // 
@@ -129,7 +133,7 @@
             this.Controls.Add(this.description);
             this.Controls.Add(this.selpic);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picture);
             this.Controls.Add(this.OK);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.name);
@@ -141,7 +145,7 @@
             this.Name = "addLocation";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,7 +157,7 @@
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.Button OK;
         private System.Windows.Forms.Button cancel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button selpic;
         private System.Windows.Forms.TextBox description;

@@ -22,5 +22,29 @@ namespace Visual_Storyline.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Projectpath {
+            get {
+                return ((string)(this["Projectpath"]));
+            }
+            set {
+                this["Projectpath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Picturepath {
+            get {
+                return ((string)(this["Picturepath"]));
+            }
+            set {
+                this["Picturepath"] = value;
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Visual_Storyline.Locations;
 
 namespace Visual_Storyline
 {
@@ -111,6 +112,12 @@ namespace Visual_Storyline
                 addEvent.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
                 Settings.DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
             }
+        }
+
+        private void addLoc_Click(object sender, EventArgs e)
+        {
+            addLocation addloc = new addLocation(false);
+            addloc.ShowDialog();
         }
     }
 }

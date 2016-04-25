@@ -155,8 +155,11 @@
   <data name="selpar.Text" xml:space="preserve">
     <value>Auswählen</value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="picture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="picture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 150</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 15</value>

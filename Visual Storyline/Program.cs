@@ -23,6 +23,11 @@ namespace Visual_Storyline
                 DirectoryInfo di = Directory.CreateDirectory(Path.Combine(Variables.VSL, "GlobalSavedata"));
                 di.Attributes = FileAttributes.Directory | FileAttributes.Hidden;
             }
+
+            if (Properties.Settings.Default.Projectpath == "")
+                Properties.Settings.Default.Projectpath = Variables.VSL;
+            if (Properties.Settings.Default.Picturepath == "")
+                Properties.Settings.Default.Picturepath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
         public static string Encode(string input)

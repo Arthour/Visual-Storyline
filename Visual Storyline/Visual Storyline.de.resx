@@ -124,6 +124,18 @@
   <data name="New.Text" xml:space="preserve">
     <value>&amp;Neu</value>
   </data>
+  <data name="SaveSubmenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="SaveSubmenu.Text" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="SaveasSubmenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="SaveasSubmenu.Text" xml:space="preserve">
+    <value>Speichern unter...</value>
+  </data>
   <data name="Save.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 22</value>
   </data>
@@ -145,11 +157,41 @@
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 25</value>
   </data>
+  <data name="addChar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="addChar.Text" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="editChar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="editChar.Text" xml:space="preserve">
+    <value>Bearbeiten</value>
+  </data>
+  <data name="editFieldsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 22</value>
+  </data>
+  <data name="editFieldsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Felder bearbeiten</value>
+  </data>
   <data name="Characters.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 22</value>
   </data>
   <data name="Characters.Text" xml:space="preserve">
     <value>Charaktere</value>
+  </data>
+  <data name="addLoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="addLoc.Text" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="editLoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="editLoc.Text" xml:space="preserve">
+    <value>Bearbeiten</value>
   </data>
   <data name="Locations.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 22</value>
@@ -157,11 +199,35 @@
   <data name="Locations.Text" xml:space="preserve">
     <value>Orte</value>
   </data>
+  <data name="addStrand.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="addStrand.Text" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="editStrand.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="editStrand.Text" xml:space="preserve">
+    <value>Bearbeiten</value>
+  </data>
   <data name="Strands.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 22</value>
   </data>
   <data name="Strands.Text" xml:space="preserve">
     <value>Stränge</value>
+  </data>
+  <data name="addChapt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="addChapt.Text" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="editChapt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 22</value>
+  </data>
+  <data name="editChapt.Text" xml:space="preserve">
+    <value>Bearbeiten</value>
   </data>
   <data name="Chapters.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 22</value>
@@ -208,77 +274,11 @@
   <data name="Toolbar.Size" type="System.Drawing.Size, System.Drawing">
     <value>1276, 25</value>
   </data>
-  <data name="SaveSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
-  </data>
-  <data name="SaveSubmenu.Text" xml:space="preserve">
-    <value>Speichern</value>
-  </data>
-  <data name="SaveasSubmenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 22</value>
-  </data>
-  <data name="SaveasSubmenu.Text" xml:space="preserve">
-    <value>Speichern unter...</value>
-  </data>
-  <data name="addChar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 22</value>
-  </data>
-  <data name="addChar.Text" xml:space="preserve">
-    <value>Hinzufügen</value>
-  </data>
-  <data name="editChar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 22</value>
-  </data>
-  <data name="editChar.Text" xml:space="preserve">
-    <value>Bearbeiten</value>
-  </data>
-  <data name="editFieldsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>165, 22</value>
-  </data>
-  <data name="editFieldsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Felder bearbeiten</value>
-  </data>
-  <data name="addLoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="addLoc.Text" xml:space="preserve">
-    <value>Hinzufügen</value>
-  </data>
-  <data name="editLoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="editLoc.Text" xml:space="preserve">
-    <value>Bearbeiten</value>
-  </data>
-  <data name="addStrand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="addStrand.Text" xml:space="preserve">
-    <value>Hinzufügen</value>
-  </data>
-  <data name="editStrand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="editStrand.Text" xml:space="preserve">
-    <value>Bearbeiten</value>
-  </data>
-  <data name="addChapt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="addChapt.Text" xml:space="preserve">
-    <value>Hinzufügen</value>
-  </data>
-  <data name="editChapt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 22</value>
-  </data>
-  <data name="editChapt.Text" xml:space="preserve">
-    <value>Bearbeiten</value>
-  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1276, 481</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
+    <value>NoControl</value>
   </data>
 </root>
