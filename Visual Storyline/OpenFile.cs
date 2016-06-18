@@ -30,6 +30,7 @@ namespace Visual_Storyline
                 Variables.currentFile = openFileDialog.FileName;
                 Variables.currentFolder = Directory.GetParent(Variables.currentFile).ToString();
                 Variables.currentPath = Directory.GetParent(Variables.currentFolder).ToString();
+                Variables.Pictures = Path.Combine(Variables.currentFolder + "\\Picturedata");
                 Properties.Settings.Default.Projectpath = Directory.GetParent(openFileDialog.FileName).ToString();
                 Properties.Settings.Default.Save();
                 openFileDialog.Dispose();

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pictureoptions));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.wmf = new System.Windows.Forms.CheckBox();
+            this.tiff = new System.Windows.Forms.CheckBox();
             this.bmp = new System.Windows.Forms.CheckBox();
             this.gif = new System.Windows.Forms.CheckBox();
             this.png = new System.Windows.Forms.CheckBox();
@@ -51,7 +51,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.wmf);
+            this.groupBox1.Controls.Add(this.tiff);
             this.groupBox1.Controls.Add(this.bmp);
             this.groupBox1.Controls.Add(this.gif);
             this.groupBox1.Controls.Add(this.png);
@@ -60,12 +60,12 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // wmf
+            // tiff
             // 
-            resources.ApplyResources(this.wmf, "wmf");
-            this.wmf.Name = "wmf";
-            this.wmf.UseVisualStyleBackColor = true;
-            this.wmf.CheckedChanged += new System.EventHandler(this.CheckSelection);
+            resources.ApplyResources(this.tiff, "tiff");
+            this.tiff.Name = "tiff";
+            this.tiff.UseVisualStyleBackColor = true;
+            this.tiff.CheckedChanged += new System.EventHandler(this.CheckSelection);
             // 
             // bmp
             // 
@@ -205,7 +205,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox wmf;
+        private System.Windows.Forms.CheckBox tiff;
         private System.Windows.Forms.CheckBox bmp;
         private System.Windows.Forms.CheckBox gif;
         private System.Windows.Forms.CheckBox png;

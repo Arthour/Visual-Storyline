@@ -39,8 +39,8 @@
             this.parentLocation = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.selpar = new System.Windows.Forms.Button();
-            this.picture = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.picture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +104,13 @@
             resources.ApplyResources(this.selpar, "selpar");
             this.selpar.Name = "selpar";
             this.selpar.UseVisualStyleBackColor = true;
+            this.selpar.Click += new System.EventHandler(this.selpar_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Name = "label4";
             // 
             // picture
             // 
@@ -112,12 +119,6 @@
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picture.Name = "picture";
             this.picture.TabStop = false;
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Name = "label4";
             // 
             // addLocation
             // 

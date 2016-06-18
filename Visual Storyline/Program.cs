@@ -41,6 +41,9 @@ namespace Visual_Storyline
             var encodedBytes = System.Convert.FromBase64String(input);
             return System.Text.Encoding.UTF8.GetString(encodedBytes);
         }
+
+        //TODO: write comments
+        //TODO: try loading
     }
 
     class Variables
@@ -53,7 +56,7 @@ namespace Visual_Storyline
         /// <summary>
         /// Current file paths
         /// </summary>
-        public static string currentPath, currentFolder, currentFile;
+        public static string currentPath, currentFolder, currentFile, Pictures;
         /// <summary>
         /// Metadata
         /// </summary>
@@ -75,7 +78,7 @@ namespace Visual_Storyline
         /// <summary>
         /// Secondary save-files
         /// </summary>
-        public static List<string> Characters, Locations, Strands, Ideas, Quests, Relations, Conditions;
+        public static List<string> Characters = new List<string>(), Locations = new List<string>(), Strands = new List<string>(), Ideas = new List<string>(), Quests = new List<string>(), Relations = new List<string>(), Conditions = new List<string>();
         /// <summary>
         /// Character save-file
         /// </summary>

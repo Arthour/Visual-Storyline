@@ -127,6 +127,8 @@ namespace Visual_Storyline
                     {
                         Console.WriteLine("Trying to create the directory");
                         Directory.CreateDirectory(ProjectPath);
+                        Directory.CreateDirectory(Path.Combine(ProjectFolder + "\\Picturedata"));
+                        Variables.Pictures = Path.Combine(ProjectFolder + "\\Picturedata");
                         Console.WriteLine("Success");
                     }
                     if (Directory.Exists(ProjectFolder) && Directory.EnumerateFileSystemEntries(ProjectFolder).Any())
@@ -156,12 +158,16 @@ namespace Visual_Storyline
                     }
                     else if (Directory.Exists(ProjectFolder) && !Directory.EnumerateFileSystemEntries(ProjectFolder).Any())
                     {
+                        Directory.CreateDirectory(Path.Combine(ProjectFolder + "\\Picturedata"));
+                        Variables.Pictures = Path.Combine(ProjectFolder + "\\Picturedata");
                         Console.WriteLine("Folder exists without files");
                     }
                     else if (!Directory.Exists(ProjectFolder))
                     {
                         Console.WriteLine("Trying to create the project folder");
                         Directory.CreateDirectory(ProjectFolder);
+                        Directory.CreateDirectory(Path.Combine(ProjectFolder + "\\Picturedata"));
+                        Variables.Pictures = Path.Combine(ProjectFolder + "\\Picturedata");
                         Console.WriteLine("Success");
                     }
 

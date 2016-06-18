@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="wmf.AutoSize" type="System.Boolean, mscorlib">
+  <data name="tiff.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="wmf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="tiff.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="wmf.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tiff.Location" type="System.Drawing.Point, System.Drawing">
     <value>101, 48</value>
   </data>
-  <data name="wmf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
+  <data name="tiff.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
   </data>
-  <data name="wmf.TabIndex" type="System.Int32, mscorlib">
+  <data name="tiff.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="wmf.Text" xml:space="preserve">
-    <value>*.wmf</value>
+  <data name="tiff.Text" xml:space="preserve">
+    <value>*.tiff</value>
   </data>
-  <data name="&gt;&gt;wmf.Name" xml:space="preserve">
-    <value>wmf</value>
+  <data name="&gt;&gt;tiff.Name" xml:space="preserve">
+    <value>tiff</value>
   </data>
-  <data name="&gt;&gt;wmf.Type" xml:space="preserve">
+  <data name="&gt;&gt;tiff.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;wmf.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tiff.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;wmf.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tiff.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="bmp.AutoSize" type="System.Boolean, mscorlib">

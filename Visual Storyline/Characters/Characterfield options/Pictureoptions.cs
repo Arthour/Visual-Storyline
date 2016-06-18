@@ -44,10 +44,10 @@ namespace Visual_Storyline.Characters.Characterfield_options
                         gif.Checked = true;
                     if (node.InnerText.Contains("bmp"))
                         bmp.Checked = true;
-                    if (node.InnerText.Contains("wmf"))
-                        wmf.Checked = true;
+                    if (node.InnerText.Contains("tiff"))
+                        tiff.Checked = true;
                 }
-                else { jpg.Checked = true; png.Checked = true; gif.Checked = true; bmp.Checked = true; wmf.Checked = true; }
+                else { jpg.Checked = true; png.Checked = true; gif.Checked = true; bmp.Checked = true; tiff.Checked = true; }
                 if (option.DocumentElement.SelectSingleNode("/options/width") != null)
                 {
                     widthVal = Convert.ToInt32(option.DocumentElement.SelectSingleNode("/options/width").InnerText);
@@ -78,7 +78,7 @@ namespace Visual_Storyline.Characters.Characterfield_options
                     png.Checked = true;
                     gif.Checked = true;
                     bmp.Checked = true;
-                    wmf.Checked = true;
+                    tiff.Checked = true;
                     unit.SelectedIndex = 0;
                     widthVal = 120;
                     heightVal = 120;
@@ -90,7 +90,7 @@ namespace Visual_Storyline.Characters.Characterfield_options
 
         private void CheckOK()
         {
-            CheckBox[] checkbox = new CheckBox[] { jpg, png, gif, bmp, wmf };
+            CheckBox[] checkbox = new CheckBox[] { jpg, png, gif, bmp, tiff };
             bool ischecked = false;
             foreach (CheckBox check in checkbox)
             {
@@ -157,8 +157,8 @@ namespace Visual_Storyline.Characters.Characterfield_options
                 allowedset += "gif;";
             if (bmp.Checked)
                 allowedset += "bmp;";
-            if (wmf.Checked)
-                allowedset += "wmf;";
+            if (tiff.Checked)
+                allowedset += "tiff;";
             string newoptions;
             newoptions = "<options><allowed>" + allowedset + "</allowed><width>" + widthVal + "</width><height>" + heightVal + "</height><unit>" + unitVar + "</unit><dpm>" + dpmode.SelectedIndex + "</dpm></options>";
             EditCharacterFields.tempID = ID;

@@ -141,6 +141,12 @@
     <Compile Include="Locations\editLocations.Designer.cs">
       <DependentUpon>editLocations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Locations\listLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locations\listLocations.Designer.cs">
+      <DependentUpon>listLocations.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManualTranslation.cs" />
     <Compile Include="New.cs">
       <SubType>Form</SubType>
@@ -242,6 +248,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Locations\editLocations.resx">
       <DependentUpon>editLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\listLocations.de.resx">
+      <DependentUpon>listLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\listLocations.resx">
+      <DependentUpon>listLocations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New.de.resx">
       <DependentUpon>New.cs</DependentUpon>
