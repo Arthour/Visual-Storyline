@@ -64,8 +64,8 @@
             // 
             // cancel
             // 
-            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.cancel, "cancel");
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
@@ -92,6 +92,7 @@
             // 
             resources.ApplyResources(this.parentLocation, "parentLocation");
             this.parentLocation.Name = "parentLocation";
+            this.parentLocation.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Keyboardentry);
             // 
             // label3
             // 
@@ -114,9 +115,9 @@
             // 
             // picture
             // 
+            resources.ApplyResources(this.picture, "picture");
             this.picture.BackColor = System.Drawing.SystemColors.HighlightText;
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.picture, "picture");
             this.picture.Name = "picture";
             this.picture.TabStop = false;
             // 

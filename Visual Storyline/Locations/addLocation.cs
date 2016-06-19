@@ -19,6 +19,7 @@ namespace Visual_Storyline.Locations
         bool isEdit;
         string options;
         string pictureName;
+        Guid guid, linked;
 
         [DllImport("msvcrt.dll")]
         private static extern int memcmp(IntPtr b1, IntPtr b2, long count);
@@ -29,7 +30,7 @@ namespace Visual_Storyline.Locations
             options = loadoptions;
             isEdit = edit;
 
-            if(edit)
+            if (edit)
             { LoadLoc(); }
         }
 
@@ -38,6 +39,7 @@ namespace Visual_Storyline.Locations
             XmlDocument doc = new XmlDocument();
             doc.LoadXml("");
 
+            guid = Guid.Parse(doc.DocumentElement.SelectSingleNode("/location/guid").InnerText);
             name.Text = doc.DocumentElement.SelectSingleNode("/location/name").InnerText;
             description.Text = doc.DocumentElement.SelectSingleNode("/location/description").InnerText;
             parentLocation.Text = doc.DocumentElement.SelectSingleNode("/location/parent").InnerText;
@@ -62,12 +64,17 @@ namespace Visual_Storyline.Locations
 
         private void OK_Click(object sender, EventArgs e)
         {
-            string locationset = "<location><name>" + name.Text + "</name><description>" + description.Text + "</description><parent>" + parentLocation.Text + "</parent><picture>" + pictureName + "</picture></location>";
+            if(guid == Guid.Empty)
+                guid = Guid.NewGuid();
+            string locationset = "<location><guid>" + guid + "</guid><name>" + name.Text + "</name><description>" + description.Text + "</description><picture>" + pictureName + "</picture><parent>" + parentLocation.Text + "</parent><linked>" + linked + "</linked></location>";
             Variables.Locations.Add(locationset);
             if(isEdit)
             {
                 //TODO: refresh edit
             }
+
+            Console.WriteLine(locationset);
+
             Dispose();
         }
 
@@ -204,9 +211,22 @@ namespace Visual_Storyline.Locations
             lloc.ShowDialog();
         }
 
+        private void Keyboardentry(object sender, KeyPressEventArgs e)
+        {
+            linked = Guid.Empty;
+        }
+
         internal void GrabSelection(string selectedLoc)
         {
-            parentLocation.Text = selectedLoc;
+            linked = Guid.Parse(selectedLoc);
+
+            XmlDocument doc = new XmlDocument();
+            foreach (string item in Variables.Locations)
+            {
+                doc.LoadXml(item);
+                if (doc.DocumentElement.SelectSingleNode("/location/guid").InnerText == selectedLoc)
+                    parentLocation.Text = doc.DocumentElement.SelectSingleNode("/location/name").InnerText;
+            }
         }
     }
 }

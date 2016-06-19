@@ -14,6 +14,7 @@ namespace Visual_Storyline.Locations
     public partial class ListLocations : Form
     {
         private AddLocation Parentform;
+        private List<string> guids = new List<string>();
 
         public ListLocations(object sender, string oldoptions = "")
         {
@@ -28,9 +29,25 @@ namespace Visual_Storyline.Locations
                     XmlDocument doc = new XmlDocument();
                     doc.LoadXml(item);
 
+                    XmlDocument old = new XmlDocument();
+                    if (oldoptions != "")
+                        old.LoadXml(oldoptions);
+
                     if (doc.DocumentElement.ParentNode.InnerXml != oldoptions)
                     {
-                        locations.Items.Add(doc.DocumentElement.SelectSingleNode("/location/name").InnerText);
+                        if(oldoptions != "")
+                        {
+                            if (doc.DocumentElement.SelectSingleNode("/location/guid").InnerText != old.DocumentElement.SelectSingleNode("/location/linked").InnerText)
+                            {
+                                locations.Items.Add(doc.DocumentElement.SelectSingleNode("/location/name").InnerText);
+                                guids.Add(doc.DocumentElement.SelectSingleNode("/location/guid").InnerText);
+                            }
+                        }
+                        else
+                        {
+                            locations.Items.Add(doc.DocumentElement.SelectSingleNode("/location/name").InnerText);
+                            guids.Add(doc.DocumentElement.SelectSingleNode("/location/guid").InnerText);
+                        }
                     }
                 }
                 locations.SelectedIndex = 0;
@@ -41,7 +58,7 @@ namespace Visual_Storyline.Locations
 
         private void OK_Click(object sender, EventArgs e)
         {
-            Parentform.GrabSelection(locations.SelectedItem.ToString());
+            Parentform.GrabSelection(guids[locations.SelectedIndex]);
             Dispose();
         }
     }
