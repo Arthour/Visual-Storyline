@@ -116,7 +116,7 @@ namespace Visual_Storyline
 
         private void addLoc_Click(object sender, EventArgs e)
         {
-            addLocation addloc = new addLocation(false);
+            AddLocation addloc = new AddLocation(false);
             addloc.ShowDialog();
         }
     }

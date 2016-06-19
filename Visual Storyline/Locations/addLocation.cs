@@ -14,7 +14,7 @@ using System.Xml;
 
 namespace Visual_Storyline.Locations
 {
-    public partial class addLocation : Form
+    public partial class AddLocation : Form
     {
         bool isEdit;
         string options;
@@ -23,7 +23,7 @@ namespace Visual_Storyline.Locations
         [DllImport("msvcrt.dll")]
         private static extern int memcmp(IntPtr b1, IntPtr b2, long count);
 
-        public addLocation(bool edit, string loadoptions = "")
+        public AddLocation(bool edit, string loadoptions = "")
         {
             InitializeComponent();
             options = loadoptions;
@@ -35,8 +35,6 @@ namespace Visual_Storyline.Locations
 
         private void LoadLoc()
         {
-            //TODO: get information from parent
-
             XmlDocument doc = new XmlDocument();
             doc.LoadXml("");
 
@@ -47,7 +45,10 @@ namespace Visual_Storyline.Locations
 
             if(pictureName != "")
             {
-                //TODO: load picture from path
+                Image pic = ImageFast.FromFile(Path.Combine(Variables.locationPictures, pictureName));
+                picture.Image = pic;
+                picture.SizeMode = PictureBoxSizeMode.Zoom;
+                picture.BackColor = Color.Black;
             }
         }
 
@@ -82,37 +83,61 @@ namespace Visual_Storyline.Locations
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                if (Directory.Exists(Variables.Pictures))
+                if (Directory.Exists(Variables.locationPictures))
                 {
-                    if (Directory.GetFiles(Variables.Pictures) != null)
+                    if (Directory.GetFiles(Variables.locationPictures) != null)
                     {
-                        Image selPic = Image.FromFile(openFileDialog.FileName);
+                        Image selPic = ImageFast.FromFile(openFileDialog.FileName);
                         Bitmap selBM = new Bitmap(selPic);
-                        //TODO: try (permission exception)
-                        string[] files = Directory.GetFiles(Variables.Pictures);
-                        foreach (string pic in files) //TODO: check only pictures
+                        try
                         {
-                            Image curPic = Image.FromFile(pic);
-                            Bitmap curBM = new Bitmap(curPic);
-
-                            if(selPic.Width == curPic.Width && selPic.Height == curPic.Height)
+                            string[] files = Directory.GetFiles(Variables.locationPictures);
+                            foreach (string pic in files)
                             {
-                                if(Compare(selBM, curBM))
+                                try
                                 {
-                                    picture.Image = curPic;
-                                    picture.SizeMode = PictureBoxSizeMode.Zoom;
-                                    picture.BackColor = Color.Black;
-                                    pictureName = Path.GetFileName(pic);
+                                    Image curPic = ImageFast.FromFile(pic);
+                                    Bitmap curBM = new Bitmap(curPic);
+
+                                    if (selPic.Width == curPic.Width && selPic.Height == curPic.Height)
+                                    {
+                                        if (Compare(selBM, curBM))
+                                        {
+                                            picture.Image = curPic;
+                                            picture.SizeMode = PictureBoxSizeMode.Zoom;
+                                            picture.BackColor = Color.Black;
+                                            pictureName = Path.GetFileName(pic);
+
+                                            Properties.Settings.Default.Picturepath = Directory.GetParent(openFileDialog.FileName).ToString();
+                                            Properties.Settings.Default.Save();
+
+                                            openFileDialog.Dispose();
+
+                                            watch.Stop();
+                                            var elapsedMs2 = watch.ElapsedMilliseconds;
+                                            Console.WriteLine(elapsedMs2);
+
+                                            return;
+                                        }
+                                    }
                                 }
+                                catch(Exception)
+                                { }
                             }
                         }
+                        catch(UnauthorizedAccessException)
+                        { }
+                        catch(Exception)
+                        { }
                     }
+
                 }
                 else
                 {
                     Directory.CreateDirectory(Path.Combine(Variables.currentFolder, "Picturedata"));
-                    //TODO: copy file, rename it, load it
                 }
+
+                picNotExisting(openFileDialog.FileName);
 
                 Properties.Settings.Default.Picturepath = Directory.GetParent(openFileDialog.FileName).ToString();
                 Properties.Settings.Default.Save();
@@ -127,7 +152,6 @@ namespace Visual_Storyline.Locations
             {
                 return;
             }
-            //TODO: check if images are used, else delete them
         }
 
         private static bool Compare (Bitmap b1, Bitmap b2)
@@ -157,14 +181,26 @@ namespace Visual_Storyline.Locations
             }
         }
 
-        private void picNotExisting()
+        private void picNotExisting(string sourcePath)
         {
+            Guid g = Guid.NewGuid();
+            string GuidString = Convert.ToBase64String(g.ToByteArray());
+            GuidString = GuidString.Replace("=", "");
+            GuidString = GuidString.Replace("+", "");
+            GuidString = GuidString.Replace("/", "");
 
+            File.Copy(sourcePath, Path.Combine(Variables.locationPictures, GuidString));
+
+            Image pic = ImageFast.FromFile(Path.Combine(Variables.locationPictures, GuidString));
+            picture.Image = pic;
+            picture.SizeMode = PictureBoxSizeMode.Zoom;
+            picture.BackColor = Color.Black;
+            pictureName = GuidString;
         }
 
         private void selpar_Click(object sender, EventArgs e)
         {
-            listLocations lloc = new listLocations(this, options);
+            ListLocations lloc = new ListLocations(this, options);
             lloc.ShowDialog();
         }
 

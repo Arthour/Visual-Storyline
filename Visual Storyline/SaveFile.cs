@@ -29,6 +29,9 @@ namespace Visual_Storyline
         //Characters
         private static List<string> Characterfields = new List<string>(Variables.CharacterFields);
 
+
+        //TODO: Check if images are being used (else delete them)
+
         internal static void Save()
         {
             Colors = "";

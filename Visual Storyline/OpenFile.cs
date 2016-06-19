@@ -26,11 +26,13 @@ namespace Visual_Storyline
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
+                Program.FlushVars();
+                decoded.Clear();
+
                 fileToOpen = openFileDialog.FileName;
                 Variables.currentFile = openFileDialog.FileName;
                 Variables.currentFolder = Directory.GetParent(Variables.currentFile).ToString();
                 Variables.currentPath = Directory.GetParent(Variables.currentFolder).ToString();
-                Variables.Pictures = Path.Combine(Variables.currentFolder + "\\Picturedata");
                 Properties.Settings.Default.Projectpath = Directory.GetParent(openFileDialog.FileName).ToString();
                 Properties.Settings.Default.Save();
                 openFileDialog.Dispose();
@@ -64,11 +66,25 @@ namespace Visual_Storyline
                 Variables.customColors = Array.ConvertAll<string, int>(xml.DocumentElement.SelectSingleNode("/saveoptions/customcolors").InnerText.Split(','), int.Parse);
             }
 
-            Variables.CharacterFields.Clear();
             if (Variables.SaveOptionChar == 1)
-            { dir = Path.Combine(Directory.GetParent(fileToOpen).ToString(), "Savedata", "Characters.dat"); }
+            {
+                dir = Path.Combine(Directory.GetParent(fileToOpen).ToString(), "Savedata", "Characters.dat");
+                Variables.characterPictures = Path.Combine(Variables.currentFolder, "Picturedata");
+            }
             else if (Variables.SaveOptionChar == 2)
-            { dir = Path.Combine(Variables.VSL, "GlobalSavedata", "Characters.dat"); }
+            {
+                dir = Path.Combine(Variables.VSL, "GlobalSavedata", "Characters.dat");
+                Variables.characterPictures = Path.Combine(Variables.VSL, "GlobalSavedata", "Picturedata");
+            }
+            if (Variables.SaveOptionLoc == 1)
+            {
+                Variables.locationPictures = Path.Combine(Variables.currentFolder, "Picturedata");
+            }
+            else if (Variables.SaveOptionLoc == 2)
+            {
+                Variables.locationPictures = Path.Combine(Variables.VSL, "GlobalSavedata", "Picturedata");
+
+            }
 
             if (File.Exists(dir))
             {

@@ -49,6 +49,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImageFast">
+      <HintPath>..\..\..\..\Desktop\Code\Librarys\ImageFast\ImageFast.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -129,23 +132,29 @@
     <Compile Include="Characters\Characterfield options\Textfieldoptions.Designer.cs">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </Compile>
-    <Compile Include="Locations\addLocation.cs">
+    <Compile Include="Locations\AddLocation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Locations\addLocation.Designer.cs">
-      <DependentUpon>addLocation.cs</DependentUpon>
+    <Compile Include="Locations\AddLocation.Designer.cs">
+      <DependentUpon>AddLocation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Locations\editLocations.cs">
+    <Compile Include="Locations\EditLocations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Locations\editLocations.Designer.cs">
-      <DependentUpon>editLocations.cs</DependentUpon>
+    <Compile Include="Locations\EditLocations.Designer.cs">
+      <DependentUpon>EditLocations.cs</DependentUpon>
     </Compile>
-    <Compile Include="Locations\listLocations.cs">
+    <Compile Include="Locations\ListLocations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Locations\listLocations.Designer.cs">
-      <DependentUpon>listLocations.cs</DependentUpon>
+    <Compile Include="Locations\ListLocations.Designer.cs">
+      <DependentUpon>ListLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\Locationfield.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Locations\Locationfield.Designer.cs">
+      <DependentUpon>Locationfield.cs</DependentUpon>
     </Compile>
     <Compile Include="ManualTranslation.cs" />
     <Compile Include="New.cs">
@@ -240,20 +249,23 @@
     <EmbeddedResource Include="Characters\Characterfield options\Pictureoptions.resx">
       <DependentUpon>Pictureoptions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Locations\addLocation.de.resx">
-      <DependentUpon>addLocation.cs</DependentUpon>
+    <EmbeddedResource Include="Locations\AddLocation.de.resx">
+      <DependentUpon>AddLocation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Locations\addLocation.resx">
-      <DependentUpon>addLocation.cs</DependentUpon>
+    <EmbeddedResource Include="Locations\AddLocation.resx">
+      <DependentUpon>AddLocation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Locations\editLocations.resx">
-      <DependentUpon>editLocations.cs</DependentUpon>
+    <EmbeddedResource Include="Locations\EditLocations.resx">
+      <DependentUpon>EditLocations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Locations\listLocations.de.resx">
-      <DependentUpon>listLocations.cs</DependentUpon>
+    <EmbeddedResource Include="Locations\ListLocations.de.resx">
+      <DependentUpon>ListLocations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Locations\listLocations.resx">
-      <DependentUpon>listLocations.cs</DependentUpon>
+    <EmbeddedResource Include="Locations\ListLocations.resx">
+      <DependentUpon>ListLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\Locationfield.resx">
+      <DependentUpon>Locationfield.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="New.de.resx">
       <DependentUpon>New.cs</DependentUpon>
@@ -355,6 +367,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

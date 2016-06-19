@@ -1,6 +1,6 @@
 ﻿namespace Visual_Storyline.Locations
 {
-    partial class listLocations
+    partial class ListLocations
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(listLocations));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListLocations));
             this.OK = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
             this.locations = new System.Windows.Forms.ListBox();

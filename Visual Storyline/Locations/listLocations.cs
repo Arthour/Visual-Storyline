@@ -11,15 +11,15 @@ using System.Xml;
 
 namespace Visual_Storyline.Locations
 {
-    public partial class listLocations : Form
+    public partial class ListLocations : Form
     {
-        private addLocation Parentform;
+        private AddLocation Parentform;
 
-        public listLocations(object sender, string oldoptions = "")
+        public ListLocations(object sender, string oldoptions = "")
         {
             InitializeComponent();
 
-            Parentform = (addLocation)sender;
+            Parentform = (AddLocation)sender;
 
             if(Variables.Locations.Count > 0)
             {

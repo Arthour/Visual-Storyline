@@ -42,8 +42,35 @@ namespace Visual_Storyline
             return System.Text.Encoding.UTF8.GetString(encodedBytes);
         }
 
+        public static void FlushVars()
+        {
+            Variables.currentPath = default(string);
+            Variables.currentFolder = default(string);
+            Variables.currentFile = default(string);
+            Variables.characterPictures = default(string);
+            Variables.locationPictures = default(string);
+            Variables.Version = default(string);
+            Variables.Created = default(string);
+            Variables.Modified = default(string);
+            Variables.Name = default(string);
+            Variables.Description = default(string);
+            Variables.SaveOptionChar = default(int);
+            Variables.SaveOptionLoc = default(int);
+            Variables.customColors = default(int[]);
+            Variables.Characters.Clear();
+            Variables.Locations.Clear();
+            Variables.Strands.Clear();
+            Variables.Ideas.Clear();
+            Variables.Quests.Clear();
+            Variables.Relations.Clear();
+            Variables.Conditions.Clear();
+            Variables.CharacterFields.Clear();
+
+        }
+
         //TODO: write comments
         //TODO: try loading
+        //TODO: tutorial
     }
 
     class Variables
@@ -56,7 +83,7 @@ namespace Visual_Storyline
         /// <summary>
         /// Current file paths
         /// </summary>
-        public static string currentPath, currentFolder, currentFile, Pictures;
+        public static string currentPath, currentFolder, currentFile, characterPictures, locationPictures;
         /// <summary>
         /// Metadata
         /// </summary>

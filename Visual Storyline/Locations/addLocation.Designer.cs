@@ -1,6 +1,6 @@
 ﻿namespace Visual_Storyline.Locations
 {
-    partial class addLocation
+    partial class AddLocation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addLocation));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddLocation));
             this.label1 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
             this.OK = new System.Windows.Forms.Button();
@@ -64,8 +64,8 @@
             // 
             // cancel
             // 
-            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.cancel, "cancel");
             this.cancel.Name = "cancel";
             this.cancel.UseVisualStyleBackColor = true;
             // 
@@ -114,13 +114,13 @@
             // 
             // picture
             // 
-            resources.ApplyResources(this.picture, "picture");
             this.picture.BackColor = System.Drawing.SystemColors.HighlightText;
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.picture, "picture");
             this.picture.Name = "picture";
             this.picture.TabStop = false;
             // 
-            // addLocation
+            // AddLocation
             // 
             this.AcceptButton = this.OK;
             resources.ApplyResources(this, "$this");
@@ -143,7 +143,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "addLocation";
+            this.Name = "AddLocation";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
