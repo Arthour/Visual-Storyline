@@ -30,7 +30,7 @@ namespace Visual_Storyline.Locations
             options = loadoptions;
             isEdit = edit;
 
-            if (edit)
+            if(edit)
             { LoadLoc(); }
         }
 
