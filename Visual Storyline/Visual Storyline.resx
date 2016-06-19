@@ -124,9 +124,6 @@
   <data name="Settings.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>706, 773</value>
-  </data>
   <data name="addQuest.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 26</value>
   </data>
@@ -157,11 +154,14 @@
   <data name="&gt;&gt;Export.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="New.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
   <data name="editChapt.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 22</value>
   </data>
-  <data name="addRelation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>VisualStoryline</value>
   </data>
   <data name="SaveSubmenu.Text" xml:space="preserve">
     <value>Save</value>
@@ -172,11 +172,14 @@
   <data name="addChapt.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 22</value>
   </data>
-  <data name="addStrand.Text" xml:space="preserve">
-    <value>Add</value>
+  <data name="&gt;&gt;SaveSubmenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Open.Text" xml:space="preserve">
-    <value>&amp;Open</value>
+  <data name="editFieldsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit fields</value>
+  </data>
+  <data name="Toolbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="&gt;&gt;editChapt.Name" xml:space="preserve">
     <value>editChapt</value>
@@ -203,8 +206,8 @@
   <data name="&gt;&gt;editStrand.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;addEvent.Name" xml:space="preserve">
-    <value>addEvent</value>
+  <data name="addLoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
   </data>
   <data name="addRelation.Text" xml:space="preserve">
     <value>Add Relation</value>
@@ -212,20 +215,14 @@
   <data name="&gt;&gt;addEvent.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;addStrand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Toolbar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Save.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Characters.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 26</value>
-  </data>
-  <data name="&gt;&gt;editFieldsToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Characters.Text" xml:space="preserve">
     <value>Characters</value>
@@ -235,9 +232,6 @@
   </data>
   <data name="Save.Text" xml:space="preserve">
     <value>&amp;Save</value>
-  </data>
-  <data name="&gt;&gt;editLoc.Name" xml:space="preserve">
-    <value>editLoc</value>
   </data>
   <data name="SaveSubmenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 22</value>
@@ -250,6 +244,9 @@
   </data>
   <data name="addRelation.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 26</value>
+  </data>
+  <data name="&gt;&gt;addLoc.Name" xml:space="preserve">
+    <value>addLoc</value>
   </data>
   <data name="&gt;&gt;Save.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -284,11 +281,8 @@
   <data name="Locations.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;Characters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Chapters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;editChar.Name" xml:space="preserve">
+    <value>editChar</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Toolbar.AutoSize" type="System.Boolean, mscorlib">
@@ -315,8 +309,8 @@
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
-  <data name="&gt;&gt;SaveasSubmenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="addQuest.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
   </data>
   <data name="&gt;&gt;editFieldsToolStripMenuItem.Name" xml:space="preserve">
     <value>editFieldsToolStripMenuItem</value>
@@ -327,8 +321,8 @@
   <data name="Save.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 26</value>
   </data>
-  <data name="addQuest.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="&gt;&gt;addStrand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="editStrand.Text" xml:space="preserve">
     <value>Edit</value>
@@ -345,17 +339,17 @@
   <data name="Featurelist.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="Toolbar.Text" xml:space="preserve">
-    <value>Toolbar</value>
+  <data name="New.Text" xml:space="preserve">
+    <value>&amp;New</value>
   </data>
-  <data name="&gt;&gt;SaveasSubmenu.Name" xml:space="preserve">
-    <value>SaveasSubmenu</value>
+  <data name="addStrand.Text" xml:space="preserve">
+    <value>Add</value>
   </data>
   <data name="New.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 26</value>
   </data>
-  <data name="editChar.Text" xml:space="preserve">
-    <value>Edit</value>
+  <data name="&gt;&gt;editLoc.Name" xml:space="preserve">
+    <value>editLoc</value>
   </data>
   <data name="Locations.Text" xml:space="preserve">
     <value>Locations</value>
@@ -363,14 +357,14 @@
   <data name="&gt;&gt;Featurelist.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="editChar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+  <data name="&gt;&gt;Chapters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Chapters.Name" xml:space="preserve">
+    <value>Chapters</value>
   </data>
   <data name="Toolbar.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;editChar.Name" xml:space="preserve">
-    <value>editChar</value>
   </data>
   <data name="addChar.Text" xml:space="preserve">
     <value>Add</value>
@@ -384,26 +378,23 @@
   <data name="&gt;&gt;Export.Name" xml:space="preserve">
     <value>Export</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>VisualStoryline</value>
-  </data>
   <data name="&gt;&gt;Strands.Name" xml:space="preserve">
     <value>Strands</value>
   </data>
   <data name="&gt;&gt;Toolbar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;addQuest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="editChar.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
   <data name="addEvent.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 26</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Strands.Text" xml:space="preserve">
     <value>Strands</value>
+  </data>
+  <data name="&gt;&gt;editFieldsToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;addChar.Name" xml:space="preserve">
     <value>addChar</value>
@@ -420,6 +411,9 @@
   <data name="Featurelist.Size" type="System.Drawing.Size, System.Drawing">
     <value>113, 26</value>
   </data>
+  <data name="editLoc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
   <data name="&gt;&gt;addRelation.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -432,26 +426,29 @@
   <data name="Settings.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="&gt;&gt;Toolbar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Open.Text" xml:space="preserve">
+    <value>&amp;Open</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Visual Storyline</value>
   </data>
-  <data name="New.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="addRelation.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
   <data name="&gt;&gt;addStrand.Name" xml:space="preserve">
     <value>addStrand</value>
   </data>
-  <data name="New.Text" xml:space="preserve">
-    <value>&amp;New</value>
+  <data name="&gt;&gt;Characters.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Toolbar.Name" xml:space="preserve">
     <value>Toolbar</value>
   </data>
   <data name="&gt;&gt;editChapt.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="editChar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>6, 29</value>
@@ -474,11 +471,11 @@
   <data name="&gt;&gt;Characters.Name" xml:space="preserve">
     <value>Characters</value>
   </data>
-  <data name="&gt;&gt;Chapters.Name" xml:space="preserve">
-    <value>Chapters</value>
+  <data name="&gt;&gt;addEvent.Name" xml:space="preserve">
+    <value>addEvent</value>
   </data>
-  <data name="Toolbar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="&gt;&gt;SaveasSubmenu.Name" xml:space="preserve">
+    <value>SaveasSubmenu</value>
   </data>
   <data name="editStrand.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 22</value>
@@ -486,8 +483,8 @@
   <data name="&gt;&gt;editChar.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SaveSubmenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;editLoc.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -498,38 +495,41 @@
   <data name="&gt;&gt;addChapt.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="editFieldsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Edit fields</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>706, 773</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
     <value>toolStripSeparator2</value>
   </data>
-  <data name="&gt;&gt;SaveSubmenu.Name" xml:space="preserve">
-    <value>SaveSubmenu</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;addLoc.Name" xml:space="preserve">
-    <value>addLoc</value>
+  <data name="&gt;&gt;addQuest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Chapters.Text" xml:space="preserve">
     <value>Chapters</value>
   </data>
-  <data name="addLoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 22</value>
+  <data name="Toolbar.Text" xml:space="preserve">
+    <value>Toolbar</value>
   </data>
   <data name="Locations.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 26</value>
   </data>
-  <data name="editLoc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 22</value>
+  <data name="&gt;&gt;SaveasSubmenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="Toolbar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="&gt;&gt;SaveSubmenu.Name" xml:space="preserve">
+    <value>SaveSubmenu</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="Toolbar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>de</value>

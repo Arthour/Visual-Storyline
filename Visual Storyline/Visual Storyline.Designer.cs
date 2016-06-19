@@ -182,6 +182,7 @@
             resources.ApplyResources(this.editLoc, "editLoc");
             this.editLoc.Image = global::Visual_Storyline.Properties.Resources.EditorZone_6025;
             this.editLoc.Name = "editLoc";
+            this.editLoc.Click += new System.EventHandler(this.editLoc_Click);
             // 
             // Strands
             // 

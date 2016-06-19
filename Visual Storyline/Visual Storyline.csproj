@@ -236,6 +236,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\EditCharacterFields.resx">
       <DependentUpon>EditCharacterFields.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Characters\Characterfield options\Textfieldoptions.de.resx">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
@@ -255,6 +256,9 @@
     <EmbeddedResource Include="Locations\AddLocation.resx">
       <DependentUpon>AddLocation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Locations\EditLocations.de.resx">
+      <DependentUpon>EditLocations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Locations\EditLocations.resx">
       <DependentUpon>EditLocations.cs</DependentUpon>
     </EmbeddedResource>
@@ -263,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Locations\ListLocations.resx">
       <DependentUpon>ListLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations\Locationfield.de.resx">
+      <DependentUpon>Locationfield.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Locations\Locationfield.resx">
       <DependentUpon>Locationfield.cs</DependentUpon>

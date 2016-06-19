@@ -16,7 +16,7 @@ namespace Visual_Storyline.Locations
 {
     public partial class AddLocation : Form
     {
-        bool isEdit;
+        bool viaEdit;
         string options;
         string pictureName;
         Guid guid, linked;
@@ -24,28 +24,30 @@ namespace Visual_Storyline.Locations
         [DllImport("msvcrt.dll")]
         private static extern int memcmp(IntPtr b1, IntPtr b2, long count);
 
-        public AddLocation(bool edit, string loadoptions = "")
+        public AddLocation(bool isEdit, bool viaEdit, string loadoptions = "")
         {
             InitializeComponent();
             options = loadoptions;
-            isEdit = edit;
+            this.viaEdit = viaEdit;
 
-            if(edit)
-            { LoadLoc(); }
+            if(isEdit)
+                LoadLoc();
         }
 
         private void LoadLoc()
         {
             XmlDocument doc = new XmlDocument();
-            doc.LoadXml("");
+            doc.LoadXml(options);
 
             guid = Guid.Parse(doc.DocumentElement.SelectSingleNode("/location/guid").InnerText);
             name.Text = doc.DocumentElement.SelectSingleNode("/location/name").InnerText;
             description.Text = doc.DocumentElement.SelectSingleNode("/location/description").InnerText;
-            parentLocation.Text = doc.DocumentElement.SelectSingleNode("/location/parent").InnerText;
             pictureName = doc.DocumentElement.SelectSingleNode("/location/picture").InnerText;
+            parentLocation.Text = doc.DocumentElement.SelectSingleNode("/location/parent").InnerText;
+            linked = Guid.Parse(doc.DocumentElement.SelectSingleNode("/location/linked").InnerText);
 
-            if(pictureName != "")
+
+            if (pictureName != "")
             {
                 Image pic = ImageFast.FromFile(Path.Combine(Variables.locationPictures, pictureName));
                 picture.Image = pic;
@@ -68,7 +70,7 @@ namespace Visual_Storyline.Locations
                 guid = Guid.NewGuid();
             string locationset = "<location><guid>" + guid + "</guid><name>" + name.Text + "</name><description>" + description.Text + "</description><picture>" + pictureName + "</picture><parent>" + parentLocation.Text + "</parent><linked>" + linked + "</linked></location>";
             Variables.Locations.Add(locationset);
-            if(isEdit)
+            if(viaEdit)
             {
                 //TODO: refresh edit
             }

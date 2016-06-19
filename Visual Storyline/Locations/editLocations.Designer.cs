@@ -1,6 +1,6 @@
 ﻿namespace Visual_Storyline.Locations
 {
-    partial class editLocations
+    partial class EditLocations
     {
         /// <summary>
         /// Required designer variable.
@@ -28,25 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditLocations));
+            this.addLocation = new System.Windows.Forms.Button();
+            this.OK = new System.Windows.Forms.Button();
+            this.cancel = new System.Windows.Forms.Button();
+            this.locationPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // editLocations
+            // addLocation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this.addLocation, "addLocation");
+            this.addLocation.Name = "addLocation";
+            this.addLocation.UseVisualStyleBackColor = true;
+            this.addLocation.Click += new System.EventHandler(this.addLocation_Click);
+            // 
+            // OK
+            // 
+            resources.ApplyResources(this.OK, "OK");
+            this.OK.Name = "OK";
+            this.OK.UseVisualStyleBackColor = true;
+            // 
+            // cancel
+            // 
+            resources.ApplyResources(this.cancel, "cancel");
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancel.Name = "cancel";
+            this.cancel.UseVisualStyleBackColor = true;
+            // 
+            // locationPanel
+            // 
+            resources.ApplyResources(this.locationPanel, "locationPanel");
+            this.locationPanel.Name = "locationPanel";
+            // 
+            // EditLocations
+            // 
+            this.AcceptButton = this.OK;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(672, 496);
+            this.CancelButton = this.cancel;
+            this.ControlBox = false;
+            this.Controls.Add(this.locationPanel);
+            this.Controls.Add(this.addLocation);
+            this.Controls.Add(this.OK);
+            this.Controls.Add(this.cancel);
             this.DoubleBuffered = true;
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "editLocations";
+            this.Name = "EditLocations";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Edit locations";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button addLocation;
+        private System.Windows.Forms.Button OK;
+        private System.Windows.Forms.Button cancel;
+        public System.Windows.Forms.Panel locationPanel;
     }
 }
