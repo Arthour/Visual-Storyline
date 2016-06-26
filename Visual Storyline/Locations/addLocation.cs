@@ -20,9 +20,7 @@ namespace Visual_Storyline.Locations
         string options;
         string pictureName;
         Guid guid, linked;
-
-        [DllImport("msvcrt.dll")]
-        private static extern int memcmp(IntPtr b1, IntPtr b2, long count);
+        public event EventHandler update;
 
         public AddLocation(bool isEdit, bool viaEdit, string loadoptions = "")
         {
@@ -31,7 +29,7 @@ namespace Visual_Storyline.Locations
             this.viaEdit = viaEdit;
 
             if(isEdit)
-                LoadLoc();
+                LoadLoc(); 
         }
 
         private void LoadLoc()
@@ -49,10 +47,7 @@ namespace Visual_Storyline.Locations
 
             if (pictureName != "")
             {
-                Image pic = ImageFast.FromFile(Path.Combine(Variables.locationPictures, pictureName));
-                picture.Image = pic;
-                picture.SizeMode = PictureBoxSizeMode.Zoom;
-                picture.BackColor = Color.Black;
+                ImageHandler.load(Variables.locationPictures, pictureName, picture);
             }
         }
 
@@ -69,13 +64,13 @@ namespace Visual_Storyline.Locations
             if(guid == Guid.Empty)
                 guid = Guid.NewGuid();
             string locationset = "<location><guid>" + guid + "</guid><name>" + name.Text + "</name><description>" + description.Text + "</description><picture>" + pictureName + "</picture><parent>" + parentLocation.Text + "</parent><linked>" + linked + "</linked></location>";
-            Variables.Locations.Add(locationset);
+
+            if(!viaEdit)
+                Variables.Locations.Add(locationset);
             if(viaEdit)
             {
-                //TODO: refresh edit
+                update?.Invoke(locationset, e);
             }
-
-            Console.WriteLine(locationset);
 
             Dispose();
         }
@@ -88,123 +83,19 @@ namespace Visual_Storyline.Locations
             openFileDialog.Filter = "All pictures|*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.tiff|JPG (*.jpg, *.jpeg)|*.jpg;*.jpeg|PNG (*.png)|*.png|GIF (*.gif)|*.gif|BMP (*.bmp)|*.bmp|TIFF (*.tiff)|*.tiff";
             openFileDialog.RestoreDirectory = false;
 
-            var watch = System.Diagnostics.Stopwatch.StartNew();
-
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                if (Directory.Exists(Variables.locationPictures))
-                {
-                    if (Directory.GetFiles(Variables.locationPictures) != null)
-                    {
-                        Image selPic = ImageFast.FromFile(openFileDialog.FileName);
-                        Bitmap selBM = new Bitmap(selPic);
-                        try
-                        {
-                            string[] files = Directory.GetFiles(Variables.locationPictures);
-                            foreach (string pic in files)
-                            {
-                                try
-                                {
-                                    Image curPic = ImageFast.FromFile(pic);
-                                    Bitmap curBM = new Bitmap(curPic);
-
-                                    if (selPic.Width == curPic.Width && selPic.Height == curPic.Height)
-                                    {
-                                        if (Compare(selBM, curBM))
-                                        {
-                                            picture.Image = curPic;
-                                            picture.SizeMode = PictureBoxSizeMode.Zoom;
-                                            picture.BackColor = Color.Black;
-                                            pictureName = Path.GetFileName(pic);
-
-                                            Properties.Settings.Default.Picturepath = Directory.GetParent(openFileDialog.FileName).ToString();
-                                            Properties.Settings.Default.Save();
-
-                                            openFileDialog.Dispose();
-
-                                            watch.Stop();
-                                            var elapsedMs2 = watch.ElapsedMilliseconds;
-                                            Console.WriteLine(elapsedMs2);
-
-                                            return;
-                                        }
-                                    }
-                                }
-                                catch(Exception)
-                                { }
-                            }
-                        }
-                        catch(UnauthorizedAccessException)
-                        { }
-                        catch(Exception)
-                        { }
-                    }
-
-                }
-                else
-                {
-                    Directory.CreateDirectory(Path.Combine(Variables.currentFolder, "Picturedata"));
-                }
-
-                picNotExisting(openFileDialog.FileName);
-
+                pictureName = ImageHandler.startComparison(Variables.locationPictures, openFileDialog.FileName, picture);
+                Console.WriteLine(pictureName);
                 Properties.Settings.Default.Picturepath = Directory.GetParent(openFileDialog.FileName).ToString();
                 Properties.Settings.Default.Save();
 
                 openFileDialog.Dispose();
-
-                watch.Stop();
-                var elapsedMs = watch.ElapsedMilliseconds;
-                Console.WriteLine(elapsedMs);
             }
             else
             {
                 return;
             }
-        }
-
-        private static bool Compare (Bitmap b1, Bitmap b2)
-        {
-            var watch = System.Diagnostics.Stopwatch.StartNew();
-
-            if ((b1 == null) != (b2 == null)) return false;
-            if (b1.Size != b2.Size) return false;
-
-            var bd1 = b1.LockBits(new Rectangle(new Point(0, 0), b1.Size), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
-            var bd2 = b2.LockBits(new Rectangle(new Point(0, 0), b2.Size), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
-
-            try
-            {
-                IntPtr bd1scan0 = bd1.Scan0;
-                IntPtr bd2scan0 = bd2.Scan0;
-
-                int stride = bd1.Stride;
-                int len = stride * b1.Height;
-
-                return memcmp(bd1scan0, bd2scan0, len) == 0;
-            }
-            finally
-            {
-                b1.UnlockBits(bd1);
-                b2.UnlockBits(bd2);
-            }
-        }
-
-        private void picNotExisting(string sourcePath)
-        {
-            Guid g = Guid.NewGuid();
-            string GuidString = Convert.ToBase64String(g.ToByteArray());
-            GuidString = GuidString.Replace("=", "");
-            GuidString = GuidString.Replace("+", "");
-            GuidString = GuidString.Replace("/", "");
-
-            File.Copy(sourcePath, Path.Combine(Variables.locationPictures, GuidString));
-
-            Image pic = ImageFast.FromFile(Path.Combine(Variables.locationPictures, GuidString));
-            picture.Image = pic;
-            picture.SizeMode = PictureBoxSizeMode.Zoom;
-            picture.BackColor = Color.Black;
-            pictureName = GuidString;
         }
 
         private void selpar_Click(object sender, EventArgs e)

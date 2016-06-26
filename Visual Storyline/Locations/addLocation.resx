@@ -130,9 +130,6 @@
   <data name="&gt;&gt;description.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;parentLocation.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -149,8 +146,11 @@
   <data name="OK.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="&gt;&gt;selpic.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cancel.Size" type="System.Drawing.Size, System.Drawing">
@@ -165,17 +165,20 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
+  <data name="OK.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;picture.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="description.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 136</value>
   </data>
-  <data name="selpar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="selpar.Text" xml:space="preserve">
+    <value>Select</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 15</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 15</value>
   </data>
   <data name="&gt;&gt;picture.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -189,20 +192,14 @@
   <data name="&gt;&gt;parentLocation.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="picture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 150</value>
-  </data>
-  <data name="description.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="OK.Text" xml:space="preserve">
+    <value>OK</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 15</value>
   </data>
   <data name="&gt;&gt;cancel.Name" xml:space="preserve">
     <value>cancel</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AddLocation</value>
   </data>
   <data name="description.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -216,11 +213,8 @@
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="OK.Text" xml:space="preserve">
-    <value>OK</value>
+  <data name="description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 74</value>
   </data>
   <data name="&gt;&gt;selpic.Parent" xml:space="preserve">
     <value>$this</value>
@@ -237,11 +231,8 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="selpar.Text" xml:space="preserve">
-    <value>Select</value>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 12, 12, 12</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -257,9 +248,6 @@
   </data>
   <data name="selpic.Text" xml:space="preserve">
     <value>Select picture</value>
-  </data>
-  <data name="&gt;&gt;OK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="parentLocation.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 23</value>
@@ -285,8 +273,11 @@
   <data name="cancel.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="name.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="selpar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 260</value>
   </data>
   <data name="&gt;&gt;parentLocation.Parent" xml:space="preserve">
     <value>$this</value>
@@ -306,14 +297,17 @@
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 74</value>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Select parent location:</value>
   </data>
   <data name="picture.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
+  </data>
+  <data name="&gt;&gt;description.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -333,11 +327,14 @@
   <data name="picture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;name.Parent" xml:space="preserve">
+  <data name="parentLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 231</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -357,8 +354,8 @@
   <data name="cancel.Text" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="name.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;picture.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -375,6 +372,9 @@
   <data name="&gt;&gt;name.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;selpic.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -390,14 +390,14 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Add location</value>
   </data>
-  <data name="OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 260</value>
+  <data name="&gt;&gt;selpic.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Description:</value>
   </data>
-  <data name="&gt;&gt;cancel.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 15</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -411,14 +411,14 @@
   <data name="&gt;&gt;selpar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 15</value>
+  <data name="&gt;&gt;OK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;description.Parent" xml:space="preserve">
+  <data name="description.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;name.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="selpic.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
   </data>
   <data name="picture.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 30</value>
@@ -432,14 +432,14 @@
   <data name="parentLocation.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="OK.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;parentLocation.Name" xml:space="preserve">
-    <value>parentLocation</value>
+  <data name="&gt;&gt;cancel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;selpar.Name" xml:space="preserve">
     <value>selpar</value>
+  </data>
+  <data name="picture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 150</value>
   </data>
   <data name="OK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -450,11 +450,11 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>320, 291</value>
   </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+  <data name="&gt;&gt;parentLocation.Name" xml:space="preserve">
+    <value>parentLocation</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddLocation</value>
   </data>
   <data name="&gt;&gt;picture.Name" xml:space="preserve">
     <value>picture</value>
@@ -462,11 +462,11 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="parentLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 231</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>12, 12, 12, 12</value>
+  <data name="selpic.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

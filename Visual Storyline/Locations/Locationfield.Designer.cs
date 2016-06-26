@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Locationfield));
             this.name_label = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.Label();
+            this.locname = new System.Windows.Forms.Label();
             this.description_label = new System.Windows.Forms.Label();
             this.description = new System.Windows.Forms.TextBox();
             this.partof_label = new System.Windows.Forms.Label();
             this.partof = new System.Windows.Forms.Label();
-            this.picture = new System.Windows.Forms.PictureBox();
-            this.edit = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
+            this.edit = new System.Windows.Forms.Button();
+            this.picture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,10 +46,10 @@
             resources.ApplyResources(this.name_label, "name_label");
             this.name_label.Name = "name_label";
             // 
-            // name
+            // locname
             // 
-            resources.ApplyResources(this.name, "name");
-            this.name.Name = "name";
+            resources.ApplyResources(this.locname, "locname");
+            this.locname.Name = "locname";
             // 
             // description_label
             // 
@@ -72,11 +72,12 @@
             resources.ApplyResources(this.partof, "partof");
             this.partof.Name = "partof";
             // 
-            // picture
+            // delete
             // 
-            resources.ApplyResources(this.picture, "picture");
-            this.picture.Name = "picture";
-            this.picture.TabStop = false;
+            this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
+            resources.ApplyResources(this.delete, "delete");
+            this.delete.Name = "delete";
+            this.delete.UseVisualStyleBackColor = true;
             // 
             // edit
             // 
@@ -84,13 +85,15 @@
             resources.ApplyResources(this.edit, "edit");
             this.edit.Name = "edit";
             this.edit.UseVisualStyleBackColor = true;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
             // 
-            // delete
+            // picture
             // 
-            this.delete.Image = global::Visual_Storyline.Properties.Resources.action_Cancel_16xSM;
-            resources.ApplyResources(this.delete, "delete");
-            this.delete.Name = "delete";
-            this.delete.UseVisualStyleBackColor = true;
+            this.picture.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.picture, "picture");
+            this.picture.Name = "picture";
+            this.picture.TabStop = false;
             // 
             // Locationfield
             // 
@@ -102,7 +105,7 @@
             this.Controls.Add(this.partof_label);
             this.Controls.Add(this.description);
             this.Controls.Add(this.description_label);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.locname);
             this.Controls.Add(this.name_label);
             this.Controls.Add(this.picture);
             this.DoubleBuffered = true;
@@ -114,15 +117,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.Label name_label;
-        private System.Windows.Forms.Label name;
         private System.Windows.Forms.Label description_label;
-        private System.Windows.Forms.TextBox description;
-        private System.Windows.Forms.Label partof_label;
-        private System.Windows.Forms.Label partof;
         private System.Windows.Forms.Button edit;
         private System.Windows.Forms.Button delete;
+        public System.Windows.Forms.Label locname;
+        public System.Windows.Forms.Label partof_label;
+        public System.Windows.Forms.Label partof;
+        public System.Windows.Forms.PictureBox picture;
+        public System.Windows.Forms.TextBox description;
     }
 }

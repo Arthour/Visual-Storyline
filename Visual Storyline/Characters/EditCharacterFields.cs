@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
@@ -38,7 +37,6 @@ namespace Visual_Storyline
                     field.Top = highestID * Distance;
                     XmlDocument option = new XmlDocument();
                     option.LoadXml(item);
-                    Console.WriteLine(item);
                     field.NameField.Text = option.DocumentElement.SelectSingleNode("/characterfield/name").InnerText;
                     field.Type.SelectedIndex = Convert.ToInt32(option.DocumentElement.SelectSingleNode("/characterfield/type").InnerText);
                     field.optionslist = option.DocumentElement.SelectSingleNode("/characterfield/optionslist").InnerXml;

@@ -121,6 +121,10 @@
   <data name="name_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="name_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="name_label.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 15</value>
@@ -146,35 +150,41 @@
   <data name="&gt;&gt;name_label.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="name.AutoSize" type="System.Boolean, mscorlib">
+  <data name="locname.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="name.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="locname.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="locname.Location" type="System.Drawing.Point, System.Drawing">
     <value>200, 15</value>
   </data>
-  <data name="name.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="locname.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 15</value>
   </data>
-  <data name="name.TabIndex" type="System.Int32, mscorlib">
+  <data name="locname.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="name.Text" xml:space="preserve">
+  <data name="locname.Text" xml:space="preserve">
     <value>placeholder</value>
   </data>
-  <data name="&gt;&gt;name.Name" xml:space="preserve">
-    <value>name</value>
+  <data name="&gt;&gt;locname.Name" xml:space="preserve">
+    <value>locname</value>
   </data>
-  <data name="&gt;&gt;name.Type" xml:space="preserve">
+  <data name="&gt;&gt;locname.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;name.Parent" xml:space="preserve">
+  <data name="&gt;&gt;locname.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;name.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;locname.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="description_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="description_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="description_label.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 56</value>
@@ -227,6 +237,9 @@
   <data name="partof_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="partof_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="partof_label.Location" type="System.Drawing.Point, System.Drawing">
     <value>152, 30</value>
   </data>
@@ -254,6 +267,9 @@
   <data name="partof.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="partof.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="partof.Location" type="System.Drawing.Point, System.Drawing">
     <value>214, 30</value>
   </data>
@@ -278,52 +294,6 @@
   <data name="&gt;&gt;partof.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="picture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="picture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="picture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 150</value>
-  </data>
-  <data name="picture.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;picture.Name" xml:space="preserve">
-    <value>picture</value>
-  </data>
-  <data name="&gt;&gt;picture.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;picture.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;picture.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="edit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 103</value>
-  </data>
-  <data name="edit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 23</value>
-  </data>
-  <data name="edit.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;edit.Name" xml:space="preserve">
-    <value>edit</value>
-  </data>
-  <data name="&gt;&gt;edit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;edit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;edit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="delete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -347,6 +317,54 @@
   </data>
   <data name="&gt;&gt;delete.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="edit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="edit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 103</value>
+  </data>
+  <data name="edit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 23</value>
+  </data>
+  <data name="edit.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;edit.Name" xml:space="preserve">
+    <value>edit</value>
+  </data>
+  <data name="&gt;&gt;edit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;edit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;edit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="picture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="picture.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="picture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 150</value>
+  </data>
+  <data name="picture.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;picture.Name" xml:space="preserve">
+    <value>picture</value>
+  </data>
+  <data name="&gt;&gt;picture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picture.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;picture.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

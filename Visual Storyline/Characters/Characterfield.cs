@@ -139,8 +139,7 @@ namespace Visual_Storyline
             {
                 Options.Enabled = true;
             }
-            if (update != null)
-                update(this, e);
+            update?.Invoke(this, e);
         }
 
         private void Options_Click(object sender, EventArgs e)

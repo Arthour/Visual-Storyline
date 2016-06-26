@@ -132,6 +132,7 @@
     <Compile Include="Characters\Characterfield options\Textfieldoptions.Designer.cs">
       <DependentUpon>Textfieldoptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageHandler.cs" />
     <Compile Include="Locations\AddLocation.cs">
       <SubType>Form</SubType>
     </Compile>
